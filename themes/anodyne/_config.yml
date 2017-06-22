@@ -1,0 +1,47 @@
+# Logo
+logo_image_source: /images/logo.svg
+
+# Index Page
+index_banner_text: Maicon Schmitz
+index_banner_text_secondary: 
+index_font_awesome_icon_css: fa fa-magic
+
+# Header
+menu:
+  Home: /
+  Arquivos: /arquivos
+  Sobre: /sobre
+
+# Post
+default_post_title: Sem título
+default_post_icon: fa-file-text-o
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+archive_font_awesome_icon_css: fa-folder-open
+
+# About Widget
+about_widget_avatar_url: https://www.gravatar.com/avatar/590d4b287a1dccf26aa5c2b11f06d560
+about_widget_text: "Meu nome é Maicon Schmitz, sou um desenvolvedor Freelancer Web e Mobile, trabalho com diversas tecnologias, mas principalmente com PHP, Laravel, Wordpress, JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Apache Cordova e Ionic."
+
+# Comments.
+comments:
+  # Disqus comments
+  disqus_shortname: maiconschmitz
+
+# Google Analytics Tracking ID
+google_analytics: UA-6606591-5
+
+# Social Media Platforms
+social_platforms:
+  - url: https://github.com/maiconschmitz
+    fa_icon: fa-github
+  - url: https://twitter.com/maiconschmitz
+    fa_icon: fa-twitter
+  - url: mailto:contato@maiconschmitz.com.br
+    fa_icon: fa-envelope
+  - url: /#
+    fa_icon: fa-rss
+
+# Footer about
+footer_about: "Todos os direitos reservados | Site estático gerado com <a class=\"link dim white\" href=\"http://www.hexo.io/\">Hexo</a>"
