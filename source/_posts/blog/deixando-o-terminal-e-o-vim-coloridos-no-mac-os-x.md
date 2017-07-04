@@ -11,7 +11,7 @@ tags:
 status: publish
 type: post
 published: true
-alias: 2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x.html
+alias: blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x.html
 ---
 O processo de configuração se inicia pelo **.bashrc** e pelo **.vimrc** e pode ser executado diretamente no **Terminal.app**.
 
