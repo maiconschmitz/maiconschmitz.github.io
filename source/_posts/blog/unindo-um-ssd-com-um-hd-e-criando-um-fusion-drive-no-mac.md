@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unindo um SSD com um HDD (HD) e criando um Fusion Drive no Mac
-date: 2017-07-03 13:00:00
+title: Unindo um SSD com um HD e criando um Fusion Drive no Mac
+date: 2017-07-03 13:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
@@ -15,6 +15,7 @@ tags:
 status: publish
 type: post
 published: true
+alias: blog/2017/07/03/Unindo-um-SSD-com-um-HDD-e-criando-um-Fusion-Drive-no-Mac/
 ---
 Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em [Instalando um segundo HD em um Macbook Pro mid 2011](http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011.html "Instalando um segundo HD em um Macbook Pro mid 2011"), uma opção, é efetuar a criação de um **Fusion Drive**.
 
