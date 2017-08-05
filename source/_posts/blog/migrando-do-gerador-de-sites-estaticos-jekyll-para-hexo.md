@@ -2,14 +2,14 @@
 title: Migrando do gerador de sites estáticos Jekyll para Hexo
 date: 2017-07-27 18:30:00
 tags: 
-- site
-- wordpress
-- estatico
-- gerador
-- jekyll
-- ruby
-- hexo
-- nodejs
+- Site
+- Wordpress
+- Estatico
+- Gerador
+- Jekyll
+- Ruby
+- Hexo
+- Node.js
 ---
 Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de sites estáticos, optou-se por migrar do **Wordpress** para o **Jekyl** e agora, do Jekyl para o **Hexo**.
 
@@ -123,7 +123,7 @@ Passados os passos anteriores, o fluxo de utilização do Hexo será o seguinte:
     
     $ hexo new post <titulo-do-post>
 
-Edite o arquivo source/_posts/<titulo-do-post.md>
+Edite o arquivo source/_posts/titulo-do-post.md
 
 ### Gerando e visualizando as páginas:
     

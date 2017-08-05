@@ -4,6 +4,11 @@ title: Instalação Limpa do OS X El Capitan
 date: 2015-10-02 12:30:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- App Store
+- MAC OS X
+- Pendrive
+- Terminal
 status: publish
 type: post
 published: true

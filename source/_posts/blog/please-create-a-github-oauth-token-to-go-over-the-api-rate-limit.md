@@ -4,6 +4,11 @@ title: Please create a GitHub OAuth token to go over the API rate limit
 date: 2015-07-09 12:30:10.000000000 -03:00
 categories:
 - Blog
+tags:
+- API
+- Github
+- Composer
+- PHP
 status: publish
 type: post
 published: true

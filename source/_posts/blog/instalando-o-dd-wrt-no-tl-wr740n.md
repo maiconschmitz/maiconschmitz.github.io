@@ -5,7 +5,7 @@ date: 2015-02-09 12:00:42.000000000 -02:00
 categories:
 - Blog
 tags:
-- dd-wrt
+- DD-WRT
 - Linux
 status: publish
 type: post

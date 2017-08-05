@@ -4,6 +4,11 @@ title: Iniciando com Docker no OS X
 date: 2016-05-21 08:00:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- App Store
+- MAC OS X
+- Pendrive
+- Terminal
 status: publish
 type: post
 published: true

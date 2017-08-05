@@ -4,6 +4,10 @@ title: Instalando o gerenciador de pacotes Brew
 date: 2015-01-09 13:30:27.000000000 -02:00
 categories:
 - Blog
+tags:
+- Brew
+- Ruby
+- MAC OS X
 status: publish
 type: post
 published: true

@@ -4,6 +4,8 @@ title: Gerando QR Code de uma URL no Google Chrome
 date: 2017-03-30 17:30:10.000000000 -03:00
 categories:
 - Blog
+tags:
+- QR Code
 status: publish
 type: post
 published: true

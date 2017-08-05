@@ -4,6 +4,11 @@ title: Comunicando Raspberry Pi com Arduino via USB (Serial)
 date: 2016-02-29 18:00:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- Raspberry Py
+- Raspbian
+- Arduino
+- USB
 status: publish
 type: post
 published: true

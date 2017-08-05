@@ -4,6 +4,10 @@ title: Instalando Node.js no Raspbian
 date: 2015-11-25 18:00:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- Node.js
+- Raspberry Pi
+- Raspbian
 status: publish
 type: post
 published: true

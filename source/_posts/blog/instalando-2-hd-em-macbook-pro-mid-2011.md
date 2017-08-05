@@ -4,6 +4,10 @@ title: Instalando um segundo HD em um Macbook Pro mid 2011
 date: 2017-04-28 15:00:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- HD
+- SSD
+- MAC OS X
 status: publish
 type: post
 published: true

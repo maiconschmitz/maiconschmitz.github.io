@@ -4,6 +4,11 @@ title: Fazendo Backup de Pendrives e Cartões SD no Mac OS X
 date: 2015-12-23 18:00:00.000000000 -03:00
 categories:
 - Blog
+tags:
+- Backup
+- MAC OS X
+- Pendrive
+- SD
 status: publish
 type: post
 published: true
