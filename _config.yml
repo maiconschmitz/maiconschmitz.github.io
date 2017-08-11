@@ -77,3 +77,7 @@ deploy:
   type: git
   repo: https://github.com/maiconschmitz/maiconschmitz.github.io.git
   branch: master
+
+search:
+  path: busca.json
+  field: post
