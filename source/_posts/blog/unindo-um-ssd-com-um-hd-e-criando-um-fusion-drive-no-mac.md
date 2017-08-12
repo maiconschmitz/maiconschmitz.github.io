@@ -25,7 +25,7 @@ Assim, é possível juntar 2 SSDs de tamanhos diferentes em apenas um volume apa
 Ao efetuar a junção de um SSD com um HD, você terá os benefícios da velocidade do SSD, com a capacidade de armazenamento do HD.
 O macOS irá gerenciar o uso deste volume, da melhor forma possível, mantendo arquivos que são mais acessados no SSD, enquanto arquivos que são menos requisitados, serão mantidos no HD. Tudo isso se dá de forma transparente para o usuário, onde o macOS irá mover os arquivos de um disco para o outro, conforme necessário e nenhuma ação da parte do usuário se fará necessária, uma vez que aparentemente, existirá apenas um único volume visível.
 
-Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a [Instalação Limpa do macOS Sierra](http://www.maiconschmitz.com.br/2017/06/02/instalacao-limpa-do-mac-os-sierra "Instalação Limpa do macOS Sierra").
+Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a [Instalação Limpa do macOS Sierra](http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra "Instalação Limpa do macOS Sierra").
 
 ## Criando o Fusion Drive
 
