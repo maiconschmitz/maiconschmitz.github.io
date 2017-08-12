@@ -53,7 +53,7 @@ Após alguns instantes, se a instalação ocorrer sem problemas, você terá o s
 
 Caso ocorra algum erro, poderá ser necessário instalar o Xcode e o Command Line Tools da Apple.
 
-Caso não saiba como, veja o passo a passo de [Instalação do Xcode Command Line Tools](http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools.html){:target="_blank"}.
+Caso não saiba como, veja o passo a passo de [Instalação do Xcode Command Line Tools](http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools){:target="_blank"}.
 
 Se a instalação ocorrer sem problemas, então basta executar o Brew Doctor.
 

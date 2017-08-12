@@ -64,7 +64,7 @@ Você pode instalar o wrapper via [Homebrew](https://github.com/Homebrew/homebre
 $ brew install terminal-notifier
 ~~~
 
-Caso você não possua o HomeBrew instalado, pode verificar [aqui, como Instalar o HomeBrew](http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew.html).
+Caso você não possua o HomeBrew instalado, pode verificar [aqui, como Instalar o HomeBrew](http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew).
 
 Ou, caso deseje utilizar o mesmo também via 
 [Ruby](https://github.com/alloy/terminal-notifier/tree/master/Ruby), efetue a instalação via RubyGems:

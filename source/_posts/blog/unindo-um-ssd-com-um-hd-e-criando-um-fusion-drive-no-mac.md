@@ -17,7 +17,7 @@ type: post
 published: true
 alias: blog/2017/07/03/Unindo-um-SSD-com-um-HDD-e-criando-um-Fusion-Drive-no-Mac/
 ---
-Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em [Instalando um segundo HD em um Macbook Pro mid 2011](http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011.html "Instalando um segundo HD em um Macbook Pro mid 2011"), uma opção, é efetuar a criação de um **Fusion Drive**.
+Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em [Instalando um segundo HD em um Macbook Pro mid 2011](http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011 "Instalando um segundo HD em um Macbook Pro mid 2011"), uma opção, é efetuar a criação de um **Fusion Drive**.
 
 O **Fusion Drive**, é um recurso disponível nas versões mais recentes do macOS, que possibilita efetuar a junção de um ou mais discos, da tal forma à lhe disponibilizar apenas um **volume virtual**.
 
@@ -25,7 +25,7 @@ Assim, é possível juntar 2 SSDs de tamanhos diferentes em apenas um volume apa
 Ao efetuar a junção de um SSD com um HD, você terá os benefícios da velocidade do SSD, com a capacidade de armazenamento do HD.
 O macOS irá gerenciar o uso deste volume, da melhor forma possível, mantendo arquivos que são mais acessados no SSD, enquanto arquivos que são menos requisitados, serão mantidos no HD. Tudo isso se dá de forma transparente para o usuário, onde o macOS irá mover os arquivos de um disco para o outro, conforme necessário e nenhuma ação da parte do usuário se fará necessária, uma vez que aparentemente, existirá apenas um único volume visível.
 
-Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a [Instalação Limpa do macOS Sierra](http://www.maiconschmitz.com.br/2017/06/02/instalacao-limpa-do-mac-os-sierra.html "Instalação Limpa do macOS Sierra").
+Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a [Instalação Limpa do macOS Sierra](http://www.maiconschmitz.com.br/2017/06/02/instalacao-limpa-do-mac-os-sierra "Instalação Limpa do macOS Sierra").
 
 ## Criando o Fusion Drive
 
