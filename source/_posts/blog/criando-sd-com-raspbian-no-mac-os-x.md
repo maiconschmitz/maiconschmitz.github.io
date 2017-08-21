@@ -71,7 +71,7 @@ A sintaxe básica do dd é:
 	dd if=origem of=destino
 
 
-##Partindo para a cópia...
+## Partindo para a cópia...
 
 Substitua **origem** e **destino**, pelo arquivo IMG e pelo disco de destino respectivamente, logo teremos algo semelhante à:
 
