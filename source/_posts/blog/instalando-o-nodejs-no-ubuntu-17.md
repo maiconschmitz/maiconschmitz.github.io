@@ -7,7 +7,7 @@ categories:
 tags:
 - Ubuntu
 - Node.js
-- NPM
+- npm
 - Terminal
 status: publish
 type: post
