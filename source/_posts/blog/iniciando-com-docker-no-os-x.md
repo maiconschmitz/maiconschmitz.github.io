@@ -9,6 +9,8 @@ tags:
 - MAC OS X
 - Pendrive
 - Terminal
+- Docker
+- macOS
 status: publish
 type: post
 published: true

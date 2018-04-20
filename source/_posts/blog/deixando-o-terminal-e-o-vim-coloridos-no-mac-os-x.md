@@ -8,6 +8,7 @@ tags:
 - MAC OS X
 - Terminal
 - VIM
+- macOS
 status: publish
 type: post
 published: true

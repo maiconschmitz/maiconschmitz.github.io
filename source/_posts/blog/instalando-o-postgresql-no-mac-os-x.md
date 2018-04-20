@@ -7,6 +7,7 @@ categories:
 tags:
 - MAC OS X
 - PostgreSQL
+- macOS
 status: publish
 type: post
 published: true

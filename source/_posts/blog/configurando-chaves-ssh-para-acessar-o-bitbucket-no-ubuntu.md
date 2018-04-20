@@ -9,6 +9,7 @@ tags:
 - SSH
 - Terminal
 - Ubuntu
+- macOS
 status: publish
 type: post
 published: true

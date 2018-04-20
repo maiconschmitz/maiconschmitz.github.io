@@ -8,6 +8,7 @@ tags:
 - Brew
 - Ruby
 - MAC OS X
+- macOS
 status: publish
 type: post
 published: true

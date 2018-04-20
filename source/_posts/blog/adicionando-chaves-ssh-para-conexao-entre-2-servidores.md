@@ -8,6 +8,7 @@ tags:
 - Linux
 - MAC OS X
 - SSH
+- macOS
 status: publish
 type: post
 published: true

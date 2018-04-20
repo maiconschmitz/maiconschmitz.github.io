@@ -5,7 +5,6 @@ date: 2017-08-12 15:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
-- MAC OS X
 - macOS
 - Netflix
 - YouTube

@@ -8,6 +8,7 @@ tags:
 - MAC OS X
 - Terminal
 - Shell script
+- macOS
 status: publish
 type: post
 published: true

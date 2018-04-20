@@ -8,6 +8,7 @@ tags:
 - MAC OS X
 - Pendrive
 - Ubuntu
+- macOS
 status: publish
 type: post
 published: true

@@ -10,6 +10,7 @@ tags:
 - SD
 - Raspberry Py
 - Raspbian
+- macOS
 status: publish
 type: post
 published: true

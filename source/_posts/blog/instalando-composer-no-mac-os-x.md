@@ -8,6 +8,7 @@ tags:
 - MAC OS X
 - PHP
 - Terminal
+- macOS
 status: publish
 type: post
 published: true

@@ -11,6 +11,7 @@ tags:
 - MAC OS X
 - Terminal
 - Xcode
+- macOS
 status: publish
 type: post
 published: true

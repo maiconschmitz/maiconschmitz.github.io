@@ -8,6 +8,7 @@ tags:
 - HD
 - SSD
 - MAC OS X
+- macOS
 status: publish
 type: post
 published: true
