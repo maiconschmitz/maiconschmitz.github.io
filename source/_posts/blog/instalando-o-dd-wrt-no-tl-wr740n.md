@@ -12,19 +12,19 @@ type: post
 published: true
 alias: blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n.html
 ---
-O **DD-WRT** é um firmware para roteadores, baseado em **Linux**.  
+O **DD-WRT** é um firmware para roteadores, baseado em **Linux**.
 A idéia por trás do **DD-WRT** é a possibilidade de utilizar todos os recursos suportados pelo harware do seu roteador, mesmo quando o firmware padrão do mesmo não o suporta. Neste caso, a alternativa é substituir o firmware de fábrica.
 
-Dentre as principais opções temos o **DD-WRT**: [http://www.dd-wrt.com](http://www.dd-wrt.com "http://www.dd-wrt.com"), o **OpenWRT**: [http://www.openwrt.org](http://www.openwrt.org "http://www.openwrt.org") e o **Tomato**: [http://www.polarcloud.com/tomato](http://www.polarcloud.com/tomato "http://www.polarcloud.com/tomato").
+Dentre as principais opções temos o **DD-WRT**: [https://dd-wrt.com](https://dd-wrt.com "https://dd-wrt.com"), o **OpenWRT**: [https://openwrt.org](https://openwrt.org "https://openwrt.org") e o **Tomato**: [http://www.polarcloud.com/tomato](http://www.polarcloud.com/tomato "http://www.polarcloud.com/tomato").
 
 ## Encontrando o Firmware
 
-Encontre o Firmware para o seu dispositivo na Router Database do DD-WRT:  
-[http://www.dd-wrt.com/site/support/router-database](http://www.dd-wrt.com/site/support/router-database "http://www.dd-wrt.com/site/support/router-database").
+Encontre o Firmware para o seu dispositivo na Router Database do DD-WRT:
+[https://dd-wrt.com/support/router-database/](https://dd-wrt.com/support/router-database/ "https://dd-wrt.com/support/router-database/").
 
 Tenha a certeza de selecionar a versão correta para o seu dispositivo.
 
-Em nosso exemplo utilizamos um equipamento da TP-Link, modelo TL-WR740N, versão 4.x.  
+Em nosso exemplo utilizamos um equipamento da TP-Link, modelo TL-WR740N, versão 4.x.
 A informação do modelo e versão (o mais importante), poderá ser encontrada na etiqueta do produto (na parte inferior) ou então na seção administrativa do equipamento (ao efetuar login).
 
 ## Especificações do TL-WR740N
@@ -78,3 +78,5 @@ Confirme a atualização e aguarde o procedimento ser concluído (não desligue 
 Quando o upgrade estiver concluído, você poderá voltar a acessar o IP 192.168.1.1 e poderá explorar todas as funcionalidades do DD-WRT.
 
 Se desejar, você poderá voltar para o firmware antigo do seu roteador, para isto, bastará efetuar a "atualização de firmware" com o arquivo: **wr740nv4_webrevert.rar**.
+
+Se julgar interessante, você pode configurar uma **VPN** facilmente, seguindo o guia: [https://www.comparitech.com/blog/vpn-privacy/best-vpn-dd-wrt-router/](https://www.comparitech.com/blog/vpn-privacy/best-vpn-dd-wrt-router/ "https://www.comparitech.com/blog/vpn-privacy/best-vpn-dd-wrt-router/").
