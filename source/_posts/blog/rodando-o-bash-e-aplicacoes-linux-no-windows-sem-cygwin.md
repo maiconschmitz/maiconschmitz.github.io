@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rodando o bash e aplicações Linux no Windows sem Cywin
-date: 2018-06-03 12:00:00.000000000 -03:00
+date: 2018-07-03 12:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
