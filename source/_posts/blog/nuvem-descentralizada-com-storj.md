@@ -23,7 +23,7 @@ O **Storj** é um sistema de armazenamento de arquivos distribuídos, **peer-to-
 O Storj utiliza criptografia de última geração, de ponta a ponta e a tecnologia **Blockchain** do **Ethereum**.
 
 ## Para que serve o Storj?
-o Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem, ao criar uma núvem de arquivos distribuída e descentralizada, que alia segura e alto desempenho para armazenar seus arquivos à um preço economicamente viável.
+O Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem, ao criar uma núvem de arquivos distribuída e descentralizada, que alia segura e alto desempenho para armazenar seus arquivos à um preço economicamente viável.
 
 ## Como funciona o Storj?
 Diferente de outros sistemas de Storage, o Storj não utiliza servidores em Data Centers, mas sim, os computadores dos usuários que fazem parte de rede e cedem espaço de armazenamento.

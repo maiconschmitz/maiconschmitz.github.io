@@ -5,7 +5,6 @@ date: 2015-11-11 18:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
-- Redis
 - MAC OS X
 - macOS
 status: publish
