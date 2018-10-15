@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Maicon Schmitz</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.maiconschmitz.com.br/"/>
+  <updated>2018-10-15T01:25:50.223Z</updated>
+  <id>http://www.maiconschmitz.com.br/</id>
+  
+  <author>
+    <name>Maicon Schmitz</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Instalação Limpa do macOS Mojave</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/</id>
+    <published>2018-10-15T17:30:00.000Z</published>
+    <updated>2018-10-15T01:25:50.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>Fazendo uma instalação limpa (do zero) do macOS Mojave.</p><p>Com o seu OS X/macOS ainda em funcionamento, efetue o download da Instalação do <a href="https://www.apple.com/br/macos/mojave/" title="macOS Mojave" target="_blank" rel="noopener"><strong>macOS Mojave</strong></a> através da <strong>App Store</strong>.</p><p>Com o download concluído, cancele a instalação.</p><p>Conecte um HD Externo, Pen drive ou Cartão SD, de no mínimo 8 GB ao Mac.</p><p>Acesse o “Utilitário de Disco” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Estando no “Utilitário de Disco”, selecione o Dispositivo, na lista de Drives e clique sobre a aba “Apagar”.</p><p>Em “Nome”, defina para “MACOS”, em “Formato” selecione a opção “Mac OS Expandido (Journaling)”, em “Esquema”, escolha “Mapa de Partição Apple” e clique no botão “Apagar…”.</p><p>Quando a formatação estiver concluída, feche o “Utilitário de Disco”.</p><p>Acesse o “Terminal” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Execute o seguinte comando:</p><pre><code>sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia  --volume /Volumes/MACOS --applicationpath /Applications/Install\ macOS\ Mojave.app/ --nointeraction</code></pre><p>O processo de cópia será efetuado e a seguinte mensagem será exibida:</p><pre><code>Erasing Disk: 0%... 10%... 20%... 30%...100%...Copying installer files to disk...Copy complete.Making disk bootable...Copying boot files...Copy complete.Done.</code></pre><h2 id="Hora-da-Instalacao"><a href="#Hora-da-Instalacao" class="headerlink" title="Hora da Instalação"></a>Hora da Instalação</h2><p>Com o Dispositivo conectado ao Mac, reinicie, ou ligue-o, mantendo pressionada ou pressionando repetidas vezes, a tecla “Option”.</p><p>Após o carregamento, deverá ser exibida uma “lista”, na qual você deverá selecionar o dispositivo para o qual copiou a instalação.</p><p>Deste ponto em diante, você possui as seguinte opções:</p><ul><li>Iniciar</li><li>Reinstalar o macOS</li><li>Instalar o macOS</li></ul><p>Os processos de Reinstalar e Instalar o macOS, são praticamente os mesmos, com a diferença de a reinstalação manter seus arquivos, programas e algumas configuração, enquanto a instalação limpa, irá lhe obrigar à reconfigurar e instalar novamente todos os seus programas, serviços, etc…</p><h2 id="APFS-Apple-File-System-X-Mac-OS-Expandido"><a href="#APFS-Apple-File-System-X-Mac-OS-Expandido" class="headerlink" title="APFS (Apple File System) X Mac OS Expandido"></a>APFS (Apple File System) X Mac OS Expandido</h2><p>Com o macOS à partir do High Sierra, temos um novo sistema de arquivos, o APFS (Apple File System), o qual é a opção padrão e ideal à ser utilizada caso você possua uma unidade de estado sólido (SSD).</p><p>Caso tenha dúvidas entre APFS (Apple File System) ou Mac OS Expandido, consulte [Como escolher entre APFS e Mac OS Expandido ao formatar um disco para o Mac] (<a href="https://support.apple.com/pt-br/HT208033" target="_blank" rel="noopener">https://support.apple.com/pt-br/HT208033</a> “Como escolher entre APFS e Mac OS Expandido ao formatar um disco para o Mac”)</p><h2 id="Instalar-o-macOS"><a href="#Instalar-o-macOS" class="headerlink" title="Instalar o macOS"></a>Instalar o macOS</h2><h3 id="Instalacao-Limpa-do-macOS-com-SSD"><a href="#Instalacao-Limpa-do-macOS-com-SSD" class="headerlink" title="Instalaçao Limpa do macOS com SSD"></a>Instalaçao Limpa do macOS com SSD</h3><ul><li>Selecione o “Utilitário de Disco” e escolha a opção “Continuar”.</li><li>Selecione o “Disco Principal” e clique na opção “Apagar”, no topo da janela.<ul><li>Defina um nome para o Disco, exemplo: “OSX”</li><li>Em Formato, selecione/mantenha a opção: “APFS (Distinção de maiúsculas)”</li><li>Confirme as opções acima, clicando em “Apagar”.</li></ul></li><li>Aguarde e conclusão do processo.</li><li>Feche o “Utilitário de Disco”.</li><li>Selecione a opção “Instalar o macOS” e siga o passo-a-passo.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Fazendo uma instalação limpa (do zero) do macOS Mojave.&lt;/p&gt;
+&lt;p&gt;Com o seu OS X/macOS ainda em funcionamento, efetue o download da Instalaç
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atualizando o Ruby no macOS</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</id>
+    <published>2018-08-04T23:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>Por padrão o macOS Sierra vem com o Ruby na versão 2.0 instalado.</p><p>Para utilizar as <strong>gems</strong> mais atuais do <strong>Ruby</strong>, se faz necessário atualizar o Ruby para alguma versão mais recente.</p><h2 id="Verifique-a-versao-do-Ruby-instalada"><a href="#Verifique-a-versao-do-Ruby-instalada" class="headerlink" title="Verifique a versão do Ruby instalada."></a>Verifique a versão do Ruby instalada.</h2><p>Vá até o terminal e execute o seguinte comando:</p><pre><code>$ ruby -v</code></pre><h2 id="Baixando-o-Ruby"><a href="#Baixando-o-Ruby" class="headerlink" title="Baixando o Ruby"></a>Baixando o Ruby</h2><p>Para efetuar a atualizaão do Ruby, estando no Terminal, execute:</p><pre><code>$ curl -sSL https://get.rvm.io | bash -s stable</code></pre><p>Após a instalação, feche o terminal que utilizou e abra-o novamente.</p><p>Agora, você pode verificar as versões disponíveis do Ruby para upgrade.</p><p>Para isto, execute:</p><pre><code>$ rvm list known</code></pre><p>O seu retorno, será algo semelhante à isto:</p><pre><code># MRI Rubies[ruby-]1.8.6[-p420][ruby-]1.8.7[-head] # security released on head[ruby-]1.9.1[-p431][ruby-]1.9.2[-p330][ruby-]1.9.3[-p551][ruby-]2.0.0[-p648][ruby-]2.1[.10][ruby-]2.2[.10][ruby-]2.3[.7][ruby-]2.4[.4][ruby-]2.5[.1][ruby-]2.6[.0-preview2]ruby-head# for forks use: rvm install ruby-head-&lt;name&gt; --url https://github.com/github/ruby.git --branch 2.2# JRubyjruby-1.6[.8]jruby-1.7[.27]jruby-9.1[.17.0]jruby[-9.2.0.0]jruby-head# Rubiniusrbx-1[.4.3]rbx-2.3[.0]rbx-2.4[.1]rbx-2[.5.8]rbx-3[.100]rbx-head# TruffleRubytruffleruby[-1.0.0-rc2]# Opalopal# Minimalistic ruby implementation - ISO 30170:2012mruby-1.0.0mruby-1.1.0mruby-1.2.0mruby-1.3.0mruby-1[.4.0]mruby[-head]# Ruby Enterprise Editionree-1.8.6ree[-1.8.7][-2012.02]# Topaztopaz# MagLevmaglev-1.0.0maglev-1.1[RC1]maglev[-1.2Alpha4]maglev-head# Mac OS X Snow Leopard Or Newermacruby-0.10macruby-0.11macruby[-0.12]macruby-nightlymacruby-head# IronRubyironruby[-1.1.3]ironruby-head</code></pre><p>Como neste momento, a versão do Ruby 2.6.0 estava ainda em preview, optei pela última versão da 2.5, no caso a 2.5.1.</p><p>Para instalar, apenas execute:</p><pre><code>$ rvm install ruby-2.5.1</code></pre><p>Ao final da instalação, execute:</p><pre><code>$ ruby -v</code></pre><p>Se ainda não estiver exibindo a versão recem instalada, então execute:</p><pre><code>$ rvm use ruby-2.5.1 --default</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Por padrão o macOS Sierra vem com o Ruby na versão 2.0 instalado.&lt;/p&gt;
+&lt;p&gt;Para utilizar as &lt;strong&gt;gems&lt;/strong&gt; mais atuais do &lt;strong&gt;Ru
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Ruby" scheme="http://www.maiconschmitz.com.br/tags/Ruby/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Netbeans 8.2 não cria nem abre projetos no macOS</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</id>
+    <published>2018-07-16T18:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.898Z</updated>
+    
+    <content type="html"><![CDATA[<p>Recentemente, instalei a <strong>JDK 10</strong> e ao instalar o <strong>Netbeans 8.2</strong>, me deparei com uma aplicação que não abria, nem criava projetos.</p><p>Se o seu <strong>Netbeans 8.2</strong> esta apresentando este problema, então, muito provavelmente você possui uma versão incorreta da JDK instala.</p><p>A versão correta da JDK para utilizar com o <strong>Netbeans 8.2</strong>, é a <strong>JDK 8</strong>!</p><p>Então, remova a sua <strong>JDK 10</strong>, instale a <strong>JDK 8</strong> e execute o Netbeans, sem maiores problemas.</p><h2 id="Como-remover-o-Java-do-macOS"><a href="#Como-remover-o-Java-do-macOS" class="headerlink" title="Como remover o Java do macOS"></a>Como remover o Java do macOS</h2><p>Para remover o Java do macOS, existem algum simples passos à serem seguidos.</p><p>A JDK pode ser localizada na pasta: /Library/Java/JavaVirtualMachines</p><p>Então, abra o terminal e execute os comandos abaixo:</p><pre><code>cd /Library/Java/JavaVirtualMachineslssudo rm -rf jdk*</code></pre><p>Se desejar remover também o plugin e painel do Java, ainda no terminal, execute os seguintes comandos:</p><pre><code>sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.pluginsudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefpane</code></pre><h2 id="Instalacao-da-JDK-e-do-Netbeans"><a href="#Instalacao-da-JDK-e-do-Netbeans" class="headerlink" title="Instalação da JDK e do Netbeans"></a>Instalação da JDK e do Netbeans</h2><p>A JDK 8 pode ser encontrada no seguinte link de <a href="http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html" title="JDK 8" target="_blank" rel="noopener">Download</a>.</p><p>O Netbeans 8.2 pode ser encontrado no seguinte de <a href="https://netbeans.org/downloads/?pagelang=pt_BR" title="Netbeans 8.2" target="_blank" rel="noopener">Download</a>.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Recentemente, instalei a &lt;strong&gt;JDK 10&lt;/strong&gt; e ao instalar o &lt;strong&gt;Netbeans 8.2&lt;/strong&gt;, me deparei com uma aplicação que não abri
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Netbeans" scheme="http://www.maiconschmitz.com.br/tags/Netbeans/"/>
+    
+      <category term="Java" scheme="http://www.maiconschmitz.com.br/tags/Java/"/>
+    
+      <category term="JDK" scheme="http://www.maiconschmitz.com.br/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rodando o bash e aplicações Linux no Windows sem Cywin</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/07/03/rodando-o-bash-e-aplicacoes-linux-no-windows-sem-cygwin/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/07/03/rodando-o-bash-e-aplicacoes-linux-no-windows-sem-cygwin/</id>
+    <published>2018-07-03T18:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>Recentemente, o <strong>Windows 10</strong> em sua versão mais atualizada, incorporou o <strong>WSL</strong>, Subsistema Windows para Linux (do inglês Windows Subsystem for Linux).</p><p>Com isto, você pode optar por utilizar o <strong>bash</strong> e uma infinidade de pacotes e aplicações Linux, diretamente no Windows.</p><p>O Subsistema Windows para Linux não suporta aplicações gráficas, pois este não é o seu propósito, mas com ele, você pode rodar <strong>Python</strong>, <strong>PHP</strong>, <strong>Node.js</strong>, <strong>Apache</strong>, <strong>Nginx</strong> e uma infinidade de outros recursos, como <strong>grep</strong>, <strong>sed</strong>, etc e tudo isso, sem precisar instalar o <strong>Cygwin</strong>.</p><p>Antes de efetuar a instalação do <strong>WSL</strong>, não se esqueça de habilitar o recurso.<br>Para isto, abra o <strong>PowerShell</strong> como Administrador e execute:</p><pre><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></pre><p>Feito isto, basta acessar a Windows Store e efetuar a instalação da distribuição de sua preferência.</p><p>Eu optei por instalar o <a href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab" title="Ubuntu" target="_blank" rel="noopener">Ubuntu</a>, mas você é livre para escolher qualquer uma das <a href="https://aka.ms/wslstore" title="distribuições" target="_blank" rel="noopener">distribuições</a> disponíveis.</p><p>Caso você não possua o Windows 10, pode optar por utilizar o <a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a>, o que já é de grande ajuda!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Recentemente, o &lt;strong&gt;Windows 10&lt;/strong&gt; em sua versão mais atualizada, incorporou o &lt;strong&gt;WSL&lt;/strong&gt;, Subsistema Windows para Lin
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Windows" scheme="http://www.maiconschmitz.com.br/tags/Windows/"/>
+    
+      <category term="Bash" scheme="http://www.maiconschmitz.com.br/tags/Bash/"/>
+    
+      <category term="PowerShell" scheme="http://www.maiconschmitz.com.br/tags/PowerShell/"/>
+    
+      <category term="Cygwin" scheme="http://www.maiconschmitz.com.br/tags/Cygwin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Aumentando o espaço de armazenamento do MacBook com cartão SD</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</id>
+    <published>2018-05-16T00:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nem sempre é possível aumentar o espaço de armazenamento interno de um MacBook, através da substituição de um HD ou SSD existente, utilizando um de maior capacidade, ou até mesmo <a href="http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/">instalando um segundo HD</a>.</p><p>Para estes casos, existe uma outra opção, que é a utilização de um adaptador para cartões <strong>MicroSD</strong>.</p><p>Existem diversas opções famosas no mercado, como o <a href="http://www.pny.eu/consumer/explore-all-products/apple-accessories/231-storedge-128gb" target="_blank" rel="noopener"><strong>StorEDGE</strong></a> da PNY, o <a href="http://www.transcend-info.com/apple/jetdrivelite/" target="_blank" rel="noopener"><strong>JetDrive</strong></a> da Transcend, o <a href="http://www.theminidrive.com/" target="_blank" rel="noopener"><strong>The Mini Drive</strong></a>, o <a href="http://minidrive.bynifty.com/" target="_blank" rel="noopener"><strong>Nifty</strong></a> ou o <a href="http://www.baseqi.com" target="_blank" rel="noopener"><strong>Baseqi</strong></a>.</p><p>Independente da opção escolhida, ambos não passam de um pequeno adaptador de cartão MicroSD, que se encaixa e fica quase que por completo dentro da carcaça do MacBook. Além disso, o que ambos possuem em comum, é o alto preço agregado para um simples adaptador.</p><p>Na contramão dos preços altos, você pode optar por um adaptado semelhante, mas <a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p2323847.m570.l1313.TR10.TRC2.A0.H0.XMicro+.TRS2&amp;_nkw=Micro+SD+Card+Adapter+For+MacBook&amp;_sacat=0" target="_blank" rel="noopener">sem marca</a> e que não chega à custar U$ 2.00 dólares.</p><p>Obviamente, a grande diferença entre os modelos de marcas mais famosas contra o <a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p2323847.m570.l1313.TR10.TRC2.A0.H0.XMicro+.TRS2&amp;_nkw=Micro+SD+Card+Adapter+For+MacBook&amp;_sacat=0" target="_blank" rel="noopener">Adaptador sem marca</a>, além do preço, é o Design.<br>O material de construção dos modelos mais caros é excelente, alguns são inclusive de alumínio e possuem um encaixe perfeito, dependendo do modelo, é claro, o que faz uma grande diferença estética. </p><p>Porém, a função, independe de marca, é igual em ambos, uma vez que o que faz a diferença não é o adaptador, mas o cartão MicroSD que será utilizado.<br>Sendo assim, prefira investir na compra de um bom cartão MicroSD, de marca e procedência conhecida, além de optar apenas por modelos de Classe 10, que são os modelos mais rápidos.</p><p>Com o adpatador em mãos, seja lá qual tenha escolhido, não ha muito o que fazer, à não ser inserir o MicroSD no mesmo e por fim, inserir o adaptador no MacBook.</p><p>O modo de uso, segue o mesmo de qualquer “disco” conectado.</p><p>Dizem inclusive, que é possível utilizar este “disco”, para criar um <a href="http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/" title="Unindo um SSD com um HD e criando um Fusion Drive no Mac">Fusion Drive</a>.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Nem sempre é possível aumentar o espaço de armazenamento interno de um MacBook, através da substituição de um HD ou SSD existente, utiliz
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="SD" scheme="http://www.maiconschmitz.com.br/tags/SD/"/>
+    
+      <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
+    
+      <category term="HDD" scheme="http://www.maiconschmitz.com.br/tags/HDD/"/>
+    
+      <category term="HD" scheme="http://www.maiconschmitz.com.br/tags/HD/"/>
+    
+      <category term="Fusion" scheme="http://www.maiconschmitz.com.br/tags/Fusion/"/>
+    
+      <category term="Drive" scheme="http://www.maiconschmitz.com.br/tags/Drive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Instalação Limpa do macOS High Sierra</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/05/08/instalacao-limpa-do-mac-os-high-sierra/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/05/08/instalacao-limpa-do-mac-os-high-sierra/</id>
+    <published>2018-05-08T17:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>Fazendo uma instalação limpa (do zero) do macOS High Sierra.</p><p>Com o seu OS X/macOS ainda em funcionamento, efetue o download da Instalação do <a href="https://www.apple.com/br/macos/high-sierra/" title="macOS High Sierra" target="_blank" rel="noopener"><strong>macOS High Sierra</strong></a> através da <strong>App Store</strong>.</p><p>Com o download concluído, cancele a instalação.</p><p>Conecte um HD Externo, Pen drive ou Cartão SD, de no mínimo 8 GB ao Mac.</p><p>Acesse o “Utilitário de Disco” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Estando no “Utilitário de Disco”, selecione o Dispositivo, na lista de Drives e clique sobre a aba “Apagar”.</p><p>Em “Nome”, defina para “MACOS”, em “Formato” selecione a opção “Mac OS Expandido (Journaling)”, em “Esquema”, escolha “Mapa de Partição Apple” e clique no botão “Apagar…”.</p><p>Quando a formatação estiver concluída, feche o “Utilitário de Disco”.</p><p>Acesse o “Terminal” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Execute o seguinte comando:</p><pre><code>sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia  --volume /Volumes/MACOS --applicationpath /Applications/Install\ macOS\ High\ Sierra.app/ --nointeraction</code></pre><p>O processo de cópia será efetuado e a seguinte mensagem será exibida:</p><pre><code>Erasing Disk: 0%... 10%... 20%... 30%...100%...Copying installer files to disk...Copy complete.Making disk bootable...Copying boot files...Copy complete.Done.</code></pre><h2 id="Hora-da-Instalacao"><a href="#Hora-da-Instalacao" class="headerlink" title="Hora da Instalação"></a>Hora da Instalação</h2><p>Com o Dispositivo conectado ao Mac, reinicie, ou ligue-o, mantendo pressionada ou pressionando repetidas vezes, a tecla “Option”.</p><p>Após o carregamento, deverá ser exibida uma “lista”, na qual você deverá selecionar o dispositivo para o qual copiou a instalação.</p><p>Deste ponto em diante, você possui as seguinte opções:</p><ul><li>Iniciar</li><li>Reinstalar o macOS</li><li>Instalar o macOS</li></ul><p>Os processos de Reinstalar e Instalar o macOS, são praticamente os mesmos, com a diferença de a reinstalação manter seus arquivos, programas e algumas configuração, enquanto a instalação limpa, obviamente irá lhe obrigar à reconfigurar e instalar novamente todos os seus programas, serviços, etc…</p><h2 id="APFS-Apple-File-System-X-Mac-OS-Expandido"><a href="#APFS-Apple-File-System-X-Mac-OS-Expandido" class="headerlink" title="APFS (Apple File System) X Mac OS Expandido"></a>APFS (Apple File System) X Mac OS Expandido</h2><p>Com o macOS High Sierra, temos um novo sistema de arquivos, o APFS (Apple File System), o qual é a opção padrão e ideal à ser utilizada caso você possua uma unidade de estado sólido (SSD).</p><p>Caso tenha dúvidas entre APFS (Apple File System) ou Mac OS Expandido, consulte <a href="https://support.apple.com/pt-br/HT208033" title="Como escolher entre APFS e Mac OS Expandido ao formatar um disco para o Mac" target="_blank" rel="noopener">Como escolher entre APFS e Mac OS Expandido ao formatar um disco para o Mac</a></p><h2 id="Instalar-o-macOS"><a href="#Instalar-o-macOS" class="headerlink" title="Instalar o macOS"></a>Instalar o macOS</h2><h3 id="Instalacao-Limpa-do-macOS-com-SSD"><a href="#Instalacao-Limpa-do-macOS-com-SSD" class="headerlink" title="Instalaçao Limpa do macOS com SSD"></a>Instalaçao Limpa do macOS com SSD</h3><ul><li>Selecione o “Utilitário de Disco” e escolha a opção “Continuar”.</li><li>Selecione o “Disco Principal” e clique na opção “Apagar”, no topo da janela.<ul><li>Defina um nome para o Disco, exemplo: “OSX”</li><li>Em Formato, selecione/mantenha a opção: “APFS (Distinção de maiúsculas)” </li><li>Confirme as opções acima, clicando em “Apagar”.</li></ul></li><li>Aguarde e conclusão do processo.</li><li>Feche o “Utilitário de Disco”.</li><li>Selecione a opção “Instalar o macOS” e siga o passo-a-passo.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Fazendo uma instalação limpa (do zero) do macOS High Sierra.&lt;/p&gt;
+&lt;p&gt;Com o seu OS X/macOS ainda em funcionamento, efetue o download da Ins
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Criando uma Stack de Desenvolvimento LNMP</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2018/04/20/criando-uma-stack-de-desenvolvimento-lnmp/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2018/04/20/criando-uma-stack-de-desenvolvimento-lnmp/</id>
+    <published>2018-04-20T23:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.890Z</updated>
+    
+    <content type="html"><![CDATA[<p>Uma Stack <strong>LNMP</strong>, é aquela formada pela junção do <strong>L</strong>inux com <strong>N</strong>ginx, <strong>M</strong>ySQL e <strong>P</strong>HP.<br>Nesta Stack em especial, que é destinada ao uso durante o desenvolvimento de projetos, optei por utilizar o PHP na versão 7, bem como rodar tudo em cima do <strong>Docker</strong>.</p><p>É importante saber que o Docker já deve estar instalado previamente.<br>Se precisar de uma ajuda com o Docker, veja este post: <a href="http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x" title="Iniciando com Docker no macOS">Iniciando com Docker no macOS</a></p><h2 id="Stack-de-Desenvolvimento"><a href="#Stack-de-Desenvolvimento" class="headerlink" title="Stack de Desenvolvimento"></a>Stack de Desenvolvimento</h2><p><code>Atenção:</code> Nenhum tipo de configuração de segurança foi aplicada nesta Stack!</p><h2 id="Banco-de-Dados-centralizado-em-uma-Imagem-em-Separado"><a href="#Banco-de-Dados-centralizado-em-uma-Imagem-em-Separado" class="headerlink" title="Banco de Dados centralizado em uma Imagem em Separado"></a>Banco de Dados centralizado em uma Imagem em Separado</h2><p>Esta Stack possui uma particularidade, que é a utilização de um único Servidor MySQL para todos os projetos, centralizando assim, todas as bases de dados em uma única imagem Docker (um só local).</p><h3 id="Criando-uma-unica-Rede-para-as-suas-Imagens"><a href="#Criando-uma-unica-Rede-para-as-suas-Imagens" class="headerlink" title="Criando uma única Rede para as suas Imagens"></a>Criando uma única Rede para as suas Imagens</h3><p>Acesse o terminal e execute o seguinte comando:</p><pre><code>docker network create rede-local-docker</code></pre><p>Onde <strong>rede-local-docker</strong> é o nome da sua rede. </p><p>Mantenha este nome, para que você não precise editar os arquivos de configuração!</p><h3 id="Criando-um-unico-Servidor-MySQL"><a href="#Criando-um-unico-Servidor-MySQL" class="headerlink" title="Criando um único Servidor MySQL"></a>Criando um único Servidor MySQL</h3><p>Acesse o terminal e execute o comando abaixo, para rodar um container com MySQL na Rede previamente criada:</p><pre><code>docker run --name servidor-mysql --network=rede-local-docker -v ˜/projetos/mysql/data/db:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:5.7</code></pre><p>Onde <strong>˜/projetos/mysql/data/db</strong> é uma estrutura de diretórios, onde as bases de dados serão salvas.</p><p>Altere este caminho de acordo com a sua necessidade!</p><p>Lembre-se, quando precisar rodar o servidor MySQL novamente, bastará que você execute o seguinte comando:</p><pre><code>docker start servidor-mysql</code></pre><h3 id="Copiando-e-Rodando"><a href="#Copiando-e-Rodando" class="headerlink" title="Copiando e Rodando"></a>Copiando e Rodando</h3><p>Os arquivos de configuração necessários, podem ser encontrados no repositório <a href="https://github.com/maiconschmitz/docker-lnmp" title="Docker LNMP" target="_blank" rel="noopener">Docker LNMP</a> no Github.</p><p>Os arquivos de configuração são simples e autoexplicativos.</p><p>Efetue o clone do projeto, ou apenas baixe o conteúdo como Zip.<br>Para rodar o seu projeto, bastará copiar os arquivos abaixo listados, para a raiz do seu projeto.</p><p>Arquivos necessários:</p><ul><li>app.docker</li><li>docker-compose.yml</li><li>host.conf</li><li>web.docker</li></ul><p>Acesse o diretório do seu projeto através do terminal e execute o seguinte comando:</p><pre><code>docker-compose up</code></pre><p>Visualize o projeto pelo browser em:</p><pre><code>http://localhost</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Uma Stack &lt;strong&gt;LNMP&lt;/strong&gt;, é aquela formada pela junção do &lt;strong&gt;L&lt;/strong&gt;inux com &lt;strong&gt;N&lt;/strong&gt;ginx, &lt;strong&gt;M&lt;/strong&gt;ySQ
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Stack" scheme="http://www.maiconschmitz.com.br/tags/Stack/"/>
+    
+      <category term="Desenvolvimento" scheme="http://www.maiconschmitz.com.br/tags/Desenvolvimento/"/>
+    
+      <category term="LNMP" scheme="http://www.maiconschmitz.com.br/tags/LNMP/"/>
+    
+      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Instalando o Node.js no Ubuntu 17</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/10/05/instalando-o-nodejs-no-ubuntu-17/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/10/05/instalando-o-nodejs-no-ubuntu-17/</id>
+    <published>2017-10-05T23:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.896Z</updated>
+    
+    <content type="html"><![CDATA[<p>Instalar o <strong>Node.js</strong> no <strong>Ubuntu 17</strong> é extremamente simples.</p><p>É bastante comum, que você encontre instruções nos mais diversos sites, que indiquem que você deve instalar o Node.js a partir do repositório do APT.<br>Porém, o que ocorre, é que ao instalar o Node.js a partir desta fonte, fará com que você instale a versão mais antiga e estável suportada.</p><p>Caso deseje fazer um simples teste, basta executar:</p><pre><code>sudo apt-get install nodejs -y</code></pre><p>Ao instalar o Node, você poderá verificar que a versão que será instalada, é a v4.7.2.</p><p>Execute:</p><pre><code>$ nodejs -v</code></pre><p>E o retorno será:</p><pre><code>v4.7.2</code></pre><p>Isto ocorre, pois conforme já mencionado anteriormente, é instalada a versão mais antiga e estável suportada, algo que é conhecido como <strong>Long Term Support (LTS)</strong>.</p><p>Caso deseje ver mais sobre as versões do Node.js, consulte: <a href="https://nodejs.org/en/download/releases/" target="_blank" rel="noopener">https://nodejs.org/en/download/releases/</a>.</p><h2 id="Instalando-a-versao-mais-recente-no-Node-js"><a href="#Instalando-a-versao-mais-recente-no-Node-js" class="headerlink" title="Instalando a versão mais recente no Node.js"></a>Instalando a versão mais recente no Node.js</h2><p>Para instalar a versão mais recente do Node.js, você pode simplesmente adicionar o <strong>PPA (arquivo de pacotes pessoais)</strong> do NodeSource.</p><p>Para into, basta seguir os seguintes passos:</p><pre><code>cd ~curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs</code></pre><p>Após a instalação, você terá à disposição o comando <strong>node</strong> e o seu alias <strong>nodejs</strong>.</p><p>Se desejar consultar a versão, bastará executar:</p><pre><code>$ nodejs -v</code></pre><p>Que neste momento, resultará em:</p><pre><code>v8.6.0</code></pre><p>Agora você possui o <strong>Node.js</strong> instalado e pronto para usar, assim como o gerenciador de pacotes <strong>npm</strong>, que também foi instalado.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Instalar o &lt;strong&gt;Node.js&lt;/strong&gt; no &lt;strong&gt;Ubuntu 17&lt;/strong&gt; é extremamente simples.&lt;/p&gt;
+&lt;p&gt;É bastante comum, que você encontre inst
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Node.js" scheme="http://www.maiconschmitz.com.br/tags/Node-js/"/>
+    
+      <category term="npm" scheme="http://www.maiconschmitz.com.br/tags/npm/"/>
+    
+      <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
+    
+      <category term="Ubuntu" scheme="http://www.maiconschmitz.com.br/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Núvem descentralizada com Storj</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/</id>
+    <published>2017-09-21T23:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.898Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="O-que-e-o-Storj"><a href="#O-que-e-o-Storj" class="headerlink" title="O que é o Storj?"></a>O que é o Storj?</h2><p>O <strong>Storj</strong> é um sistema de armazenamento de arquivos distribuídos, <strong>peer-to-peer</strong> (<strong>P2P</strong>), desenvolvido e mantido pela Storj Labs.<br>O Storj utiliza criptografia de última geração, de ponta a ponta e a tecnologia <strong>Blockchain</strong> do <strong>Ethereum</strong>.</p><h2 id="Para-que-serve-o-Storj"><a href="#Para-que-serve-o-Storj" class="headerlink" title="Para que serve o Storj?"></a>Para que serve o Storj?</h2><p>O Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem, ao criar uma núvem de arquivos distribuída e descentralizada, que alia segura e alto desempenho para armazenar seus arquivos à um preço economicamente viável.</p><h2 id="Como-funciona-o-Storj"><a href="#Como-funciona-o-Storj" class="headerlink" title="Como funciona o Storj?"></a>Como funciona o Storj?</h2><p>Diferente de outros sistemas de Storage, o Storj não utiliza servidores em Data Centers, mas sim, os computadores dos usuários que fazem parte de rede e cedem espaço de armazenamento.</p><p>O Storj ainda não possui uma ferramentas de sincronização automática, como possuem outros serviços como Dropbox, Google Drive, iCloud, OneDrive, etc.</p><p>No momento, é possível, por exemplo, enviar e acessar seus arquivos através do software <strong>FileZilla</strong>, um dos, ou senão o primeiro à suportar o protocolo do Storj.</p><p>Além de possuir seus códigos disponíveis para acesso público em seu <a href="https://github.com/storj" target="_blank" rel="noopener">Github</a>, o Storj também oferece uma <strong>API</strong> de integração, para que qualquer um possa desenvolver suas próprias soluções ou ferramentas.</p><h2 id="Quanto-custa-o-armazenamento-na-nuvem-com-o-Storj"><a href="#Quanto-custa-o-armazenamento-na-nuvem-com-o-Storj" class="headerlink" title="Quanto custa o armazenamento na núvem com o Storj?"></a>Quanto custa o armazenamento na núvem com o Storj?</h2><p>Atualmente, o preço por GB armazenado, é de <strong>$0.015</strong>, enquanto que a banda de transferência, é de <strong>$0.05</strong> por GB baixado.<br>Em um cálculo rápido, isso significa que o armazenamento de 50 GB, custaria em torno de $0.75/mês (não contando a banda de download)</p><h2 id="Alugando-seu-espaco-em-disco-para-a-nuvem-do-Storj"><a href="#Alugando-seu-espaco-em-disco-para-a-nuvem-do-Storj" class="headerlink" title="Alugando seu espaço em disco para a núvem do Storj"></a>Alugando seu espaço em disco para a núvem do Storj</h2><p>O ponto chave do Storj, são os <strong>Farmers</strong> (agricultores), que são os usuários que disponibilizam (mediante aluguel) porções do seu espaço em disco rígido, para outros usuários ou clientes do Storj.</p><p>Para compartihar seu espaço em disco, basta se inscrever no Storj: <a href="https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610" target="_blank" rel="noopener">https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610</a>.</p><p>Após feita a inscrição, basta você baixar e instalar o GUI de Compartilhamento, através do link: <a href="https://storj.io/share.html" target="_blank" rel="noopener">https://storj.io/share.html</a>.</p><h2 id="Gratuito-por-12-meses"><a href="#Gratuito-por-12-meses" class="headerlink" title="Gratuíto por 12 meses"></a>Gratuíto por 12 meses</h2><p>Novos usuários, podem utilizar o Storj gratuitamente, nos primeiros de 12 meses, contanto que não ultrapassem o limite de armazenamento de 25 GB/mês.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;O-que-e-o-Storj&quot;&gt;&lt;a href=&quot;#O-que-e-o-Storj&quot; class=&quot;headerlink&quot; title=&quot;O que é o Storj?&quot;&gt;&lt;/a&gt;O que é o Storj?&lt;/h2&gt;&lt;p&gt;O &lt;strong&gt;Storj&lt;
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Storj" scheme="http://www.maiconschmitz.com.br/tags/Storj/"/>
+    
+      <category term="Nuvem" scheme="http://www.maiconschmitz.com.br/tags/Nuvem/"/>
+    
+      <category term="P2P" scheme="http://www.maiconschmitz.com.br/tags/P2P/"/>
+    
+      <category term="Blockchain" scheme="http://www.maiconschmitz.com.br/tags/Blockchain/"/>
+    
+      <category term="Ethereum" scheme="http://www.maiconschmitz.com.br/tags/Ethereum/"/>
+    
+      <category term="ETH" scheme="http://www.maiconschmitz.com.br/tags/ETH/"/>
+    
+      <category term="FileZilla" scheme="http://www.maiconschmitz.com.br/tags/FileZilla/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Assistindo vídeos em modo PIP no macOS Sierra</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</id>
+    <published>2017-08-12T21:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.887Z</updated>
+    
+    <content type="html"><![CDATA[<p>O modo <strong>PIP</strong>, ou <strong>Picture in Picture</strong>, é um recurso que lhe possibilita assistir à uma segunda imagem em uma pequena janela, na sua tela atual.</p><p>Popular e disponível em Smart TVs mais modernas, onde é possível assistir à uma transmissão de TV aberta em uma pequena janela, enquanto assiste à algo na “tela grande”, vindo da HDMI ou vice-versa.</p><p>À partir da versão 10.12 do macOS, este recurso passou à estar disponível tambem no Mac, porém apenas dentro do navegador <strong>Safari</strong>.</p><p>Com este recurso, é possível desacoplar a transmissão de um vídeo do YouTube, por exemplo, passando à liberar o seu navegador da necessidade de ficar visível na tela o tempo todo.</p><h2 id="Assistindo-video-em-uma-tela-em-separado"><a href="#Assistindo-video-em-uma-tela-em-separado" class="headerlink" title="Assistindo vídeo em uma tela em separado"></a>Assistindo vídeo em uma tela em separado</h2><p>Para utilizar o modo <strong>PIP</strong> nativo do macOS, não é necessário instalar absolutamente nada!</p><p>Uma vez que a sua nova tela esteja aberta, você poderá:</p><ul><li>Ajusta o tamanho da janela (limitado à um tamanho mínimo e máximo)</li><li>Posicionar a janela do PIP em um dos 4 cantos da sua tela</li></ul><h3 id="Assistindo-YouTube-em-modo-PIP-no-macOS-Sierra"><a href="#Assistindo-YouTube-em-modo-PIP-no-macOS-Sierra" class="headerlink" title="Assistindo YouTube em modo PIP no macOS Sierra"></a>Assistindo YouTube em modo PIP no macOS Sierra</h3><p>Para ativar o PIP, enquanto assiste à um vídeo do YouTube, faça o seguinte:</p><ul><li>Clique com o botão direito do Magic Mouse/Trackpad sobre a área do vídeo.</li><li>Neste momento, um menu de contexto do próprio YouTube é aberto, <strong>não acesse este menu</strong> e pressione uma segunda vez o botão direito do Magic Mouse/Trackpad.</li><li>Novo menu que se abre, basta selecionar a opção “Entrar no Modo PIP”</li></ul><p>Simples assim.</p><h3 id="Assistindo-Netflix-em-modo-PIP-no-macOS-Sierra"><a href="#Assistindo-Netflix-em-modo-PIP-no-macOS-Sierra" class="headerlink" title="Assistindo Netflix em modo PIP no macOS Sierra"></a>Assistindo Netflix em modo PIP no macOS Sierra</h3><p>Infelizmente o modo PIP não esta disponível nativamente em todos os tipos de transmissões de Vídeo.<br>É ai que entra uma segunda opção, que é a utilização da Extensão para Safari chamada <strong>PiPifier</strong>.<br>Com o PiPifier, você poderá assistir à todo e qualquer vídeo compatível com <strong>HTML 5</strong>, que ainda não suporte o modo PIP nativo do macOS.</p><h3 id="Instalando-o-PiPifier"><a href="#Instalando-o-PiPifier" class="headerlink" title="Instalando o PiPifier"></a>Instalando o PiPifier</h3><p>O <strong>PiPifier</strong> pode ser baixado gratuitamente na App Store <a href="https://itunes.apple.com/us/app/pipifier-pip-for-nearly-every/id1160374471?mt=12&amp;at=10l3Vy&amp;ct=UUimUdUnU41163" title="Download do PiPifier" target="_blank" rel="noopener">neste link</a>.<br>Uma vez que a instalação do PiPifier esteja concluída, siga os passos abaixo para habilitá-lo.</p><p>Configure/habilite o PiPifier:</p><ul><li>Abra o Safari</li><li>No menu “Safari”, selecione “Preferências”</li><li>Vá para a guia “Extensões”</li><li>Na lateral esquerda, selecione/marque o “PiPifier Button”</li><li>Feche esta janela</li><li>No menu “Visualizar”, do Safari, selecione “Personalizar Barra de Ferramentas”</li><li>Selecione o botão do “PiPifier” e arraste para a sua barra de ferramentas</li><li>Feche esta janela</li></ul><p>Agora, ao acessar qualquer site, quando uma transmissão de vídeo em formato HTML 5 estiver disponível, o botão do PiPifier mudará do status “desabilitado” (em cinza claro), para “habilitado” (na cor preta).<br>Basta clicar neste botão e o seu vídeo será separado em uma 2ª janela.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O modo &lt;strong&gt;PIP&lt;/strong&gt;, ou &lt;strong&gt;Picture in Picture&lt;/strong&gt;, é um recurso que lhe possibilita assistir à uma segunda imagem em um
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Netflix" scheme="http://www.maiconschmitz.com.br/tags/Netflix/"/>
+    
+      <category term="YouTube" scheme="http://www.maiconschmitz.com.br/tags/YouTube/"/>
+    
+      <category term="PIP" scheme="http://www.maiconschmitz.com.br/tags/PIP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Migrando do gerador de sites estáticos Jekyll para Hexo</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/</id>
+    <published>2017-07-27T21:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.898Z</updated>
+    
+    <content type="html"><![CDATA[<p>Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de sites estáticos, optou-se por migrar do <strong>Wordpress</strong> para o <strong>Jekyl</strong> e agora, do Jekyl para o <strong>Hexo</strong>.</p><h2 id="Jekyl"><a href="#Jekyl" class="headerlink" title="Jekyl"></a>Jekyl</h2><p>O Jekyl é um gerador de sites estáticos, bastante rápido, escrito em Ruby e é também, o gerador “oficial” utilizado no <a href="https://pages.github.com/" title="GitHub Pages" target="_blank" rel="noopener">GitHub Pages</a>, motivo principal que levou esta página à ser migrada para ele inicialmente.</p><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>O Hexo, assim como o <strong>Jekyl</strong>, também é um gerador de sites estáticos, porém este é escrito em <strong>Nodejs</strong>. Bastante semelhante ao Jekyl em funcionalidade, efetuar esta migração é um passo bastante simples, sendo necessário tomar cuidado apenas com pequenos detalhes.</p><h2 id="Instalando-o-Hexo"><a href="#Instalando-o-Hexo" class="headerlink" title="Instalando o Hexo"></a>Instalando o Hexo</h2><p>Acesse o Terminal e execute o seguinte comando:</p><pre><code>$npm install hexo-cli -g</code></pre><p>Para maiores esclarecimentos sobre a instalação, você pode acessar a documentação no site do <a href="https://hexo.io/docs/" title="Hexo" target="_blank" rel="noopener">Hexo</a>.</p><h2 id="Migrando-do-Jekyl-para-o-Hexo"><a href="#Migrando-do-Jekyl-para-o-Hexo" class="headerlink" title="Migrando do Jekyl para o Hexo"></a>Migrando do Jekyl para o Hexo</h2><p>Crie um novo projeto com o Hexo:</p><pre><code>$hexo init &lt;nome-do-projeto&gt;$cd &lt;nome-do-projeto&gt;$npm install</code></pre><p>Lembrando que <strong>nome-do-projeto</strong>, deve ser substituido pelo nome do seu projeto.</p><p>Uma vez que este procedimento estiver concluído, configure o seu projeto, editando o arquivo <strong>_config.yml</strong> que se encontra na raiz do diretório <strong>nome-do-projeto</strong>.</p><p>Este arquivo de configuração é bastante intuitívo e segue o padrão de qualquel YAML.</p><p>Defina os valores para as principais <strong>tags</strong> como <strong>title</strong>, <strong>description</strong> e <strong>author</strong>. Defina <strong>language</strong> com o valor <em>pt-BR</em>, a URL seu site em <strong>url</strong> e ajuste os padrões de data e hora em <strong>date_format</strong>, com <em>DD/MM/YYY</em> e <strong>time_format</strong> com <em>HH:mm:ss</em>, respectivamente.</p><h3 id="Migrando-os-Posts"><a href="#Migrando-os-Posts" class="headerlink" title="Migrando os Posts"></a>Migrando os Posts</h3><p>Para migrar os Posts, basta copiar os arquivos de post do Jekyll, que estão na pasta <strong>_posts</strong> e no formato Markdown (*.md), para a pasta <strong>source/_posts/</strong> do <strong>Hexo</strong>.</p><p>Volte para o seu arquivo de configuração (<strong>_config.yml</strong>) e ajuste o valor da <strong>tag</strong>, <strong>new_post_name</strong> para utilizar o mesmo padrão que você possuia no Jekyll. No meu caso, o valor definido foi <strong>blog/:title.md</strong>, pois meus posts ficam todos no subdiretório <strong>blog</strong> e possuem como URL, apenas o <strong>título</strong>.</p><h2 id="Gerando-os-arquivos-estaticos"><a href="#Gerando-os-arquivos-estaticos" class="headerlink" title="Gerando os arquivos estáticos"></a>Gerando os arquivos estáticos</h2><p>Para gerar as páginas estáticas do Hexo, basta executar o comando:</p><pre><code>$hexo generate</code></pre><p>Este procedimento irá processar todos os seus arquivos .md e irá gerar os devidos arquivos para cada um dos Posts, irá também, gerar a paginação, arquivos (indice de posts) e tags, caso você às utilize.</p><p>O generate também se encarrega de copiar quaisquer arquivos estáticos, como <em>assets</em> da pasta source, para a pasta de destino, no diretório <strong>public</strong>.</p><p>Lembre-se de não efetuar qualquer alteração no conteúdo dos arquivos do diretório <strong>public</strong>, pois sempre que o <strong>generate</strong> é executado, estes conteúdos são sustituídos/atualizados, com base no conteúdo do diretório <strong>source</strong> e do resultado de geração das páginas estáticas.</p><h2 id="Servindo-as-paginas-estaticas"><a href="#Servindo-as-paginas-estaticas" class="headerlink" title="Servindo as páginas estáticas"></a>Servindo as páginas estáticas</h2><p>Para servir as páginas estáticas do Hexo, você pode utilizar o próprio Hexo, bastando executar o comando:</p><pre><code>$hexo serve</code></pre><p>Assim, você poderá acessar o <a href="http://localhost:4000" title="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> para navegar e visualizar o seu site.</p><h2 id="Fazendo-o-deploy"><a href="#Fazendo-o-deploy" class="headerlink" title="Fazendo o deploy"></a>Fazendo o deploy</h2><p>O Hexo provê um sistema bastante simples e efetivo para efetuar o deploy.</p><p>Para que você possa fazer o deploy via git, por exemplo, você deverá adicionar ao arquivo <strong>_config.yml</strong>, as seguintes informações:</p><pre><code>deploy:    type: git    repo: &lt;url-do-repositorio.git&gt;    branch: &lt;nome-do-branch-normalmente-master&gt;</code></pre><p>Feita esta configuração, não se esqueça de efetuar a instalação do plugin de deploy, com o comando:</p><pre><code>$npm install hexo-deployer-git --save</code></pre><p>Enfim, para efetuar o deploy, execute o comando:</p><pre><code>$hexo deploy</code></pre><p>Caso você ainda possua dúvidas, não deixe de consulta a seção de <a href="https://hexo.io/docs/deployment.html" title="Deployment" target="_blank" rel="noopener">Deployment</a> na documentação.</p><h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>Para que você possa utilizar o <strong>Hexo</strong> no <a href="https://pages.github.com/" title="GitHub Pages" target="_blank" rel="noopener">GitHub Pages</a>, será necessário mais alguns passos.</p><h3 id="Crie-um-Branch-para-os-Fontes"><a href="#Crie-um-Branch-para-os-Fontes" class="headerlink" title="Crie um Branch para os Fontes!"></a>Crie um Branch para os Fontes!</h3><p>Para que você possa publicar o seu site no <strong>GitHub Pages</strong>, você deverá criar um novo branch para os fontes do seu projeto, deixando o branch <strong>master</strong>, apenas para o site gerado através do comando <strong>hexo deploy</strong>, isto por que atualmente o GitHub Pages, só serve os sites estáticos à partir do branch <strong>master</strong>.</p><p>No meu caso:<br>    Criei um repositório git<br>    Criei um branch <strong>source</strong><br>    Criei o projeto do <strong>hexo</strong> neste branch <strong>source</strong><br>    Efetuo <strong>git add</strong>, <strong>commit</strong> e <strong>push</strong> apenas neste branch<br>    Deixo o branch <strong>master</strong> nas mãos do <strong>hexo deploy</strong></p><h3 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h3><p>Caso você esteja apontando o seu domínio para o GitHub Pages, é bem provável que você já possui um CNAME configurado.</p><p>Se não sabe o que é isto, verifique artigo <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" title="utilizando um domínio customizado com o github pages" target="_blank" rel="noopener">utilizando um domínio customizado com o github pages</a>.</p><p>Para que você possa manter as configurações do CNAME funcionais, será necessário copiar o seu arquivo <strong>CNAME</strong> para a raiz da pasta <strong>souce</strong>.</p><h2 id="Adicionando-e-Gerando-Posts"><a href="#Adicionando-e-Gerando-Posts" class="headerlink" title="Adicionando e Gerando Posts"></a>Adicionando e Gerando Posts</h2><p>Passados os passos anteriores, o fluxo de utilização do Hexo será o seguinte:</p><h3 id="Criando-um-novo-Post"><a href="#Criando-um-novo-Post" class="headerlink" title="Criando um novo Post:"></a>Criando um novo Post:</h3><pre><code>$ hexo new post &lt;titulo-do-post&gt;</code></pre><p>Edite o arquivo source/_posts/titulo-do-post.md</p><h3 id="Gerando-e-visualizando-as-paginas"><a href="#Gerando-e-visualizando-as-paginas" class="headerlink" title="Gerando e visualizando as páginas:"></a>Gerando e visualizando as páginas:</h3><pre><code>$ hexo generate$ hexo serve</code></pre><p>Acesse o link <a href="http://localhost:4000" title="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><h3 id="Efetuando-o-deploy"><a href="#Efetuando-o-deploy" class="headerlink" title="Efetuando o deploy"></a>Efetuando o deploy</h3><pre><code>$hexo deploy</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de site
+      
+    
+    </summary>
+    
+    
+      <category term="Node.js" scheme="http://www.maiconschmitz.com.br/tags/Node-js/"/>
+    
+      <category term="Ruby" scheme="http://www.maiconschmitz.com.br/tags/Ruby/"/>
+    
+      <category term="Site" scheme="http://www.maiconschmitz.com.br/tags/Site/"/>
+    
+      <category term="Wordpress" scheme="http://www.maiconschmitz.com.br/tags/Wordpress/"/>
+    
+      <category term="Estatico" scheme="http://www.maiconschmitz.com.br/tags/Estatico/"/>
+    
+      <category term="Gerador" scheme="http://www.maiconschmitz.com.br/tags/Gerador/"/>
+    
+      <category term="Jekyll" scheme="http://www.maiconschmitz.com.br/tags/Jekyll/"/>
+    
+      <category term="Hexo" scheme="http://www.maiconschmitz.com.br/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unindo um SSD com um HD e criando um Fusion Drive no Mac</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</id>
+    <published>2017-07-03T19:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em <a href="http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011" title="Instalando um segundo HD em um Macbook Pro mid 2011">Instalando um segundo HD em um Macbook Pro mid 2011</a>, uma opção, é efetuar a criação de um <strong>Fusion Drive</strong>.</p><p>O <strong>Fusion Drive</strong>, é um recurso disponível nas versões mais recentes do macOS, que possibilita efetuar a junção de um ou mais discos, da tal forma à lhe disponibilizar apenas um <strong>volume virtual</strong>.</p><p>Assim, é possível juntar 2 SSDs de tamanhos diferentes em apenas um volume aparente, ou então um SSD e um HDD (HD).<br>Ao efetuar a junção de um SSD com um HD, você terá os benefícios da velocidade do SSD, com a capacidade de armazenamento do HD.<br>O macOS irá gerenciar o uso deste volume, da melhor forma possível, mantendo arquivos que são mais acessados no SSD, enquanto arquivos que são menos requisitados, serão mantidos no HD. Tudo isso se dá de forma transparente para o usuário, onde o macOS irá mover os arquivos de um disco para o outro, conforme necessário e nenhuma ação da parte do usuário se fará necessária, uma vez que aparentemente, existirá apenas um único volume visível.</p><p>Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a <a href="http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra" title="Instalação Limpa do macOS Sierra">Instalação Limpa do macOS Sierra</a>.</p><h2 id="Criando-o-Fusion-Drive"><a href="#Criando-o-Fusion-Drive" class="headerlink" title="Criando o Fusion Drive"></a>Criando o Fusion Drive</h2><p><strong>Atenção:</strong> Criar um Fusion Drive, fará com que todo o conteúdo dos discos selecionados para a criação do Fusion Drive sejam perdidos/apagados. </p><p>Reinicie, ou ligue o Mac, mantendo a tecla “Option” pressionada.</p><p>Após o carregamento da interface, selecione a opção de menu “Utilitários” / “Terminal”.</p><p>Com o Terminal aberto, execute o comando “<strong>diskutil list</strong>“, para obter uma lista de discos disponíveis:</p><pre><code>$diskutil list</code></pre><p>Este comando irá listar todos os discos, volumes e dispositivos existentes no seu Mac.<br>Os principais, à serem observados, são os iniciais com caminhos como: <strong>dev/disk0</strong>, <strong>dev/disk1</strong>, <strong>dev/disk2</strong>, etc.<br>Observe que estes volumes, são os mesmos referentes aos tamanhos do seu SSD, HD, Pendrive/SD (se algum estiver conectado), etc.</p><p>Verifique o caminho dos discos que deseja “juntar” e execute o comando de criação do Fusion Drive.</p><pre><code>$diskutil coreStorage create &apos;Fusion&apos; /dev/disk0 /dev/disk1</code></pre><p>No comando acima, defini o nome do meu novo ‘disco’ como ‘Fusion’ e juntei os meus 2 primeiros discos, os quais são respectivamente /dev/disk0 e /dev/disk1, sendo disk0 o SSD e disk1, o meu HD.</p><p>Após alguns instantes, o processo será concluído.<br>Observe o resultado que será impresso no Terminal.<br>Atente para uma das linhas finais, iniciada com: <strong>Core Storage LVG UUID:</strong>.<br>Anote o UUID (conteúdo após o :, com estrutura semelhante à: XXXXXX-XXX-XXX-XXXXXX), pois ele será utilizado no comando em seguida:</p><pre><code>$diskutil coreStorage createVolume XXXXXX-XXX-XXX-XXXXXX jhfs+ &apos;Fusion&apos; 100%</code></pre><p>No comando acima, XXXXXX-XXX-XXX-XXXXXX deve ser substituído pelo UUID que você copiou do resultado de execução do comando <strong>diskutil coreStorage create …</strong>.<br>O restante dos parâmetros deve ser mantido como no comando original.</p><p>Novamente, após alguns instantes, o processo será concluído.<br>Deste ponto em diante, o seu novo <strong>volume virtual</strong> já está criado e pronto para uso.<br>Agora o seu Mac poderá desfrutar da velocidade do SSD e da capacidade de armazenamento do HD, tudo em um único volume.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em &lt;a href=&quot;http://www.maiconschmitz.com.br/
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
+    
+      <category term="HDD" scheme="http://www.maiconschmitz.com.br/tags/HDD/"/>
+    
+      <category term="HD" scheme="http://www.maiconschmitz.com.br/tags/HD/"/>
+    
+      <category term="Fusion" scheme="http://www.maiconschmitz.com.br/tags/Fusion/"/>
+    
+      <category term="Drive" scheme="http://www.maiconschmitz.com.br/tags/Drive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Instalação Limpa do macOS Sierra</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra/</id>
+    <published>2017-06-02T21:30:00.000Z</published>
+    <updated>2018-10-15T01:16:09.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>Neste procedimento, irei detalhar como efetuar a instalação limpa do macOS Sierra.</p><p>Com o OS X/macOS ainda em funcionamento, efetue o download da Instalação do <strong>macOS Sierra</strong> através da <strong>Mac App Store</strong>.</p><p>Quando o download estiver concluído, cancele o processo de instalação.</p><p>Conecte um Disco, PenDrive ou Cartão SD, de no mínimo 8 GB ao Mac.</p><p>Acesse o “Utilitário de Disco” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Estando no “Utilitário de Disco”, selecione o Dispositivo, na lista de Drives e clique sobre a aba “Apagar”.</p><p>Em “Formato” selecione a opção “Mac OS Expandido (Reg. Cronológico)” e em “Nome”, defina o nome para “MACOS”.</p><p>Feito isto, clique no botão “Apagar…”.</p><p>Quando a formatação estiver concluída, feche o “Utilitário de Disco”.</p><p>Acesse o “Terminal” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p><p>Execute o seguinte comando:</p><pre><code>sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MACOS --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction</code></pre><p>O processo de cópia será efetuado e a seguinte mensagem será exibida:</p><pre><code>Erasing Disk: 0%... 10%... 20%... 30%...100%...Copying installer files to disk...Copy complete.Making disk bootable...Copying boot files...Copy complete.Done.</code></pre><h2 id="Hora-da-Instalacao"><a href="#Hora-da-Instalacao" class="headerlink" title="Hora da Instalação"></a>Hora da Instalação</h2><p>Com o Dispositivo conectado ao Mac, reinicie, ou ligue-o, mantendo a tecla “Option” pressionada.</p><p>Após o carregamento, deverá ser exibida uma “lista”, na qual você deverá selecionar o dispositivo para o qual copiou a instalação.</p><p>Deste ponto em diante, você possui duas opções:</p><ul><li>Instalar o macOS</li><li>Reinstalar o macOS</li></ul><p>Os processos de Instalar e Reinstalar o macOS, são praticamente os mesmos, com a diferença de a reinstalação manter seus arquivos, programas e algumas configuração, enquanto a instalação limpa, obviamente irá lhe obrigar à reconfigurar e instalar novamente todos os seus programas, serviços, etc…</p><h2 id="Instalar-o-macOS"><a href="#Instalar-o-macOS" class="headerlink" title="Instalar o macOS"></a>Instalar o macOS</h2><h3 id="Instalacao-Limpa-do-macOS"><a href="#Instalacao-Limpa-do-macOS" class="headerlink" title="Instalaçao Limpa do macOS"></a>Instalaçao Limpa do macOS</h3><ul><li>Selecione o “Utilitário de Disco” e escolha a opção “Continuar”.</li><li>Selecione o “Disco Principal” e clique na opção “Apagar”, no topo da janela.<ul><li>Defina um nome para o Disco, exemplo: “Sierra”</li><li>Em Formato, mantenha a opção: “OS X Expandido (Reg. Cronológico)” </li><li>E em Esquema, mantenha “Mapa de Partição GUID”.</li><li>Confirme as opções acima, clicando em “Apagar”.</li></ul></li><li>Aguarde e conclusão do processo.</li><li>Feche o “Utilitário de Disco”.</li><li>Prossiga com uma instalação do zero…</li></ul><h2 id="Reinstalar-o-macOS"><a href="#Reinstalar-o-macOS" class="headerlink" title="Reinstalar o macOS"></a>Reinstalar o macOS</h2><p>Bastará selecionar a opção “Reinstalar macOS” e escolher a opção “Continuar”.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Neste procedimento, irei detalhar como efetuar a instalação limpa do macOS Sierra.&lt;/p&gt;
+&lt;p&gt;Com o OS X/macOS ainda em funcionamento, efetue
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Instalando um segundo HD em um Macbook Pro mid 2011</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</id>
+    <published>2017-04-28T21:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.894Z</updated>
+    
+    <content type="html"><![CDATA[<p>Faz algum tempo, efetuei um upgrade em um Macbook Pro de 2011, <a href="http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011" title="Substituindo um HD magnético por um SSD">substituindo um HD magnético por um SSD</a>.</p><p>Este procedimento que apresento hoje, é semelhante à substituição do HD por SSD, porém visa remover o Drive Óptico (Leitor/Gravador de CD/DVD) e substituí-lo por um segundo HD ou SSD.</p><p>Para que você possa fazer isto, será necessário antes de mais nada, que você adquira um <strong>adaptador/suporte</strong>, o qual é comumente conhecido por <strong>Caddy</strong></p><p>Se desejar, pode comprar o <a href="http://www.dx.com/p/designer-s-2-5-sata-to-sata-hdd-ssd-caddy-for-12-7mm-optical-drive-122075?Utm_rid=70879913&amp;Utm_source=affiliate" title="2nd 9.5mm SATA HDD SSD Hard Drive Caddy Bay for MacBook Pro" target="_blank" rel="noopener">2nd 9.5mm SATA HDD SSD Hard Drive Caddy Bay for MacBook Pro 13 15 17</a>, que é compatível com diversos modelos.</p><p>Se o Drive Óptico ainda for importante para você, você poderá adquirir um adaptador que converte o mesmo, em um Drive Óptico Externo. Para isto, você deverá adquirir o <a href="http://www.dx.com/p/01-ide-sata-to-usb-converting-dvd-rw-drive-box-for-laptops-silvery-white-black-200369?Utm_rid=70879913&amp;Utm_source=affiliate" title="IDE / SATA to USB Converting DVD-RW Drive Box Enclosure for Laptops - Silvery White + Black" target="_blank" rel="noopener">IDE / SATA to USB Converting DVD-RW Drive Box Enclosure for Laptops - Silvery White + Black”</a>.</p><h2 id="Substituindo-o-hardware"><a href="#Substituindo-o-hardware" class="headerlink" title="Substituindo o hardware"></a>Substituindo o hardware</h2><p>O procedimento é bastante simples e consiste do seguinte passo-a-passo:</p><ul><li>Com o Macbook Pro desligado, posicione-o de cabeça para baixo, sobre uma superfície plana</li><li>Remova os <strong>parafusos</strong>, são <strong>10</strong> no total (4 no topo, 1 em cada lateral e 4 na parte inferior)</li><li>Ao remover os parafusos, posicione-os de forma organizada, para que possa recoloca-los posteriormente, na mesma ordem.</li><li>Remova a tampa de alumínio</li><li>Na lateral direita, você encontrará seu <strong>Drive Óptico</strong></li><li>Remova os parafusos e desconecte o <strong>cabo flat</strong></li><li>Fixe o seu HD ou SSD secundário do <strong>Caddy</strong></li><li>Insira o Caddy no lugar do antigo <strong>Drive Óptico</strong>, conectando o cabo flat e fixando os parafusos</li><li>Feche a tampa e prenda os parafusos novamente</li></ul><h2 id="Usando-o-novo-disco"><a href="#Usando-o-novo-disco" class="headerlink" title="Usando o novo disco"></a>Usando o novo disco</h2><p>Este passo não é obrigatório e é indicado apenas para disco novos e quando os dados do disco antigo não são mais necessários…</p><p>Após iniciar o OS X/macOS</p><ul><li>No menu Utilitários, acesse o <strong>Utilitário de Disco</strong></li><li>Selecione o seu Disco, na lateral esquerda e clique na opção Apagar</li><li>Defina o nome como <strong>HD</strong>, em formato selecione <strong>OS X Expandido (Reg. Cronológico)</strong> e em Esquema, selecione <strong>Mapa de Partição GUID</strong></li><li>Clique em Apagar</li></ul><p>Pronto, agora o seu Mac terá mais espaço disponível com este segundo disco de armazenamento.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Faz algum tempo, efetuei um upgrade em um Macbook Pro de 2011, &lt;a href=&quot;http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
+    
+      <category term="HD" scheme="http://www.maiconschmitz.com.br/tags/HD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gerando QR Code de uma URL no Google Chrome</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</id>
+    <published>2017-03-30T23:30:10.000Z</published>
+    <updated>2018-10-15T01:16:09.891Z</updated>
+    
+    <content type="html"><![CDATA[<p>Códigos QR (QR Codes) já não são uma novidade e talvez nem sejam tão utilizados quanto o esperado, mas existem casos em que quando bem aplicados, ajudam e facilitam diversas tarefas, como publicar dados de acesso à uma rede Wi-Fi (mentira) e tornar URL’s mais faceis de serem acessadas em dispositivos móveis.</p><p>Foi pensando em tornar o acesso às URL’s mais fácil em dispositivos móveis, que o QRCode URL foi criado.<br>A idéia que motivou a criação de tal extensão, foi a possibilidade de simplificar o acesso à URL’s mais longas e complexas, como por exemplo, de páginas em desenvolvimento, em dispositivos móveis, para fins de teste de desenvolvimento.</p><h2 id="QRCode-URL"><a href="#QRCode-URL" class="headerlink" title="QRCode URL"></a>QRCode URL</h2><p>O QRCode URL é uma extensão para o navegado Google Chrome, que lhe permite gerar um Código QR (QR Code) a partir da URL que se encontra atualmente aberta no navegador.<br>Isto lhe permite acessar esta URL rapidamente a partir de outros dispositivos munidos de uma câmera e um aplicativo leitor de Códigos QR.</p><p>Esta extensão é extremamente simples, funciona de modo offline e nenhum dado é enviado para a nuvem.</p><p>Publicada originalmente em sua versão 0.0.0.2, em 30 de março de 2017.</p><p>Caso seja de seu interesse, você pode efetuar o <a href="https://goo.gl/jLk9hk" target="_blank" rel="noopener">Download da Extensão QRCode URL</a> para o seu Google Chrome.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Códigos QR (QR Codes) já não são uma novidade e talvez nem sejam tão utilizados quanto o esperado, mas existem casos em que quando bem ap
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="QR Code" scheme="http://www.maiconschmitz.com.br/tags/QR-Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Login Error RAC0218 - The maximum number of user sessions is reached</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2016/07/02/login-error-rac0218-the-maximum-number-of-user-sessions-is-reached/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2016/07/02/login-error-rac0218-the-maximum-number-of-user-sessions-is-reached/</id>
+    <published>2016-07-02T19:30:10.000Z</published>
+    <updated>2018-10-15T01:16:09.897Z</updated>
+    
+    <content type="html"><![CDATA[<p>Publicado originalmente em 15/07/2015, com reedição em 02/07/2016 para adicionar possibilidades extras.</p><p>As vezes, ao tentar acessar o iDrac, através da interface Web, é possível que você se depare com uma mensagem semelhante à esta:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...Login Error RAC0218: The maximum number of user sessions is reached....</span><br></pre></td></tr></table></figure><p>Esta mensagem é exibida, devido ao fato do iDrac já ter atingido o limite no número de sessões, ou, por algum bug, caso seu iDrac não esteja 100% atualizado.</p><p>Para resolver este problema, você deve resetar o iDrac.</p><h2 id="Resetando-o-iDrac"><a href="#Resetando-o-iDrac" class="headerlink" title="Resetando o iDrac"></a>Resetando o iDrac</h2><p>Para resetar o iDrac, você deve se conectar ao mesmo através do SSH:</p><pre><code>Acesse o iDrac via SSHExecute o comando: racadm racreset</code></pre><p>Caso o a acesso via SSH lhe retorne uma mensagem semelhante à esta:</p><pre><code>No more sessions are available for this type of connection!</code></pre><p>Então você deverá resetar o iDrac de outra forma:</p><pre><code>Localize no painel do iDrac (no hardware físico), o botão &apos;i&apos;.Pressione o botão por 30 segundos e após isto, solte-oO iDrac (apenas o iDrac e não o equipamento) será reiniciadoA Fan do equipamento irá aumentar a sua rotação momentaneamente (não se assunte)Após alguns segundos, a Fan irá voltar para a rotação original e o iDrac estará reiniciado, mantendo a mesma configuração e IP de rede.</code></pre><p>Em último caso, caso o item anterior não funcione, você poderá optar por desligar completamente o equipamento.</p><p>Desligue e desconecte o equipamento da energia elétrica (reiniciar não basta).</p><p>Ligue tudo novamente e ao concluir a inicialização, o iDrac estará funcionando normalmente.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Publicado originalmente em 15/07/2015, com reedição em 02/07/2016 para adicionar possibilidades extras.&lt;/p&gt;
+&lt;p&gt;As vezes, ao tentar acessa
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="SSH" scheme="http://www.maiconschmitz.com.br/tags/SSH/"/>
+    
+      <category term="iDrac" scheme="http://www.maiconschmitz.com.br/tags/iDrac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Iniciando com Docker no OS X</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</id>
+    <published>2016-05-21T14:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>Abaixo irei detalhar a forma mais fácil de iniciar o uso do Docker no OS X.</p><p>O <strong>Docker</strong>, para quem não conhece, é uma plataforma Open Source, utilizada para empacotar aplicações e/ou ambientes inteiros, dentro de containers, que podem ser portados para outros Hosts (Máquinas).</p><p>Atualmente, o Docker possui uma ferramenta gráfica chamada <strong>Kitematic</strong> em estágio Beta, que permite baixar, instalar e gerenciar containers, de uma forma extremamente simples!</p><p>Para instalar o Kitematic, basta efetuar o download do <a href="https://www.docker.com/products/docker-toolbox" target="_blank" rel="noopener">Docker Toolbox</a>, o qual possui além do Kitematic, o Docker Engine, o Compose e o Machine.</p><p>Um pré requisito para o Docker, é a necessidade de possuir alguma ferramenta para virtualização, neste caso, pode-se optar pelo <strong>VirtualBox</strong>.</p><p>Caso você não possua o VirtualBox, efetue o <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">Download</a> e posteriormente a instalação do mesmo.</p><h2 id="Docker-Toolbox"><a href="#Docker-Toolbox" class="headerlink" title="Docker Toolbox"></a>Docker Toolbox</h2><p>Continuando com o Docker Toolbox, efetue o <a href="https://www.docker.com/products/docker-toolbox" target="_blank" rel="noopener">Download</a> e quando o mesmo estiver concluído, efetue a instalação seguindo o passo-a-passo do instalador, ou consulte os passos no <a href="https://docs.docker.com/mac/step_one/" target="_blank" rel="noopener">guia oficial</a>.</p><p>Com a instalação concluída, execute o Kitematic, a interface é bastante simples e intuitiva.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Abaixo irei detalhar a forma mais fácil de iniciar o uso do Docker no OS X.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;Docker&lt;/strong&gt;, para quem não conhece, é um
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
+    
+      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
+    
+      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
+    
+      <category term="App Store" scheme="http://www.maiconschmitz.com.br/tags/App-Store/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Exibindo Notificações Desktop via Shell script</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/</id>
+    <published>2016-03-30T14:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.890Z</updated>
+    
+    <content type="html"><![CDATA[<p>O <strong>Shell script</strong> é uma linguagem de script, usada nos mais diversos sistemas operacionais, mas o mundo <strong>GNU/Linux</strong> é que é a sua casa.</p><p>Poderoso e flexível, o <strong>Shell script</strong> lhe permiter fazer praticamente qualquer coisa que seria possível de ser feita via terminal, incluindo aí, exibir notificações diretamente no Desktop.</p><p>Neste post, exemplifico de forma rápida, como exibir Notificações no Desktop, para os ambientes gráficos do <a href="https://unity.ubuntu.com/" target="_blank" rel="noopener">Unity</a> (Ubuntu) e do KDE, bem como no OS X.</p><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>Exibir as notificações no Unity e no KDE, é bastante simples, uma vez que ambos ambientes gráficos, já oferecem ferramentas para exibir tais notificações.</p><h3 id="Notificacao-no-Ubuntu"><a href="#Notificacao-no-Ubuntu" class="headerlink" title="Notificação no Ubuntu"></a>Notificação no Ubuntu</h3><p>No Ubuntu, temos disponível o <strong>notify-send</strong></p><p>Exemplo de uso:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">notify-send "Mensagem"</span><br></pre></td></tr></table></figure><h3 id="Notificacao-no-KDE"><a href="#Notificacao-no-KDE" class="headerlink" title="Notificação no KDE"></a>Notificação no KDE</h3><p>No KDE, temos disponível o <strong>kdialog</strong></p><p>Exemplo de uso:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kdialog --title "Mensagem"</span><br></pre></td></tr></table></figure><h2 id="OS-X"><a href="#OS-X" class="headerlink" title="OS X"></a>OS X</h2><p>Para que as Notificações via Shell possam ser exibidas no Desktop do OS X, é necessário utilizar o Growl ou a Central de Notificações, nativa a partir do Mountain Lion.</p><h3 id="Notificacao-no-Mac-OS-X-Mountain-Lion-ou-superior"><a href="#Notificacao-no-Mac-OS-X-Mountain-Lion-ou-superior" class="headerlink" title="Notificação no Mac OS X Mountain Lion ou superior"></a>Notificação no Mac OS X Mountain Lion ou superior</h3><p>A notificação no OS X Mountain Lion ou mais recente, se utiliza da Central de Notificações e para utiliza-la, precisamos do Terminal Notifier, um wrapper escrito em Ruby e disponível no RubyGems.</p><h4 id="Instalando-o-Terminal-Notifier"><a href="#Instalando-o-Terminal-Notifier" class="headerlink" title="Instalando o Terminal Notifier"></a>Instalando o Terminal Notifier</h4><p>Você pode instalar o wrapper via <a href="https://github.com/Homebrew/homebrew" target="_blank" rel="noopener">Homebrew</a>:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew install terminal-notifier</span><br></pre></td></tr></table></figure><p>Caso você não possua o HomeBrew instalado, pode verificar <a href="http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew">aqui, como Instalar o HomeBrew</a>.</p><p>Ou, caso deseje utilizar o mesmo também via<br><a href="https://github.com/alloy/terminal-notifier/tree/master/Ruby" target="_blank" rel="noopener">Ruby</a>, efetue a instalação via RubyGems:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> [sudo] gem install terminal-notifier</span><br></pre></td></tr></table></figure><p>Uma vez que o Terminal Notifier esteja instalado, você terá a sua disposição o <strong>terminal-notifier</strong>.</p><p>Exemplo de uso:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">terminal-notifier -message "Mensagem" -title "Titulo"</span><br></pre></td></tr></table></figure><h3 id="Notificacao-no-Mac-OS-X-anterior-ao-Mountain-Lion"><a href="#Notificacao-no-Mac-OS-X-anterior-ao-Mountain-Lion" class="headerlink" title="Notificação no Mac OS X, anterior ao Mountain Lion"></a>Notificação no Mac OS X, anterior ao Mountain Lion</h3><p>Em versões anteriores ao Mac OS X Mountain Lion, onde a Central de Notificações ainda não existia, também é possível utilizar notificações no Desktop.<br>Neste caso porém, será necessário utilizar uma ferramenta adicional, o Growl.</p><h4 id="Notificacao-com-Growl"><a href="#Notificacao-com-Growl" class="headerlink" title="Notificação com Growl"></a>Notificação com Growl</h4><p>O Growl é um software livre, utilizado para exibir notificação no Mac OS X.</p><h4 id="Instalando-o-Growl"><a href="#Instalando-o-Growl" class="headerlink" title="Instalando o Growl"></a>Instalando o Growl</h4><p>Para instalar o Growl, basta visitar a página de <a href="http://growl.info/downloads" target="_blank" rel="noopener">Download do Growl</a></p><h4 id="Exibindo-notificacao"><a href="#Exibindo-notificacao" class="headerlink" title="Exibindo notificação"></a>Exibindo notificação</h4><p>Uma vez que o Growl esteja instalado, você terá a sua disposição o <strong>growlnotify</strong>.</p><p>Exemplo de uso:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/bin/growlnotify Titulo -m 'Mensagem'</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O &lt;strong&gt;Shell script&lt;/strong&gt; é uma linguagem de script, usada nos mais diversos sistemas operacionais, mas o mundo &lt;strong&gt;GNU/Linux&lt;/
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
+    
+      <category term="Shell script" scheme="http://www.maiconschmitz.com.br/tags/Shell-script/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Comunicando Raspberry Pi com Arduino via USB (Serial)</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</id>
+    <published>2016-03-01T00:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>Umas das formas mais simples de comunicar o <strong>Raspberry Pi</strong> com <strong>Arduino</strong>, onde uma conexão física é possível, é através da comunicação Serial.</p><p>É possível conectar o Raspberry Pi e o Arduino através da <strong>GPIO</strong>, nas portas <strong>RX</strong> e <strong>TX</strong>, porém uma forma mais simples ainda, de fazer tal conexão, é utilizando a própria porta <strong>USB</strong> de ambos os dispositivos.</p><p>Para efetuar tal conexão, pode-se utilizar o próprio cabo do Arduino, ou então um Cabo USB 2.0 com conectores Macho “A” e Macho “B”, de uso comum em impressoras.</p><h2 id="Arduino"><a href="#Arduino" class="headerlink" title="Arduino"></a>Arduino</h2><p>Para testar tal conexão, abra a IDE do Arduino e crie um novo projeto, com o seguinte código:</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  delay(<span class="number">5000</span>);</span><br><span class="line">  Serial.println(<span class="string">"COMUNICACAO SERIAL VIA USB"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Feito isto, carregue esta Sketch para o Arduino.</p><h2 id="Raspberry-Pi"><a href="#Raspberry-Pi" class="headerlink" title="Raspberry Pi"></a>Raspberry Pi</h2><p>No Raspberry Pi, você irá primeiramente verificar qual é o endereço da porta USB.</p><p>Para isto, com o cabo USB desconectado do RPi, execute o seguinte comando no terminal:</p><pre><code>ls /dev/tty*</code></pre><p>Agora, conecte o cabo USB do Arduino ao RPi e execute o mesmo comando novamente, para verificar a nova porta que aparece na lista.</p><p>Normalmente, a nova porta é a <strong>ttyACM0</strong></p><p>Sendo, assim, crie um novo arquivo Python, com o seguinte código:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> serial</span><br><span class="line">comunicacaoSerial = serial.Serial(<span class="string">'/dev/ttyACM0'</span>, <span class="number">9600</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span> :</span><br><span class="line">  <span class="keyword">print</span> comunicacaoSerial.readline()</span><br></pre></td></tr></table></figure><p>No nosso exemplo, foi criado o arquivo <strong>testeserial.py</strong></p><p>Antes de rodar o projeto, não esqueça de instalar o pacote pySerial</p><pre><code>$sudo pip install pyserial</code></pre><p>Para testar, basta executar:</p><pre><code>$python testeserial.py</code></pre><p>Se tudo ocorrer sem erros, à cada 5 segundos, você verá a mensagem <strong>COMUNICACAO SERIAL VIA USB</strong> sendo impressa no Terminal, vindo diretamente do <strong>Arduino</strong>.</p><p>Agora basta expandir seu projeto!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Umas das formas mais simples de comunicar o &lt;strong&gt;Raspberry Pi&lt;/strong&gt; com &lt;strong&gt;Arduino&lt;/strong&gt;, onde uma conexão física é possíve
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Raspberry Py" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Py/"/>
+    
+      <category term="Raspbian" scheme="http://www.maiconschmitz.com.br/tags/Raspbian/"/>
+    
+      <category term="Arduino" scheme="http://www.maiconschmitz.com.br/tags/Arduino/"/>
+    
+      <category term="USB" scheme="http://www.maiconschmitz.com.br/tags/USB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fazendo Backup de Pendrives e Cartões SD no Mac OS X</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</id>
+    <published>2015-12-23T23:00:00.000Z</published>
+    <updated>2018-10-15T01:16:09.891Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ao trabalhar com Pendrives e cartões SD, para testar distribuições à serem executadas no <strong>Raspberry Pi</strong>, por exemplo, pode ser útil, fazer cópias de segurança (backup) de imagens que você já tenha configurado, executado e atualizado.</p><p>Neste caso, algo bastante útil e simples de ser feito, é efetuar uma cópia (criar uma imagem) do Pendrive ou Cartão SD, de tal forma que você possa recupera-la posteriormente, ou até então replicar para diversos Pendrives ou Cartões SD.</p><h2 id="Efetuando-a-copia…"><a href="#Efetuando-a-copia…" class="headerlink" title="Efetuando a cópia…"></a>Efetuando a cópia…</h2><p>Insira o Pendrive ou Cartão SD no Mac</p><p>Acesse o aplicativo Terminal.app, pelo Spotlight (⌘ + Tecla Espaço) ou diretamente através do diretório /Applications/Utilities/</p><p>Execute o comando “<strong>diskutil list</strong>“, para obter uma lista de discos disponíveis:</p><pre><code>$diskutil list</code></pre><p>O retorno do <strong>diskutil list</strong>, poderá ser semelhante à isto:</p><pre><code>/dev/disk0   #:                       TYPE NAME                    SIZE       IDENTIFIER   0:      GUID_partition_scheme                        *120.0 GB   disk0   1:                        EFI EFI                     209.7 MB   disk0s1   2:          Apple_CoreStorage OSX                     119.2 GB   disk0s2   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3/dev/disk1 (internal, virtual):   #:                       TYPE NAME                    SIZE       IDENTIFIER   0:                  Apple_HFS OSX                    +118.8 GB   disk1                             Logical Volume on disk0s2                             B34DD1A2-6928-4216-9B11-76DDF772B04F                             Unlocked Encrypted/dev/disk2   #:                       TYPE NAME                    SIZE       IDENTIFIER   0:     FDisk_partition_scheme                        *4.0 GB     disk2   1:                 DOS_FAT_32 RASPBPI                 4.0 GB     disk2s1</code></pre><p>Identifique o disco relativo ao dispositivo, neste caso, é o /dev/disk2</p><p>Desmonte o disco, com o comando “<strong>diskutil unmountDisk</strong>“</p><pre><code>$diskutil unmountDisk /dev/disk2</code></pre><p>Uma vez que o disco esteja desmontado, você poderá acessa-lo e altera-lo diretamente.</p><p>Para efetuar a cópia, iremos utilizar o utilitário <strong>dd</strong>, o qual já se encontra disponível no Mac OS X.</p><p>Para saber mais sobre o dd, basta consultar o Manual, digitando “<strong>man dd</strong>“ no Terminal.</p><p>A sintaxe básica do dd é:</p><pre><code>dd if=origem of=destino</code></pre><p>Substitua <strong>origem</strong> e <strong>destino</strong>, pelo disco de origem e pelo caminho e nome do arquivo de destino, respectivamente.</p><p>O nome do arquivo de destino pode possuir qualquer nome e extensão, bem como pode ser salvo onde você bem entender, logo teremos algo semelhante à:</p><pre><code>dd if=/dev/rdisk2 of=~/imagens/2015-12-23-backup-raspbian.img bs=128m</code></pre><p>Note que, para acelerar o processo de cópia, complementamos o comando, definindo o parâmetro block size (bs) como 128m e alteramos o disco de destino incluindo um “<strong>r</strong>“ antes de “<strong>disk2</strong>“.</p><p>O <strong>bs</strong> indica que os <strong>blocos</strong> de leitura e escrita devem possuir o mesmo tamanho, enquanto que o “<strong>r</strong>“ define que o disco deve ser acessado no modo <strong>raw</strong>.</p><p>Quando o processo de cópia for concluído, você receberá uma mensagem informando o tempo decorrido e a quantidade de bytes transferidos.</p><h2 id="Restaurando-a-copia…"><a href="#Restaurando-a-copia…" class="headerlink" title="Restaurando a cópia…"></a>Restaurando a cópia…</h2><p>Quando desejar restaurar a cópia, bastará efetuar o procedimento reverso, definindo o arquivo de origem em if= e o dispositive de destivo em of=, algo como:</p><pre><code>dd if=~/imagens/2015-12-23-backup-raspbian.img of=/dev/rdisk2 bs=128m</code></pre><p>Quando o processo de cópia for concluído, bastará utilizar o Cartão ou Pendrive normalmente…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Ao trabalhar com Pendrives e cartões SD, para testar distribuições à serem executadas no &lt;strong&gt;Raspberry Pi&lt;/strong&gt;, por exemplo, pode
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="SD" scheme="http://www.maiconschmitz.com.br/tags/SD/"/>
+    
+      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
+    
+      <category term="Backup" scheme="http://www.maiconschmitz.com.br/tags/Backup/"/>
+    
+  </entry>
+  
+</feed>
