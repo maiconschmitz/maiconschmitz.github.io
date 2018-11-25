@@ -17,7 +17,7 @@
     
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Login Error RAC0218 - The maximum number of user sessions is reached"/>
+        <meta property="og:title" content="Desfazendo um Fusion Drive no macOS"/>
     
     <!--Open Graph Description-->
     
@@ -35,7 +35,7 @@
     
     <!-- Title -->
     
-    <title>Login Error RAC0218 - The maximum number of user sessions is reached - Maicon Schmitz</title>
+    <title>Desfazendo um Fusion Drive no macOS - Maicon Schmitz</title>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
     <!-- Custom Fonts -->
@@ -102,8 +102,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Login Error RAC0218 - The maximum number of user sessions is reached</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">02/07/2016</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Desfazendo um Fusion Drive no macOS</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">25/11/2018</p>
         </div>
     </div>
 
@@ -123,37 +123,36 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/iDrac/">#iDrac</a>
+                                <a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/SSD/">#SSD</a> <a class="fw3 ph1 dib" href="/tags/HDD/">#HDD</a> <a class="fw3 ph1 dib" href="/tags/HD/">#HD</a> <a class="fw3 ph1 dib" href="/tags/Fusion/">#Fusion</a> <a class="fw3 ph1 dib" href="/tags/Drive/">#Drive</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>Publicado originalmente em 15/07/2015, com reedição em 02/07/2016 para adicionar possibilidades extras.</p>
-<p>As vezes, ao tentar acessar o iDrac, através da interface Web, é possível que você se depare com uma mensagem semelhante à esta:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...Login Error RAC0218: The maximum number of user sessions is reached....</span><br></pre></td></tr></table></figure>
-<p>Esta mensagem é exibida, devido ao fato do iDrac já ter atingido o limite no número de sessões, ou, por algum bug, caso seu iDrac não esteja 100% atualizado.</p>
-<p>Para resolver este problema, você deve resetar o iDrac.</p>
-<h2 id="Resetando-o-iDrac"><a href="#Resetando-o-iDrac" class="headerlink" title="Resetando o iDrac"></a>Resetando o iDrac</h2><p>Para resetar o iDrac, você deve se conectar ao mesmo através do SSH:</p>
-<pre><code>Acesse o iDrac via SSH
-Execute o comando: racadm racreset
-</code></pre><p>Caso o a acesso via SSH lhe retorne uma mensagem semelhante à esta:</p>
-<pre><code>No more sessions are available for this type of connection!
-</code></pre><p>Então você deverá resetar o iDrac de outra forma:</p>
-<pre><code>Localize no painel do iDrac (no hardware físico), o botão &apos;i&apos;.
-Pressione o botão por 30 segundos e após isto, solte-o
-O iDrac (apenas o iDrac e não o equipamento) será reiniciado
-A Fan do equipamento irá aumentar a sua rotação momentaneamente (não se assunte)
-Após alguns segundos, a Fan irá voltar para a rotação original e o iDrac estará reiniciado, mantendo a mesma configuração e IP de rede.
-</code></pre><p>Em último caso, caso o item anterior não funcione, você poderá optar por desligar completamente o equipamento.</p>
-<p>Desligue e desconecte o equipamento da energia elétrica (reiniciar não basta).</p>
-<p>Ligue tudo novamente e ao concluir a inicialização, o iDrac estará funcionando normalmente.</p>
+                    <p>O <strong>Fusion Drive</strong>, é um recurso que se encontra disponível nas versões mais recentes do macOS e que possibilita efetuar a junção de um ou mais discos, da tal forma à lhe disponibilizar apenas um único <strong>volume virtual</strong>.</p>
+<p>Desta forma, é possível juntar 2 SSDs, ou então um SSD e um HDD (HD) em apenas um volume aparente.</p>
+<p>Ao efetuar a junção de um SSD com um HD, você terá os benefícios da velocidade do SSD, com a capacidade de armazenamento do HD.</p>
+<p>O macOS gerencia o uso deste volume, da melhor forma possível, mantendo arquivos que são mais acessados no SSD, enquanto arquivos que são menos acessados, são mantidos no HD. Tudo isso se dá de forma transparente, sem qualquer intervenção do usuário.</p>
+<p>Se você deseja criar um Fusion Drive no macOS, pode verificar o post: <a href="http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac" title="Unindo um SSD com um HD e criando um Fusion Drive no Mac">Unindo um SSD com um HD e criando um Fusion Drive no Mac</a>.</p>
+<p>Obviamente um Fusion Drive traz benefícios, porém em contra partida, pode trazer o malefício do conjunto ser mais lento do que o uso exclusivo de um SSD.</p>
+<p>Nestes casos, pode ser interessante desfazer um Fusion Drive.</p>
+<h2 id="Desfazendo-o-Fusion-Drive"><a href="#Desfazendo-o-Fusion-Drive" class="headerlink" title="Desfazendo o Fusion Drive"></a>Desfazendo o Fusion Drive</h2><p><strong>Atenção:</strong> Desfazer um Fusion Drive, fará com que todo o conteúdo do volume seja perdido/apagado.</p>
+<p>Reinicie, ou ligue o Mac, mantendo a tecla “Option” pressionada.</p>
+<p>Após o carregamento da interface, selecione a opção de menu “Utilitários” / “Terminal”.</p>
+<p>Com o Terminal aberto, execute o comando “<strong>diskutil cs list</strong>“, para obter uma lista de volumes lógicos:</p>
+<pre><code>$diskutil cs list
+</code></pre><p>Este comando irá listar todos os volumes lógicos existentes no seu Mac.</p>
+<p>A informação principal, à ser observada, é o UUID que é listado logo após o título: <strong>Logical Volume Group</strong>.<br>O UUID é um conjunto de caracteres formado por 5 blocos separados por hífens, algo como:  <strong>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</strong>.</p>
+<p>Para desfazer o volume lógico, basta executar <em>diskutil cs delete XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</em>, onde XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX é o UUID anteriormente listado pelo comando <strong>diskutil cs list</strong>:</p>
+<pre><code>$diskutil cs delete XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+</code></pre><p>Após alguns instantes, o processo será concluído.</p>
+<p>Deste ponto em diante, o seu <strong>volume virtual</strong> já está desfeito e você pode voltar à utilizar os discos individualmente.</p>
 
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/iDrac/">#iDrac</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/SSD/">#SSD</a> <a class="fw3 ph1 dib" href="/tags/HDD/">#HDD</a> <a class="fw3 ph1 dib" href="/tags/HD/">#HD</a> <a class="fw3 ph1 dib" href="/tags/Fusion/">#Fusion</a> <a class="fw3 ph1 dib" href="/tags/Drive/">#Drive</a>
                         </div>
                     
 
