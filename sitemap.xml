@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/11/28/instalando-nodejs-no-raspbian-stretch/</loc>
+    
+    <lastmod>2018-11-28T00:39:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/11/25/desfazendo-um-fusion-drive-no-mac/</loc>
     
     <lastmod>2018-11-25T15:10:45.000Z</lastmod>
@@ -16,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -31,13 +38,6 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -135,7 +142,28 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -143,6 +171,13 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/11/25/instalando-nodejs-no-raspbian/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -163,28 +198,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/11/25/instalando-nodejs-no-raspbian/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -219,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -240,21 +254,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -268,7 +268,21 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -289,13 +303,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/03/rodando-o-bash-e-aplicacoes-linux-no-windows-sem-cygwin/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -310,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
