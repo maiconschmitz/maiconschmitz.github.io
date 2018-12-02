@@ -17,7 +17,7 @@
     
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Login Error RAC0218 - The maximum number of user sessions is reached"/>
+        <meta property="og:title" content="Terminal colorido no macOS com ZSH"/>
     
     <!--Open Graph Description-->
     
@@ -35,7 +35,7 @@
     
     <!-- Title -->
     
-    <title>Login Error RAC0218 - The maximum number of user sessions is reached - Maicon Schmitz</title>
+    <title>Terminal colorido no macOS com ZSH - Maicon Schmitz</title>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
     <!-- Custom Fonts -->
@@ -102,8 +102,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Login Error RAC0218 - The maximum number of user sessions is reached</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">02/07/2016</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Terminal colorido no macOS com ZSH</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">02/12/2018</p>
         </div>
     </div>
 
@@ -123,37 +123,24 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/iDrac/">#iDrac</a>
+                                <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a> <a class="fw3 ph1 dib" href="/tags/ZSH/">#ZSH</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>Publicado originalmente em 15/07/2015, com reedição em 02/07/2016 para adicionar possibilidades extras.</p>
-<p>As vezes, ao tentar acessar o iDrac, através da interface Web, é possível que você se depare com uma mensagem semelhante à esta:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...Login Error RAC0218: The maximum number of user sessions is reached....</span><br></pre></td></tr></table></figure>
-<p>Esta mensagem é exibida, devido ao fato do iDrac já ter atingido o limite no número de sessões, ou, por algum bug, caso seu iDrac não esteja 100% atualizado.</p>
-<p>Para resolver este problema, você deve resetar o iDrac.</p>
-<h2 id="Resetando-o-iDrac"><a href="#Resetando-o-iDrac" class="headerlink" title="Resetando o iDrac"></a>Resetando o iDrac</h2><p>Para resetar o iDrac, você deve se conectar ao mesmo através do SSH:</p>
-<pre><code>Acesse o iDrac via SSH
-Execute o comando: racadm racreset
-</code></pre><p>Caso o a acesso via SSH lhe retorne uma mensagem semelhante à esta:</p>
-<pre><code>No more sessions are available for this type of connection!
-</code></pre><p>Então você deverá resetar o iDrac de outra forma:</p>
-<pre><code>Localize no painel do iDrac (no hardware físico), o botão &apos;i&apos;.
-Pressione o botão por 30 segundos e após isto, solte-o
-O iDrac (apenas o iDrac e não o equipamento) será reiniciado
-A Fan do equipamento irá aumentar a sua rotação momentaneamente (não se assunte)
-Após alguns segundos, a Fan irá voltar para a rotação original e o iDrac estará reiniciado, mantendo a mesma configuração e IP de rede.
-</code></pre><p>Em último caso, caso o item anterior não funcione, você poderá optar por desligar completamente o equipamento.</p>
-<p>Desligue e desconecte o equipamento da energia elétrica (reiniciar não basta).</p>
-<p>Ligue tudo novamente e ao concluir a inicialização, o iDrac estará funcionando normalmente.</p>
+                    <p>O <strong>ZSH</strong> é um shell interativo e também um interpretador de scripts, semelhante ao bash, porém oferece uma ampla gama de configurações e temas.</p>
+<h2 id="Instalando-o-ZSH-com-o-˜Oh-My-ZSH-˜"><a href="#Instalando-o-ZSH-com-o-˜Oh-My-ZSH-˜" class="headerlink" title="Instalando o ZSH com o ˜Oh My ZSH!˜"></a>Instalando o ZSH com o ˜Oh My ZSH!˜</h2><p>Para instalar o <strong>ZSH</strong>, basta abrir o <strong>Terminal</strong> e rodar um simples comando:</p>
+<pre><code>$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre><p>O processo de instalação é rápido e simples.</p>
+<p>Ao final, basta reiniciar o Terminal (feche-o e abra novamente)</p>
+<p>Com isto o ZSH já estará disponível por padrão sempre que abrir o <strong>Terminal</strong>.</p>
 
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/iDrac/">#iDrac</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a> <a class="fw3 ph1 dib" href="/tags/ZSH/">#ZSH</a>
                         </div>
                     
 
