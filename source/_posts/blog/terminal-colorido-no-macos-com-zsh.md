@@ -17,7 +17,7 @@ published: true
 
 O **ZSH** é um shell interativo e também um interpretador de scripts, semelhante ao bash, porém oferece uma ampla gama de configurações e temas.
 
-## Instalando o ZSH com o ˜Oh My ZSH!˜
+## Instalando o ZSH com o "Oh My ZSH!"
 
 Para instalar o **ZSH**, basta abrir o **Terminal** e rodar um simples comando:
 
