@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/</loc>
+    
+    <lastmod>2019-11-14T23:41:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/</loc>
     
-    <lastmod>2018-12-02T16:02:01.000Z</lastmod>
+    <lastmod>2018-12-02T16:06:16.000Z</lastmod>
     
   </url>
   
@@ -30,42 +37,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/04/20/criando-uma-stack-de-desenvolvimento-lnmp/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -93,7 +72,21 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -114,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -128,7 +114,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -142,7 +128,21 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/04/20/criando-uma-stack-de-desenvolvimento-lnmp/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -163,21 +163,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/10/02/instalacao-limpa-do-os-x-el-capitan/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -191,7 +184,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -206,6 +199,13 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/10/02/instalacao-limpa-do-os-x-el-capitan/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -282,14 +282,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -310,7 +310,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -325,6 +325,13 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/05/20/utilizando-o-pip/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maiconschmitz.com.br/"/>
-  <updated>2018-12-02T16:02:01.000Z</updated>
+  <updated>2019-11-14T23:41:52.000Z</updated>
   <id>http://www.maiconschmitz.com.br/</id>
   
   <author>
@@ -17,13 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Brave, o navegador com Blockchain e Criptomoedas BAT</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/</id>
+    <published>2019-11-15T01:30:00.000Z</published>
+    <updated>2019-11-14T23:41:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>O <strong>Brave</strong> é um navegador de internet baseado no projeto <strong>Chromium</strong> (o mesmo do <strong>Google Chrome</strong> e do <strong>Microsoft Edge</strong>).<br>Desenvolvido pela <strong>Brave Software</strong>, a empresa é liderada por <strong>Brendan Eich</strong>, criador do <strong>JavaScript</strong> e que por muito tempo esteve à frente da <strong>Fundação Mozilla</strong>, mantenedora do navegador <strong>Firefox</strong>.</p><h2 id="Brave"><a href="#Brave" class="headerlink" title="Brave"></a>Brave</h2><p>O principal diferencial do <a href="https://brave.com/download/" target="_blank" rel="noopener">Brave</a>, é a <a href="https://basicattentiontoken.org/" target="_blank" rel="noopener"><strong>Basic Attention Token</strong> (<strong>BAT</strong>)</a>. Estas criptomoedas foram baseadas no <strong>Blockchain</strong> do <strong>Ethereum</strong> e sua proposta é transformar a forma como os anúncios são remunerados na Internet.</p><p>O Brave também oferece uma excelente performance, sendo atualmente mais rápido que seus concorrentes no carregamento de páginas, além de oferecer nativamente, o bloqueio de anúncios de terceiros e da reprodução automática vídeos, por exemplo.</p><p>Com o Brave, é possível não só navegar de forma privada, mas também utilizar uma janela privada através da qual você pode navegar utilizando a rede <strong>Tor</strong>.</p><p>Totalmente compatível com os recursos do Google Chrome, o Brave lhe permite inclusive, fazer o uso e a instalação das Extensões do Chrome, diretamente através da <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener">Chrome Web Store</a>.</p><h3 id="Brave-Rewards"><a href="#Brave-Rewards" class="headerlink" title="Brave Rewards"></a>Brave Rewards</h3><p>O <strong>Brave Rewards</strong> é a forma através da qual o Brave gerencia o recebimento de tokens <strong>BAT</strong>. Os anúncios são apresentados ao usuário baseado nos interesses do mesmo, os quais são verificados de forma anônima e automática, de acordo com o comportamento de navegação.</p><p>Dentro do Brave Rewards, é possível ainda, configurar doações automáticas para os sites que você mais visita, ou ainda, efetuar doações para criadores de conteúdo.</p><p>Com o <a href="https://creators.brave.com/" target="_blank" rel="noopener">Brave Rewards Creators</a>, é possível presentear tokens para o criador do site o qual você visita, como forma de fomentar a criação de conteúdo e além disso, você mesmo, pode se tornar um <a href="https://creators.brave.com/sign-up" target="_blank" rel="noopener"><strong>Creator</strong></a> se desejar, adicionando seu Site, Canal do Youtube, ou ainda contas do Twitter, Github, dentre outras.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O &lt;strong&gt;Brave&lt;/strong&gt; é um navegador de internet baseado no projeto &lt;strong&gt;Chromium&lt;/strong&gt; (o mesmo do &lt;strong&gt;Google Chrome&lt;/stron
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Blockchain" scheme="http://www.maiconschmitz.com.br/tags/Blockchain/"/>
+    
+      <category term="Ethereum" scheme="http://www.maiconschmitz.com.br/tags/Ethereum/"/>
+    
+      <category term="Brave" scheme="http://www.maiconschmitz.com.br/tags/Brave/"/>
+    
+      <category term="Chromium" scheme="http://www.maiconschmitz.com.br/tags/Chromium/"/>
+    
+      <category term="Criptomoeda" scheme="http://www.maiconschmitz.com.br/tags/Criptomoeda/"/>
+    
+      <category term="BAT" scheme="http://www.maiconschmitz.com.br/tags/BAT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Terminal colorido no macOS com ZSH</title>
     <link href="http://www.maiconschmitz.com.br/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/"/>
     <id>http://www.maiconschmitz.com.br/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/</id>
     <published>2018-12-02T19:00:00.000Z</published>
-    <updated>2018-12-02T16:02:01.000Z</updated>
+    <updated>2018-12-02T16:06:16.000Z</updated>
     
-    <content type="html"><![CDATA[<p>O <strong>ZSH</strong> é um shell interativo e também um interpretador de scripts, semelhante ao bash, porém oferece uma ampla gama de configurações e temas.</p><h2 id="Instalando-o-ZSH-com-o-˜Oh-My-ZSH-˜"><a href="#Instalando-o-ZSH-com-o-˜Oh-My-ZSH-˜" class="headerlink" title="Instalando o ZSH com o ˜Oh My ZSH!˜"></a>Instalando o ZSH com o ˜Oh My ZSH!˜</h2><p>Para instalar o <strong>ZSH</strong>, basta abrir o <strong>Terminal</strong> e rodar um simples comando:</p><pre><code>$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></pre><p>O processo de instalação é rápido e simples.</p><p>Ao final, basta reiniciar o Terminal (feche-o e abra novamente)</p><p>Com isto o ZSH já estará disponível por padrão sempre que abrir o <strong>Terminal</strong>.</p>]]></content>
+    <content type="html"><![CDATA[<p>O <strong>ZSH</strong> é um shell interativo e também um interpretador de scripts, semelhante ao bash, porém oferece uma ampla gama de configurações e temas.</p><h2 id="Instalando-o-ZSH-com-o-“Oh-My-ZSH-”"><a href="#Instalando-o-ZSH-com-o-“Oh-My-ZSH-”" class="headerlink" title="Instalando o ZSH com o “Oh My ZSH!”"></a>Instalando o ZSH com o “Oh My ZSH!”</h2><p>Para instalar o <strong>ZSH</strong>, basta abrir o <strong>Terminal</strong> e rodar um simples comando:</p><pre><code>$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></pre><p>O processo de instalação é rápido e simples.</p><p>Ao final, basta reiniciar o Terminal (feche-o e abra novamente)</p><p>Com isto o ZSH já estará disponível por padrão sempre que abrir o <strong>Terminal</strong>.</p>]]></content>
     
     <summary type="html">
     
@@ -37,9 +72,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
     
@@ -97,9 +132,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
     
@@ -135,9 +170,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
   </entry>
   
@@ -163,11 +198,11 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
       <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="Ruby" scheme="http://www.maiconschmitz.com.br/tags/Ruby/"/>
-    
-      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
     
   </entry>
   
@@ -254,9 +289,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="SD" scheme="http://www.maiconschmitz.com.br/tags/SD/"/>
     
@@ -294,9 +329,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
   </entry>
   
@@ -323,13 +358,13 @@
     
       <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
+      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
+    
       <category term="Stack" scheme="http://www.maiconschmitz.com.br/tags/Stack/"/>
     
       <category term="Desenvolvimento" scheme="http://www.maiconschmitz.com.br/tags/Desenvolvimento/"/>
     
       <category term="LNMP" scheme="http://www.maiconschmitz.com.br/tags/LNMP/"/>
-    
-      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
     
   </entry>
   
@@ -491,9 +526,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
     
@@ -529,9 +564,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
   </entry>
   
@@ -556,9 +591,9 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
       <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
       <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
     
@@ -616,42 +651,6 @@
       <category term="SSH" scheme="http://www.maiconschmitz.com.br/tags/SSH/"/>
     
       <category term="iDrac" scheme="http://www.maiconschmitz.com.br/tags/iDrac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Iniciando com Docker no OS X</title>
-    <link href="http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/"/>
-    <id>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</id>
-    <published>2016-05-21T14:00:00.000Z</published>
-    <updated>2018-10-15T01:16:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Abaixo irei detalhar a forma mais fácil de iniciar o uso do Docker no OS X.</p><p>O <strong>Docker</strong>, para quem não conhece, é uma plataforma Open Source, utilizada para empacotar aplicações e/ou ambientes inteiros, dentro de containers, que podem ser portados para outros Hosts (Máquinas).</p><p>Atualmente, o Docker possui uma ferramenta gráfica chamada <strong>Kitematic</strong> em estágio Beta, que permite baixar, instalar e gerenciar containers, de uma forma extremamente simples!</p><p>Para instalar o Kitematic, basta efetuar o download do <a href="https://www.docker.com/products/docker-toolbox" target="_blank" rel="noopener">Docker Toolbox</a>, o qual possui além do Kitematic, o Docker Engine, o Compose e o Machine.</p><p>Um pré requisito para o Docker, é a necessidade de possuir alguma ferramenta para virtualização, neste caso, pode-se optar pelo <strong>VirtualBox</strong>.</p><p>Caso você não possua o VirtualBox, efetue o <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">Download</a> e posteriormente a instalação do mesmo.</p><h2 id="Docker-Toolbox"><a href="#Docker-Toolbox" class="headerlink" title="Docker Toolbox"></a>Docker Toolbox</h2><p>Continuando com o Docker Toolbox, efetue o <a href="https://www.docker.com/products/docker-toolbox" target="_blank" rel="noopener">Download</a> e quando o mesmo estiver concluído, efetue a instalação seguindo o passo-a-passo do instalador, ou consulte os passos no <a href="https://docs.docker.com/mac/step_one/" target="_blank" rel="noopener">guia oficial</a>.</p><p>Com a instalação concluída, execute o Kitematic, a interface é bastante simples e intuitiva.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Abaixo irei detalhar a forma mais fácil de iniciar o uso do Docker no OS X.&lt;/p&gt;
-&lt;p&gt;O &lt;strong&gt;Docker&lt;/strong&gt;, para quem não conhece, é um
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
-    
-    
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
-      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
-    
-      <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
-    
-      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
-    
-      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
-    
-      <category term="App Store" scheme="http://www.maiconschmitz.com.br/tags/App-Store/"/>
     
   </entry>
   
