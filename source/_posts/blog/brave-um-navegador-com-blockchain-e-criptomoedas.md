@@ -22,7 +22,7 @@ Desenvolvido pela **Brave Software**, a empresa é liderada por **Brendan Eich**
 
 ## Brave
 
-O principal diferencial do [Brave](https://brave.com/download/), é a [**Basic Attention Token** (**BAT**)](https://basicattentiontoken.org/). Estas criptomoedas foram baseadas no **Blockchain** do **Ethereum** e sua proposta é transformar a forma como os anúncios são remunerados na Internet.
+O principal diferencial do [Brave](https://brave.com/mai223), é a [**Basic Attention Token** (**BAT**)](https://basicattentiontoken.org/). Estas criptomoedas foram baseadas no **Blockchain** do **Ethereum** e sua proposta é transformar a forma como os anúncios são remunerados na Internet.
 
 O Brave também oferece uma excelente performance, sendo atualmente mais rápido que seus concorrentes no carregamento de páginas, além de oferecer nativamente, o bloqueio de anúncios de terceiros e da reprodução automática vídeos, por exemplo.
 
