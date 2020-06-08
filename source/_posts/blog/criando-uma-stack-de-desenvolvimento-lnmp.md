@@ -34,15 +34,15 @@ Esta Stack possui uma particularidade, que é a utilização de um único Servid
 Acesse o terminal e execute o seguinte comando:
 
     docker network create rede-local-docker
-    
-Onde **rede-local-docker** é o nome da sua rede. 
+
+Onde **rede-local-docker** é o nome da sua rede.
 
 Mantenha este nome, para que você não precise editar os arquivos de configuração!
 
 ### Criando um único Servidor MySQL
 
 Acesse o terminal e execute o comando abaixo, para rodar um container com MySQL na Rede previamente criada:
-    
+
     docker run --name servidor-mysql --network=rede-local-docker -v ˜/projetos/mysql/data/db:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:5.7
 
 Onde **˜/projetos/mysql/data/db** é uma estrutura de diretórios, onde as bases de dados serão salvas.
@@ -52,7 +52,7 @@ Altere este caminho de acordo com a sua necessidade!
 Lembre-se, quando precisar rodar o servidor MySQL novamente, bastará que você execute o seguinte comando:
 
     docker start servidor-mysql
-    
+
 ### Copiando e Rodando
 
 Os arquivos de configuração necessários, podem ser encontrados no repositório [Docker LNMP](https://github.com/maiconschmitz/docker-lnmp "Docker LNMP") no Github.

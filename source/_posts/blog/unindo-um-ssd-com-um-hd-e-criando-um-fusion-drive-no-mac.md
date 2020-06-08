@@ -49,14 +49,14 @@ Verifique o caminho dos discos que deseja "juntar" e execute o comando de criaç
 
 No comando acima, defini o nome do meu novo 'disco' como 'Fusion' e juntei os meus 2 primeiros discos, os quais são respectivamente /dev/disk0 e /dev/disk1, sendo disk0 o SSD e disk1, o meu HD.
 
-Após alguns instantes, o processo será concluído. 
-Observe o resultado que será impresso no Terminal. 
-Atente para uma das linhas finais, iniciada com: **Core Storage LVG UUID:**. 
+Após alguns instantes, o processo será concluído.
+Observe o resultado que será impresso no Terminal.
+Atente para uma das linhas finais, iniciada com: **Core Storage LVG UUID:**.
 Anote o UUID (conteúdo após o :, com estrutura semelhante à: XXXXXX-XXX-XXX-XXXXXX), pois ele será utilizado no comando em seguida:
 
     $diskutil coreStorage createVolume XXXXXX-XXX-XXX-XXXXXX jhfs+ 'Fusion' 100%
 
-No comando acima, XXXXXX-XXX-XXX-XXXXXX deve ser substituído pelo UUID que você copiou do resultado de execução do comando **diskutil coreStorage create ...**. 
+No comando acima, XXXXXX-XXX-XXX-XXXXXX deve ser substituído pelo UUID que você copiou do resultado de execução do comando **diskutil coreStorage create ...**.
 O restante dos parâmetros deve ser mantido como no comando original.
 
 Novamente, após alguns instantes, o processo será concluído.

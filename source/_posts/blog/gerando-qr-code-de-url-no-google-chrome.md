@@ -19,7 +19,7 @@ A idéia que motivou a criação de tal extensão, foi a possibilidade de simpli
 
 ## QRCode URL
 
-O QRCode URL é uma extensão para o navegado Google Chrome, que lhe permite gerar um Código QR (QR Code) a partir da URL que se encontra atualmente aberta no navegador. 
+O QRCode URL é uma extensão para o navegado Google Chrome, que lhe permite gerar um Código QR (QR Code) a partir da URL que se encontra atualmente aberta no navegador.
 Isto lhe permite acessar esta URL rapidamente a partir de outros dispositivos munidos de uma câmera e um aplicativo leitor de Códigos QR.
 
 Esta extensão é extremamente simples, funciona de modo offline e nenhum dado é enviado para a nuvem.

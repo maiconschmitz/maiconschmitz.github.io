@@ -19,7 +19,7 @@ alias: blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools.html
 ---
 O Xcode é o ambiente/plataforma de desenvolvimento da Apple.
 
-Se você não possui o Xcode, instale-o a partir da AppStore, ou obtenha o link para o mesmo na página de Download: 
+Se você não possui o Xcode, instale-o a partir da AppStore, ou obtenha o link para o mesmo na página de Download:
 
 
 [https://developer.apple.com/xcode/downloads/](https://developer.apple.com/xcode/downloads/ "https://developer.apple.com/xcode/downloads/").

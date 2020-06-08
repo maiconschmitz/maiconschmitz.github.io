@@ -29,7 +29,7 @@ Independente da opção escolhida, ambos não passam de um pequeno adaptador de 
 Na contramão dos preços altos, você pode optar por um adaptado semelhante, mas [sem marca](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2323847.m570.l1313.TR10.TRC2.A0.H0.XMicro+.TRS2&_nkw=Micro+SD+Card+Adapter+For+MacBook&_sacat=0) e que não chega à custar U$ 2.00 dólares.
 
 Obviamente, a grande diferença entre os modelos de marcas mais famosas contra o [Adaptador sem marca](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2323847.m570.l1313.TR10.TRC2.A0.H0.XMicro+.TRS2&_nkw=Micro+SD+Card+Adapter+For+MacBook&_sacat=0), além do preço, é o Design.
-O material de construção dos modelos mais caros é excelente, alguns são inclusive de alumínio e possuem um encaixe perfeito, dependendo do modelo, é claro, o que faz uma grande diferença estética. 
+O material de construção dos modelos mais caros é excelente, alguns são inclusive de alumínio e possuem um encaixe perfeito, dependendo do modelo, é claro, o que faz uma grande diferença estética.
 
 Porém, a função, independe de marca, é igual em ambos, uma vez que o que faz a diferença não é o adaptador, mas o cartão MicroSD que será utilizado.
 Sendo assim, prefira investir na compra de um bom cartão MicroSD, de marca e procedência conhecida, além de optar apenas por modelos de Classe 10, que são os modelos mais rápidos.

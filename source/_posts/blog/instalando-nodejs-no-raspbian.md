@@ -33,7 +33,7 @@ Para testar o Node, basta executar:
 
 	$node -v
 
-O repositório da Adafruit também possui outros pacotes que podem ser interessantes, então, dê uma olhada lá: 
+O repositório da Adafruit também possui outros pacotes que podem ser interessantes, então, dê uma olhada lá:
 [Adafruit's Raspberry Pi Package Repository](https://learn.adafruit.com/apt-adafruit-com/installing-packages "Adafruit's Raspberry Pi Package Repository")
 
 E se você não conhece o projeto node-arm, pode dar uma conferida em:

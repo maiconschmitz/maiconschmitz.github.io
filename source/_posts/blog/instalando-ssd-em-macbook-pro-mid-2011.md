@@ -14,7 +14,7 @@ alias: blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011.html
 ---
 Recentemente efetuei um upgrade em um Macbook Pro de 2011, substituindo o HD magnético por um SSD.
 
-Este procedimento é bastante simples e pode ser feito utilizando qualquer SSD, de qualquer marca. 
+Este procedimento é bastante simples e pode ser feito utilizando qualquer SSD, de qualquer marca.
 
 Diferente de como era à algum tempo atrás, a partir do OS X Yosemite 10.10.4, a Apple traz suporte total ao TRIM para SSDs de terceiros.
 
@@ -47,9 +47,9 @@ Quando isto estiver concluído, reinicie o Macbook com a tecla **Option** pressi
 
 ## Ativando o TRIM para o SSD
 
-Após a conclusão da instalação do OS X, o último passo a ser efetuado, á a ativação do TRIM. 
+Após a conclusão da instalação do OS X, o último passo a ser efetuado, á a ativação do TRIM.
 
-Para tal, basta abrir uma janela do Terminal e digitar o comando **sudo trimforce enable** e confirmar quando solicitado. 
+Para tal, basta abrir uma janela do Terminal e digitar o comando **sudo trimforce enable** e confirmar quando solicitado.
 
 Seu Mac será reiniciado e feito isto, tudo estará concluído.
 

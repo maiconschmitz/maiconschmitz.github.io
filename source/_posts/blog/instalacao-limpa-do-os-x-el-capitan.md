@@ -68,7 +68,7 @@ Deste ponto em diante, você possui duas opções:
 * Selecione o "Utilitário de Disco" e escolha a opção "Continuar".
 * Selecione o "Disco Principal" e clique na opção "Apagar", no topo da janela.
 	* Defina um nome para o Disco, exemplo: "OSX"
-	* Em Formato, mantenha a opção: "OS X Expandido (Reg. Cronológico)" 
+	* Em Formato, mantenha a opção: "OS X Expandido (Reg. Cronológico)"
 	* E em Esquema, mantenha "Mapa de Partição GUID".
 	* Confirme as opções acima, clicando em "Apagar".
 * Aguarde e conclusão do processo.

@@ -17,7 +17,7 @@ O **XenServer** é uma plataforma de virtualização open-source que pode ser ut
 
 Através deste tutorial você irá aprender como criar um Pendrive bootavel com o XenServer, para efetuar a sua própria instalação.
 
-Primeiramente, você deverá ter em mãos, a ISO do **XenServer**. Caso você ainda não a possua, então poderá obte-la do site do XenServer, através do link: http://xenserver.org/overview-xenserver-open-source-virtualization/download.html.  
+Primeiramente, você deverá ter em mãos, a ISO do **XenServer**. Caso você ainda não a possua, então poderá obte-la do site do XenServer, através do link: http://xenserver.org/overview-xenserver-open-source-virtualization/download.html.
 Atualmente, o XenServer encontra-se na versão 6.2.
 
 O próximo passo, será obter uma cópia do **Universal USB Installer**, através deste link: http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/.

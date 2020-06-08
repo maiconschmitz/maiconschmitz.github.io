@@ -1,7 +1,7 @@
 ---
 title: Migrando do gerador de sites estáticos Jekyll para Hexo
 date: 2017-07-27 18:30:00
-tags: 
+tags:
 - Site
 - Wordpress
 - Estatico
@@ -36,7 +36,7 @@ Crie um novo projeto com o Hexo:
     $hexo init <nome-do-projeto>
     $cd <nome-do-projeto>
     $npm install
-    
+
 Lembrando que **nome-do-projeto**, deve ser substituido pelo nome do seu projeto.
 
 Uma vez que este procedimento estiver concluído, configure o seu projeto, editando o arquivo **_config.yml** que se encontra na raiz do diretório **nome-do-projeto**.
@@ -120,13 +120,13 @@ Para que você possa manter as configurações do CNAME funcionais, será necess
 Passados os passos anteriores, o fluxo de utilização do Hexo será o seguinte:
 
 ### Criando um novo Post:
-    
+
     $ hexo new post <titulo-do-post>
 
 Edite o arquivo source/_posts/titulo-do-post.md
 
 ### Gerando e visualizando as páginas:
-    
+
     $ hexo generate
     $ hexo serve
 

@@ -37,7 +37,7 @@ Pode escolher istalar o **Node.js** na sua versão mais atual e estável, execut
 
 	$ sudo n stable
 
-Ou pode istalar o **Node.js** em uma versão mais específica, neste exemplo, a versão 0.11.x.  
+Ou pode istalar o **Node.js** em uma versão mais específica, neste exemplo, a versão 0.11.x.
 Para isto, basta executar:
 
 	$ sudo n 0.11

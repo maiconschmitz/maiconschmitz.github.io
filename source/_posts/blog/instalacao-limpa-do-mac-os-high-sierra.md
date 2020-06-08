@@ -70,7 +70,7 @@ Caso tenha dúvidas entre APFS (Apple File System) ou Mac OS Expandido, consulte
 * Selecione o "Utilitário de Disco" e escolha a opção "Continuar".
 * Selecione o "Disco Principal" e clique na opção "Apagar", no topo da janela.
 	* Defina um nome para o Disco, exemplo: "OSX"
-	* Em Formato, selecione/mantenha a opção: "APFS (Distinção de maiúsculas)" 
+	* Em Formato, selecione/mantenha a opção: "APFS (Distinção de maiúsculas)"
 	* Confirme as opções acima, clicando em "Apagar".
 * Aguarde e conclusão do processo.
 * Feche o "Utilitário de Disco".

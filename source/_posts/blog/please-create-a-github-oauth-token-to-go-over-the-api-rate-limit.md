@@ -45,7 +45,7 @@ Definir a Token de forma global no composer:
 
 Ou então, definir a Token por projeto, diretamente no composer.json:
 
-	{  
+	{
 	  "config": {
 	    "github-oauth": {
 	      "github.com": "<TOKEN>"

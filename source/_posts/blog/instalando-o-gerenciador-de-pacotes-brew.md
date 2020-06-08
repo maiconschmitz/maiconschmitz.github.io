@@ -49,7 +49,7 @@ Após alguns instantes, se a instalação ocorrer sem problemas, você terá o s
 	http://docs.brew.sh/Analytics.html
 	==> Next steps:
 	- Run `brew help` to get started
-	- Further documentation: 
+	- Further documentation:
 		http://docs.brew.sh
 
 Caso ocorra algum erro, poderá ser necessário instalar o Xcode e o Command Line Tools da Apple.

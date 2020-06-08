@@ -29,7 +29,7 @@ Para testar tal conexão, abra a IDE do Arduino e crie um novo projeto, com o se
 void setup() {
   Serial.begin(9600);
 }
-	
+
 void loop() {
   delay(5000);
   Serial.println("COMUNICACAO SERIAL VIA USB");
@@ -55,7 +55,7 @@ Sendo, assim, crie um novo arquivo Python, com o seguinte código:
 ~~~ python
 import serial
 comunicacaoSerial = serial.Serial('/dev/ttyACM0', 9600)
-	
+
 while 1 :
   print comunicacaoSerial.readline()
 ~~~

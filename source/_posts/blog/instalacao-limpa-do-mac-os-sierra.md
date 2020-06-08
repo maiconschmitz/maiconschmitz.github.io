@@ -67,7 +67,7 @@ Os processos de Instalar e Reinstalar o macOS, são praticamente os mesmos, com 
 * Selecione o "Utilitário de Disco" e escolha a opção "Continuar".
 * Selecione o "Disco Principal" e clique na opção "Apagar", no topo da janela.
 	* Defina um nome para o Disco, exemplo: "Sierra"
-	* Em Formato, mantenha a opção: "OS X Expandido (Reg. Cronológico)" 
+	* Em Formato, mantenha a opção: "OS X Expandido (Reg. Cronológico)"
 	* E em Esquema, mantenha "Mapa de Partição GUID".
 	* Confirme as opções acima, clicando em "Apagar".
 * Aguarde e conclusão do processo.

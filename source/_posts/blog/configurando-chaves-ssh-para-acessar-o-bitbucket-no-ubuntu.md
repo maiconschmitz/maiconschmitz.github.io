@@ -15,7 +15,7 @@ type: post
 published: true
 alias: blog/2014/07/07/configurando-chaves-ssh-para-acessar-o-bitbucket-no-ubuntu.html
 ---
-Uma boa escolha para trabalhar com o **BitBucket**, sem a necessidade de digitar a sua senha a cada **push** ou **pull** do **GIT**, é a configuração de **chaves SSH**.  
+Uma boa escolha para trabalhar com o **BitBucket**, sem a necessidade de digitar a sua senha a cada **push** ou **pull** do **GIT**, é a configuração de **chaves SSH**.
 Seja no **Linux**, **MAC OS X** ou até **Windows**, a configuração de chaves SSH é uma ótima e segura opção.
 
 No exemplo abaixo, será demonstrado um passo a passo de como efetuar a configuração de chaves SSH no Ubuntu Linux.
@@ -32,7 +32,7 @@ E então acesse-o...
 
 	$ cd ~/.ssh
 
-Se o diretório existir, procure pela sua chave pública.  
+Se o diretório existir, procure pela sua chave pública.
 A chave pública estará em um arquivo nomeado como **id_rsa.pub** ou **id_dsa.pub**
 
 	$ ls
@@ -45,13 +45,13 @@ Para criar a sua chave publica, basta executar o comando abaixo, lembrando de al
 
 	$ ssh-keygen -t rsa -C "ENDERECO-DE-EMAIL@DOMINIO.COM.BR"
 
-Quando for solicitado o nome do arquivo a ser criado, defina um de sua preferência ou simplesmente confirme a sugestão, pressionando <Enter>  
+Quando for solicitado o nome do arquivo a ser criado, defina um de sua preferência ou simplesmente confirme a sugestão, pressionando <Enter>
 Quando solicitar uma passphrase, defina uma senha ou deixe-a em branco, simplesmente pressionando <Enter>
 
 **Importante:**
 
 *   Defina uma passphrase, caso você deseje que uma senha seja solicitada ao acessar o repositório.
-*   Deixe a passphrase em branco, caso você deseje que nenhuma senha seja solicitada ao acessar o repositório. Este método é mais simples,  
+*   Deixe a passphrase em branco, caso você deseje que nenhuma senha seja solicitada ao acessar o repositório. Este método é mais simples,
     já que nenhuma senha será solicitada, bem como é o propósito de criação das chaves neste caso.
 
 Agora que a sua chave esta criada, liste os arquivos do diretório ~/.ssh
@@ -74,7 +74,7 @@ No menu esquerdo, no grupo "SECURITY" selecione "Chaves SSH"
 
 Clique em "Adicionar Chave"
 
-Defina um "Label" para identificar esta chave:  
+Defina um "Label" para identificar esta chave:
 Exemplo: "ENDERECO-DE-EMAIL@DOMINIO.COM.BR em ubuntu"
 
 Cole o conteúdo da chave (anteriormente copiado) no campo "Key"
@@ -85,7 +85,7 @@ Volte ao Terminal para testar se a adição das chaves funcionou de forma corret
 
 	$ ssh -T git@bitbucket.org
 
-Quando solicitar se você deseja realmente conectar:  
+Quando solicitar se você deseja realmente conectar:
 _"Are you sure you want to continue connecting (yes/no)?"_
 
 Confirme, digitando: yes
