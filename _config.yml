@@ -8,7 +8,7 @@ subtitle:
 description: Desenvolvedor Web e Mobile. PHP, Laravel, Wordpress, JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Apache Cordova e Ionic.
 author: Maicon Schmitz
 language: pt-BR
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -75,7 +75,8 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/maiconschmitz/maiconschmitz.github.io.git
+  repo:
+    github: git@github.com:maiconschmitz/maiconschmitz.github.io.git
   branch: master
 
 search:

@@ -3,7 +3,7 @@ logo_image_source: /images/logo.svg
 
 # Index Page
 index_banner_text: Maicon Schmitz
-index_banner_text_secondary: 
+index_banner_text_secondary:
 index_font_awesome_icon_css: fa fa-magic
 
 # Header
@@ -22,7 +22,7 @@ archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
 about_widget_avatar_url: https://www.gravatar.com/avatar/590d4b287a1dccf26aa5c2b11f06d560
-about_widget_text: "Meu nome é Maicon Schmitz, sou um desenvolvedor Freelancer Web e Mobile, trabalho com diversas tecnologias, mas principalmente com PHP, Laravel, Wordpress, JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Apache Cordova e Ionic."
+about_widget_text: "Meu nome é Maicon Schmitz, sou um desenvolvedor Web e Mobile, trabalho com diversas tecnologias, mas principalmente com JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Apache Cordova e Ionic."
 
 # Comments.
 comments:
