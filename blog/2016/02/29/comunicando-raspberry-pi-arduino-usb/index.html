@@ -133,7 +133,7 @@
 <p>É possível conectar o Raspberry Pi e o Arduino através da <strong>GPIO</strong>, nas portas <strong>RX</strong> e <strong>TX</strong>, porém uma forma mais simples ainda, de fazer tal conexão, é utilizando a própria porta <strong>USB</strong> de ambos os dispositivos.</p>
 <p>Para efetuar tal conexão, pode-se utilizar o próprio cabo do Arduino, ou então um Cabo USB 2.0 com conectores Macho “A” e Macho “B”, de uso comum em impressoras.</p>
 <h2 id="Arduino"><a href="#Arduino" class="headerlink" title="Arduino"></a>Arduino</h2><p>Para testar tal conexão, abra a IDE do Arduino e crie um novo projeto, com o seguinte código:</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  delay(<span class="number">5000</span>);</span><br><span class="line">  Serial.println(<span class="string">"COMUNICACAO SERIAL VIA USB"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  delay(<span class="number">5000</span>);</span><br><span class="line">  Serial.println(<span class="string">"COMUNICACAO SERIAL VIA USB"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Feito isto, carregue esta Sketch para o Arduino.</p>
 <h2 id="Raspberry-Pi"><a href="#Raspberry-Pi" class="headerlink" title="Raspberry Pi"></a>Raspberry Pi</h2><p>No Raspberry Pi, você irá primeiramente verificar qual é o endereço da porta USB.</p>
 <p>Para isto, com o cabo USB desconectado do RPi, execute o seguinte comando no terminal:</p>
@@ -141,7 +141,7 @@
 </code></pre><p>Agora, conecte o cabo USB do Arduino ao RPi e execute o mesmo comando novamente, para verificar a nova porta que aparece na lista.</p>
 <p>Normalmente, a nova porta é a <strong>ttyACM0</strong></p>
 <p>Sendo, assim, crie um novo arquivo Python, com o seguinte código:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> serial</span><br><span class="line">comunicacaoSerial = serial.Serial(<span class="string">'/dev/ttyACM0'</span>, <span class="number">9600</span>)</span><br><span class="line">	</span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span> :</span><br><span class="line">  <span class="keyword">print</span> comunicacaoSerial.readline()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> serial</span><br><span class="line">comunicacaoSerial = serial.Serial(<span class="string">'/dev/ttyACM0'</span>, <span class="number">9600</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span> :</span><br><span class="line">  <span class="keyword">print</span> comunicacaoSerial.readline()</span><br></pre></td></tr></table></figure>
 <p>No nosso exemplo, foi criado o arquivo <strong>testeserial.py</strong></p>
 <p>Antes de rodar o projeto, não esqueça de instalar o pacote pySerial</p>
 <pre><code>$sudo pip install pyserial
@@ -206,6 +206,10 @@
     <h3>Posts Recentes</h3>
     
         <p>
+            <a href="/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/">Criando cartão SD de Instalação do Raspberry Pi OS</a>
+        </p>
+    
+        <p>
             <a href="/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/">Brave, o navegador com Blockchain e Criptomoedas B</a>
         </p>
     
@@ -219,10 +223,6 @@
     
         <p>
             <a href="/blog/2018/11/25/desfazendo-um-fusion-drive-no-mac/">Desfazendo um Fusion Drive no macOS</a>
-        </p>
-    
-        <p>
-            <a href="/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/">Instalação Limpa do macOS Mojave</a>
         </p>
     
 </div>

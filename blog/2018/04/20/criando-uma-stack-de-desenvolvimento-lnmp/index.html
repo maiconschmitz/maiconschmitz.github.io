@@ -135,7 +135,7 @@
 <h2 id="Banco-de-Dados-centralizado-em-uma-Imagem-em-Separado"><a href="#Banco-de-Dados-centralizado-em-uma-Imagem-em-Separado" class="headerlink" title="Banco de Dados centralizado em uma Imagem em Separado"></a>Banco de Dados centralizado em uma Imagem em Separado</h2><p>Esta Stack possui uma particularidade, que é a utilização de um único Servidor MySQL para todos os projetos, centralizando assim, todas as bases de dados em uma única imagem Docker (um só local).</p>
 <h3 id="Criando-uma-unica-Rede-para-as-suas-Imagens"><a href="#Criando-uma-unica-Rede-para-as-suas-Imagens" class="headerlink" title="Criando uma única Rede para as suas Imagens"></a>Criando uma única Rede para as suas Imagens</h3><p>Acesse o terminal e execute o seguinte comando:</p>
 <pre><code>docker network create rede-local-docker
-</code></pre><p>Onde <strong>rede-local-docker</strong> é o nome da sua rede. </p>
+</code></pre><p>Onde <strong>rede-local-docker</strong> é o nome da sua rede.</p>
 <p>Mantenha este nome, para que você não precise editar os arquivos de configuração!</p>
 <h3 id="Criando-um-unico-Servidor-MySQL"><a href="#Criando-um-unico-Servidor-MySQL" class="headerlink" title="Criando um único Servidor MySQL"></a>Criando um único Servidor MySQL</h3><p>Acesse o terminal e execute o comando abaixo, para rodar um container com MySQL na Rede previamente criada:</p>
 <pre><code>docker run --name servidor-mysql --network=rede-local-docker -v ˜/projetos/mysql/data/db:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:5.7
@@ -214,6 +214,10 @@
     <h3>Posts Recentes</h3>
     
         <p>
+            <a href="/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/">Criando cartão SD de Instalação do Raspberry Pi OS</a>
+        </p>
+    
+        <p>
             <a href="/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/">Brave, o navegador com Blockchain e Criptomoedas B</a>
         </p>
     
@@ -227,10 +231,6 @@
     
         <p>
             <a href="/blog/2018/11/25/desfazendo-um-fusion-drive-no-mac/">Desfazendo um Fusion Drive no macOS</a>
-        </p>
-    
-        <p>
-            <a href="/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/">Instalação Limpa do macOS Mojave</a>
         </p>
     
 </div>
