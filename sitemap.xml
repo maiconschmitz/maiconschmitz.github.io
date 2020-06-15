@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/06/15/instalar-raspberry-pi-os-sem-teclado-mouse-monitor/</loc>
+    
+    <lastmod>2020-06-15T01:56:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/</loc>
     
-    <lastmod>2020-06-08T02:36:19.000Z</lastmod>
+    <lastmod>2020-06-15T01:30:09.000Z</lastmod>
     
   </url>
   
@@ -23,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
     
     <lastmod>2020-06-08T02:32:10.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/</loc>
     
     <lastmod>2020-06-08T02:32:10.000Z</lastmod>
     
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
     
     <lastmod>2020-06-08T02:32:04.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
     
     <lastmod>2020-06-08T02:32:04.000Z</lastmod>
     
@@ -135,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
     
     <lastmod>2020-06-08T02:28:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
     
     <lastmod>2020-06-08T02:28:22.000Z</lastmod>
     
@@ -198,6 +205,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -212,21 +226,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/08/24/criando-sd-com-raspbian-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -240,14 +240,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -261,6 +261,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2014/12/29/instalando-o-redis-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -268,14 +275,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/08/24/criando-sd-com-raspbian-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/03/25/instalacao-limpa-do-mountain-lion-com-pendrive/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -289,6 +296,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/03/25/instalacao-limpa-do-mountain-lion-com-pendrive/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -296,7 +310,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -317,6 +331,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -325,20 +346,6 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     

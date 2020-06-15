@@ -17,7 +17,7 @@
     
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Compilando e Instalando o Node.js no CentOS 7"/>
+        <meta property="og:title" content="Instalar Raspberry Pi OS sem teclado, mouse e monitor"/>
     
     <!--Open Graph Description-->
     
@@ -35,7 +35,7 @@
     
     <!-- Title -->
     
-    <title>Compilando e Instalando o Node.js no CentOS 7 - Maicon Schmitz</title>
+    <title>Instalar Raspberry Pi OS sem teclado, mouse e monitor - Maicon Schmitz</title>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
     <!-- Custom Fonts -->
@@ -102,8 +102,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Compilando e Instalando o Node.js no CentOS 7</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">26/08/2014</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Instalar Raspberry Pi OS sem teclado, mouse e monitor</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">15/06/2020</p>
         </div>
     </div>
 
@@ -123,39 +123,52 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/tags/Node-js/">#Node.js</a> <a class="fw3 ph1 dib" href="/tags/CentOS/">#CentOS</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a>
+                                <a class="fw3 ph1 dib" href="/tags/Linux/">#Linux</a> <a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/SD/">#SD</a> <a class="fw3 ph1 dib" href="/tags/Raspbian/">#Raspbian</a> <a class="fw3 ph1 dib" href="/tags/Windows/">#Windows</a> <a class="fw3 ph1 dib" href="/tags/Pendrive/">#Pendrive</a> <a class="fw3 ph1 dib" href="/tags/Raspberry-Pi/">#Raspberry Pi</a> <a class="fw3 ph1 dib" href="/tags/Raspberry-Pi-OS/">#Raspberry Pi OS</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>Para poder compilar e instalar o <strong>Node.js</strong> no CentOS 7, você deverá executar alguns passos.</p>
-<p>Primeiramente, prepare um local para baixar o Node.js.</p>
-<p>Pode ser na sua pasta home:</p>
-<pre><code>$ cd ~
-$ mkdir node
-$ cd node/
-</code></pre><h2 id="Baixe-e-Descompacte-o-Node"><a href="#Baixe-e-Descompacte-o-Node" class="headerlink" title="Baixe e Descompacte o Node"></a>Baixe e Descompacte o Node</h2><pre><code>$ wget http://nodejs.org/dist/v0.10.31/node-v0.10.31.tar.gz
-$ tar xzvf node-v* &amp;&amp; cd node-v*
-</code></pre><p>À título de curiosidade, atualmente a versão estável é a v0.10.31.</p>
-<p>Para poder compilar, será necessário possuir o <strong>GCC</strong>, caso você não o possua instalado, então intale-o:</p>
-<pre><code>$ sudo yum install gcc gcc-c++
-</code></pre><h2 id="Compilando-e-Instalando-o-Node-js"><a href="#Compilando-e-Instalando-o-Node-js" class="headerlink" title="Compilando e Instalando o Node.js"></a>Compilando e Instalando o Node.js</h2><p>Para compilar e instalar o Node, execute a sequência de comandos abaixo:</p>
-<pre><code>$ ./configure
-$ make
-$ sudo make install
-</code></pre><p>Quando o processo de instalação estiver concluído, você poderá verificar se tudo ocorreu normalmente, testando por exemplo, a versão do node que você acabou de instalar.</p>
-<p>Para isto, bastará executar o seguinte comando:</p>
-<pre><code>$ node --version
-</code></pre><p>O qual, neste exemplo, resultou em:</p>
-<pre><code>v0.10.31
-</code></pre><p>Com isto você tem o <strong>Node.js</strong> instalado e pronto para usar.</p>
+                    <p>O processo de instalação do <strong>Raspberry Pi OS</strong> é bastante simples.</p>
+<p>Uma vez que você tenha gravado o cartão SD com o instalador, você deverá inseri-lo na Raspberry, conectar um teclado e mouse às entradas USB, bem como um display (monitor) à entrada HDMI e por fim, bastará ligar a alimentação à entrada Micro USB ou USB-C (dependendo do modelo da sua Raspberry Pi) e pronto.</p>
+<p>Neste momento, a <strong>Raspberry Pi</strong> irá ligar automaticamente e o boot ocorrerá à partir do cartão SD.</p>
+<p>Mas e se você desejar instalar o Raspberry Pi OS em sua Raspberry, sem precisar de um teclado, mouse ou até mesmo um display?</p>
+<h1 id="Instalar-Raspberry-Pi-OS-sem-teclado-mouse-e-monitor"><a href="#Instalar-Raspberry-Pi-OS-sem-teclado-mouse-e-monitor" class="headerlink" title="Instalar Raspberry Pi OS sem teclado, mouse e monitor"></a>Instalar Raspberry Pi OS sem teclado, mouse e monitor</h1><p>Para efetuar a instalação do Raspberry Pi OS sem a necessidade de um teclado, mouse e monitor, você deverá seguir alguns pequenos passos.</p>
+<p>Logo após a gravação do instalador, antes de remover o cartão SD do seu computador, siga com os passos abaixo, de acordo com a sua realidade.</p>
+<p>Após concluídos os passos abaixo, remova o cartão SD do computador, insira-o na Raspberry e conecte o cabo de energia. Se sua Raspberry não possuir conexão WiFi, também será necessário conectar um cabo de rede.</p>
+<h2 id="Habilitando-o-acesso-Remoto-via-SSH"><a href="#Habilitando-o-acesso-Remoto-via-SSH" class="headerlink" title="Habilitando o acesso Remoto via SSH"></a>Habilitando o acesso Remoto via SSH</h2><p>Para efetuar o acesso e a instalação de forma remota, você deverá habilitar o acesso via SSH, que por padrão esta inativo.</p>
+<p>Logo após a gravação da imagem no cartão SD, sem remove-lo do computador, basta acessar a unidade do cartão SD, que possuirá o nome “boot” e então, você deverá criar em sua raiz, um arquivo de nome “<strong>SSH</strong>“, sem extensão, sem conteúdo.</p>
+<p>Para fazer isto no Terminal do macOS, por exemplo, basta acessar o volume:</p>
+<p>cd /Volumes/boot</p>
+<p>E criar o arquivo:</p>
+<p>touch SSH</p>
+<h2 id="Configuracao-do-WiFi"><a href="#Configuracao-do-WiFi" class="headerlink" title="Configuração do WiFi"></a>Configuração do WiFi</h2><p>Para que sua Raspberry Pi conecte-se automaticamente à uma rede WiFi no primeiro boot, você precisará informar as credenciais de acesso em um arquivo apropriado.</p>
+<p>Após a gravação da imagem no cartão SD, sem remove-lo do computador, bastará acessar a unidade do cartão SD, que possuirá o nome “boot” e então, deverá criar em sua raiz, um arquivo de nome “<strong>wpa_supplicant.conf</strong>“.</p>
+<p>Uma vez que tenha criado o arquivo <strong>wpa_supplicant.conf</strong>, abra-o para edição em seu editor de preferência e insira o conteúdo abaixo no mesmo, alterando os pontos adequados.</p>
+<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=&lt;Insira aqui as duas letras correspondentes ao código ISO 3166-1 do seu país&gt;
+
+network={
+  ssid=&quot;&lt;Insira aqui o Nome da sua rede Wireless&gt;&quot;
+  psk=&quot;&lt;Insira aqui a Senha da sua rede Wireless&gt;&quot;
+}
+</code></pre><p>Para saber o código do seu país, você poderá consultar a <a href="https://en.wikipedia.org/wiki/ISO_3166-1" title="Lista ISO 3166-1" target="_blank" rel="noopener">ISO 3166-1</a>.</p>
+<p>Para o <strong>Brasil</strong>, basta preencher com <strong>BR</strong>.</p>
+<h1 id="Conectando-se-a-Raspberry-Pi-via-SSH"><a href="#Conectando-se-a-Raspberry-Pi-via-SSH" class="headerlink" title="Conectando-se à Raspberry Pi via SSH"></a>Conectando-se à Raspberry Pi via SSH</h1><p>Uma vez que sua Raspberry Pi tenha sido ligada, em no máximo 1 minuto, já será possível conectar-se à mesma via SSH.</p>
+<p>Por padrão, o <strong>Raspberry Pi OS</strong> define o nome da sua Raspberry Pi em sua rede local, com o nome <strong>raspberrypi.local</strong>.</p>
+<p>Isto significa que, você poderá disparar um <strong>ping</strong> contra sua <strong>Raspberry</strong>, utilizando o endereço <strong>raspberrypi.local</strong>, como por exemplo:</p>
+<pre><code>ping raspberrypi.local
+</code></pre><p>Para conectar-se via SSH, você deverá utilizar o usuário: <strong>pi</strong> e a senha: <strong>raspberry</strong></p>
+<p>Se você estiver no Linux ou macOS, acesse o terminal e execute:</p>
+<pre><code>ssh raspberrypi.local -l pi
+</code></pre><p>Se você estiver no Windows, poderá utilizar o <a href="https://www.putty.org/" title="Putty" target="_blank" rel="noopener">Putty</a>.</p>
 
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/Node-js/">#Node.js</a> <a class="fw3 ph1 dib" href="/tags/CentOS/">#CentOS</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/Linux/">#Linux</a> <a class="fw3 ph1 dib" href="/tags/SSH/">#SSH</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a> <a class="fw3 ph1 dib" href="/tags/SD/">#SD</a> <a class="fw3 ph1 dib" href="/tags/Raspbian/">#Raspbian</a> <a class="fw3 ph1 dib" href="/tags/Windows/">#Windows</a> <a class="fw3 ph1 dib" href="/tags/Pendrive/">#Pendrive</a> <a class="fw3 ph1 dib" href="/tags/Raspberry-Pi/">#Raspberry Pi</a> <a class="fw3 ph1 dib" href="/tags/Raspberry-Pi-OS/">#Raspberry Pi OS</a>
                         </div>
                     
 

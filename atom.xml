@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maiconschmitz.com.br/"/>
-  <updated>2020-06-08T02:36:19.000Z</updated>
+  <updated>2020-06-15T01:56:02.000Z</updated>
   <id>http://www.maiconschmitz.com.br/</id>
   
   <author>
@@ -17,13 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Instalar Raspberry Pi OS sem teclado, mouse e monitor</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2020/06/15/instalar-raspberry-pi-os-sem-teclado-mouse-monitor/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2020/06/15/instalar-raspberry-pi-os-sem-teclado-mouse-monitor/</id>
+    <published>2020-06-15T12:00:00.000Z</published>
+    <updated>2020-06-15T01:56:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>O processo de instalação do <strong>Raspberry Pi OS</strong> é bastante simples.</p><p>Uma vez que você tenha gravado o cartão SD com o instalador, você deverá inseri-lo na Raspberry, conectar um teclado e mouse às entradas USB, bem como um display (monitor) à entrada HDMI e por fim, bastará ligar a alimentação à entrada Micro USB ou USB-C (dependendo do modelo da sua Raspberry Pi) e pronto.</p><p>Neste momento, a <strong>Raspberry Pi</strong> irá ligar automaticamente e o boot ocorrerá à partir do cartão SD.</p><p>Mas e se você desejar instalar o Raspberry Pi OS em sua Raspberry, sem precisar de um teclado, mouse ou até mesmo um display?</p><h1 id="Instalar-Raspberry-Pi-OS-sem-teclado-mouse-e-monitor"><a href="#Instalar-Raspberry-Pi-OS-sem-teclado-mouse-e-monitor" class="headerlink" title="Instalar Raspberry Pi OS sem teclado, mouse e monitor"></a>Instalar Raspberry Pi OS sem teclado, mouse e monitor</h1><p>Para efetuar a instalação do Raspberry Pi OS sem a necessidade de um teclado, mouse e monitor, você deverá seguir alguns pequenos passos.</p><p>Logo após a gravação do instalador, antes de remover o cartão SD do seu computador, siga com os passos abaixo, de acordo com a sua realidade.</p><p>Após concluídos os passos abaixo, remova o cartão SD do computador, insira-o na Raspberry e conecte o cabo de energia. Se sua Raspberry não possuir conexão WiFi, também será necessário conectar um cabo de rede.</p><h2 id="Habilitando-o-acesso-Remoto-via-SSH"><a href="#Habilitando-o-acesso-Remoto-via-SSH" class="headerlink" title="Habilitando o acesso Remoto via SSH"></a>Habilitando o acesso Remoto via SSH</h2><p>Para efetuar o acesso e a instalação de forma remota, você deverá habilitar o acesso via SSH, que por padrão esta inativo.</p><p>Logo após a gravação da imagem no cartão SD, sem remove-lo do computador, basta acessar a unidade do cartão SD, que possuirá o nome “boot” e então, você deverá criar em sua raiz, um arquivo de nome “<strong>SSH</strong>“, sem extensão, sem conteúdo.</p><p>Para fazer isto no Terminal do macOS, por exemplo, basta acessar o volume:</p><p>cd /Volumes/boot</p><p>E criar o arquivo:</p><p>touch SSH</p><h2 id="Configuracao-do-WiFi"><a href="#Configuracao-do-WiFi" class="headerlink" title="Configuração do WiFi"></a>Configuração do WiFi</h2><p>Para que sua Raspberry Pi conecte-se automaticamente à uma rede WiFi no primeiro boot, você precisará informar as credenciais de acesso em um arquivo apropriado.</p><p>Após a gravação da imagem no cartão SD, sem remove-lo do computador, bastará acessar a unidade do cartão SD, que possuirá o nome “boot” e então, deverá criar em sua raiz, um arquivo de nome “<strong>wpa_supplicant.conf</strong>“.</p><p>Uma vez que tenha criado o arquivo <strong>wpa_supplicant.conf</strong>, abra-o para edição em seu editor de preferência e insira o conteúdo abaixo no mesmo, alterando os pontos adequados.</p><pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1country=&lt;Insira aqui as duas letras correspondentes ao código ISO 3166-1 do seu país&gt;network={  ssid=&quot;&lt;Insira aqui o Nome da sua rede Wireless&gt;&quot;  psk=&quot;&lt;Insira aqui a Senha da sua rede Wireless&gt;&quot;}</code></pre><p>Para saber o código do seu país, você poderá consultar a <a href="https://en.wikipedia.org/wiki/ISO_3166-1" title="Lista ISO 3166-1" target="_blank" rel="noopener">ISO 3166-1</a>.</p><p>Para o <strong>Brasil</strong>, basta preencher com <strong>BR</strong>.</p><h1 id="Conectando-se-a-Raspberry-Pi-via-SSH"><a href="#Conectando-se-a-Raspberry-Pi-via-SSH" class="headerlink" title="Conectando-se à Raspberry Pi via SSH"></a>Conectando-se à Raspberry Pi via SSH</h1><p>Uma vez que sua Raspberry Pi tenha sido ligada, em no máximo 1 minuto, já será possível conectar-se à mesma via SSH.</p><p>Por padrão, o <strong>Raspberry Pi OS</strong> define o nome da sua Raspberry Pi em sua rede local, com o nome <strong>raspberrypi.local</strong>.</p><p>Isto significa que, você poderá disparar um <strong>ping</strong> contra sua <strong>Raspberry</strong>, utilizando o endereço <strong>raspberrypi.local</strong>, como por exemplo:</p><pre><code>ping raspberrypi.local</code></pre><p>Para conectar-se via SSH, você deverá utilizar o usuário: <strong>pi</strong> e a senha: <strong>raspberry</strong></p><p>Se você estiver no Linux ou macOS, acesse o terminal e execute:</p><pre><code>ssh raspberrypi.local -l pi</code></pre><p>Se você estiver no Windows, poderá utilizar o <a href="https://www.putty.org/" title="Putty" target="_blank" rel="noopener">Putty</a>.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O processo de instalação do &lt;strong&gt;Raspberry Pi OS&lt;/strong&gt; é bastante simples.&lt;/p&gt;
+&lt;p&gt;Uma vez que você tenha gravado o cartão SD com o 
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Linux" scheme="http://www.maiconschmitz.com.br/tags/Linux/"/>
+    
+      <category term="SSH" scheme="http://www.maiconschmitz.com.br/tags/SSH/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="SD" scheme="http://www.maiconschmitz.com.br/tags/SD/"/>
+    
+      <category term="Raspbian" scheme="http://www.maiconschmitz.com.br/tags/Raspbian/"/>
+    
+      <category term="Windows" scheme="http://www.maiconschmitz.com.br/tags/Windows/"/>
+    
+      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
+    
+      <category term="Raspberry Pi" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Pi/"/>
+    
+      <category term="Raspberry Pi OS" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Pi-OS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Criando cartão SD de Instalação do Raspberry Pi OS no macOS, Linux e Windows</title>
     <link href="http://www.maiconschmitz.com.br/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/"/>
     <id>http://www.maiconschmitz.com.br/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/</id>
     <published>2020-06-08T12:00:00.000Z</published>
-    <updated>2020-06-08T02:36:19.000Z</updated>
+    <updated>2020-06-15T01:30:09.000Z</updated>
     
-    <content type="html"><![CDATA[<p>O <strong>Raspberry Pi</strong> dispensa apresentações, mas basicamente é um mini computador com arquitetura <strong>ARM</strong>, composto por um hardware que integra tudo em um única placa, que à depender das suas versões, possui conexão de Audio, HDMI, USB, SD, Ethernet, GPIO, dentre outras.</p><p>De tamanho diminuto, comparável ao tamanho de um cartão de crédito, ou até mesmo menor, na versão Raspberry Pi Zero/W.</p><p>Diversos são os sistemas operacionais disponíveis para o Raspberry Pi, tais como o Ubuntu, OSMC, Mozilla WebThings, RISC OS e o agora oficial Raspberry Pi OS.</p><p>O Raspberry Pi OS é a versão oficial do sistema operacional do Raspberry Pi, sendo até o momento, compatível apenas com 32bits, mas é claro, por pouco tempo, visto que esforços estão sendo aplicados, para compatibiliza-lo com 64bits, o que irá possibilitar um maior aproveitamento da memória RAM (endereçamento acima de 3 GB), importante principalmente para a nova Raspberry Pi 4, que recentemente recebeu uma atualização, que em uma de suas versões que passa à vir equipada com 8GB de RAM.</p><p>Acessando o site da <a href="https://www.raspberrypi.org/downloads/" title="https://www.raspberrypi.org" target="_blank" rel="noopener">https://www.raspberrypi.org</a>, é possível baixar na seção <a href="https://www.raspberrypi.org/downloads/" title="Download Raspbian" target="_blank" rel="noopener">Downloads</a>, a última versão do Raspberry Pi OS, o qual anteriormente era conhecido por Raspbian e que estava em sua versão Buster.</p><h2 id="Criando-o-cartao-SD"><a href="#Criando-o-cartao-SD" class="headerlink" title="Criando o cartão SD"></a>Criando o cartão SD</h2><p>O <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, é um softwate <a href="https://github.com/balena-io/etcher" title="https://github.com/balena-io/etcher" target="_blank" rel="noopener">OpenSource</a>, multiplataforma (macOS, Linux e Windows), que permite efetuar a gravação de imagens em cartões SD e Drives USB de forma bastante rápida, simples e intuitiva.</p><p>Após baixar e executar o <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, bastará selecionar a imagem anteriormente baixada do site da Raspberry Pi. Não é preciso descompactar a imagem e inclusive é possível apenas informar uma URL para a imagem.</p><p>Uma vez que a gravação da imagem estiver concluída, é possível partir para a instalação.</p><h3 id="Alternativa-ao-Etcher"><a href="#Alternativa-ao-Etcher" class="headerlink" title="Alternativa ao Etcher"></a>Alternativa ao Etcher</h3><p>Uma alternativo ao <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, é que é possível de ser executada via linha de comando, seja no macOS ou Linux, é através do comando <strong>dd</strong>.</p><p>Se quiser saber mais, sobre como instalar desta forma, poderá ler o artigo <a href="https://www.maiconschmitz.com.br/blog/2015/08/24/criando-sd-com-raspbian-no-mac-os-x/">Criando cartão SD com Raspbian no Mac OS X</a>.</p>]]></content>
+    <content type="html"><![CDATA[<p>O <strong>Raspberry Pi</strong> dispensa apresentações, mas basicamente é um mini computador com arquitetura <strong>ARM</strong>, composto por um hardware que integra tudo em um única placa, que à depender das suas versões, possui conexão de Audio, HDMI, USB, SD, Ethernet, GPIO, dentre outras.</p><p>De tamanho diminuto, comparável ao tamanho de um cartão de crédito, ou até mesmo menor, na versão Raspberry Pi Zero/W.</p><p>Diversos são os sistemas operacionais disponíveis para o Raspberry Pi, tais como o Ubuntu, OSMC, Mozilla WebThings, RISC OS e o agora oficial Raspberry Pi OS.</p><p>O Raspberry Pi OS é a versão oficial do sistema operacional do Raspberry Pi, sendo até o momento, compatível apenas com 32bits, mas é claro, por pouco tempo, visto que esforços estão sendo aplicados, para compatibiliza-lo com 64bits, o que irá possibilitar um maior aproveitamento da memória RAM (endereçamento acima de 3 GB), importante principalmente para a nova Raspberry Pi 4, que recentemente recebeu uma atualização, que em uma de suas versões que passa à vir equipada com 8GB de RAM.</p><p>Acessando o site da <a href="https://www.raspberrypi.org/downloads/" title="https://www.raspberrypi.org" target="_blank" rel="noopener">https://www.raspberrypi.org</a>, é possível baixar na seção <a href="https://www.raspberrypi.org/downloads/" title="Download Raspberry Pi OS" target="_blank" rel="noopener">Downloads</a>, a última versão do Raspberry Pi OS, o qual anteriormente era conhecido por Raspbian e que estava em sua versão Buster.</p><h2 id="Criando-o-cartao-SD"><a href="#Criando-o-cartao-SD" class="headerlink" title="Criando o cartão SD"></a>Criando o cartão SD</h2><p>O <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, é um softwate <a href="https://github.com/balena-io/etcher" title="https://github.com/balena-io/etcher" target="_blank" rel="noopener">OpenSource</a>, multiplataforma (macOS, Linux e Windows), que permite efetuar a gravação de imagens em cartões SD e Drives USB de forma bastante rápida, simples e intuitiva.</p><p>Após baixar e executar o <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, bastará selecionar a imagem anteriormente baixada do site da Raspberry Pi. Não é preciso descompactar a imagem e inclusive é possível apenas informar uma URL para a imagem.</p><p>Uma vez que a gravação da imagem estiver concluída, é possível partir para a instalação.</p><h3 id="Alternativa-ao-Etcher"><a href="#Alternativa-ao-Etcher" class="headerlink" title="Alternativa ao Etcher"></a>Alternativa ao Etcher</h3><p>Uma alternativo ao <a href="https://www.balena.io/etcher/" title="https://www.balena.io/etcher/" target="_blank" rel="noopener">Etcher</a>, é que é possível de ser executada via linha de comando, seja no macOS ou Linux, é através do comando <strong>dd</strong>.</p><p>Se quiser saber mais, sobre como instalar desta forma, poderá ler o artigo <a href="https://www.maiconschmitz.com.br/blog/2015/08/24/criando-sd-com-raspbian-no-mac-os-x/">Criando cartão SD com Raspbian no Mac OS X</a>.</p>]]></content>
     
     <summary type="html">
     
@@ -45,13 +87,13 @@
     
       <category term="SD" scheme="http://www.maiconschmitz.com.br/tags/SD/"/>
     
-      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
-    
-      <category term="Raspberry Py" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Py/"/>
-    
       <category term="Raspbian" scheme="http://www.maiconschmitz.com.br/tags/Raspbian/"/>
     
       <category term="Windows" scheme="http://www.maiconschmitz.com.br/tags/Windows/"/>
+    
+      <category term="Pendrive" scheme="http://www.maiconschmitz.com.br/tags/Pendrive/"/>
+    
+      <category term="Raspberry Pi" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Pi/"/>
     
       <category term="Raspberry Pi OS" scheme="http://www.maiconschmitz.com.br/tags/Raspberry-Pi-OS/"/>
     
@@ -528,9 +570,9 @@
     </summary>
     
     
-      <category term="Ruby" scheme="http://www.maiconschmitz.com.br/tags/Ruby/"/>
-    
       <category term="Node.js" scheme="http://www.maiconschmitz.com.br/tags/Node-js/"/>
+    
+      <category term="Ruby" scheme="http://www.maiconschmitz.com.br/tags/Ruby/"/>
     
       <category term="Site" scheme="http://www.maiconschmitz.com.br/tags/Site/"/>
     
@@ -639,31 +681,6 @@
       <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
     
       <category term="HD" scheme="http://www.maiconschmitz.com.br/tags/HD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gerando QR Code de uma URL no Google Chrome</title>
-    <link href="http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/"/>
-    <id>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</id>
-    <published>2017-03-30T23:30:10.000Z</published>
-    <updated>2020-06-08T02:32:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Códigos QR (QR Codes) já não são uma novidade e talvez nem sejam tão utilizados quanto o esperado, mas existem casos em que quando bem aplicados, ajudam e facilitam diversas tarefas, como publicar dados de acesso à uma rede Wi-Fi (mentira) e tornar URL’s mais faceis de serem acessadas em dispositivos móveis.</p><p>Foi pensando em tornar o acesso às URL’s mais fácil em dispositivos móveis, que o QRCode URL foi criado.<br>A idéia que motivou a criação de tal extensão, foi a possibilidade de simplificar o acesso à URL’s mais longas e complexas, como por exemplo, de páginas em desenvolvimento, em dispositivos móveis, para fins de teste de desenvolvimento.</p><h2 id="QRCode-URL"><a href="#QRCode-URL" class="headerlink" title="QRCode URL"></a>QRCode URL</h2><p>O QRCode URL é uma extensão para o navegado Google Chrome, que lhe permite gerar um Código QR (QR Code) a partir da URL que se encontra atualmente aberta no navegador.<br>Isto lhe permite acessar esta URL rapidamente a partir de outros dispositivos munidos de uma câmera e um aplicativo leitor de Códigos QR.</p><p>Esta extensão é extremamente simples, funciona de modo offline e nenhum dado é enviado para a nuvem.</p><p>Publicada originalmente em sua versão 0.0.0.2, em 30 de março de 2017.</p><p>Caso seja de seu interesse, você pode efetuar o <a href="https://goo.gl/jLk9hk" target="_blank" rel="noopener">Download da Extensão QRCode URL</a> para o seu Google Chrome.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Códigos QR (QR Codes) já não são uma novidade e talvez nem sejam tão utilizados quanto o esperado, mas existem casos em que quando bem ap
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
-    
-    
-      <category term="QR Code" scheme="http://www.maiconschmitz.com.br/tags/QR-Code/"/>
     
   </entry>
   
