@@ -11,7 +11,7 @@ tags:
 - Windows
 - Pendrive
 - SD
-- Raspberry Py
+- Raspberry Pi
 - Raspbian
 - Raspberry Pi OS
 status: publish
@@ -27,7 +27,7 @@ Diversos são os sistemas operacionais disponíveis para o Raspberry Pi, tais co
 
 O Raspberry Pi OS é a versão oficial do sistema operacional do Raspberry Pi, sendo até o momento, compatível apenas com 32bits, mas é claro, por pouco tempo, visto que esforços estão sendo aplicados, para compatibiliza-lo com 64bits, o que irá possibilitar um maior aproveitamento da memória RAM (endereçamento acima de 3 GB), importante principalmente para a nova Raspberry Pi 4, que recentemente recebeu uma atualização, que em uma de suas versões que passa à vir equipada com 8GB de RAM.
 
-Acessando o site da [https://www.raspberrypi.org](https://www.raspberrypi.org/downloads/ "https://www.raspberrypi.org"), é possível baixar na seção [Downloads](https://www.raspberrypi.org/downloads/ "Download Raspbian"), a última versão do Raspberry Pi OS, o qual anteriormente era conhecido por Raspbian e que estava em sua versão Buster.
+Acessando o site da [https://www.raspberrypi.org](https://www.raspberrypi.org/downloads/ "https://www.raspberrypi.org"), é possível baixar na seção [Downloads](https://www.raspberrypi.org/downloads/ "Download Raspberry Pi OS"), a última versão do Raspberry Pi OS, o qual anteriormente era conhecido por Raspbian e que estava em sua versão Buster.
 
 
 ## Criando o cartão SD
