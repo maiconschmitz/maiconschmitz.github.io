@@ -5,7 +5,6 @@ date: 2020-06-15 06:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
-- MAC OS X
 - macOS
 - Linux
 - Windows
@@ -14,6 +13,7 @@ tags:
 - Raspberry Pi
 - Raspbian
 - Raspberry Pi OS
+- SSH
 status: publish
 type: post
 published: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assistindo vídeos em modo PIP no macOS Sierra
+title: Assistindo vídeos em modo PiP no macOS Sierra
 date: 2017-08-12 15:00:00.000000000 -03:00
 categories:
 - Blog
@@ -8,13 +8,13 @@ tags:
 - macOS
 - Netflix
 - YouTube
-- PIP
+- PiP
 status: publish
 type: post
 published: true
 ---
 
-O modo **PIP**, ou **Picture in Picture**, é um recurso que lhe possibilita assistir à uma segunda imagem em uma pequena janela, na sua tela atual.
+O modo **PiP**, ou **Picture in Picture**, é um recurso que lhe possibilita assistir à uma segunda imagem em uma pequena janela, na sua tela atual.
 
 Popular e disponível em Smart TVs mais modernas, onde é possível assistir à uma transmissão de TV aberta em uma pequena janela, enquanto assiste à algo na "tela grande", vindo da HDMI ou vice-versa.
 
@@ -24,26 +24,26 @@ Com este recurso, é possível desacoplar a transmissão de um vídeo do YouTube
 
 ## Assistindo vídeo em uma tela em separado
 
-Para utilizar o modo **PIP** nativo do macOS, não é necessário instalar absolutamente nada!
+Para utilizar o modo **PiP** nativo do macOS, não é necessário instalar absolutamente nada!
 
 Uma vez que a sua nova tela esteja aberta, você poderá:
 * Ajusta o tamanho da janela (limitado à um tamanho mínimo e máximo)
-* Posicionar a janela do PIP em um dos 4 cantos da sua tela
+* Posicionar a janela do PiP em um dos 4 cantos da sua tela
 
-### Assistindo YouTube em modo PIP no macOS Sierra
+### Assistindo YouTube em modo PiP no macOS Sierra
 
-Para ativar o PIP, enquanto assiste à um vídeo do YouTube, faça o seguinte:
+Para ativar o PiP, enquanto assiste à um vídeo do YouTube, faça o seguinte:
 * Clique com o botão direito do Magic Mouse/Trackpad sobre a área do vídeo.
 * Neste momento, um menu de contexto do próprio YouTube é aberto, **não acesse este menu** e pressione uma segunda vez o botão direito do Magic Mouse/Trackpad.
-* Novo menu que se abre, basta selecionar a opção "Entrar no Modo PIP"
+* Novo menu que se abre, basta selecionar a opção "Entrar no Modo PiP"
 
 Simples assim.
 
-### Assistindo Netflix em modo PIP no macOS Sierra
+### Assistindo Netflix em modo PiP no macOS Sierra
 
-Infelizmente o modo PIP não esta disponível nativamente em todos os tipos de transmissões de Vídeo.
+Infelizmente o modo PiP não esta disponível nativamente em todos os tipos de transmissões de Vídeo.
 É ai que entra uma segunda opção, que é a utilização da Extensão para Safari chamada **PiPifier**.
-Com o PiPifier, você poderá assistir à todo e qualquer vídeo compatível com **HTML 5**, que ainda não suporte o modo PIP nativo do macOS.
+Com o PiPifier, você poderá assistir à todo e qualquer vídeo compatível com **HTML 5**, que ainda não suporte o modo PiP nativo do macOS.
 
 ### Instalando o PiPifier
 
