@@ -139,10 +139,10 @@
 <h2 id="Habilitando-o-acesso-Remoto-via-SSH"><a href="#Habilitando-o-acesso-Remoto-via-SSH" class="headerlink" title="Habilitando o acesso Remoto via SSH"></a>Habilitando o acesso Remoto via SSH</h2><p>Para efetuar o acesso e a instalação de forma remota, você deverá habilitar o acesso via SSH, que por padrão esta inativo.</p>
 <p>Logo após a gravação da imagem no cartão SD, sem remove-lo do computador, basta acessar a unidade do cartão SD, que possuirá o nome “boot” e então, você deverá criar em sua raiz, um arquivo de nome “<strong>SSH</strong>“, sem extensão, sem conteúdo.</p>
 <p>Para fazer isto no Terminal do macOS, por exemplo, basta acessar o volume:</p>
-<p>cd /Volumes/boot</p>
-<p>E criar o arquivo:</p>
-<p>touch SSH</p>
-<h2 id="Configuracao-do-WiFi"><a href="#Configuracao-do-WiFi" class="headerlink" title="Configuração do WiFi"></a>Configuração do WiFi</h2><p>Para que sua Raspberry Pi conecte-se automaticamente à uma rede WiFi no primeiro boot, você precisará informar as credenciais de acesso em um arquivo apropriado.</p>
+<pre><code>cd /Volumes/boot
+</code></pre><p>E criar o arquivo:</p>
+<pre><code>touch SSH
+</code></pre><h2 id="Configuracao-do-WiFi"><a href="#Configuracao-do-WiFi" class="headerlink" title="Configuração do WiFi"></a>Configuração do WiFi</h2><p>Para que sua Raspberry Pi conecte-se automaticamente à uma rede WiFi no primeiro boot, você precisará informar as credenciais de acesso em um arquivo apropriado.</p>
 <p>Após a gravação da imagem no cartão SD, sem remove-lo do computador, bastará acessar a unidade do cartão SD, que possuirá o nome “boot” e então, deverá criar em sua raiz, um arquivo de nome “<strong>wpa_supplicant.conf</strong>“.</p>
 <p>Uma vez que tenha criado o arquivo <strong>wpa_supplicant.conf</strong>, abra-o para edição em seu editor de preferência e insira o conteúdo abaixo no mesmo, alterando os pontos adequados.</p>
 <pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -220,6 +220,10 @@ network={
     <h3>Posts Recentes</h3>
     
         <p>
+            <a href="/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/">Gerenciando multiplas versões do Node.js no macOS </a>
+        </p>
+    
+        <p>
             <a href="/blog/2020/06/27/assistindo-videos-em-modo-pip-no-macos-e-windows/">Assistindo à vídeos do Browser em modo PiP no macO</a>
         </p>
     
@@ -233,10 +237,6 @@ network={
     
         <p>
             <a href="/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/">Brave, o navegador com Blockchain e Criptomoedas B</a>
-        </p>
-    
-        <p>
-            <a href="/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/">Terminal colorido no macOS com ZSH</a>
         </p>
     
 </div>

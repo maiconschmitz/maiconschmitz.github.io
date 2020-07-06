@@ -17,7 +17,7 @@
     
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Instalação Limpa do macOS Sierra"/>
+        <meta property="og:title" content="Gerenciando multiplas versões do Node.js no macOS com o NVM"/>
     
     <!--Open Graph Description-->
     
@@ -35,7 +35,7 @@
     
     <!-- Title -->
     
-    <title>Instalação Limpa do macOS Sierra - Maicon Schmitz</title>
+    <title>Gerenciando multiplas versões do Node.js no macOS com o NVM - Maicon Schmitz</title>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
     <!-- Custom Fonts -->
@@ -102,8 +102,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Instalação Limpa do macOS Sierra</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">02/06/2017</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Gerenciando multiplas versões do Node.js no macOS com o NVM</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">06/07/2020</p>
         </div>
     </div>
 
@@ -123,60 +123,40 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a>
+                                <a class="fw3 ph1 dib" href="/tags/Node-js/">#Node.js</a> <a class="fw3 ph1 dib" href="/tags/npm/">#npm</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>Neste procedimento, irei detalhar como efetuar a instalação limpa do macOS Sierra.</p>
-<p>Com o OS X/macOS ainda em funcionamento, efetue o download da Instalação do <strong>macOS Sierra</strong> através da <strong>Mac App Store</strong>.</p>
-<p>Quando o download estiver concluído, cancele o processo de instalação.</p>
-<p>Conecte um Disco, PenDrive ou Cartão SD, de no mínimo 8 GB ao Mac.</p>
-<p>Acesse o “Utilitário de Disco” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p>
-<p>Estando no “Utilitário de Disco”, selecione o Dispositivo, na lista de Drives e clique sobre a aba “Apagar”.</p>
-<p>Em “Formato” selecione a opção “Mac OS Expandido (Reg. Cronológico)” e em “Nome”, defina o nome para “MACOS”.</p>
-<p>Feito isto, clique no botão “Apagar…”.</p>
-<p>Quando a formatação estiver concluída, feche o “Utilitário de Disco”.</p>
-<p>Acesse o “Terminal” pelo <strong>Spotlight</strong> ou através do diretório “/Applications/“.</p>
-<p>Execute o seguinte comando:</p>
-<pre><code>sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MACOS --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction
-</code></pre><p>O processo de cópia será efetuado e a seguinte mensagem será exibida:</p>
-<pre><code>Erasing Disk: 0%... 10%... 20%... 30%...100%...
-Copying installer files to disk...
-Copy complete.
-Making disk bootable...
-Copying boot files...
-Copy complete.
-Done.
-</code></pre><h2 id="Hora-da-Instalacao"><a href="#Hora-da-Instalacao" class="headerlink" title="Hora da Instalação"></a>Hora da Instalação</h2><p>Com o Dispositivo conectado ao Mac, reinicie, ou ligue-o, mantendo a tecla “Option” pressionada.</p>
-<p>Após o carregamento, deverá ser exibida uma “lista”, na qual você deverá selecionar o dispositivo para o qual copiou a instalação.</p>
-<p>Deste ponto em diante, você possui duas opções:</p>
-<ul>
-<li>Instalar o macOS</li>
-<li>Reinstalar o macOS</li>
-</ul>
-<p>Os processos de Instalar e Reinstalar o macOS, são praticamente os mesmos, com a diferença de a reinstalação manter seus arquivos, programas e algumas configuração, enquanto a instalação limpa, obviamente irá lhe obrigar à reconfigurar e instalar novamente todos os seus programas, serviços, etc…</p>
-<h2 id="Instalar-o-macOS"><a href="#Instalar-o-macOS" class="headerlink" title="Instalar o macOS"></a>Instalar o macOS</h2><h3 id="Instalacao-Limpa-do-macOS"><a href="#Instalacao-Limpa-do-macOS" class="headerlink" title="Instalaçao Limpa do macOS"></a>Instalaçao Limpa do macOS</h3><ul>
-<li>Selecione o “Utilitário de Disco” e escolha a opção “Continuar”.</li>
-<li>Selecione o “Disco Principal” e clique na opção “Apagar”, no topo da janela.<ul>
-<li>Defina um nome para o Disco, exemplo: “Sierra”</li>
-<li>Em Formato, mantenha a opção: “OS X Expandido (Reg. Cronológico)”</li>
-<li>E em Esquema, mantenha “Mapa de Partição GUID”.</li>
-<li>Confirme as opções acima, clicando em “Apagar”.</li>
-</ul>
-</li>
-<li>Aguarde e conclusão do processo.</li>
-<li>Feche o “Utilitário de Disco”.</li>
-<li>Prossiga com uma instalação do zero…</li>
-</ul>
-<h2 id="Reinstalar-o-macOS"><a href="#Reinstalar-o-macOS" class="headerlink" title="Reinstalar o macOS"></a>Reinstalar o macOS</h2><p>Bastará selecionar a opção “Reinstalar macOS” e escolher a opção “Continuar”.</p>
+                    <p>O Node Version Manager (NVM), é um ferramenta que permite gerenciar multiplas versões do <strong>Node.js</strong>, em seu sistema operacional.</p>
+<p>Independentemente da forma como o <strong>Node.js</strong> foi instalado inicialmente, é possível fazer uso do <strong>nvm</strong>, para passar a gerenciar as atualizações e instalações de outras versões do mesmo.</p>
+<p>Especialmente útil, quando você precisa testar e rodar aplicações em diferentes versões do <strong>Node.js</strong>, seja ele tendo sido instalado via algum gerenciador de pacotes, ou até mesmo compilado à partir dos fontes.</p>
+<h2 id="Instalando-o-NVM"><a href="#Instalando-o-NVM" class="headerlink" title="Instalando o NVM"></a>Instalando o NVM</h2><p>Primeiramente, você deve instalar o <strong>NVM</strong> através do <strong>Brew</strong>:</p>
+<pre><code>brew install nvm
+</code></pre><p>Se você nunca utilizou o <strong>Brew</strong>, você pode saber mais sobre ele em: <a href="https://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew/">Instalando o gerenciador de pacotes Brew</a>.</p>
+<p>Após a instalação, você deve atualizar o seu profile (.profile, .zshrc ou .zprofile).<br>Para isto, execute:</p>
+<pre><code>export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+</code></pre><p>Para verificar se a instalação ocorreu normalmente, você pode checar a versão do nvm com o comando:</p>
+<pre><code>nvm --version
+</code></pre><h2 id="Instalando-uma-versao-do-Node-js-com-o-NVM"><a href="#Instalando-uma-versao-do-Node-js-com-o-NVM" class="headerlink" title="Instalando uma versão do Node.js com o NVM"></a>Instalando uma versão do Node.js com o NVM</h2><p>Agora que NVM esta instalado e acessível, você pode listar as versões disponíveis, executando:</p>
+<pre><code>nvm ls-remote
+</code></pre><p>Assim, uma lista de versões lhe será apresentada.</p>
+<p>Neste momento, recomenda-se que seja instalado o <strong>Node.js Erbium</strong>.</p>
+<p>Portanto, execute:</p>
+<pre><code>nvm install --lts=Erbium
+</code></pre><p>Após a instalação, você pode checar a versão do Node.js que esta instalada, com:</p>
+<pre><code>nvm ls
+</code></pre><p>Por fim, você pode definir a versão atual, como a versão padrão (global), executando:</p>
+<pre><code>nvm use default
+</code></pre><p>Com isto você tem o <strong>Node.js</strong> instalado na versão desejada.</p>
 
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/Node-js/">#Node.js</a> <a class="fw3 ph1 dib" href="/tags/npm/">#npm</a>
                         </div>
                     
 
