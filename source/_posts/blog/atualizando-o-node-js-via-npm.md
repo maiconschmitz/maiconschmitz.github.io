@@ -22,24 +22,24 @@ Os passos para atualizar o **Node.js** são extremamente simples e são exemplif
 
 Primeiramente, iremos verificar a versão do **Node.js**, executando:
 
-	$ node -v
+	node -v
 
 ## Partindo para a atualização propriamente dita
 
 Execute a seguinte sequência de comandos:
 
-	$ sudo npm cache clean -f
-	$ sudo npm install -g n
+	sudo npm cache clean -f
+	sudo npm install -g n
 
 Agora, para atualizar o **Node.js**, você tem duas opções:
 
 Pode escolher istalar o **Node.js** na sua versão mais atual e estável, executando:
 
-	$ sudo n stable
+	sudo n stable
 
 Ou pode istalar o **Node.js** em uma versão mais específica, neste exemplo, a versão 0.11.x.
 Para isto, basta executar:
 
-	$ sudo n 0.11
+	sudo n 0.11
 
 Com isto você tem o **Node.js** atualizado na versão desejada.

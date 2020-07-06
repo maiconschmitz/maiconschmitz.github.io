@@ -43,11 +43,11 @@ Logo após a gravação da imagem no cartão SD, sem remove-lo do computador, ba
 
 Para fazer isto no Terminal do macOS, por exemplo, basta acessar o volume:
 
-cd /Volumes/boot
+    cd /Volumes/boot
 
 E criar o arquivo:
 
-touch SSH
+    touch SSH
 
 ## Configuração do WiFi
 
