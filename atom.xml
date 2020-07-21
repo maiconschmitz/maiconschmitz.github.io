@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maiconschmitz.com.br/"/>
-  <updated>2020-07-06T04:03:06.000Z</updated>
+  <updated>2020-07-21T01:21:16.000Z</updated>
   <id>http://www.maiconschmitz.com.br/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Rodando e monitorando aplicações Node.js com PM2</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2020/07/21/rodando-e-monitorando-aplicacoes-nodejs-com-pm2/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2020/07/21/rodando-e-monitorando-aplicacoes-nodejs-com-pm2/</id>
+    <published>2020-07-21T04:00:00.000Z</published>
+    <updated>2020-07-21T01:21:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>O <strong>PM2</strong> é um gerenciador de processos, que irá lhe ajudar à gerenciar e manter sua aplicação sempre online.</p><p>Largamente utilizado para o gerenciamento de aplicações <strong>Node.js</strong>, para o qual possui inclusive, um controle mais apurado, como por exemplo o gerenciamento e a execução da aplicação em modo <strong>cluster</strong>.</p><p>No entanto, ele pode ser utilizado também para gerenciar de uma forma mais simples, aplicações escritas em outras linguagens, seja interpretadas ou compiladas, como <strong>Python</strong> e <strong>GO</strong>, por exemplo.</p><h2 id="Instalando-o-PM2"><a href="#Instalando-o-PM2" class="headerlink" title="Instalando o PM2"></a>Instalando o PM2</h2><p>Primeiramente, você deve instalar o <strong>PM2</strong> de forma global, através do comando:</p><pre><code>npm install pm2@latest -g</code></pre><h2 id="Registrando-e-ou-iniciando-um-processo-com-o-PM2"><a href="#Registrando-e-ou-iniciando-um-processo-com-o-PM2" class="headerlink" title="Registrando e/ou iniciando um processo com o PM2"></a>Registrando e/ou iniciando um processo com o PM2</h2><p>Com o <strong>PM2</strong> instalado, vamos partir para a execução do seu processo.</p><p>De forma semelhante à qual você rodaria a sua aplicação, seja com um “npm start” ou através da execução direta do seu script de entrada, <s>normalmente index.js</s>.</p><p>O PM2 também possui um comando “start” e este serve tanto para registrar, quanto para iniciar um processo que já tenha sido “registrado” no PM2 anteriormente.</p><p>Em nosso exemplo, o script inicial da aplicação, será o entrypoint.js.</p><p>Logo, para executar a aplicação, deve-se executar o comando:</p><pre><code>pm2 start entrypoint.js</code></pre><h3 id="Definindo-um-nome-para-a-aplicacao"><a href="#Definindo-um-nome-para-a-aplicacao" class="headerlink" title="Definindo um nome para a aplicação"></a>Definindo um nome para a aplicação</h3><p>É possível definir um nome para o processo, passando o parâmetro “–name NOME”, onde NOME é o nome à ser dado para a aplicação.</p><p>Em nosso exemplo, vamos nomear nossa aplicação como “API”:</p><pre><code>pm2 start entrypoint.js --name API</code></pre><p>Neste caso, todos os comandos subsequentes poderão ser executados usando o nome da aplicação, devendo-se substituir “entrypoint.js” por “API”.</p><p>Exemplo:</p><pre><code>pm2 start API</code></pre><p>Mas não se esqueça, a primeira execução deverá ser completa, como por exemplo:</p><pre><code>pm2 start entrypoint.js --name API</code></pre><h3 id="Recarregar-ao-atualizar"><a href="#Recarregar-ao-atualizar" class="headerlink" title="Recarregar ao atualizar"></a>Recarregar ao atualizar</h3><p>Se você desejar que a aplicação seja recarregada, sempre que houver uma atualização do seu conteúdo (hot reload), de forma semelhante ao que o <strong>nodemon</strong> faz, então você deverá roda-la com o parâmetro “–watch”.</p><p>Exemplo:</p><pre><code>pm2 start entrypoint.js --name API --watch</code></pre><h2 id="Reiniciando-um-processo"><a href="#Reiniciando-um-processo" class="headerlink" title="Reiniciando um processo"></a>Reiniciando um processo</h2><p>Se você não deseja utilizar o parâmetro “–watch” e deseja controlar quando e como reiniciar sua aplicação, você poderá utilizar o comando “restart”.</p><pre><code>pm2 restart API</code></pre><h2 id="Parando-um-processo"><a href="#Parando-um-processo" class="headerlink" title="Parando um processo"></a>Parando um processo</h2><p>Se você desejar parar a execução da sua aplicação momentaneamente, você deverá utilizar o comando “stop”.</p><pre><code>pm2 stop API</code></pre><h2 id="Deletar-um-processo"><a href="#Deletar-um-processo" class="headerlink" title="Deletar um processo"></a>Deletar um processo</h2><p>Quando não houver mais a necessidade de rodar um determinado processo, você poderá efetuar a deleção do mesmo, com o comando “delete”.</p><pre><code>pm2 delete API</code></pre><h2 id="Salvando-as-configuracoes"><a href="#Salvando-as-configuracoes" class="headerlink" title="Salvando as configurações"></a>Salvando as configurações</h2><p>Sempre que uma configuração for efetuada e um determinado estado precisar ser salvo, você deverá definir isto explicitamente, executando o comando “save”:</p><pre><code>pm2 save</code></pre><p>Rodando este comando, a lista de processos à serem inicializados ou não pelo PM2 será salva e consequentemente será “recuperada”, no caso da reinicialização do sistema operacional ou outra circunstância.</p><h2 id="Habilitando-a-inicializacao-do-PM2-como-um-servico"><a href="#Habilitando-a-inicializacao-do-PM2-como-um-servico" class="headerlink" title="Habilitando a inicialização do PM2 como um serviço"></a>Habilitando a inicialização do PM2 como um serviço</h2><p>Com relação à inicialização do PM2 junto à inicialização do sistema operacional, é importante notar que você deverá habilitar este recurso, executando o comando:</p><pre><code>pm2 startup</code></pre><h2 id="Monitorando-os-processos-com-o-PM2"><a href="#Monitorando-os-processos-com-o-PM2" class="headerlink" title="Monitorando os processos com o PM2"></a>Monitorando os processos com o PM2</h2><p>Basicamente, existem 2 comandos que irão lhe apresentar o <strong>status</strong> das aplicações, bem como lhe ajudarão à <strong>monitorar</strong> a execução das mesmas.</p><p>São eles:</p><pre><code>pm2 statuspm2 monit</code></pre><p>Rode e explore estes comandos à vontade.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O &lt;strong&gt;PM2&lt;/strong&gt; é um gerenciador de processos, que irá lhe ajudar à gerenciar e manter sua aplicação sempre online.&lt;/p&gt;
+&lt;p&gt;Largame
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="Node.js" scheme="http://www.maiconschmitz.com.br/tags/Node-js/"/>
+    
+      <category term="npm" scheme="http://www.maiconschmitz.com.br/tags/npm/"/>
+    
+      <category term="Python" scheme="http://www.maiconschmitz.com.br/tags/Python/"/>
+    
+      <category term="PM2" scheme="http://www.maiconschmitz.com.br/tags/PM2/"/>
+    
+      <category term="GO" scheme="http://www.maiconschmitz.com.br/tags/GO/"/>
+    
+      <category term="nodemon" scheme="http://www.maiconschmitz.com.br/tags/nodemon/"/>
+    
+      <category term="hotreload" scheme="http://www.maiconschmitz.com.br/tags/hotreload/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Gerenciando multiplas versões do Node.js no macOS com o NVM</title>
     <link href="http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/"/>
     <id>http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/</id>
     <published>2020-07-06T18:00:00.000Z</published>
-    <updated>2020-07-06T04:03:06.000Z</updated>
+    <updated>2020-07-21T00:27:03.000Z</updated>
     
     <content type="html"><![CDATA[<p>O Node Version Manager (NVM), é um ferramenta que permite gerenciar multiplas versões do <strong>Node.js</strong>, em seu sistema operacional.</p><p>Independentemente da forma como o <strong>Node.js</strong> foi instalado inicialmente, é possível fazer uso do <strong>nvm</strong>, para passar a gerenciar as atualizações e instalações de outras versões do mesmo.</p><p>Especialmente útil, quando você precisa testar e rodar aplicações em diferentes versões do <strong>Node.js</strong>, seja ele tendo sido instalado via algum gerenciador de pacotes, ou até mesmo compilado à partir dos fontes.</p><h2 id="Instalando-o-NVM"><a href="#Instalando-o-NVM" class="headerlink" title="Instalando o NVM"></a>Instalando o NVM</h2><p>Primeiramente, você deve instalar o <strong>NVM</strong> através do <strong>Brew</strong>:</p><pre><code>brew install nvm</code></pre><p>Se você nunca utilizou o <strong>Brew</strong>, você pode saber mais sobre ele em: <a href="https://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew/">Instalando o gerenciador de pacotes Brew</a>.</p><p>Após a instalação, você deve atualizar o seu profile (.profile, .zshrc ou .zprofile).<br>Para isto, execute:</p><pre><code>export NVM_DIR=~/.nvmsource $(brew --prefix nvm)/nvm.sh</code></pre><p>Para verificar se a instalação ocorreu normalmente, você pode checar a versão do nvm com o comando:</p><pre><code>nvm --version</code></pre><h2 id="Instalando-uma-versao-do-Node-js-com-o-NVM"><a href="#Instalando-uma-versao-do-Node-js-com-o-NVM" class="headerlink" title="Instalando uma versão do Node.js com o NVM"></a>Instalando uma versão do Node.js com o NVM</h2><p>Agora que NVM esta instalado e acessível, você pode listar as versões disponíveis, executando:</p><pre><code>nvm ls-remote</code></pre><p>Assim, uma lista de versões lhe será apresentada.</p><p>Neste momento, recomenda-se que seja instalado o <strong>Node.js Erbium</strong>.</p><p>Portanto, execute:</p><pre><code>nvm install --lts=Erbium</code></pre><p>Após a instalação, você pode checar a versão do Node.js que esta instalada, com:</p><pre><code>nvm ls</code></pre><p>Por fim, você pode definir a versão atual, como a versão padrão (global), executando:</p><pre><code>nvm use default</code></pre><p>Com isto você tem o <strong>Node.js</strong> instalado na versão desejada.</p>]]></content>
     
@@ -37,9 +75,15 @@
       <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
     
     
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
       <category term="Node.js" scheme="http://www.maiconschmitz.com.br/tags/Node-js/"/>
     
       <category term="npm" scheme="http://www.maiconschmitz.com.br/tags/npm/"/>
+    
+      <category term="nvm" scheme="http://www.maiconschmitz.com.br/tags/nvm/"/>
+    
+      <category term="Brew" scheme="http://www.maiconschmitz.com.br/tags/Brew/"/>
     
   </entry>
   
@@ -66,13 +110,13 @@
     
       <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
-      <category term="Netflix" scheme="http://www.maiconschmitz.com.br/tags/Netflix/"/>
-    
-      <category term="YouTube" scheme="http://www.maiconschmitz.com.br/tags/YouTube/"/>
-    
       <category term="PiP" scheme="http://www.maiconschmitz.com.br/tags/PiP/"/>
     
       <category term="Windows" scheme="http://www.maiconschmitz.com.br/tags/Windows/"/>
+    
+      <category term="Netflix" scheme="http://www.maiconschmitz.com.br/tags/Netflix/"/>
+    
+      <category term="YouTube" scheme="http://www.maiconschmitz.com.br/tags/YouTube/"/>
     
       <category term="Prime Video" scheme="http://www.maiconschmitz.com.br/tags/Prime-Video/"/>
     
@@ -613,11 +657,11 @@
     
       <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
     
+      <category term="PiP" scheme="http://www.maiconschmitz.com.br/tags/PiP/"/>
+    
       <category term="Netflix" scheme="http://www.maiconschmitz.com.br/tags/Netflix/"/>
     
       <category term="YouTube" scheme="http://www.maiconschmitz.com.br/tags/YouTube/"/>
-    
-      <category term="PiP" scheme="http://www.maiconschmitz.com.br/tags/PiP/"/>
     
   </entry>
   
@@ -655,43 +699,6 @@
       <category term="Jekyll" scheme="http://www.maiconschmitz.com.br/tags/Jekyll/"/>
     
       <category term="Hexo" scheme="http://www.maiconschmitz.com.br/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unindo um SSD com um HD e criando um Fusion Drive no Mac</title>
-    <link href="http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/"/>
-    <id>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</id>
-    <published>2017-07-03T19:00:00.000Z</published>
-    <updated>2020-06-08T02:32:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em <a href="http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011" title="Instalando um segundo HD em um Macbook Pro mid 2011">Instalando um segundo HD em um Macbook Pro mid 2011</a>, uma opção, é efetuar a criação de um <strong>Fusion Drive</strong>.</p><p>O <strong>Fusion Drive</strong>, é um recurso disponível nas versões mais recentes do macOS, que possibilita efetuar a junção de um ou mais discos, da tal forma à lhe disponibilizar apenas um <strong>volume virtual</strong>.</p><p>Assim, é possível juntar 2 SSDs de tamanhos diferentes em apenas um volume aparente, ou então um SSD e um HDD (HD).<br>Ao efetuar a junção de um SSD com um HD, você terá os benefícios da velocidade do SSD, com a capacidade de armazenamento do HD.<br>O macOS irá gerenciar o uso deste volume, da melhor forma possível, mantendo arquivos que são mais acessados no SSD, enquanto arquivos que são menos requisitados, serão mantidos no HD. Tudo isso se dá de forma transparente para o usuário, onde o macOS irá mover os arquivos de um disco para o outro, conforme necessário e nenhuma ação da parte do usuário se fará necessária, uma vez que aparentemente, existirá apenas um único volume visível.</p><p>Neste procedimento que apresento agora, demonstro como juntar um SSD com um HD, resultando em um Fusion Drive, o qual utilizei posteriormente, para efetuar a <a href="http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra" title="Instalação Limpa do macOS Sierra">Instalação Limpa do macOS Sierra</a>.</p><h2 id="Criando-o-Fusion-Drive"><a href="#Criando-o-Fusion-Drive" class="headerlink" title="Criando o Fusion Drive"></a>Criando o Fusion Drive</h2><p><strong>Atenção:</strong> Criar um Fusion Drive, fará com que todo o conteúdo dos discos selecionados para a criação do Fusion Drive sejam perdidos/apagados. </p><p>Reinicie, ou ligue o Mac, mantendo a tecla “Option” pressionada.</p><p>Após o carregamento da interface, selecione a opção de menu “Utilitários” / “Terminal”.</p><p>Com o Terminal aberto, execute o comando “<strong>diskutil list</strong>“, para obter uma lista de discos disponíveis:</p><pre><code>$diskutil list</code></pre><p>Este comando irá listar todos os discos, volumes e dispositivos existentes no seu Mac.<br>Os principais, à serem observados, são os iniciais com caminhos como: <strong>dev/disk0</strong>, <strong>dev/disk1</strong>, <strong>dev/disk2</strong>, etc.<br>Observe que estes volumes, são os mesmos referentes aos tamanhos do seu SSD, HD, Pendrive/SD (se algum estiver conectado), etc.</p><p>Verifique o caminho dos discos que deseja “juntar” e execute o comando de criação do Fusion Drive.</p><pre><code>$diskutil coreStorage create &apos;Fusion&apos; /dev/disk0 /dev/disk1</code></pre><p>No comando acima, defini o nome do meu novo ‘disco’ como ‘Fusion’ e juntei os meus 2 primeiros discos, os quais são respectivamente /dev/disk0 e /dev/disk1, sendo disk0 o SSD e disk1, o meu HD.</p><p>Após alguns instantes, o processo será concluído.<br>Observe o resultado que será impresso no Terminal.<br>Atente para uma das linhas finais, iniciada com: <strong>Core Storage LVG UUID:</strong>.<br>Anote o UUID (conteúdo após o :, com estrutura semelhante à: XXXXXX-XXX-XXX-XXXXXX), pois ele será utilizado no comando em seguida:</p><pre><code>$diskutil coreStorage createVolume XXXXXX-XXX-XXX-XXXXXX jhfs+ &apos;Fusion&apos; 100%</code></pre><p>No comando acima, XXXXXX-XXX-XXX-XXXXXX deve ser substituído pelo UUID que você copiou do resultado de execução do comando <strong>diskutil coreStorage create …</strong>.<br>O restante dos parâmetros deve ser mantido como no comando original.</p><p>Novamente, após alguns instantes, o processo será concluído.<br>Deste ponto em diante, o seu novo <strong>volume virtual</strong> já está criado e pronto para uso.<br>Agora o seu Mac poderá desfrutar da velocidade do SSD e da capacidade de armazenamento do HD, tudo em um único volume.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Após a adição de um segundo HD ao Macbook Pro mid 2011, o qual você pode ver o passo a passo em &lt;a href=&quot;http://www.maiconschmitz.com.br/
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
-    
-    
-      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
-    
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
-      <category term="SSD" scheme="http://www.maiconschmitz.com.br/tags/SSD/"/>
-    
-      <category term="HDD" scheme="http://www.maiconschmitz.com.br/tags/HDD/"/>
-    
-      <category term="HD" scheme="http://www.maiconschmitz.com.br/tags/HD/"/>
-    
-      <category term="Fusion" scheme="http://www.maiconschmitz.com.br/tags/Fusion/"/>
-    
-      <category term="Drive" scheme="http://www.maiconschmitz.com.br/tags/Drive/"/>
     
   </entry>
   

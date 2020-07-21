@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/07/21/rodando-e-monitorando-aplicacoes-nodejs-com-pm2/</loc>
+    
+    <lastmod>2020-07-21T01:21:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/</loc>
     
-    <lastmod>2020-07-06T04:03:06.000Z</lastmod>
+    <lastmod>2020-07-21T00:27:03.000Z</lastmod>
     
   </url>
   
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
     
     <lastmod>2020-06-08T02:32:10.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/03/30/exibindo-notificacoes-desktop-via-shell-script/</loc>
     
     <lastmod>2020-06-08T02:32:10.000Z</lastmod>
     
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/11/25/instalando-nodejs-no-raspbian/</loc>
     
     <lastmod>2020-06-08T02:32:06.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/11/25/instalando-nodejs-no-raspbian/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew/</loc>
     
     <lastmod>2020-06-08T02:32:06.000Z</lastmod>
     
@@ -121,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
     
     <lastmod>2020-06-08T02:32:04.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
     
     <lastmod>2020-06-08T02:32:04.000Z</lastmod>
     
@@ -142,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/07/09/please-create-a-github-oauth-token-to-go-over-the-api-rate-limit/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
     
     <lastmod>2020-06-08T02:32:02.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/07/09/please-create-a-github-oauth-token-to-go-over-the-api-rate-limit/</loc>
     
     <lastmod>2020-06-08T02:32:02.000Z</lastmod>
     
@@ -226,21 +233,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -254,14 +247,21 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -275,21 +275,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/08/04/atualizando-o-ruby-no-macos/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -297,6 +290,13 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/08/24/criando-sd-com-raspbian-no-mac-os-x/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/12/23/fazendo-backup-de-pendrive-e-sd-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -317,6 +317,13 @@
   </url>
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -331,14 +338,7 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -352,14 +352,21 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
