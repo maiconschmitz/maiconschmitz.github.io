@@ -7,6 +7,9 @@ categories:
 tags:
 - Node.js
 - npm
+- nvm
+- Brew
+- macOS
 status: publish
 type: post
 published: true
