@@ -23,6 +23,8 @@ O processo de instalação do **Raspberry Pi OS** é bastante simples.
 
 Uma vez que você tenha gravado o cartão SD com o instalador, você deverá inseri-lo na Raspberry, conectar um teclado e mouse às entradas USB, bem como um display (monitor) à entrada HDMI e por fim, bastará ligar a alimentação à entrada Micro USB ou USB-C (dependendo do modelo da sua Raspberry Pi) e pronto.
 
+Para saber como criar um cartão com o instalador, acesse o Post: [Criando um cartão SD de Instalação do Raspberry Pi OS no macOS, Linux e Windows](https://www.maiconschmitz.com.br/blog/2020/06/08/criando-sd-de-instalacao-do-raspberry-pi-os-no-macos-linux-windows/)
+
 Neste momento, a **Raspberry Pi** irá ligar automaticamente e o boot ocorrerá à partir do cartão SD.
 
 Mas e se você desejar instalar o Raspberry Pi OS em sua Raspberry, sem precisar de um teclado, mouse ou até mesmo um display?
