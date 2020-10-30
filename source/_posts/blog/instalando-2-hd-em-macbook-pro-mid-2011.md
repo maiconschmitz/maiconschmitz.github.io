@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalando um segundo HD em um Macbook Pro mid 2011
+title: Instalando um segundo HD em um MacBook Pro mid 2011
 date: 2017-04-28 15:00:00.000000000 -03:00
 categories:
 - Blog
@@ -15,7 +15,7 @@ published: true
 alias: blog/2017/04/24/instalando-2-hd-em-macbook-pro-mid-2011.html
 ---
 
-Faz algum tempo, efetuei um upgrade em um Macbook Pro de 2011, [substituindo um HD magnético por um SSD](http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011 "Substituindo um HD magnético por um SSD").
+Faz algum tempo, efetuei um upgrade em um MacBook Pro de 2011, [substituindo um HD magnético por um SSD](http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011 "Substituindo um HD magnético por um SSD").
 
 Este procedimento que apresento hoje, é semelhante à substituição do HD por SSD, porém visa remover o Drive Óptico (Leitor/Gravador de CD/DVD) e substituí-lo por um segundo HD ou SSD.
 
@@ -29,7 +29,7 @@ Se o Drive Óptico ainda for importante para você, você poderá adquirir um ad
 
 O procedimento é bastante simples e consiste do seguinte passo-a-passo:
 
-* Com o Macbook Pro desligado, posicione-o de cabeça para baixo, sobre uma superfície plana
+* Com o MacBook Pro desligado, posicione-o de cabeça para baixo, sobre uma superfície plana
 * Remova os **parafusos**, são **10** no total (4 no topo, 1 em cada lateral e 4 na parte inferior)
 * Ao remover os parafusos, posicione-os de forma organizada, para que possa recoloca-los posteriormente, na mesma ordem.
 * Remova a tampa de alumínio

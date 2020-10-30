@@ -82,4 +82,8 @@ Para remover um módulo, execute:
 
 Para instalar os módulos de um projeto, basta executar:
 
-	**yarn** ou **yarn install**
+	yarn
+
+ou
+
+	yarn install
