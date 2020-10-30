@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maiconschmitz.com.br/"/>
-  <updated>2020-08-28T05:50:21.000Z</updated>
+  <updated>2020-10-30T09:57:24.000Z</updated>
   <id>http://www.maiconschmitz.com.br/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Usando Alexa como Autofalante do MacBook</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/</id>
+    <published>2020-10-30T12:30:00.000Z</published>
+    <updated>2020-10-30T09:57:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Além da infinidade de possibilidades que a <strong>Alexa</strong> proporciona no dia a dia, é possível utilizá-la também, como uma “simples caixa de som”. Seja através da conexão de um cabo de som auxiliar, que pode ser encontrado normalmente ao lado da entrada de energia, ou então, via bluetooth.</p><h2 id="Pareando-a-Alexa-com-o-MacBook"><a href="#Pareando-a-Alexa-com-o-MacBook" class="headerlink" title="Pareando a Alexa com o MacBook"></a>Pareando a Alexa com o MacBook</h2><p>Para parear a <strong>Alexa</strong> com o MacBook, você pode poderá utilizar o App da Alexa, ou efetuar o procedimento diretamente através de um Navegador no MacBook.</p><p>Neste caso, vamos fazer através de um Navegador.</p><p>Abra o site <a href="https://alexa.amazon.com/" target="_blank" rel="noopener">https://alexa.amazon.com/</a><br>Efetue o login, com a conta da Amazon que utiliza na sua <strong>Alexa</strong>.<br>No menu à esquerda, selecione <strong>Configurações</strong><br>Na lista de <strong>Dispositivos</strong>, selecione o dispositivo que deseja configurar<br>Na sessão <strong>Sem fio</strong>, selecione <strong>Bluetooth</strong><br>E em seguida escolha a opção <strong>Parear um novo dispositivo</strong></p><h3 id="No-MacBook"><a href="#No-MacBook" class="headerlink" title="No MacBook"></a>No MacBook</h3><p>Abra as preferência do Bluetooth, clicando no ícone do Bluetooth na “barra do relógio”, ou então acesse a opção “Bluetooth” pelo <strong>Spotlight</strong></p><p>Na janela que se abre, aguarde a Alexa surgir na lista de opções.</p><p>Quando isto ocorrer, basta selecionar a opção <strong>Conectar</strong>.</p><p>Com isto, a Alexa irá exibir um aviso sonoro, informando que o pareamento ocorreu com sucesso!</p><p>Deste ponto em diante, basta seleciona a Alexa como dispositivo de saída de áudio, clicando no ícone de Volume na “barra do relógio”.</p><p>Nas próximas vezes que ligar o MacBook, será necessário apenas efetuar a conexão com a Alexa, clicando no ícone do Bluetooth na “barra do relógio”, selecionando-a e conectando-se com a mesma.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Além da infinidade de possibilidades que a &lt;strong&gt;Alexa&lt;/strong&gt; proporciona no dia a dia, é possível utilizá-la também, como uma “simpl
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="MAC OS X" scheme="http://www.maiconschmitz.com.br/tags/MAC-OS-X/"/>
+    
+      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
+    
+      <category term="Alexa" scheme="http://www.maiconschmitz.com.br/tags/Alexa/"/>
+    
+      <category term="Bluetooth" scheme="http://www.maiconschmitz.com.br/tags/Bluetooth/"/>
+    
+  </entry>
   
   <entry>
     <title>Instalando o gerenciador de pacotes Yarn no macOS</title>
@@ -244,7 +275,7 @@
     <title>Brave, o navegador com Blockchain e Criptomoedas BAT</title>
     <link href="http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/"/>
     <id>http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/</id>
-    <published>2019-11-15T01:30:00.000Z</published>
+    <published>2019-11-15T02:30:00.000Z</published>
     <updated>2019-11-16T13:59:01.000Z</updated>
     
     <content type="html"><![CDATA[<p>O <strong>Brave</strong> é um navegador de internet baseado no projeto <strong>Chromium</strong> (o mesmo do <strong>Google Chrome</strong> e do <strong>Microsoft Edge</strong>).<br>Desenvolvido pela <strong>Brave Software</strong>, a empresa é liderada por <strong>Brendan Eich</strong>, criador do <strong>JavaScript</strong> e que por muito tempo esteve à frente da <strong>Fundação Mozilla</strong>, mantenedora do navegador <strong>Firefox</strong>.</p><h2 id="Brave"><a href="#Brave" class="headerlink" title="Brave"></a>Brave</h2><p>O principal diferencial do <a href="https://brave.com/mai223" target="_blank" rel="noopener">Brave</a>, é a <a href="https://basicattentiontoken.org/" target="_blank" rel="noopener"><strong>Basic Attention Token</strong> (<strong>BAT</strong>)</a>. Estas criptomoedas foram baseadas no <strong>Blockchain</strong> do <strong>Ethereum</strong> e sua proposta é transformar a forma como os anúncios são remunerados na Internet.</p><p>O Brave também oferece uma excelente performance, sendo atualmente mais rápido que seus concorrentes no carregamento de páginas, além de oferecer nativamente, o bloqueio de anúncios de terceiros e da reprodução automática vídeos, por exemplo.</p><p>Com o Brave, é possível não só navegar de forma privada, mas também utilizar uma janela privada através da qual você pode navegar utilizando a rede <strong>Tor</strong>.</p><p>Totalmente compatível com os recursos do Google Chrome, o Brave lhe permite inclusive, fazer o uso e a instalação das Extensões do Chrome, diretamente através da <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener">Chrome Web Store</a>.</p><h3 id="Brave-Rewards"><a href="#Brave-Rewards" class="headerlink" title="Brave Rewards"></a>Brave Rewards</h3><p>O <strong>Brave Rewards</strong> é a forma através da qual o Brave gerencia o recebimento de tokens <strong>BAT</strong>. Os anúncios são apresentados ao usuário baseado nos interesses do mesmo, os quais são verificados de forma anônima e automática, de acordo com o comportamento de navegação.</p><p>Dentro do Brave Rewards, é possível ainda, configurar doações automáticas para os sites que você mais visita, ou ainda, efetuar doações para criadores de conteúdo.</p><p>Com o <a href="https://creators.brave.com/" target="_blank" rel="noopener">Brave Rewards Creators</a>, é possível presentear tokens para o criador do site o qual você visita, como forma de fomentar a criação de conteúdo e além disso, você mesmo, pode se tornar um <a href="https://creators.brave.com/sign-up" target="_blank" rel="noopener"><strong>Creator</strong></a> se desejar, adicionando seu Site, Canal do Youtube, ou ainda contas do Twitter, Github, dentre outras.</p>]]></content>
@@ -658,37 +689,6 @@
       <category term="ETH" scheme="http://www.maiconschmitz.com.br/tags/ETH/"/>
     
       <category term="FileZilla" scheme="http://www.maiconschmitz.com.br/tags/FileZilla/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assistindo vídeos em modo PiP no macOS Sierra</title>
-    <link href="http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/"/>
-    <id>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</id>
-    <published>2017-08-12T21:00:00.000Z</published>
-    <updated>2020-06-26T23:14:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>O modo <strong>PiP</strong>, ou <strong>Picture in Picture</strong>, é um recurso que lhe possibilita assistir à uma segunda imagem em uma pequena janela, na sua tela atual.</p><p>Popular e disponível em Smart TVs mais modernas, onde é possível assistir à uma transmissão de TV aberta em uma pequena janela, enquanto assiste à algo na “tela grande”, vindo da HDMI ou vice-versa.</p><p>À partir da versão 10.12 do macOS, este recurso passou à estar disponível tambem no Mac, porém apenas dentro do navegador <strong>Safari</strong>.</p><p>Com este recurso, é possível desacoplar a transmissão de um vídeo do YouTube, por exemplo, passando à liberar o seu navegador da necessidade de ficar visível na tela o tempo todo.</p><h2 id="Assistindo-video-em-uma-tela-em-separado"><a href="#Assistindo-video-em-uma-tela-em-separado" class="headerlink" title="Assistindo vídeo em uma tela em separado"></a>Assistindo vídeo em uma tela em separado</h2><p>Para utilizar o modo <strong>PiP</strong> nativo do macOS, não é necessário instalar absolutamente nada!</p><p>Uma vez que a sua nova tela esteja aberta, você poderá:</p><ul><li>Ajusta o tamanho da janela (limitado à um tamanho mínimo e máximo)</li><li>Posicionar a janela do PiP em um dos 4 cantos da sua tela</li></ul><h3 id="Assistindo-YouTube-em-modo-PiP-no-macOS-Sierra"><a href="#Assistindo-YouTube-em-modo-PiP-no-macOS-Sierra" class="headerlink" title="Assistindo YouTube em modo PiP no macOS Sierra"></a>Assistindo YouTube em modo PiP no macOS Sierra</h3><p>Para ativar o PiP, enquanto assiste à um vídeo do YouTube, faça o seguinte:</p><ul><li>Clique com o botão direito do Magic Mouse/Trackpad sobre a área do vídeo.</li><li>Neste momento, um menu de contexto do próprio YouTube é aberto, <strong>não acesse este menu</strong> e pressione uma segunda vez o botão direito do Magic Mouse/Trackpad.</li><li>Novo menu que se abre, basta selecionar a opção “Entrar no Modo PiP”</li></ul><p>Simples assim.</p><h3 id="Assistindo-Netflix-em-modo-PiP-no-macOS-Sierra"><a href="#Assistindo-Netflix-em-modo-PiP-no-macOS-Sierra" class="headerlink" title="Assistindo Netflix em modo PiP no macOS Sierra"></a>Assistindo Netflix em modo PiP no macOS Sierra</h3><p>Infelizmente o modo PiP não esta disponível nativamente em todos os tipos de transmissões de Vídeo.<br>É ai que entra uma segunda opção, que é a utilização da Extensão para Safari chamada <strong>PiPifier</strong>.<br>Com o PiPifier, você poderá assistir à todo e qualquer vídeo compatível com <strong>HTML 5</strong>, que ainda não suporte o modo PiP nativo do macOS.</p><h3 id="Instalando-o-PiPifier"><a href="#Instalando-o-PiPifier" class="headerlink" title="Instalando o PiPifier"></a>Instalando o PiPifier</h3><p>O <strong>PiPifier</strong> pode ser baixado gratuitamente na App Store <a href="https://itunes.apple.com/us/app/pipifier-pip-for-nearly-every/id1160374471?mt=12&amp;at=10l3Vy&amp;ct=UUimUdUnU41163" title="Download do PiPifier" target="_blank" rel="noopener">neste link</a>.<br>Uma vez que a instalação do PiPifier esteja concluída, siga os passos abaixo para habilitá-lo.</p><p>Configure/habilite o PiPifier:</p><ul><li>Abra o Safari</li><li>No menu “Safari”, selecione “Preferências”</li><li>Vá para a guia “Extensões”</li><li>Na lateral esquerda, selecione/marque o “PiPifier Button”</li><li>Feche esta janela</li><li>No menu “Visualizar”, do Safari, selecione “Personalizar Barra de Ferramentas”</li><li>Selecione o botão do “PiPifier” e arraste para a sua barra de ferramentas</li><li>Feche esta janela</li></ul><p>Agora, ao acessar qualquer site, quando uma transmissão de vídeo em formato HTML 5 estiver disponível, o botão do PiPifier mudará do status “desabilitado” (em cinza claro), para “habilitado” (na cor preta).<br>Basta clicar neste botão e o seu vídeo será separado em uma 2ª janela.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;O modo &lt;strong&gt;PiP&lt;/strong&gt;, ou &lt;strong&gt;Picture in Picture&lt;/strong&gt;, é um recurso que lhe possibilita assistir à uma segunda imagem em um
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
-    
-    
-      <category term="macOS" scheme="http://www.maiconschmitz.com.br/tags/macOS/"/>
-    
-      <category term="PiP" scheme="http://www.maiconschmitz.com.br/tags/PiP/"/>
-    
-      <category term="Netflix" scheme="http://www.maiconschmitz.com.br/tags/Netflix/"/>
-    
-      <category term="YouTube" scheme="http://www.maiconschmitz.com.br/tags/YouTube/"/>
     
   </entry>
   
