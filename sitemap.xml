@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/11/27/instalando-o-docker-no-centos-8/</loc>
+    
+    <lastmod>2020-11-27T09:48:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/</loc>
     
     <lastmod>2020-10-30T09:57:24.000Z</lastmod>
@@ -324,14 +331,14 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     
@@ -359,13 +366,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/07/02/login-error-rac0218-the-maximum-number-of-user-sessions-is-reached/</loc>
-    
-    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/16/netbeans-8-2-nao-cria-nem-abre-projetos-no-macos/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
@@ -381,6 +381,13 @@
   
   <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/03/rodando-o-bash-e-aplicacoes-linux-no-windows-sem-cygwin/</loc>
+    
+    <lastmod>2018-10-15T01:16:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/07/02/login-error-rac0218-the-maximum-number-of-user-sessions-is-reached/</loc>
     
     <lastmod>2018-10-15T01:16:09.000Z</lastmod>
     

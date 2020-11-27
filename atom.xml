@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maiconschmitz.com.br/"/>
-  <updated>2020-10-30T09:57:24.000Z</updated>
+  <updated>2020-11-27T09:48:49.000Z</updated>
   <id>http://www.maiconschmitz.com.br/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Instalando o Docker no CentOS 8</title>
+    <link href="http://www.maiconschmitz.com.br/blog/2020/11/27/instalando-o-docker-no-centos-8/"/>
+    <id>http://www.maiconschmitz.com.br/blog/2020/11/27/instalando-o-docker-no-centos-8/</id>
+    <published>2020-11-27T12:30:00.000Z</published>
+    <updated>2020-11-27T09:48:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>O <strong>Docker CE</strong> atualmente não é suportado pelo <strong>Red Hat Enterprise Linux (RHEL) 8</strong> e <strong>CentOS 8</strong>.</p><p>A maneira oficialmente recomendada pela <strong>Red Hat</strong> para gerenciar contêineres, é através do <strong>Podman</strong>, que é basicamente um substituto para o Docker nestas distribuições do Linux.</p><p>Se você desejar maiores informações sobre o por que desta <em>falta de suporte</em> ao Docker, você pode consultar a seção <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/building_running_and_managing_containers/index" target="_blank" rel="noopener">“1.1. Running containers without Docker”</a> da documentação.</p><h1 id="Instalacao-do-Docker"><a href="#Instalacao-do-Docker" class="headerlink" title="Instalação do Docker"></a>Instalação do Docker</h1><p>Para que se possa iniciar a instalação do Docker, primeiramente, atualize os pacotes:</p><pre><code>$ sudo yum update -y</code></pre><h2 id="Adicionar-o-repositorio-do-Docker"><a href="#Adicionar-o-repositorio-do-Docker" class="headerlink" title="Adicionar o repositório do Docker"></a>Adicionar o repositório do Docker</h2><p>Para que seja possível instalar o Docker, se faz necessário adicionar o repositório do mesmo ao YUM.</p><pre><code>$ sudo yum install -y yum-utils$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</code></pre><h2 id="Remover-pacotes-que-conflitam-com-o-Docker"><a href="#Remover-pacotes-que-conflitam-com-o-Docker" class="headerlink" title="Remover pacotes que conflitam com o Docker"></a>Remover pacotes que conflitam com o Docker</h2><p>Uma vez que o <strong>Podman</strong> é o “substituto” para o Docker no RHEL/CentOS 8, será necessário remove-los antes de prosseguir com a instalação do Docker:</p><pre><code>$ yum erase podman buildah -y</code></pre><h2 id="Instalar-o-Docker"><a href="#Instalar-o-Docker" class="headerlink" title="Instalar o Docker"></a>Instalar o Docker</h2><p>Agora, efetivamente partindo para a instalação do Docker:</p><pre><code>$ sudo yum install docker-ce docker-ce-cli containerd.io -y</code></pre><p>Ao final da instalação, você pode adicionar o seu o usuário atual ao grupo do Docker:</p><pre><code>$ sudo usermod -a -G docker ${USER}</code></pre><h2 id="Habilitar-e-iniciar-o-servico-do-Docker"><a href="#Habilitar-e-iniciar-o-servico-do-Docker" class="headerlink" title="Habilitar e iniciar o serviço do Docker"></a>Habilitar e iniciar o serviço do Docker</h2><p>Para que o Docker esteja sempre disponível e rodando, habilite e rode o serviço, respectivamente:</p><pre><code>$ sudo systemctl enable docker$ sudo systemctl start docker</code></pre><h1 id="Verificar-a-instalacao-e-status-do-Docker"><a href="#Verificar-a-instalacao-e-status-do-Docker" class="headerlink" title="Verificar a instalação e status do Docker"></a>Verificar a instalação e status do Docker</h1><p>Para que você possa verificar o status de execução do Docker, você pode, por exemplo, executar os comandos:</p><pre><code>$ docker info$ systemctl status docker</code></pre><h3 id="Rodando-uma-imagem-de-testes"><a href="#Rodando-uma-imagem-de-testes" class="headerlink" title="Rodando uma imagem de testes"></a>Rodando uma imagem de testes</h3><p>Já, para verificar o sucesso da instalação, você executar a imagem <strong>hello-world</strong>.<br>Para isto, basta executar:</p><pre><code>$ sudo docker run hello-world</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;O &lt;strong&gt;Docker CE&lt;/strong&gt; atualmente não é suportado pelo &lt;strong&gt;Red Hat Enterprise Linux (RHEL) 8&lt;/strong&gt; e &lt;strong&gt;CentOS 8&lt;/stron
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
+    
+    
+      <category term="CentOS" scheme="http://www.maiconschmitz.com.br/tags/CentOS/"/>
+    
+      <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
+    
+      <category term="Docker" scheme="http://www.maiconschmitz.com.br/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Usando Alexa como Autofalante do MacBook</title>
@@ -652,43 +681,6 @@
       <category term="Terminal" scheme="http://www.maiconschmitz.com.br/tags/Terminal/"/>
     
       <category term="Ubuntu" scheme="http://www.maiconschmitz.com.br/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Núvem descentralizada com Storj</title>
-    <link href="http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/"/>
-    <id>http://www.maiconschmitz.com.br/blog/2017/09/21/nuvem-descentralizada-com-storj/</id>
-    <published>2017-09-21T23:00:00.000Z</published>
-    <updated>2018-10-15T01:16:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="O-que-e-o-Storj"><a href="#O-que-e-o-Storj" class="headerlink" title="O que é o Storj?"></a>O que é o Storj?</h2><p>O <strong>Storj</strong> é um sistema de armazenamento de arquivos distribuídos, <strong>peer-to-peer</strong> (<strong>P2P</strong>), desenvolvido e mantido pela Storj Labs.<br>O Storj utiliza criptografia de última geração, de ponta a ponta e a tecnologia <strong>Blockchain</strong> do <strong>Ethereum</strong>.</p><h2 id="Para-que-serve-o-Storj"><a href="#Para-que-serve-o-Storj" class="headerlink" title="Para que serve o Storj?"></a>Para que serve o Storj?</h2><p>O Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem, ao criar uma núvem de arquivos distribuída e descentralizada, que alia segura e alto desempenho para armazenar seus arquivos à um preço economicamente viável.</p><h2 id="Como-funciona-o-Storj"><a href="#Como-funciona-o-Storj" class="headerlink" title="Como funciona o Storj?"></a>Como funciona o Storj?</h2><p>Diferente de outros sistemas de Storage, o Storj não utiliza servidores em Data Centers, mas sim, os computadores dos usuários que fazem parte de rede e cedem espaço de armazenamento.</p><p>O Storj ainda não possui uma ferramentas de sincronização automática, como possuem outros serviços como Dropbox, Google Drive, iCloud, OneDrive, etc.</p><p>No momento, é possível, por exemplo, enviar e acessar seus arquivos através do software <strong>FileZilla</strong>, um dos, ou senão o primeiro à suportar o protocolo do Storj.</p><p>Além de possuir seus códigos disponíveis para acesso público em seu <a href="https://github.com/storj" target="_blank" rel="noopener">Github</a>, o Storj também oferece uma <strong>API</strong> de integração, para que qualquer um possa desenvolver suas próprias soluções ou ferramentas.</p><h2 id="Quanto-custa-o-armazenamento-na-nuvem-com-o-Storj"><a href="#Quanto-custa-o-armazenamento-na-nuvem-com-o-Storj" class="headerlink" title="Quanto custa o armazenamento na núvem com o Storj?"></a>Quanto custa o armazenamento na núvem com o Storj?</h2><p>Atualmente, o preço por GB armazenado, é de <strong>$0.015</strong>, enquanto que a banda de transferência, é de <strong>$0.05</strong> por GB baixado.<br>Em um cálculo rápido, isso significa que o armazenamento de 50 GB, custaria em torno de $0.75/mês (não contando a banda de download)</p><h2 id="Alugando-seu-espaco-em-disco-para-a-nuvem-do-Storj"><a href="#Alugando-seu-espaco-em-disco-para-a-nuvem-do-Storj" class="headerlink" title="Alugando seu espaço em disco para a núvem do Storj"></a>Alugando seu espaço em disco para a núvem do Storj</h2><p>O ponto chave do Storj, são os <strong>Farmers</strong> (agricultores), que são os usuários que disponibilizam (mediante aluguel) porções do seu espaço em disco rígido, para outros usuários ou clientes do Storj.</p><p>Para compartihar seu espaço em disco, basta se inscrever no Storj: <a href="https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610" target="_blank" rel="noopener">https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610</a>.</p><p>Após feita a inscrição, basta você baixar e instalar o GUI de Compartilhamento, através do link: <a href="https://storj.io/share.html" target="_blank" rel="noopener">https://storj.io/share.html</a>.</p><h2 id="Gratuito-por-12-meses"><a href="#Gratuito-por-12-meses" class="headerlink" title="Gratuíto por 12 meses"></a>Gratuíto por 12 meses</h2><p>Novos usuários, podem utilizar o Storj gratuitamente, nos primeiros de 12 meses, contanto que não ultrapassem o limite de armazenamento de 25 GB/mês.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;O-que-e-o-Storj&quot;&gt;&lt;a href=&quot;#O-que-e-o-Storj&quot; class=&quot;headerlink&quot; title=&quot;O que é o Storj?&quot;&gt;&lt;/a&gt;O que é o Storj?&lt;/h2&gt;&lt;p&gt;O &lt;strong&gt;Storj&lt;
-      
-    
-    </summary>
-    
-      <category term="Blog" scheme="http://www.maiconschmitz.com.br/categorias/Blog/"/>
-    
-    
-      <category term="Ethereum" scheme="http://www.maiconschmitz.com.br/tags/Ethereum/"/>
-    
-      <category term="Blockchain" scheme="http://www.maiconschmitz.com.br/tags/Blockchain/"/>
-    
-      <category term="Storj" scheme="http://www.maiconschmitz.com.br/tags/Storj/"/>
-    
-      <category term="Nuvem" scheme="http://www.maiconschmitz.com.br/tags/Nuvem/"/>
-    
-      <category term="P2P" scheme="http://www.maiconschmitz.com.br/tags/P2P/"/>
-    
-      <category term="ETH" scheme="http://www.maiconschmitz.com.br/tags/ETH/"/>
-    
-      <category term="FileZilla" scheme="http://www.maiconschmitz.com.br/tags/FileZilla/"/>
     
   </entry>
   

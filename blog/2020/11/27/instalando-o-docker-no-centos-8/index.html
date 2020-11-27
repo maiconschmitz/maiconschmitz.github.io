@@ -17,7 +17,7 @@
     
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Instalando SSD em MacBook Pro mid 2011">
+        <meta property="og:title" content="Instalando o Docker no CentOS 8">
     
     <!--Open Graph Description-->
     
@@ -35,7 +35,7 @@
     
     <!-- Title -->
     
-    <title>Instalando SSD em MacBook Pro mid 2011 - Maicon Schmitz</title>
+    <title>Instalando o Docker no CentOS 8 - Maicon Schmitz</title>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
     <!-- Custom Fonts -->
@@ -102,8 +102,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Instalando SSD em MacBook Pro mid 2011</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">11/11/2015</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Instalando o Docker no CentOS 8</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">27/11/2020</p>
         </div>
     </div>
 
@@ -123,46 +123,40 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a>
+                                <a class="fw3 ph1 dib" href="/tags/CentOS/">#CentOS</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a> <a class="fw3 ph1 dib" href="/tags/Docker/">#Docker</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>Recentemente efetuei um upgrade em um MacBook Pro de 2011, substituindo o HD magnético por um SSD.</p>
-<p>Este procedimento é bastante simples e pode ser feito utilizando qualquer SSD, de qualquer marca.</p>
-<p>Diferente de como era à algum tempo atrás, a partir do OS X Yosemite 10.10.4, a Apple traz suporte total ao TRIM para SSDs de terceiros.</p>
-<h2 id="Substituindo-o-hardware"><a href="#Substituindo-o-hardware" class="headerlink" title="Substituindo o hardware"></a>Substituindo o hardware</h2><p>O procedimento é bastante simples e consiste do seguinte passo-a-passo:</p>
-<ul>
-<li>Com o MacBook Pro desligado, posicione-o de cabeça para baixo, sobre uma superfície plana</li>
-<li>Remova os <strong>parafusos</strong>, são <strong>10</strong> no total (4 no topo, 1 em cada lateral e 4 na parte inferior)</li>
-<li>Ao remover os parafusos, posicione-os de forma organizada, para que possa recoloca-los posteriormente, na mesma ordem.</li>
-<li>Remova a tampa de alumínio</li>
-<li>Na lateral inferior esquerda, você encontrará seu <strong>HD</strong></li>
-<li>Remova-o com cuidado, desconectando antes o <strong>cabo flat</strong></li>
-<li>Remova os parafusos <strong>laterais do HD</strong>, pois você irá precisar dos mesmos para prender o SDD</li>
-<li>Prenda os parafusos removidos do HD, no <strong>SSD</strong></li>
-<li>Insira o SSD no lugar do antigo HD, conectando o cabo flat</li>
-<li>Feche a tampa e prenda os parafusos novamente</li>
-</ul>
-<h2 id="Reinstalando-o-software"><a href="#Reinstalando-o-software" class="headerlink" title="Reinstalando o software"></a>Reinstalando o software</h2><p>Uma vez que tenha inserido um novo disco, será necessário reinstalar o sistema operacional:</p>
-<ul>
-<li>Dê boot no MacBook, com a tecla <strong>Option</strong> pressionada</li>
-<li>No menu Utilitários, acesse o <strong>Utilitário de Disco</strong></li>
-<li>Selecione o seu Disco, na lateral esquerda e clique na opção Apagar</li>
-<li>Defina o nome como <strong>OSX</strong>, em formato selecione <strong>OS X Expandido (Reg. Cronológico)</strong> e em Esquema, selecione <strong>Mapa de Partição GUID</strong></li>
-<li>Clique em Apagar</li>
-</ul>
-<p>Quando isto estiver concluído, reinicie o MacBook com a tecla <strong>Option</strong> pressionada e efetue a instalação do OS X.</p>
-<h2 id="Ativando-o-TRIM-para-o-SSD"><a href="#Ativando-o-TRIM-para-o-SSD" class="headerlink" title="Ativando o TRIM para o SSD"></a>Ativando o TRIM para o SSD</h2><p>Após a conclusão da instalação do OS X, o último passo a ser efetuado, á a ativação do TRIM.</p>
-<p>Para tal, basta abrir uma janela do Terminal e digitar o comando <strong>sudo trimforce enable</strong> e confirmar quando solicitado.</p>
-<p>Seu Mac será reiniciado e feito isto, tudo estará concluído.</p>
-
+                    <p>O <strong>Docker CE</strong> atualmente não é suportado pelo <strong>Red Hat Enterprise Linux (RHEL) 8</strong> e <strong>CentOS 8</strong>.</p>
+<p>A maneira oficialmente recomendada pela <strong>Red Hat</strong> para gerenciar contêineres, é através do <strong>Podman</strong>, que é basicamente um substituto para o Docker nestas distribuições do Linux.</p>
+<p>Se você desejar maiores informações sobre o por que desta <em>falta de suporte</em> ao Docker, você pode consultar a seção <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/building_running_and_managing_containers/index" target="_blank" rel="noopener">“1.1. Running containers without Docker”</a> da documentação.</p>
+<h1 id="Instalacao-do-Docker"><a href="#Instalacao-do-Docker" class="headerlink" title="Instalação do Docker"></a>Instalação do Docker</h1><p>Para que se possa iniciar a instalação do Docker, primeiramente, atualize os pacotes:</p>
+<pre><code>$ sudo yum update -y
+</code></pre><h2 id="Adicionar-o-repositorio-do-Docker"><a href="#Adicionar-o-repositorio-do-Docker" class="headerlink" title="Adicionar o repositório do Docker"></a>Adicionar o repositório do Docker</h2><p>Para que seja possível instalar o Docker, se faz necessário adicionar o repositório do mesmo ao YUM.</p>
+<pre><code>$ sudo yum install -y yum-utils
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre><h2 id="Remover-pacotes-que-conflitam-com-o-Docker"><a href="#Remover-pacotes-que-conflitam-com-o-Docker" class="headerlink" title="Remover pacotes que conflitam com o Docker"></a>Remover pacotes que conflitam com o Docker</h2><p>Uma vez que o <strong>Podman</strong> é o “substituto” para o Docker no RHEL/CentOS 8, será necessário remove-los antes de prosseguir com a instalação do Docker:</p>
+<pre><code>$ yum erase podman buildah -y
+</code></pre><h2 id="Instalar-o-Docker"><a href="#Instalar-o-Docker" class="headerlink" title="Instalar o Docker"></a>Instalar o Docker</h2><p>Agora, efetivamente partindo para a instalação do Docker:</p>
+<pre><code>$ sudo yum install docker-ce docker-ce-cli containerd.io -y
+</code></pre><p>Ao final da instalação, você pode adicionar o seu o usuário atual ao grupo do Docker:</p>
+<pre><code>$ sudo usermod -a -G docker ${USER}
+</code></pre><h2 id="Habilitar-e-iniciar-o-servico-do-Docker"><a href="#Habilitar-e-iniciar-o-servico-do-Docker" class="headerlink" title="Habilitar e iniciar o serviço do Docker"></a>Habilitar e iniciar o serviço do Docker</h2><p>Para que o Docker esteja sempre disponível e rodando, habilite e rode o serviço, respectivamente:</p>
+<pre><code>$ sudo systemctl enable docker
+$ sudo systemctl start docker
+</code></pre><h1 id="Verificar-a-instalacao-e-status-do-Docker"><a href="#Verificar-a-instalacao-e-status-do-Docker" class="headerlink" title="Verificar a instalação e status do Docker"></a>Verificar a instalação e status do Docker</h1><p>Para que você possa verificar o status de execução do Docker, você pode, por exemplo, executar os comandos:</p>
+<pre><code>$ docker info
+$ systemctl status docker
+</code></pre><h3 id="Rodando-uma-imagem-de-testes"><a href="#Rodando-uma-imagem-de-testes" class="headerlink" title="Rodando uma imagem de testes"></a>Rodando uma imagem de testes</h3><p>Já, para verificar o sucesso da instalação, você executar a imagem <strong>hello-world</strong>.<br>Para isto, basta executar:</p>
+<pre><code>$ sudo docker run hello-world
+</code></pre>
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/MAC-OS-X/">#MAC OS X</a> <a class="fw3 ph1 dib" href="/tags/macOS/">#macOS</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/CentOS/">#CentOS</a> <a class="fw3 ph1 dib" href="/tags/Terminal/">#Terminal</a> <a class="fw3 ph1 dib" href="/tags/Docker/">#Docker</a>
                         </div>
                     
 
