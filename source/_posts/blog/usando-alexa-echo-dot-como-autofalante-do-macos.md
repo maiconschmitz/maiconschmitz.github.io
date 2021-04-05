@@ -15,7 +15,12 @@ published: true
 
 ---
 
-Além da infinidade de possibilidades que a **Alexa** proporciona no dia a dia, é possível utilizá-la também, como uma "simples caixa de som". Seja através da conexão de um cabo de som auxiliar, que pode ser encontrado normalmente ao lado da entrada de energia, ou então, via bluetooth.
+Além da infinidade de possibilidades que a **Alexa** proporciona no dia a dia, é possível utilizá-la também, como uma "simples caixinha de som". Seja através da conexão de um cabo de som auxiliar, que pode ser encontrado normalmente ao lado da entrada de energia, ou então, via bluetooth.
+
+
+| Echo Dot  | Echo Dot com Relógio  | Echo Show  |
+| --------- |:---------------------:| ----------:|
+| <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=maiconschmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B084DWCZY6&asins=B084DWCZY6&linkId=84bf94a07c72d9c677c3fb3dea67357e&show_border=true&link_opens_in_new_window=true"></iframe> | <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=maiconschmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B084J4WP6J&asins=B084J4WP6J&linkId=f6797af1202e83779c7a2db327b1e80b&show_border=true&link_opens_in_new_window=true"></iframe> | <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=maiconschmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B07KD8HB2G&asins=B07KD8HB2G&linkId=6023ef73e10ce275fdd5d74d61345c00&show_border=true&link_opens_in_new_window=true"></iframe>|
 
 ## Pareando a Alexa com o MacBook
 
