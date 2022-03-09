@@ -22,7 +22,7 @@ archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
 about_widget_avatar_url: https://www.gravatar.com/avatar/590d4b287a1dccf26aa5c2b11f06d560
-about_widget_text: "Meu nome é Maicon Schmitz, sou um desenvolvedor Web e Mobile, trabalho com diversas tecnologias, mas principalmente com JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Apache Cordova e Ionic."
+about_widget_text: "Meu nome é Maicon Schmitz, sou um desenvolvedor Freelancer Web e Mobile, trabalho com diversas tecnologias, mas principalmente com JavaScript, Node.js, Vue.js, Python e GO."
 
 # Comments.
 comments:
@@ -40,7 +40,7 @@ social_platforms:
     fa_icon: fa-twitter
   - url: mailto:contato@maiconschmitz.com.br
     fa_icon: fa-envelope
-  - url: /#
+  - url: /atom.xml
     fa_icon: fa-rss
 
 # Footer about
