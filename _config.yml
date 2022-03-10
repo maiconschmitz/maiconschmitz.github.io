@@ -90,8 +90,9 @@ feed:
 deploy:
   type: git
   repo:
-    github: git@github.com:maiconschmitz/maiconschmitz.github.io.git
+    github: https://github.com/maiconschmitz/maiconschmitz.github.io.git
   branch: master
+  message: Site atualizado em {{ now('YYYY-MM-DD HH:mm:ss') }}
 
 search:
   path: busca.json
