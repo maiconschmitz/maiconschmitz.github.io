@@ -5,6 +5,10 @@ date: 2015-01-09 13:30:27.000000000 -02:00
 categories:
 - Blog
 tags:
+- brew
+- ruby
+- mac-os-x
+- macos
 - Brew
 - Ruby
 - MAC OS X

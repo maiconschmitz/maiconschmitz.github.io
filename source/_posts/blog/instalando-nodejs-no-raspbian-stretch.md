@@ -5,6 +5,9 @@ date: 2018-11-28 12:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- nodejs
+- raspberry-pi
+- raspbian
 - Node.js
 - Raspberry Pi
 - Raspbian

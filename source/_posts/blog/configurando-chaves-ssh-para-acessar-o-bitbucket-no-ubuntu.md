@@ -5,6 +5,11 @@ date: 2014-07-07 11:30:54.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- ssh
+- terminal
+- ubuntu
+- macos
 - MAC OS X
 - SSH
 - Terminal

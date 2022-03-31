@@ -5,6 +5,10 @@ date: 2017-10-05 17:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- ubuntu
+- nodejs
+- npm
+- terminal
 - Ubuntu
 - Node.js
 - npm

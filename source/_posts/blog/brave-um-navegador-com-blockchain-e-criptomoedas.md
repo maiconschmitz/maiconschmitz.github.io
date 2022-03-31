@@ -5,6 +5,12 @@ date: 2019-11-14 20:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- brave
+- chromium
+- ethereum
+- blockchain
+- criptomoeda
+- bat
 - Brave
 - Chromium
 - Ethereum

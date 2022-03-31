@@ -2,6 +2,14 @@
 title: Migrando do gerador de sites estáticos Jekyll para Hexo
 date: 2017-07-27 18:30:00
 tags:
+- site
+- wordpress
+- estatico
+- gerador
+- jekyll
+- ruby
+- hexo
+- nodejs
 - Site
 - Wordpress
 - Estatico

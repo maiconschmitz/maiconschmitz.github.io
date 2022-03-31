@@ -5,6 +5,10 @@ date: 2018-12-02 14:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- terminal
+- zsh
+- macos
 - MAC OS X
 - Terminal
 - ZSH

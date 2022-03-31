@@ -5,6 +5,11 @@ date: 2015-10-02 12:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- app-store
+- mac-os-x
+- pendrive
+- terminal
+- macos
 - App Store
 - MAC OS X
 - Pendrive

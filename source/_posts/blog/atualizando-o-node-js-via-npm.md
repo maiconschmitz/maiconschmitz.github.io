@@ -5,8 +5,9 @@ date: 2014-09-11 11:30:42.000000000 -03:00
 categories:
 - Blog
 tags:
-- Node.js
+- nodejs
 - npm
+- Node.js
 status: publish
 type: post
 published: true

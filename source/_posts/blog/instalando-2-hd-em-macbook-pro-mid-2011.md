@@ -5,6 +5,10 @@ date: 2017-04-28 15:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- hd
+- ssd
+- mac-os-x
+- macos
 - HD
 - SSD
 - MAC OS X

@@ -5,6 +5,9 @@ date: 2014-08-18 11:30:53.000000000 -03:00
 categories:
 - Blog
 tags:
+- pendrive
+- windows
+- xenserver
 - Pendrive
 - Windows
 - XenServer

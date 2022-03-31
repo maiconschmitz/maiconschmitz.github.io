@@ -5,6 +5,9 @@ date: 2015-05-20 13:00:10.000000000 -03:00
 categories:
 - Blog
 tags:
+- pip
+- python
+- terminal
 - PIP
 - Python
 - Terminal

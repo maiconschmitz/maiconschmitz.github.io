@@ -5,6 +5,16 @@ date: 2020-06-26 21:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- pip
+- macos
+- windows
+- netflix
+- youtube
+- prime video
+- chrome
+- brave
+- edge
+- firefox
 - PiP
 - macOS
 - Windows

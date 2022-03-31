@@ -5,6 +5,13 @@ date: 2017-07-03 13:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- ssd
+- hdd
+- hd
+- fusion
+- drive
+- mac-os-x
+- macos
 - SSD
 - HDD
 - HD

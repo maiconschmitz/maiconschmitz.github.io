@@ -5,6 +5,11 @@ date: 2020-07-06 12:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- nodejs
+- npm
+- nvm
+- brew
+- macoS
 - Node.js
 - npm
 - nvm

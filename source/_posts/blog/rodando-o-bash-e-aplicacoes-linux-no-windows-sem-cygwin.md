@@ -5,6 +5,10 @@ date: 2018-07-03 12:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- bash
+- windows
+- powershell
+- cygwin
 - Bash
 - Windows
 - PowerShell

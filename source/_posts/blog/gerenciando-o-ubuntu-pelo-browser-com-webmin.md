@@ -5,6 +5,8 @@ date: 2013-01-11 10:00:18.000000000 -02:00
 categories:
 - Blog
 tags:
+- ubuntu
+- webmin
 - Ubuntu
 - Webmin
 status: publish

@@ -5,6 +5,10 @@ date: 2014-08-12 19:20:29.000000000 -03:00
 categories:
 - Blog
 tags:
+- linux
+- mac-os-x
+- ssh
+- macos
 - Linux
 - MAC OS X
 - SSH

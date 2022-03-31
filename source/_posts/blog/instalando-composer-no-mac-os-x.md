@@ -5,6 +5,10 @@ date: 2015-03-04 11:30:09.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- php
+- terminal
+- macos
 - MAC OS X
 - PHP
 - Terminal

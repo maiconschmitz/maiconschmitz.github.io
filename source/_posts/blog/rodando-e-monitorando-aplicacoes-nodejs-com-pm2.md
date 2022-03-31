@@ -5,6 +5,13 @@ date: 2020-07-20 22:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- pm2
+- nodejs
+- npm
+- nodemon
+- hotreload
+- python
+- go
 - PM2
 - Node.js
 - npm

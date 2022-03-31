@@ -5,6 +5,14 @@ date: 2018-05-15 18:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- macos
+- sd
+- ssd
+- hdd
+- hd
+- fusion
+- drive
 - MAC OS X
 - macOS
 - SD

@@ -5,6 +5,7 @@ date: 2017-03-30 17:30:10.000000000 -03:00
 categories:
 - Blog
 tags:
+- qrcode
 - QR Code
 status: publish
 type: post

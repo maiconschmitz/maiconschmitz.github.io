@@ -5,6 +5,10 @@ date: 2017-08-12 15:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- macos
+- netflix
+- youtube
+- pip
 - macOS
 - Netflix
 - YouTube

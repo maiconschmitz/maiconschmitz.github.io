@@ -5,6 +5,10 @@ date: 2015-07-09 12:30:10.000000000 -03:00
 categories:
 - Blog
 tags:
+- api
+- github
+- composer
+- php
 - API
 - Github
 - Composer

@@ -5,6 +5,11 @@ date: 2015-12-23 18:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- backup
+- mac-os-x
+- pendrive
+- sd
+- macos
 - Backup
 - MAC OS X
 - Pendrive

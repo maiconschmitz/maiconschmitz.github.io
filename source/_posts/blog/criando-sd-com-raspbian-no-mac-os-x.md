@@ -5,6 +5,12 @@ date: 2015-08-24 18:15:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- pendrive
+- sd
+- raspberry py
+- raspbian
+- macos
 - MAC OS X
 - Pendrive
 - SD

@@ -5,6 +5,10 @@ date: 2018-07-16 12:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- macos
+- netbeans
+- java
+- jdk
 - macOS
 - Netbeans
 - Java

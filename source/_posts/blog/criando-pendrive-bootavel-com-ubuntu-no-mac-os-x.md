@@ -5,6 +5,10 @@ date: 2013-07-24 11:00:39.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- pendrive
+- ubuntu
+- macos
 - MAC OS X
 - Pendrive
 - Ubuntu

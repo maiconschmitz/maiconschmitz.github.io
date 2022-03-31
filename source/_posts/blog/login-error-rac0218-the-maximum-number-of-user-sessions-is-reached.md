@@ -5,6 +5,8 @@ date: 2016-07-02 13:30:10.000000000 -03:00
 categories:
 - Blog
 tags:
+- idrac
+- ssh
 - iDrac
 - SSH
 status: publish

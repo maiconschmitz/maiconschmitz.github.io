@@ -5,6 +5,10 @@ date: 2016-02-29 18:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- raspberry-py
+- raspbian
+- arduino
+- usb
 - Raspberry Py
 - Raspbian
 - Arduino

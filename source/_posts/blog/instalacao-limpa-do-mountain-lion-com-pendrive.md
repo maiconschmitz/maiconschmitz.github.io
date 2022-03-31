@@ -5,6 +5,11 @@ date: 2013-03-25 10:30:36.000000000 -03:00
 categories:
 - Blog
 tags:
+- app-store
+- apple
+- mac-os-x
+- pendrive
+- macos
 - App Store
 - Apple
 - MAC OS X

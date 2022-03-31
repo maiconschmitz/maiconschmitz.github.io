@@ -5,6 +5,12 @@ date: 2016-05-21 08:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- app-store
+- mac-os-x
+- pendrive
+- terminal
+- docker
+- macos
 - App Store
 - MAC OS X
 - Pendrive

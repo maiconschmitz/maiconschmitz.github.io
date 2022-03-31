@@ -5,6 +5,10 @@ date: 2014-06-23 11:30:56.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- terminal
+- vim
+- macos
 - MAC OS X
 - Terminal
 - VIM

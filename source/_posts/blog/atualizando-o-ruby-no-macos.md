@@ -5,6 +5,9 @@ date: 2018-08-04 18:30:00.000000000 -02:00
 categories:
 - Blog
 tags:
+- ruby
+- mac-os-x
+- macos
 - Ruby
 - MAC OS X
 - macOS

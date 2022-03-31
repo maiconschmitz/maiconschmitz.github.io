@@ -5,6 +5,11 @@ date: 2018-04-20 17:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- stack
+- desenvolvimento
+- lnmp
+- docker
+- macos
 - Stack
 - Desenvolvimento
 - LNMP

@@ -5,6 +5,8 @@ date: 2018-05-08 11:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac os x
+- macos
 - MAC OS X
 - macOS
 status: publish

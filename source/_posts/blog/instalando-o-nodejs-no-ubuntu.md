@@ -5,6 +5,9 @@ date: 2014-07-28 11:30:38.000000000 -03:00
 categories:
 - Blog
 tags:
+- nodejs
+- terminal
+- ubuntu
 - Node.js
 - Terminal
 - Ubuntu

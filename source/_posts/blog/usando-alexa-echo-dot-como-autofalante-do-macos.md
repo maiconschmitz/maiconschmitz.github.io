@@ -5,6 +5,10 @@ date: 2020-10-30 06:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- macos
+- alexa
+- bluetooth
 - MAC OS X
 - macOS
 - Alexa
@@ -32,7 +36,7 @@ Abra o site [https://alexa.amazon.com/](https://alexa.amazon.com/)
 Efetue o login, com a conta da Amazon que utiliza na sua **Alexa**.
 No menu à esquerda, selecione **Configurações**
 Na lista de **Dispositivos**, selecione o dispositivo que deseja configurar
-Na sessão **Sem fio**, selecione **Bluetooth**
+Acesse a sessão **Bluetooth**
 E em seguida escolha a opção **Parear um novo dispositivo**
 
 ### No MacBook ###

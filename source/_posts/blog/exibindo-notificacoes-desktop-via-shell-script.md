@@ -5,6 +5,10 @@ date: 2016-03-30 08:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- mac-os-x
+- terminal
+- shellscript
+- macos
 - MAC OS X
 - Terminal
 - Shell script

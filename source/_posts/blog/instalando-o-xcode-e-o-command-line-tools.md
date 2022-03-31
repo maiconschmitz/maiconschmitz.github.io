@@ -5,6 +5,13 @@ date: 2015-01-09 12:30:26.000000000 -02:00
 categories:
 - Blog
 tags:
+- app-store
+- apple
+- gcc
+- mac-os-x
+- terminal
+- xcode
+- macos
 - App Store
 - Apple
 - gcc

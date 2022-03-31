@@ -5,6 +5,9 @@ date: 2014-08-26 11:30:56.000000000 -03:00
 categories:
 - Blog
 tags:
+- centos
+- nodejs
+- terminal
 - CentOS
 - Node.js
 - Terminal

@@ -5,6 +5,15 @@ date: 2020-06-15 06:00:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- macos
+- linux
+- windows
+- pendrive
+- sd
+- raspberry-pi
+- raspbian
+- raspberry-pi-os
+- ssh
 - macOS
 - Linux
 - Windows

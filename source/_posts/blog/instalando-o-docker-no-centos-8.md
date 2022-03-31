@@ -5,6 +5,9 @@ date: 2020-11-27 06:30:00.000000000 -03:00
 categories:
 - Blog
 tags:
+- centos
+- docker
+- terminal
 - CentOS
 - Docker
 - Terminal
