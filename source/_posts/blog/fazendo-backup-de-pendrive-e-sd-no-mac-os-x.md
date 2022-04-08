@@ -25,7 +25,7 @@ Ao trabalhar com Pendrives e cartões SD, para testar distribuições à serem e
 
 Neste caso, algo bastante útil e simples de ser feito, é efetuar uma cópia (criar uma imagem) do Pendrive ou Cartão SD, de tal forma que você possa recupera-la posteriormente, ou até então replicar para diversos Pendrives ou Cartões SD.
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=maiconschmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B0749WVNYG&asins=B0749WVNYG&linkId=8f1e44d5d4f5d83113f6a82e0c321727&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=schmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B0749WVNYG&asins=B0749WVNYG&linkId=4b62d74b866d58ee7797c124507ef1bd&show_border=true&link_opens_in_new_window=true"></iframe>
 
 ## Efetuando a cópia...
 
