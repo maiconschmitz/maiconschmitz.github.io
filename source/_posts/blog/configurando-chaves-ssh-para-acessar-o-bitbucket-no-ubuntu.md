@@ -10,11 +10,6 @@ tags:
 - terminal
 - ubuntu
 - macos
-- MAC OS X
-- SSH
-- Terminal
-- Ubuntu
-- macOS
 status: publish
 type: post
 published: true

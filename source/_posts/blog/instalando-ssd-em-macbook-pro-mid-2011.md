@@ -7,8 +7,6 @@ categories:
 tags:
 - mac-os-x
 - macos
-- MAC OS X
-- macOS
 status: publish
 type: post
 published: true

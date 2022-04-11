@@ -8,9 +8,6 @@ tags:
 - centos
 - docker
 - terminal
-- CentOS
-- Docker
-- Terminal
 status: publish
 type: post
 published: true

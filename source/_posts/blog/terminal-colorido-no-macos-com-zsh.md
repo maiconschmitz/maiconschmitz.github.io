@@ -9,10 +9,6 @@ tags:
 - terminal
 - zsh
 - macos
-- MAC OS X
-- Terminal
-- ZSH
-- macOS
 status: publish
 type: post
 published: true

@@ -9,10 +9,6 @@ tags:
 - mac-os-x
 - ssh
 - macos
-- Linux
-- MAC OS X
-- SSH
-- macOS
 status: publish
 type: post
 published: true

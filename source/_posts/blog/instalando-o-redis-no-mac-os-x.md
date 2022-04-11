@@ -9,10 +9,6 @@ tags:
 - redis
 - terminal
 - macos
-- MAC OS X
-- Redis
-- Terminal
-- macOS
 status: publish
 type: post
 published: true

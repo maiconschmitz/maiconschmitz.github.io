@@ -9,10 +9,6 @@ tags:
 - terminal
 - shellscript
 - macos
-- MAC OS X
-- Terminal
-- Shell script
-- macOS
 status: publish
 type: post
 published: true

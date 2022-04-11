@@ -11,12 +11,6 @@ tags:
 - raspberry py
 - raspbian
 - macos
-- MAC OS X
-- Pendrive
-- SD
-- Raspberry Py
-- Raspbian
-- macOS
 status: publish
 type: post
 published: true

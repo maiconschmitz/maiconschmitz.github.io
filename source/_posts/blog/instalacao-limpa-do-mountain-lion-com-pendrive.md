@@ -10,11 +10,6 @@ tags:
 - mac-os-x
 - pendrive
 - macos
-- App Store
-- Apple
-- MAC OS X
-- Pendrive
-- macOS
 status: publish
 type: post
 published: true

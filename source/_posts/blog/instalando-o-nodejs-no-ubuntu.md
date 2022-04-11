@@ -8,9 +8,6 @@ tags:
 - nodejs
 - terminal
 - ubuntu
-- Node.js
-- Terminal
-- Ubuntu
 status: publish
 type: post
 published: true

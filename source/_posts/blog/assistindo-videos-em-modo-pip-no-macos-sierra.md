@@ -9,10 +9,6 @@ tags:
 - netflix
 - youtube
 - pip
-- macOS
-- Netflix
-- YouTube
-- PiP
 status: publish
 type: post
 published: true

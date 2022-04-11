@@ -9,10 +9,6 @@ tags:
 - windows
 - powershell
 - cygwin
-- Bash
-- Windows
-- PowerShell
-- Cygwin
 status: publish
 type: post
 published: true

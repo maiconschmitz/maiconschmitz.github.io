@@ -9,12 +9,7 @@ tags:
 - npm
 - nvm
 - brew
-- macoS
-- Node.js
-- npm
-- nvm
-- Brew
-- macOS
+- macos
 status: publish
 type: post
 published: true

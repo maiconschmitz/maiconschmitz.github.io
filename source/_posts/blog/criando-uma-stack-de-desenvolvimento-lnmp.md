@@ -10,11 +10,6 @@ tags:
 - lnmp
 - docker
 - macos
-- Stack
-- Desenvolvimento
-- LNMP
-- Docker
-- macOS
 status: publish
 type: post
 published: true

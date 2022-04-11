@@ -6,7 +6,8 @@ categories:
 - Blog
 tags:
 - qrcode
-- QR Code
+- extensao
+- chrome
 status: publish
 type: post
 published: true

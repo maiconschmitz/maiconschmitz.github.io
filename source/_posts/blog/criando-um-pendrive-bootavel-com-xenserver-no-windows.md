@@ -8,9 +8,6 @@ tags:
 - pendrive
 - windows
 - xenserver
-- Pendrive
-- Windows
-- XenServer
 status: publish
 type: post
 published: true

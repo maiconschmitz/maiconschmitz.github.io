@@ -15,16 +15,6 @@ tags:
 - brave
 - edge
 - firefox
-- PiP
-- macOS
-- Windows
-- Netflix
-- YouTube
-- Prime Video
-- Chrome
-- Brave
-- Edge
-- Firefox
 status: publish
 type: post
 published: true

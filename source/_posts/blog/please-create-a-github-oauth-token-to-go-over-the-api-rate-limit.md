@@ -9,10 +9,6 @@ tags:
 - github
 - composer
 - php
-- API
-- Github
-- Composer
-- PHP
 status: publish
 type: post
 published: true

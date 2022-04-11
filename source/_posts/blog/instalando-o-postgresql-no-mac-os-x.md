@@ -8,9 +8,6 @@ tags:
 - mac-os-x
 - postgresql
 - macos
-- MAC OS X
-- PostgreSQL
-- macOS
 status: publish
 type: post
 published: true

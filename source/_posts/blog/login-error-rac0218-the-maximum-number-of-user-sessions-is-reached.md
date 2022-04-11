@@ -7,8 +7,6 @@ categories:
 tags:
 - idrac
 - ssh
-- iDrac
-- SSH
 status: publish
 type: post
 published: true

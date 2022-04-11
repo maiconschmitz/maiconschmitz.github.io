@@ -9,10 +9,6 @@ tags:
 - raspbian
 - arduino
 - usb
-- Raspberry Py
-- Raspbian
-- Arduino
-- USB
 status: publish
 type: post
 published: true

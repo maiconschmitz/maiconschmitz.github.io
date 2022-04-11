@@ -9,10 +9,6 @@ tags:
 - netbeans
 - java
 - jdk
-- macOS
-- Netbeans
-- Java
-- JDK
 status: publish
 type: post
 published: true

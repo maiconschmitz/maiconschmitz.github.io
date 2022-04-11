@@ -14,15 +14,6 @@ tags:
 - raspbian
 - raspberry-pi-os
 - ssh
-- macOS
-- Linux
-- Windows
-- Pendrive
-- SD
-- Raspberry Pi
-- Raspbian
-- Raspberry Pi OS
-- SSH
 status: publish
 type: post
 published: true

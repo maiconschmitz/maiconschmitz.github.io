@@ -12,13 +12,6 @@ tags:
 - hotreload
 - python
 - go
-- PM2
-- Node.js
-- npm
-- nodemon
-- hotreload
-- Python
-- GO
 status: publish
 type: post
 published: true

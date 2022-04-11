@@ -11,12 +11,6 @@ tags:
 - terminal
 - docker
 - macos
-- App Store
-- MAC OS X
-- Pendrive
-- Terminal
-- Docker
-- macOS
 status: publish
 type: post
 published: true

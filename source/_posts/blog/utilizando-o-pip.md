@@ -8,9 +8,6 @@ tags:
 - pip
 - python
 - terminal
-- PIP
-- Python
-- Terminal
 status: publish
 type: post
 published: true

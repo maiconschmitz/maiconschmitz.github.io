@@ -9,10 +9,6 @@ tags:
 - ssd
 - mac-os-x
 - macos
-- HD
-- SSD
-- MAC OS X
-- macOS
 status: publish
 type: post
 published: true

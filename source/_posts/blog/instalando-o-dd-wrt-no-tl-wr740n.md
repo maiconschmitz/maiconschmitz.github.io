@@ -7,8 +7,6 @@ categories:
 tags:
 - dd-wrt
 - linux
-- DD-WRT
-- Linux
 status: publish
 type: post
 published: true

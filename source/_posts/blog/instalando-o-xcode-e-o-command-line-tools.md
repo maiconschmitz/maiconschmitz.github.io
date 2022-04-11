@@ -12,13 +12,6 @@ tags:
 - terminal
 - xcode
 - macos
-- App Store
-- Apple
-- gcc
-- MAC OS X
-- Terminal
-- Xcode
-- macOS
 status: publish
 type: post
 published: true

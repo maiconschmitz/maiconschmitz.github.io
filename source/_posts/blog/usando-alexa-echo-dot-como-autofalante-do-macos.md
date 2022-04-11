@@ -9,10 +9,6 @@ tags:
 - macos
 - alexa
 - bluetooth
-- MAC OS X
-- macOS
-- Alexa
-- Bluetooth
 status: publish
 type: post
 published: true

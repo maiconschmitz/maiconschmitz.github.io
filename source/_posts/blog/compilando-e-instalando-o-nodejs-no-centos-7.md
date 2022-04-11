@@ -8,9 +8,6 @@ tags:
 - centos
 - nodejs
 - terminal
-- CentOS
-- Node.js
-- Terminal
 status: publish
 type: post
 published: true

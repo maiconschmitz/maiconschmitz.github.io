@@ -9,10 +9,6 @@ tags:
 - ruby
 - mac-os-x
 - macos
-- Brew
-- Ruby
-- MAC OS X
-- macOS
 status: publish
 type: post
 published: true

@@ -14,15 +14,6 @@ tags:
 - raspberry-pi
 - raspbian
 - raspberry-pi-os
-- MAC OS X
-- macOS
-- Linux
-- Windows
-- Pendrive
-- SD
-- Raspberry Pi
-- Raspbian
-- Raspberry Pi OS
 status: publish
 type: post
 published: true

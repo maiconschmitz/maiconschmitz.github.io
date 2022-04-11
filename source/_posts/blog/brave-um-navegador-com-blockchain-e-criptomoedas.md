@@ -11,12 +11,6 @@ tags:
 - blockchain
 - criptomoeda
 - bat
-- Brave
-- Chromium
-- Ethereum
-- Blockchain
-- Criptomoeda
-- BAT
 status: publish
 type: post
 published: true

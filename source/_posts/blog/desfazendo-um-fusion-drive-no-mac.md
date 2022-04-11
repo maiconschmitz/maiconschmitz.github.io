@@ -12,13 +12,6 @@ tags:
 - drive
 - mac-os-x
 - macos
-- SSD
-- HDD
-- HD
-- Fusion
-- Drive
-- MAC OS X
-- macOS
 status: publish
 type: post
 published: true

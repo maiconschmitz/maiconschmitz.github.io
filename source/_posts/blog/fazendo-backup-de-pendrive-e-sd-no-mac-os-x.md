@@ -10,11 +10,6 @@ tags:
 - pendrive
 - sd
 - macos
-- Backup
-- MAC OS X
-- Pendrive
-- SD
-- macOS
 status: publish
 type: post
 published: true

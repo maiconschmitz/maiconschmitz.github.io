@@ -10,11 +10,6 @@ tags:
 - pendrive
 - terminal
 - macos
-- App Store
-- MAC OS X
-- Pendrive
-- Terminal
-- macOS
 status: publish
 type: post
 published: true

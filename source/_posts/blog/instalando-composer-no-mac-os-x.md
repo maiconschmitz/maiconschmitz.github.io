@@ -9,10 +9,6 @@ tags:
 - php
 - terminal
 - macos
-- MAC OS X
-- PHP
-- Terminal
-- macOS
 status: publish
 type: post
 published: true

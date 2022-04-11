@@ -7,7 +7,6 @@ categories:
 tags:
 - nodejs
 - npm
-- Node.js
 status: publish
 type: post
 published: true

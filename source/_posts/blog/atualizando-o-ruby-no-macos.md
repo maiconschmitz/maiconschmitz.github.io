@@ -8,9 +8,6 @@ tags:
 - ruby
 - mac-os-x
 - macos
-- Ruby
-- MAC OS X
-- macOS
 status: publish
 type: post
 published: true

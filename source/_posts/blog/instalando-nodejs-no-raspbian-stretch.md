@@ -8,9 +8,6 @@ tags:
 - nodejs
 - raspberry-pi
 - raspbian
-- Node.js
-- Raspberry Pi
-- Raspbian
 status: publish
 type: post
 published: true

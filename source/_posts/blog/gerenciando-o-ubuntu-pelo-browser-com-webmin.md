@@ -7,8 +7,6 @@ categories:
 tags:
 - ubuntu
 - webmin
-- Ubuntu
-- Webmin
 status: publish
 type: post
 published: true

@@ -13,14 +13,6 @@ tags:
 - hd
 - fusion
 - drive
-- MAC OS X
-- macOS
-- SD
-- SSD
-- HDD
-- HD
-- Fusion
-- Drive
 status: publish
 type: post
 published: true

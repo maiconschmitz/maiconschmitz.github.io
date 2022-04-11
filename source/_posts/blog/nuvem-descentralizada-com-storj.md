@@ -12,13 +12,6 @@ tags:
 - ethereum
 - eth
 - filezilla
-- Storj
-- Nuvem
-- P2P
-- Blockchain
-- Ethereum
-- ETH
-- FileZilla
 status: publish
 type: post
 published: true

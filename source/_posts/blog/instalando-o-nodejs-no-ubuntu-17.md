@@ -9,10 +9,6 @@ tags:
 - nodejs
 - npm
 - terminal
-- Ubuntu
-- Node.js
-- npm
-- Terminal
 status: publish
 type: post
 published: true
