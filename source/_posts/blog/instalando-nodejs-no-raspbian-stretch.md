@@ -3,7 +3,7 @@ layout: post
 title: Instalando Node.js no Raspbian Stretch
 date: 2018-11-28 12:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - nodejs
 - raspberry-pi

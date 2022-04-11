@@ -3,7 +3,7 @@ layout: post
 title: Aumentando o espaço de armazenamento do MacBook com cartão SD
 date: 2018-05-15 18:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos

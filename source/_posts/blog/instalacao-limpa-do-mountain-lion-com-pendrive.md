@@ -3,7 +3,7 @@ layout: post
 title: Instalação limpa do Mountain Lion com Pendrive
 date: 2013-03-25 10:30:36.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - app-store
 - apple

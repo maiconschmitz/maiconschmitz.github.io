@@ -3,7 +3,7 @@ layout: post
 title: Adicionando chaves SSH para conexão entre 2 Servidores
 date: 2014-08-12 19:20:29.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - linux
 - mac-os-x

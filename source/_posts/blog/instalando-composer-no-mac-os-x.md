@@ -3,7 +3,7 @@ layout: post
 title: Instalando Composer no MAC OS X
 date: 2015-03-04 11:30:09.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - php

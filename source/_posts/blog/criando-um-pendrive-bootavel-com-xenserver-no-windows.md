@@ -3,7 +3,7 @@ layout: post
 title: Criando um Pendrive bootavel com XenServer no Windows
 date: 2014-08-18 11:30:53.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - pendrive
 - windows

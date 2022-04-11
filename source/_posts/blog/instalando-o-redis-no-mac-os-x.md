@@ -3,7 +3,7 @@ layout: post
 title: Instalando o REDIS no MAC OS X
 date: 2014-12-29 18:30:49.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - redis

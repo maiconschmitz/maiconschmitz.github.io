@@ -3,7 +3,7 @@ layout: post
 title: Criando uma Stack de Desenvolvimento LNMP
 date: 2018-04-20 17:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - stack
 - desenvolvimento

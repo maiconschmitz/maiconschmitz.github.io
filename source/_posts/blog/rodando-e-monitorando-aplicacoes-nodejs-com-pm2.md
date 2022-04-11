@@ -3,7 +3,7 @@ layout: post
 title: Rodando e monitorando aplicações Node.js com PM2
 date: 2020-07-20 22:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - pm2
 - nodejs

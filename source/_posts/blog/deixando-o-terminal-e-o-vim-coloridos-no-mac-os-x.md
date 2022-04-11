@@ -3,7 +3,7 @@ layout: post
 title: Deixando o Terminal e o VIM Coloridos no MAC OS X
 date: 2014-06-23 11:30:56.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - terminal

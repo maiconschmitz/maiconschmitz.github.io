@@ -3,7 +3,7 @@ layout: post
 title: Instalando o PostgreSQL no MAC OS X
 date: 2015-03-23 15:00:43.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - postgresql

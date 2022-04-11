@@ -3,7 +3,7 @@ layout: post
 title: Gerenciando multiplas versões do Node.js no macOS com o NVM
 date: 2020-07-06 12:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - nodejs
 - npm

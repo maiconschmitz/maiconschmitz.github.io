@@ -3,7 +3,7 @@ layout: post
 title: Usando Alexa como Autofalante do MacBook
 date: 2020-10-30 06:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos

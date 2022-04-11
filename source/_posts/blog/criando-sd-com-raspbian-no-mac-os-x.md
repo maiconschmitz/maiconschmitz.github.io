@@ -3,7 +3,7 @@ layout: post
 title: Criando cartão SD com Raspbian no Mac OS X
 date: 2015-08-24 18:15:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - pendrive

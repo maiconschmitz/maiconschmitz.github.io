@@ -3,7 +3,7 @@ layout: post
 title: Núvem descentralizada com Storj
 date: 2017-09-21 17:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - storj
 - nuvem

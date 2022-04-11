@@ -3,7 +3,7 @@ layout: post
 title: Gerenciando o Ubuntu pelo browser, com Webmin
 date: 2013-01-11 10:00:18.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - ubuntu
 - webmin

@@ -3,7 +3,7 @@ layout: post
 title: Unindo um SSD com um HD e criando um Fusion Drive no Mac
 date: 2017-07-03 13:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - ssd
 - hdd

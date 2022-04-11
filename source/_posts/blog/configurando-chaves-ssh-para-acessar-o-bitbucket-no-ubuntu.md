@@ -3,7 +3,7 @@ layout: post
 title: Configurando chaves SSH para acessar o BitBucket no Ubuntu
 date: 2014-07-07 11:30:54.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - ssh

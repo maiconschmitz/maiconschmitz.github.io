@@ -3,7 +3,7 @@ layout: post
 title: Exibindo Notificações Desktop via Shell script
 date: 2016-03-30 08:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - terminal

@@ -3,7 +3,7 @@ layout: post
 title: Instalar Raspberry Pi OS sem teclado, mouse e monitor
 date: 2020-06-15 06:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - macos
 - linux

@@ -3,7 +3,7 @@ layout: post
 title: Instalando o gerenciador de pacotes PIP
 date: 2015-04-09 13:30:52.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - pip
 - python

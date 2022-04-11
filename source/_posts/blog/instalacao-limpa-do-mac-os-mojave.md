@@ -3,7 +3,7 @@ layout: post
 title: Instalação Limpa do macOS Mojave
 date: 2018-10-15 11:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos

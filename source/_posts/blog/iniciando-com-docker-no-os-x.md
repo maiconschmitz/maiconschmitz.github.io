@@ -3,7 +3,7 @@ layout: post
 title: Iniciando com Docker no OS X
 date: 2016-05-21 08:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - app-store
 - mac-os-x

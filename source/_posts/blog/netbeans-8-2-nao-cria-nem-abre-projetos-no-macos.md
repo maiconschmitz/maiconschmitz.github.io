@@ -3,7 +3,7 @@ layout: post
 title: Netbeans 8.2 não cria nem abre projetos no macOS
 date: 2018-07-16 12:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - macos
 - netbeans

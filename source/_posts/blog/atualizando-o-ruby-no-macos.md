@@ -3,7 +3,7 @@ layout: post
 title: Atualizando o Ruby no macOS
 date: 2018-08-04 18:30:00.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - ruby
 - mac-os-x

@@ -3,7 +3,7 @@ layout: post
 title: Instalando o Docker no CentOS 8
 date: 2020-11-27 06:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - centos
 - docker

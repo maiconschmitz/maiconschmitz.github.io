@@ -3,7 +3,7 @@ layout: post
 title: Instalando o Node.js no Ubuntu
 date: 2014-07-28 11:30:38.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - nodejs
 - terminal

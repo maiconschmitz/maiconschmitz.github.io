@@ -3,7 +3,7 @@ layout: post
 title: Instalando o Xcode e o Command Line Tools
 date: 2015-01-09 12:30:26.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - app-store
 - apple

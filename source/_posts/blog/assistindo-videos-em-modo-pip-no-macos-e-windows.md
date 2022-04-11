@@ -3,7 +3,7 @@ layout: post
 title: Assistindo à vídeos do Browser em modo PiP no macOS e Windows
 date: 2020-06-26 21:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - pip
 - macos
@@ -35,3 +35,7 @@ Já para usuários do **Firefox**, este recurso esta disponível de forma nativa
 ### Assistindo Vídeos em modo PiP através do Navegador
 
 Após instalada a extensão, bastará acessar seu site de vídeos desejado e clicar sobre o ícones de "janelinha", que estara disponível na barra do navegador, ou junto à imagem do vídeo.
+
+### Conteúdo para assistir
+
+Se deseja [conteúdo para assistir](https://amzn.to/3v2eX9a), você pode optar por fazer uma [assinatura Prime da Amazon](https://amzn.to/3v2eX9a), que lhe oferece diversos recursos, como frete grátis em compras, acesso à eBooks e acesso ao [Prime Vídeo](https://amzn.to/3v2eX9a).

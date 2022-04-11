@@ -3,7 +3,7 @@ layout: post
 title: Instalando o gerenciador de pacotes Yarn no macOS
 date: 2020-08-28 11:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - yarn
 - npm

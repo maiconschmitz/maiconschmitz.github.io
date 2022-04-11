@@ -3,7 +3,7 @@ layout: post
 title: Instalando o DD-WRT no TL-WR740N
 date: 2015-02-09 12:00:42.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - dd-wrt
 - linux

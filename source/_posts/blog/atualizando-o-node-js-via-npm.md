@@ -3,7 +3,7 @@ layout: post
 title: Atualizando o Node.js via npm
 date: 2014-09-11 11:30:42.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - nodejs
 - npm

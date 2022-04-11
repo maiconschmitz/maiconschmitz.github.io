@@ -3,7 +3,7 @@ layout: post
 title: Instalação limpa do OS X Yosemite
 date: 2014-12-30 19:00:36.000000000 -02:00
 categories:
-- Blog
+- blog
 tags:
 - app-store
 - mac-os-x

@@ -3,7 +3,7 @@ layout: post
 title: Desfazendo um Fusion Drive no macOS
 date: 2018-11-25 13:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - ssd
 - hdd

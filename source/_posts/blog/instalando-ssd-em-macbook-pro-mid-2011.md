@@ -3,7 +3,7 @@ layout: post
 title: Instalando SSD em MacBook Pro mid 2011
 date: 2015-11-11 18:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos

@@ -3,7 +3,7 @@ layout: post
 title: Instalando o Node.js no Ubuntu 17
 date: 2017-10-05 17:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - ubuntu
 - nodejs

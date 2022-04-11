@@ -3,7 +3,7 @@ layout: post
 title: Criando um Pendrive bootavel com Ubuntu no Mac OS X
 date: 2013-07-24 11:00:39.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - pendrive

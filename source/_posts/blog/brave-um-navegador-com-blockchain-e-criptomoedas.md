@@ -3,7 +3,7 @@ layout: post
 title: Brave, o navegador com Blockchain e Criptomoedas BAT
 date: 2019-11-14 20:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - brave
 - chromium

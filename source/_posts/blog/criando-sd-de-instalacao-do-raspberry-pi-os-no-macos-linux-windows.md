@@ -3,7 +3,7 @@ layout: post
 title: Criando cartão SD de Instalação do Raspberry Pi OS no macOS, Linux e Windows
 date: 2020-06-08 06:00:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos

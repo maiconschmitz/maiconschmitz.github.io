@@ -3,7 +3,7 @@ layout: post
 title: Compilando e Instalando o Node.js no CentOS 7
 date: 2014-08-26 11:30:56.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - centos
 - nodejs

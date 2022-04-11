@@ -3,7 +3,7 @@ layout: post
 title: Instalação Limpa do macOS Sierra
 date: 2017-06-02 15:30:00.000000000 -03:00
 categories:
-- Blog
+- blog
 tags:
 - mac-os-x
 - macos
