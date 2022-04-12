@@ -24,7 +24,7 @@ O modo **PiP**, ou **Picture in Picture**, é um recurso que lhe permite assisti
 
 Popular e disponível em Smart TVs modernas, onde é possível assistir à uma transmissão de vídeo em uma pequena janela, enquanto assiste à algo na "tela grande", bem como nos smartphone Android e recentemente no iOS 14 (que na data desta publicacão, está na versão beta).
 
-Disponível em navegadores compatíveis com as extensões da [Chrome Web Store](https://chrome.google.com/webstore/category/extensions), como o próprio **Google Chrome**, [**Brave**](https://brave.com/mai223) e até mesmo o **Microsoft Edge**, é possível fazer o uso deste recurso e desacoplar uma pequena janela flutuante para assistir aos vídeos, da Netflix, YouTube, Amazon Prime Video, etc.
+Disponível em navegadores compatíveis com as extensões da [Chrome Web Store](https://chrome.google.com/webstore/category/extensions), como o próprio **Google Chrome**, [**Brave**](https://brave.com) e até mesmo o **Microsoft Edge**, é possível fazer o uso deste recurso e desacoplar uma pequena janela flutuante para assistir aos vídeos, da Netflix, YouTube, Amazon Prime Video, etc.
 
 ### Habilitando o uso do modo PiP no Navegador
 
