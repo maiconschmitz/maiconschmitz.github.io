@@ -5,7 +5,7 @@ date: 2016-02-29 18:00:00.000000000 -03:00
 categories:
 - blog
 tags:
-- raspberry-py
+- raspberry-pi
 - raspbian
 - arduino
 - usb
