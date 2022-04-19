@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="MTo6E4sAMMHSyi4nYC308ZPAlN0hZdu72yDYTe0wI1k" />
+    <!--Description-->
+    
+        <meta name="description" content="Desenvolvedor de software Web e Mobile, atualmente estou estudando Python e Go. Entusiasta de IoT, Python, Go e Flutter.">
+    
+    <!--Author-->
+    
+        <meta name="author" content="Maicon Schmitz">
+    
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Migrando do gerador de sites estáticos Jekyll para Hexo"/>
+    
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Desenvolvedor de software Web e Mobile, atualmente estou estudando Python e Go. Entusiasta de IoT, Python, Go e Flutter." />
+    
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Maicon Schmitz"/>
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+    <!--Page Cover-->
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <!-- Title -->
+    
+    <title>Migrando do gerador de sites estáticos Jekyll para Hexo - Maicon Schmitz</title>
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6606591-5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-6606591-5');
+    </script>
+
+
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Maicon Schmitz" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Maicon Schmitz" type="application/rss+xml">
+</head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/" title="Maicon Schmitz">
+            <img src="/images/logo.svg" class="dib h3" alt="Maicon Schmitz">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/" 
+                    title="Home">
+                    Home
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/arquivos" 
+                    title="Arquivos">
+                    Arquivos
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/sobre" 
+                    title="Sobre">
+                    Sobre
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Migrando do gerador de sites estáticos Jekyll para Hexo</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">27/07/2017</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-file-text-o"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/tags/nodejs/">#nodejs</a> <a class="fw3 ph1 dib" href="/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/tags/site/">#site</a> <a class="fw3 ph1 dib" href="/tags/wordpress/">#wordpress</a> <a class="fw3 ph1 dib" href="/tags/estatico/">#estatico</a> <a class="fw3 ph1 dib" href="/tags/gerador/">#gerador</a> <a class="fw3 ph1 dib" href="/tags/jekyll/">#jekyll</a> <a class="fw3 ph1 dib" href="/tags/hexo/">#hexo</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <p>Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de sites estáticos, optou-se por migrar do <strong>Wordpress</strong> para o <strong>Jekyl</strong> e agora, do Jekyl para o <strong>Hexo</strong>.</p>
+<h2 id="Jekyl"><a href="#Jekyl" class="headerlink" title="Jekyl"></a>Jekyl</h2><p>O Jekyl é um gerador de sites estáticos, bastante rápido, escrito em Ruby e é também, o gerador “oficial” utilizado no <a target="_blank" rel="noopener" href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a>, motivo principal que levou esta página à ser migrada para ele inicialmente.</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>O Hexo, assim como o <strong>Jekyl</strong>, também é um gerador de sites estáticos, porém este é escrito em <strong>Nodejs</strong>. Bastante semelhante ao Jekyl em funcionalidade, efetuar esta migração é um passo bastante simples, sendo necessário tomar cuidado apenas com pequenos detalhes.</p>
+<h2 id="Instalando-o-Hexo"><a href="#Instalando-o-Hexo" class="headerlink" title="Instalando o Hexo"></a>Instalando o Hexo</h2><p>Acesse o Terminal e execute o seguinte comando:</p>
+<pre><code>$npm install hexo-cli -g
+</code></pre>
+<p>Para maiores esclarecimentos sobre a instalação, você pode acessar a documentação no site do <a target="_blank" rel="noopener" href="https://hexo.io/docs/" title="Hexo">Hexo</a>.</p>
+<h2 id="Migrando-do-Jekyl-para-o-Hexo"><a href="#Migrando-do-Jekyl-para-o-Hexo" class="headerlink" title="Migrando do Jekyl para o Hexo"></a>Migrando do Jekyl para o Hexo</h2><p>Crie um novo projeto com o Hexo:</p>
+<pre><code>$hexo init &lt;nome-do-projeto&gt;
+$cd &lt;nome-do-projeto&gt;
+$npm install
+</code></pre>
+<p>Lembrando que <strong>nome-do-projeto</strong>, deve ser substituido pelo nome do seu projeto.</p>
+<p>Uma vez que este procedimento estiver concluído, configure o seu projeto, editando o arquivo <strong>_config.yml</strong> que se encontra na raiz do diretório <strong>nome-do-projeto</strong>.</p>
+<p>Este arquivo de configuração é bastante intuitívo e segue o padrão de qualquel YAML.</p>
+<p>Defina os valores para as principais <strong>tags</strong> como <strong>title</strong>, <strong>description</strong> e <strong>author</strong>. Defina <strong>language</strong> com o valor <em>pt-BR</em>, a URL seu site em <strong>url</strong> e ajuste os padrões de data e hora em <strong>date_format</strong>, com <em>DD&#x2F;MM&#x2F;YYY</em> e <strong>time_format</strong> com <em>HH:mm:ss</em>, respectivamente.</p>
+<h3 id="Migrando-os-Posts"><a href="#Migrando-os-Posts" class="headerlink" title="Migrando os Posts"></a>Migrando os Posts</h3><p>Para migrar os Posts, basta copiar os arquivos de post do Jekyll, que estão na pasta <strong>_posts</strong> e no formato Markdown (*.md), para a pasta <strong>source&#x2F;_posts&#x2F;</strong> do <strong>Hexo</strong>.</p>
+<p>Volte para o seu arquivo de configuração (<strong>_config.yml</strong>) e ajuste o valor da <strong>tag</strong>, <strong>new_post_name</strong> para utilizar o mesmo padrão que você possuia no Jekyll. No meu caso, o valor definido foi <strong>blog&#x2F;:title.md</strong>, pois meus posts ficam todos no subdiretório <strong>blog</strong> e possuem como URL, apenas o <strong>título</strong>.</p>
+<h2 id="Gerando-os-arquivos-estaticos"><a href="#Gerando-os-arquivos-estaticos" class="headerlink" title="Gerando os arquivos estáticos"></a>Gerando os arquivos estáticos</h2><p>Para gerar as páginas estáticas do Hexo, basta executar o comando:</p>
+<pre><code>$hexo generate
+</code></pre>
+<p>Este procedimento irá processar todos os seus arquivos .md e irá gerar os devidos arquivos para cada um dos Posts, irá também, gerar a paginação, arquivos (indice de posts) e tags, caso você às utilize.</p>
+<p>O generate também se encarrega de copiar quaisquer arquivos estáticos, como <em>assets</em> da pasta source, para a pasta de destino, no diretório <strong>public</strong>.</p>
+<p>Lembre-se de não efetuar qualquer alteração no conteúdo dos arquivos do diretório <strong>public</strong>, pois sempre que o <strong>generate</strong> é executado, estes conteúdos são sustituídos&#x2F;atualizados, com base no conteúdo do diretório <strong>source</strong> e do resultado de geração das páginas estáticas.</p>
+<h2 id="Servindo-as-paginas-estaticas"><a href="#Servindo-as-paginas-estaticas" class="headerlink" title="Servindo as páginas estáticas"></a>Servindo as páginas estáticas</h2><p>Para servir as páginas estáticas do Hexo, você pode utilizar o próprio Hexo, bastando executar o comando:</p>
+<pre><code>$hexo serve
+</code></pre>
+<p>Assim, você poderá acessar o <a target="_blank" rel="noopener" href="http://localhost:4000/" title="http://localhost:4000">http://localhost:4000</a> para navegar e visualizar o seu site.</p>
+<h2 id="Fazendo-o-deploy"><a href="#Fazendo-o-deploy" class="headerlink" title="Fazendo o deploy"></a>Fazendo o deploy</h2><p>O Hexo provê um sistema bastante simples e efetivo para efetuar o deploy.</p>
+<p>Para que você possa fazer o deploy via git, por exemplo, você deverá adicionar ao arquivo <strong>_config.yml</strong>, as seguintes informações:</p>
+<pre><code>deploy:
+    type: git
+    repo: &lt;url-do-repositorio.git&gt;
+    branch: &lt;nome-do-branch-normalmente-master&gt;
+</code></pre>
+<p>Feita esta configuração, não se esqueça de efetuar a instalação do plugin de deploy, com o comando:</p>
+<pre><code>$npm install hexo-deployer-git --save
+</code></pre>
+<p>Enfim, para efetuar o deploy, execute o comando:</p>
+<pre><code>$hexo deploy
+</code></pre>
+<p>Caso você ainda possua dúvidas, não deixe de consulta a seção de <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html" title="Deployment">Deployment</a> na documentação.</p>
+<h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>Para que você possa utilizar o <strong>Hexo</strong> no <a target="_blank" rel="noopener" href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a>, será necessário mais alguns passos.</p>
+<h3 id="Crie-um-Branch-para-os-Fontes"><a href="#Crie-um-Branch-para-os-Fontes" class="headerlink" title="Crie um Branch para os Fontes!"></a>Crie um Branch para os Fontes!</h3><p>Para que você possa publicar o seu site no <strong>GitHub Pages</strong>, você deverá criar um novo branch para os fontes do seu projeto, deixando o branch <strong>master</strong>, apenas para o site gerado através do comando <strong>hexo deploy</strong>, isto por que atualmente o GitHub Pages, só serve os sites estáticos à partir do branch <strong>master</strong>.</p>
+<p>No meu caso:<br>    Criei um repositório git<br>    Criei um branch <strong>source</strong><br>    Criei o projeto do <strong>hexo</strong> neste branch <strong>source</strong><br>    Efetuo <strong>git add</strong>, <strong>commit</strong> e <strong>push</strong> apenas neste branch<br>    Deixo o branch <strong>master</strong> nas mãos do <strong>hexo deploy</strong></p>
+<h3 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h3><p>Caso você esteja apontando o seu domínio para o GitHub Pages, é bem provável que você já possui um CNAME configurado.</p>
+<p>Se não sabe o que é isto, verifique artigo <a target="_blank" rel="noopener" href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" title="utilizando um domínio customizado com o github pages">utilizando um domínio customizado com o github pages</a>.</p>
+<p>Para que você possa manter as configurações do CNAME funcionais, será necessário copiar o seu arquivo <strong>CNAME</strong> para a raiz da pasta <strong>souce</strong>.</p>
+<h2 id="Adicionando-e-Gerando-Posts"><a href="#Adicionando-e-Gerando-Posts" class="headerlink" title="Adicionando e Gerando Posts"></a>Adicionando e Gerando Posts</h2><p>Passados os passos anteriores, o fluxo de utilização do Hexo será o seguinte:</p>
+<h3 id="Criando-um-novo-Post"><a href="#Criando-um-novo-Post" class="headerlink" title="Criando um novo Post:"></a>Criando um novo Post:</h3><pre><code>$ hexo new post &lt;titulo-do-post&gt;
+</code></pre>
+<p>Edite o arquivo source&#x2F;_posts&#x2F;titulo-do-post.md</p>
+<h3 id="Gerando-e-visualizando-as-paginas"><a href="#Gerando-e-visualizando-as-paginas" class="headerlink" title="Gerando e visualizando as páginas:"></a>Gerando e visualizando as páginas:</h3><pre><code>$ hexo generate
+$ hexo serve
+</code></pre>
+<p>Acesse o link <a target="_blank" rel="noopener" href="http://localhost:4000/" title="http://localhost:4000">http://localhost:4000</a></p>
+<h3 id="Efetuando-o-deploy"><a href="#Efetuando-o-deploy" class="headerlink" title="Efetuando o deploy"></a>Efetuando o deploy</h3><pre><code>$hexo deploy
+</code></pre>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/nodejs/">#nodejs</a> <a class="fw3 ph1 dib" href="/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/tags/site/">#site</a> <a class="fw3 ph1 dib" href="/tags/wordpress/">#wordpress</a> <a class="fw3 ph1 dib" href="/tags/estatico/">#estatico</a> <a class="fw3 ph1 dib" href="/tags/gerador/">#gerador</a> <a class="fw3 ph1 dib" href="/tags/jekyll/">#jekyll</a> <a class="fw3 ph1 dib" href="/tags/hexo/">#hexo</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+<div id="disqus_thread" class="mt5">
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <!--<div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="https://www.gravatar.com/avatar/590d4b287a1dccf26aa5c2b11f06d560" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="Maicon Schmitz">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            Meu nome é Maicon Schmitz, sou um desenvolvedor Freelancer Web e Mobile, trabalho com diversas tecnologias, mas principalmente com JavaScript, Node.js, Vue.js, Python e GO.
+        </div>
+    </article>
+</div>-->
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>Posts Recentes</h3>
+    
+        <p>
+            <a href="/blog/2020/11/27/instalando-o-docker-no-centos-8/">Instalando o Docker no CentOS 8</a>
+        </p>
+    
+        <p>
+            <a href="/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/">Usando Alexa como Autofalante do MacBook</a>
+        </p>
+    
+        <p>
+            <a href="/blog/2020/08/28/instalando-o-gerenciador-de-pacotes-yarn-no-macos/">Instalando o gerenciador de pacotes Yarn no macOS</a>
+        </p>
+    
+        <p>
+            <a href="/blog/2020/07/21/rodando-e-monitorando-aplicacoes-nodejs-com-pm2/">Rodando e monitorando aplicações Node.js com PM2</a>
+        </p>
+    
+        <p>
+            <a href="/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/">Gerenciando multiplas versões do Node.js no macOS </a>
+        </p>
+    
+</div>
+
+                    <!-- Widget 4: Anuncios -->
+                    <div class="mt5 tc tl-l">
+    <h3>Anúncios</h3>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Widget Lateral Maicon Schmitz -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6275576875601893"
+        data-ad-slot="8727794500"
+        data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <br />
+</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://github.com/maiconschmitz" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://twitter.com/maiconschmitz" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="mailto:contato@maiconschmitz.com.br" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="/atom.xml" target="_blank">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                Todos os direitos reservados | Site estático gerado com <a class="link dim white" target="_blank" rel="noopener" href="http://www.hexo.io/">Hexo</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'maiconschmitz';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<!-- One Signal -->
+<head>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "51caf726-7685-422c-8c15-7d3ed42eaff8",
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      httpPermissionRequest: {
+          enable: false,
+          useCustomModal: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      },
+      /* Your other init options here */
+      notifyButton: {
+          enable: true, /* Required to use the notify button */
+          size: 'small', /* One of 'small', 'medium', or 'large' */
+          theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
+          position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+          offset: {
+              bottom: '10px',
+              left: '10px', /* Only applied if bottom-left */
+              right: '10px' /* Only applied if bottom-right */
+          },
+          prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+          showCredit: false, /* Hide the OneSignal logo */
+          text: {
+              'tip.state.unsubscribed': 'Receber notificações',
+              'tip.state.subscribed': "Você já esta inscrito para receber notificações",
+              'tip.state.blocked': "Bloqueou notificações",
+              'message.prenotify': 'Clique para receber as notificações',
+              'message.action.subscribed': "Obrigado por se inscrever!",
+              'message.action.resubscribed': "Você já esta inscrito ",
+              'message.action.unsubscribed': "Você não receberá notificações novamente",
+              'dialog.main.title': 'Gerenciar suas notificações',
+              'dialog.main.button.subscribe': 'INSCREVER-SE',
+              'dialog.main.button.unsubscribe': 'DESCADASTRAR-SE',
+              'dialog.blocked.title': 'Permitir notificações',
+              'dialog.blocked.message': "Siga as instruções de como ativar as notificações:"
+          },
+          colors: { // Customize the colors of the main button and dialog popup button
+              'circle.background': 'rgb(55,55,55)',
+              'circle.foreground': 'white',
+              'badge.background': 'rgb(55,55,55)',
+              'badge.foreground': 'rgb(0,0,0)',
+              'badge.bordercolor': 'rgb(0,0,0)',
+              'pulse.color': 'white',
+              'dialog.button.background.hovering': 'rgb(77, 101, 113)',
+              'dialog.button.background.active': 'rgb(70, 92, 103)',
+              'dialog.button.background': 'rgb(55,55,55)',
+              'dialog.button.foreground': 'white'
+          },
+      },
+      promptOptions: {
+          /* Change bold title, limited to 30 characters */
+          siteName: 'Maicon Schmitz',
+          /* Subtitle, limited to 90 characters */
+          actionMessage: "Vamos mostrar notificações com notícias e atualizações.",
+          /* Example notification title */
+          exampleNotificationTitle: 'Exemplo de notificação',
+          /* Example notification message */
+          exampleNotificationMessage: 'Este é um exemplo de notificação de Maicon Schmitz.',
+          /* Text below example notification, limited to 50 characters */
+          exampleNotificationCaption: 'Você pode remover sua inscrição a qualquer momento.',
+          /* Accept button text, limited to 15 characters */
+          acceptButtonText: "AUTORIZO",
+          /* Cancel button text, limited to 15 characters */
+          cancelButtonText: "NÃO AUTORIZO"
+      },
+      welcomeNotification: {
+          "title": "Notificações",
+          "message": "Obrigado por se inscrever para receber as notificações!",
+      },
+    }]);
+  </script>
+</head>
+
+</body>
+
+</html>
