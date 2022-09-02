@@ -28,4 +28,4 @@ Esta extensão é extremamente simples, funciona de modo offline e nenhum dado �
 
 Publicada originalmente em sua versão 0.0.0.2, em 30 de março de 2017.
 
-Caso seja de seu interesse, você pode efetuar o [Download da Extensão QRCode URL](https://goo.gl/jLk9hk) para o seu Google Chrome.
+Caso seja de seu interesse, você pode efetuar o [Download da Extensão QRCode URL](https://bit.ly/3Km66qj) para o seu Google Chrome.

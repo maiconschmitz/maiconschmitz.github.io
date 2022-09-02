@@ -3,7 +3,7 @@ title: Sobre
 date: 1983-05-21
 ---
 
-Meu nome é **Maicon Schmitz**, sou um desenvolvedor Freelancer Web e Mobile, trabalho com diversas tecnologias, mas principalmente com JavaScript, Node.js, Vue.js, Python e GO.
+Meu nome é **Maicon Schmitz**, sou Arquiteto de Software Sênior e desenvolvo softwates Web e Mobile em modelo Freelancer. Já trabalhei com diversas tecnologias, dentre elas PHP, Laravel, JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Ionic e Flutter.
 
 🇧🇷  Brasil, Rio Grande do Sul
 🔭  Desenvolvedor de software Web e Mobile

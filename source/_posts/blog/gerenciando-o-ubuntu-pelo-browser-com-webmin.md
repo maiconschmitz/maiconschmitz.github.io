@@ -68,10 +68,10 @@ Para automatizar a instalação, que já é bastante simples por sinal, criei um
 https://gist.github.com/3062661#file_instalar_wm.sh
 
 Para efetuar o Download deste Gist, basta acessar a URL: [https://gist.github.com/raw/3062661/a565ff650a3655f9d31c37b72855669214ad10e8/instalar_wm.sh](https://gist.github.com/raw/3062661/a565ff650a3655f9d31c37b72855669214ad10e8/instalar_wm.sh "Script Bash para Instalar o Webmin")
-Ou então, utilize a versão da URL encurtada: [http://goo.gl/q0PPR](http://goo.gl/q0PPR "Script Bash para Instalar o Webmin")
+Ou então, utilize a versão da URL encurtada: [https://bit.ly/3AIppqx](https://bit.ly/3AIppqx "Script Bash para Instalar o Webmin")
 
 Vá ao terminal e execute na sequencia abaixo, para efetuar o download e efetuar a instalação:
 
-	wget http://goo.gl/q0PPR -O instalar_wm.sh
+	wget https://bit.ly/3AIppqx -O instalar_wm.sh
 	chmod 777 instalar_wm.sh
 	sudo ./instalar_wm.sh
