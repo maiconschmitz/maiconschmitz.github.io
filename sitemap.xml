@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
     
-    <lastmod>2022-04-19T16:14:58.682Z</lastmod>
+    <lastmod>2022-08-25T13:15:08.657Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
+    
+    <lastmod>2022-08-25T13:03:04.176Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.maiconschmitz.com.br/sobre/index.html</loc>
     
-    <lastmod>2022-04-19T16:03:31.656Z</lastmod>
+    <lastmod>2022-08-25T12:58:35.481Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/02/29/comunicando-raspberry-pi-arduino-usb/</loc>
+    
+    <lastmod>2022-04-19T16:14:58.682Z</lastmod>
     
   </url>
   
@@ -254,23 +268,9 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.617Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/</loc>
     
     <lastmod>2022-04-19T16:03:31.616Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.615Z</lastmod>
     
   </url>
   
