@@ -2,6 +2,7 @@
 <html lang="pt_BR">
 
 <!-- Head tag -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6275576875601893" crossorigin="anonymous"></script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,14 +53,22 @@
 
     <!-- Google Analytics -->
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6606591-5"></script>
-    <script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6606591-5"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-6606591-5');
-    </script>
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LCK8K1NZR"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8LCK8K1NZR');
+</script>
 
 
 <meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Maicon Schmitz" type="application/atom+xml">
@@ -171,7 +180,7 @@
 <p>Se tudo ocorrer sem erros, à cada 5 segundos, você verá a mensagem <strong>COMUNICACAO SERIAL VIA USB</strong> sendo impressa no Terminal, vindo diretamente do <strong>Arduino</strong>.</p>
 <p>Agora basta expandir seu projeto!</p>
 
-                    
+
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
@@ -269,7 +278,6 @@
             <img src="/images/segredos-dark-web.webp" title="Os segredos da Dark Web - Como ser anônimo e navegar por uma rede desconhecida">
         </a>
     </div>
-    
 </div>
 
                 </div>
@@ -334,81 +342,81 @@
 
 <!-- One Signal -->
 <head>
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-  <script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
-      appId: "51caf726-7685-422c-8c15-7d3ed42eaff8",
-      autoRegister: false, /* Set to true to automatically prompt visitors */
-      httpPermissionRequest: {
-          enable: false,
-          useCustomModal: true
-      },
-      notifyButton: {
-          enable: true /* Set to false to hide */
-      },
-      /* Your other init options here */
-      notifyButton: {
-          enable: true, /* Required to use the notify button */
-          size: 'small', /* One of 'small', 'medium', or 'large' */
-          theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
-          position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
-          offset: {
-              bottom: '10px',
-              left: '10px', /* Only applied if bottom-left */
-              right: '10px' /* Only applied if bottom-right */
-          },
-          prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
-          showCredit: false, /* Hide the OneSignal logo */
-          text: {
-              'tip.state.unsubscribed': 'Receber notificações',
-              'tip.state.subscribed': "Você já esta inscrito para receber notificações",
-              'tip.state.blocked': "Bloqueou notificações",
-              'message.prenotify': 'Clique para receber as notificações',
-              'message.action.subscribed': "Obrigado por se inscrever!",
-              'message.action.resubscribed': "Você já esta inscrito ",
-              'message.action.unsubscribed': "Você não receberá notificações novamente",
-              'dialog.main.title': 'Gerenciar suas notificações',
-              'dialog.main.button.subscribe': 'INSCREVER-SE',
-              'dialog.main.button.unsubscribe': 'DESCADASTRAR-SE',
-              'dialog.blocked.title': 'Permitir notificações',
-              'dialog.blocked.message': "Siga as instruções de como ativar as notificações:"
-          },
-          colors: { // Customize the colors of the main button and dialog popup button
-              'circle.background': 'rgb(55,55,55)',
-              'circle.foreground': 'white',
-              'badge.background': 'rgb(55,55,55)',
-              'badge.foreground': 'rgb(0,0,0)',
-              'badge.bordercolor': 'rgb(0,0,0)',
-              'pulse.color': 'white',
-              'dialog.button.background.hovering': 'rgb(77, 101, 113)',
-              'dialog.button.background.active': 'rgb(70, 92, 103)',
-              'dialog.button.background': 'rgb(55,55,55)',
-              'dialog.button.foreground': 'white'
-          },
-      },
-      promptOptions: {
-          /* Change bold title, limited to 30 characters */
-          siteName: 'Maicon Schmitz',
-          /* Subtitle, limited to 90 characters */
-          actionMessage: "Vamos mostrar notificações com notícias e atualizações.",
-          /* Example notification title */
-          exampleNotificationTitle: 'Exemplo de notificação',
-          /* Example notification message */
-          exampleNotificationMessage: 'Este é um exemplo de notificação de Maicon Schmitz.',
-          /* Text below example notification, limited to 50 characters */
-          exampleNotificationCaption: 'Você pode remover sua inscrição a qualquer momento.',
-          /* Accept button text, limited to 15 characters */
-          acceptButtonText: "AUTORIZO",
-          /* Cancel button text, limited to 15 characters */
-          cancelButtonText: "NÃO AUTORIZO"
-      },
-      welcomeNotification: {
-          "title": "Notificações",
-          "message": "Obrigado por se inscrever para receber as notificações!",
-      },
+        appId: "51caf726-7685-422c-8c15-7d3ed42eaff8",
+        autoRegister: false, /* Set to true to automatically prompt visitors */
+        httpPermissionRequest: {
+            enable: false,
+            useCustomModal: true
+        },
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        },
+        /* Your other init options here */
+        notifyButton: {
+            enable: true, /* Required to use the notify button */
+            size: 'small', /* One of 'small', 'medium', or 'large' */
+            theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
+            position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+            offset: {
+                bottom: '10px',
+                left: '10px', /* Only applied if bottom-left */
+                right: '10px' /* Only applied if bottom-right */
+            },
+            prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+            showCredit: false, /* Hide the OneSignal logo */
+            text: {
+                'tip.state.unsubscribed': 'Receber notificações',
+                'tip.state.subscribed': "Você já esta inscrito para receber notificações",
+                'tip.state.blocked': "Bloqueou notificações",
+                'message.prenotify': 'Clique para receber as notificações',
+                'message.action.subscribed': "Obrigado por se inscrever!",
+                'message.action.resubscribed': "Você já esta inscrito ",
+                'message.action.unsubscribed': "Você não receberá notificações novamente",
+                'dialog.main.title': 'Gerenciar suas notificações',
+                'dialog.main.button.subscribe': 'INSCREVER-SE',
+                'dialog.main.button.unsubscribe': 'DESCADASTRAR-SE',
+                'dialog.blocked.title': 'Permitir notificações',
+                'dialog.blocked.message': "Siga as instruções de como ativar as notificações:"
+            },
+            colors: { // Customize the colors of the main button and dialog popup button
+                'circle.background': 'rgb(55,55,55)',
+                'circle.foreground': 'white',
+                'badge.background': 'rgb(55,55,55)',
+                'badge.foreground': 'rgb(0,0,0)',
+                'badge.bordercolor': 'rgb(0,0,0)',
+                'pulse.color': 'white',
+                'dialog.button.background.hovering': 'rgb(77, 101, 113)',
+                'dialog.button.background.active': 'rgb(70, 92, 103)',
+                'dialog.button.background': 'rgb(55,55,55)',
+                'dialog.button.foreground': 'white'
+            },
+        },
+        promptOptions: {
+            /* Change bold title, limited to 30 characters */
+            siteName: 'Maicon Schmitz',
+            /* Subtitle, limited to 90 characters */
+            actionMessage: "Vamos mostrar notificações com notícias e atualizações.",
+            /* Example notification title */
+            exampleNotificationTitle: 'Exemplo de notificação',
+            /* Example notification message */
+            exampleNotificationMessage: 'Este é um exemplo de notificação de Maicon Schmitz.',
+            /* Text below example notification, limited to 50 characters */
+            exampleNotificationCaption: 'Você pode remover sua inscrição a qualquer momento.',
+            /* Accept button text, limited to 15 characters */
+            acceptButtonText: "AUTORIZO",
+            /* Cancel button text, limited to 15 characters */
+            cancelButtonText: "NÃO AUTORIZO"
+        },
+        welcomeNotification: {
+            "title": "Notificações",
+            "message": "Obrigado por se inscrever para receber as notificações!",
+        },
     }]);
-  </script>
+    </script>
 </head>
 
 </body>
