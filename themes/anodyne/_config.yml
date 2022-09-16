@@ -32,6 +32,9 @@ comments:
 # Google Analytics Tracking ID
 google_analytics: UA-6606591-5
 
+# Google tag (gtag.js)
+google_tagmanager: G-8LCK8K1NZR
+
 # Social Media Platforms
 social_platforms:
   - url: https://github.com/maiconschmitz
