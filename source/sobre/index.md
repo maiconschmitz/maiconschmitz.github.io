@@ -7,5 +7,5 @@ Meu nome é **Maicon Schmitz**, sou Arquiteto de Software Sênior e desenvolvo s
 
 🇧🇷  Brasil, Rio Grande do Sul
 🔭  Desenvolvedor de software Web e Mobile
-🌱  Atualmente estou estudando Python e Go
-🚀  Entusiasta de IoT, Python, Go e Flutter
+🌱  Atualmente estou estudando Python, Terraform e Nomad
+🚀  Entusiasta de IoT, Automação e Raspberry Pi
