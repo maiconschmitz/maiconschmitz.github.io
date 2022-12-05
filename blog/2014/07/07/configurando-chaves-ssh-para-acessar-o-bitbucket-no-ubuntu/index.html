@@ -155,7 +155,7 @@
 <pre><code>$ ls
 </code></pre>
 <p>Se nenhum dos arquivos: id_rsa.pub ou id_dsa.pub existir, então significa que você deverá cria-los:</p>
-<h2 id="Criando-sua-chave-publica"><a href="#Criando-sua-chave-publica" class="headerlink" title="Criando sua chave pública"></a>Criando sua chave pública</h2><p>Para criar a sua chave publica, basta executar o comando abaixo, lembrando de alterar o endereço “<a href="mailto:&#x45;&#x4e;&#68;&#69;&#x52;&#69;&#67;&#x4f;&#x2d;&#x44;&#x45;&#45;&#69;&#77;&#65;&#73;&#76;&#x40;&#68;&#x4f;&#77;&#73;&#78;&#x49;&#x4f;&#x2e;&#67;&#79;&#x4d;&#46;&#66;&#82;">&#x45;&#x4e;&#68;&#69;&#x52;&#69;&#67;&#x4f;&#x2d;&#x44;&#x45;&#45;&#69;&#77;&#65;&#73;&#76;&#x40;&#68;&#x4f;&#77;&#73;&#78;&#x49;&#x4f;&#x2e;&#67;&#79;&#x4d;&#46;&#66;&#82;</a>“ pelo seu e-mail.</p>
+<h2 id="Criando-sua-chave-publica"><a href="#Criando-sua-chave-publica" class="headerlink" title="Criando sua chave pública"></a>Criando sua chave pública</h2><p>Para criar a sua chave publica, basta executar o comando abaixo, lembrando de alterar o endereço “<a href="mailto:&#x45;&#x4e;&#x44;&#x45;&#x52;&#x45;&#67;&#x4f;&#x2d;&#x44;&#x45;&#x2d;&#x45;&#77;&#x41;&#x49;&#x4c;&#x40;&#x44;&#79;&#x4d;&#x49;&#x4e;&#73;&#x4f;&#x2e;&#67;&#79;&#77;&#46;&#x42;&#82;">&#x45;&#x4e;&#x44;&#x45;&#x52;&#x45;&#67;&#x4f;&#x2d;&#x44;&#x45;&#x2d;&#x45;&#77;&#x41;&#x49;&#x4c;&#x40;&#x44;&#79;&#x4d;&#x49;&#x4e;&#73;&#x4f;&#x2e;&#67;&#79;&#77;&#46;&#x42;&#82;</a>“ pelo seu e-mail.</p>
 <pre><code>$ ssh-keygen -t rsa -C &quot;ENDERECO-DE-EMAIL@DOMINIO.COM.BR&quot;
 </code></pre>
 <p>Quando for solicitado o nome do arquivo a ser criado, defina um de sua preferência ou simplesmente confirme a sugestão, pressionando <Enter><br>Quando solicitar uma passphrase, defina uma senha ou deixe-a em branco, simplesmente pressionando <Enter></p>
@@ -170,12 +170,12 @@
 <p>Visualize e copie o conteúdo da sua chave, tomando o cuidado para não adicionar espaços extras no início ou no final do arquivo</p>
 <pre><code>$ cat ~/.ssh/id_rsa.pub
 </code></pre>
-<p>Sua chave normalmente irá iniciar com a string: “ssh-rsa “ e terminar com o endereço de e-mail anteriormente informado: “<a href="mailto:&#69;&#x4e;&#68;&#69;&#x52;&#69;&#67;&#x4f;&#x2d;&#68;&#x45;&#45;&#x45;&#77;&#x41;&#73;&#76;&#x40;&#x44;&#x4f;&#77;&#x49;&#78;&#73;&#79;&#x2e;&#x43;&#79;&#x4d;&#x2e;&#x42;&#82;">&#69;&#x4e;&#68;&#69;&#x52;&#69;&#67;&#x4f;&#x2d;&#68;&#x45;&#45;&#x45;&#77;&#x41;&#73;&#76;&#x40;&#x44;&#x4f;&#77;&#x49;&#78;&#73;&#79;&#x2e;&#x43;&#79;&#x4d;&#x2e;&#x42;&#82;</a>“</p>
+<p>Sua chave normalmente irá iniciar com a string: “ssh-rsa “ e terminar com o endereço de e-mail anteriormente informado: “<a href="mailto:&#x45;&#x4e;&#x44;&#69;&#82;&#69;&#67;&#79;&#45;&#68;&#x45;&#x2d;&#x45;&#77;&#65;&#73;&#x4c;&#64;&#68;&#79;&#x4d;&#73;&#x4e;&#73;&#x4f;&#46;&#67;&#79;&#x4d;&#46;&#x42;&#x52;">&#x45;&#x4e;&#x44;&#69;&#82;&#69;&#67;&#79;&#45;&#68;&#x45;&#x2d;&#x45;&#77;&#65;&#73;&#x4c;&#64;&#68;&#79;&#x4d;&#73;&#x4e;&#73;&#x4f;&#46;&#67;&#79;&#x4d;&#46;&#x42;&#x52;</a>“</p>
 <h2 id="Configurando-no-BitBucket"><a href="#Configurando-no-BitBucket" class="headerlink" title="Configurando no BitBucket"></a>Configurando no BitBucket</h2><p>Acesse o BitBucket e efetue o login em sua conta: <a target="_blank" rel="noopener" href="http://www.bitbucket.org/" title="http://www.bitbucket.org">http://www.bitbucket.org</a></p>
 <p>Clique no seu “Avatar” e selecione o item de menu “Gerenciar conta”</p>
 <p>No menu esquerdo, no grupo “SECURITY” selecione “Chaves SSH”</p>
 <p>Clique em “Adicionar Chave”</p>
-<p>Defina um “Label” para identificar esta chave:<br>Exemplo: “<a href="mailto:&#69;&#x4e;&#68;&#x45;&#82;&#x45;&#x43;&#x4f;&#45;&#x44;&#69;&#45;&#69;&#77;&#65;&#73;&#x4c;&#64;&#68;&#79;&#77;&#73;&#78;&#x49;&#x4f;&#x2e;&#67;&#79;&#x4d;&#46;&#66;&#x52;">&#69;&#x4e;&#68;&#x45;&#82;&#x45;&#x43;&#x4f;&#45;&#x44;&#69;&#45;&#69;&#77;&#65;&#73;&#x4c;&#64;&#68;&#79;&#77;&#73;&#78;&#x49;&#x4f;&#x2e;&#67;&#79;&#x4d;&#46;&#66;&#x52;</a> em ubuntu”</p>
+<p>Defina um “Label” para identificar esta chave:<br>Exemplo: “<a href="mailto:&#69;&#78;&#x44;&#x45;&#82;&#69;&#x43;&#79;&#45;&#68;&#69;&#x2d;&#69;&#77;&#65;&#73;&#76;&#64;&#68;&#x4f;&#x4d;&#x49;&#78;&#x49;&#x4f;&#x2e;&#x43;&#79;&#77;&#x2e;&#66;&#x52;">&#69;&#78;&#x44;&#x45;&#82;&#69;&#x43;&#79;&#45;&#68;&#69;&#x2d;&#69;&#77;&#65;&#73;&#76;&#64;&#68;&#x4f;&#x4d;&#x49;&#78;&#x49;&#x4f;&#x2e;&#x43;&#79;&#77;&#x2e;&#66;&#x52;</a> em ubuntu”</p>
 <p>Cole o conteúdo da chave (anteriormente copiado) no campo “Key”</p>
 <p>Confirme, clicando em “Adicionar chave”.</p>
 <p>Volte ao Terminal para testar se a adição das chaves funcionou de forma correta</p>
@@ -243,6 +243,10 @@
     <h3>Posts Recentes</h3>
     
         <p>
+            <a href="/blog/2022/12/05/key-is-stored-in-legacy-trusted-gpg-keyring/">Como resolver a exibição do aviso de depreciação d</a>
+        </p>
+    
+        <p>
             <a href="/blog/2020/11/27/instalando-o-docker-no-centos-8/">Instalando o Docker no CentOS 8</a>
         </p>
     
@@ -256,10 +260,6 @@
     
         <p>
             <a href="/blog/2020/07/21/rodando-e-monitorando-aplicacoes-nodejs-com-pm2/">Rodando e monitorando aplicações Node.js com PM2</a>
-        </p>
-    
-        <p>
-            <a href="/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/">Gerenciando multiplas versões do Node.js no macOS </a>
         </p>
     
 </div>

@@ -2,9 +2,240 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2022/12/05/key-is-stored-in-legacy-trusted-gpg-keyring/</loc>
+    
+    <lastmod>2022-12-05T18:22:59.075Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/sobre/index.html</loc>
+    
+    <lastmod>2022-12-05T17:56:33.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
+    
+    <lastmod>2022-12-05T17:56:23.381Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
+    
+    <lastmod>2022-12-05T17:56:19.320Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/</loc>
+    
+    <lastmod>2022-12-05T17:56:15.879Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
+    
+    <lastmod>2022-12-05T17:56:14.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/07/07/configurando-chaves-ssh-para-acessar-o-bitbucket-no-ubuntu/</loc>
+    
+    <lastmod>2022-12-05T17:56:09.980Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:56:07.756Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows/</loc>
+    
+    <lastmod>2022-12-05T17:56:03.259Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:56:00.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/</loc>
+    
+    <lastmod>2022-12-05T17:55:52.960Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin/</loc>
     
-    <lastmod>2022-08-25T13:15:08.657Z</lastmod>
+    <lastmod>2022-12-05T17:55:51.499Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:55:49.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/05/08/instalacao-limpa-do-mac-os-high-sierra/</loc>
+    
+    <lastmod>2022-12-05T17:55:48.512Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/</loc>
+    
+    <lastmod>2022-12-05T17:55:44.855Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra/</loc>
+    
+    <lastmod>2022-12-05T17:55:43.729Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2013/03/25/instalacao-limpa-do-mountain-lion-com-pendrive/</loc>
+    
+    <lastmod>2022-12-05T17:55:42.422Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/10/02/instalacao-limpa-do-os-x-el-capitan/</loc>
+    
+    <lastmod>2022-12-05T17:55:40.557Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
+    
+    <lastmod>2022-12-05T17:55:39.052Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:55:36.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
+    
+    <lastmod>2022-12-05T17:55:31.362Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/11/27/instalando-o-docker-no-centos-8/</loc>
+    
+    <lastmod>2022-12-05T17:55:29.809Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
+    
+    <lastmod>2022-12-05T17:55:26.303Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/08/28/instalando-o-gerenciador-de-pacotes-yarn-no-macos/</loc>
+    
+    <lastmod>2022-12-05T17:55:25.025Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/10/05/instalando-o-nodejs-no-ubuntu-17/</loc>
+    
+    <lastmod>2022-12-05T17:55:22.643Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
+    
+    <lastmod>2022-12-05T17:55:16.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:55:15.412Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2014/12/29/instalando-o-redis-no-mac-os-x/</loc>
+    
+    <lastmod>2022-12-05T17:55:14.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
+    
+    <lastmod>2022-12-05T17:55:13.768Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/</loc>
+    
+    <lastmod>2022-12-05T17:55:06.696Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2015/07/09/please-create-a-github-oauth-token-to-go-over-the-api-rate-limit/</loc>
+    
+    <lastmod>2022-12-05T17:55:04.227Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/</loc>
+    
+    <lastmod>2022-12-05T17:55:01.591Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
+    
+    <lastmod>2022-12-05T17:55:00.645Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.maiconschmitz.com.br/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/</loc>
+    
+    <lastmod>2022-12-05T17:54:57.522Z</lastmod>
     
   </url>
   
@@ -12,13 +243,6 @@
     <loc>http://www.maiconschmitz.com.br/blog/2017/03/30/gerando-qr-code-de-url-no-google-chrome/</loc>
     
     <lastmod>2022-08-25T13:03:04.176Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/sobre/index.html</loc>
-    
-    <lastmod>2022-08-25T12:58:35.481Z</lastmod>
     
   </url>
   
@@ -37,37 +261,9 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2020/10/30/usando-alexa-echo-dot-como-autofalante-do-macos/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.650Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/07/03/unindo-um-ssd-com-um-hd-e-criando-um-fusion-drive-no-mac/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.649Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/12/02/terminal-colorido-no-macos-com-zsh/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.648Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/07/03/rodando-o-bash-e-aplicacoes-linux-no-windows-sem-cygwin/</loc>
     
     <lastmod>2022-04-19T16:03:31.647Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/07/09/please-create-a-github-oauth-token-to-go-over-the-api-rate-limit/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.646Z</lastmod>
     
   </url>
   
@@ -93,13 +289,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/07/27/migrando-do-gerador-de-sites-estaticos-jekyll-para-hexo/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.643Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2016/07/02/login-error-rac0218-the-maximum-number-of-user-sessions-is-reached/</loc>
     
     <lastmod>2022-04-19T16:03:31.642Z</lastmod>
@@ -114,20 +303,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.638Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/12/29/instalando-o-redis-no-mac-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.637Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-xcode-e-o-command-line-tools/</loc>
     
     <lastmod>2022-04-19T16:03:31.637Z</lastmod>
@@ -135,58 +310,9 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/23/instalando-o-postgresql-no-mac-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.636Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/07/28/instalando-o-nodejs-no-ubuntu/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.635Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2020/08/28/instalando-o-gerenciador-de-pacotes-yarn-no-macos/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/10/05/instalando-o-nodejs-no-ubuntu-17/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.633Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew/</loc>
     
     <lastmod>2022-04-19T16:03:31.632Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2020/11/27/instalando-o-docker-no-centos-8/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.631Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.630Z</lastmod>
     
   </url>
   
@@ -205,72 +331,9 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.627Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011/</loc>
     
     <lastmod>2022-04-19T16:03:31.626Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/12/30/instalacao-limpa-do-os-x-yosemite/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.625Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2015/10/02/instalacao-limpa-do-os-x-el-capitan/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.624Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/03/25/instalacao-limpa-do-mountain-lion-com-pendrive/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.622Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2017/06/02/instalacao-limpa-do-mac-os-sierra/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.621Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/10/15/instalacao-limpa-do-mac-os-mojave/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.620Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2018/05/08/instalacao-limpa-do-mac-os-high-sierra/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.619Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2016/05/21/iniciando-com-docker-no-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.618Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2020/07/06/gerenciando-multiplas-versoes-do-nodejs-no-macos-com-nvm/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.616Z</lastmod>
     
   </url>
   
@@ -296,23 +359,9 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/06/23/deixando-o-terminal-e-o-vim-coloridos-no-mac-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.605Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/04/20/criando-uma-stack-de-desenvolvimento-lnmp/</loc>
     
     <lastmod>2022-04-19T16:03:31.603Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.601Z</lastmod>
     
   </url>
   
@@ -331,34 +380,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/07/07/configurando-chaves-ssh-para-acessar-o-bitbucket-no-ubuntu/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.592Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2019/11/14/brave-um-navegador-com-blockchain-e-criptomoedas/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.591Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2018/05/15/aumentando-o-espaco-de-armazenamento-do-macbook-com-cartao-sd/</loc>
     
     <lastmod>2022-04-19T16:03:31.589Z</lastmod>
@@ -373,13 +394,6 @@
   </url>
   
   <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/09/11/atualizando-o-node-js-via-npm/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.586Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.maiconschmitz.com.br/blog/2017/08/12/assistindo-videos-em-modo-pip-no-macos-sierra/</loc>
     
     <lastmod>2022-04-19T16:03:31.584Z</lastmod>
@@ -390,13 +404,6 @@
     <loc>http://www.maiconschmitz.com.br/blog/2020/06/27/assistindo-videos-em-modo-pip-no-macos-e-windows/</loc>
     
     <lastmod>2022-04-19T16:03:31.583Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maiconschmitz.com.br/blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores/</loc>
-    
-    <lastmod>2022-04-19T16:03:31.581Z</lastmod>
     
   </url>
   
