@@ -15,7 +15,6 @@ tags:
 status: publish
 type: post
 published: true
-
 ---
 
 O **Brave** é um navegador de internet baseado no projeto **Chromium** (o mesmo do **Google Chrome** e do **Microsoft Edge**).

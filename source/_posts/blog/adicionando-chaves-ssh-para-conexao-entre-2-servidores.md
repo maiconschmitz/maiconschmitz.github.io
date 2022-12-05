@@ -14,6 +14,7 @@ type: post
 published: true
 alias: blog/2014/08/12/adicionando-chaves-ssh-para-conexao-entre-2-servidores.html
 ---
+
 Adicionar **chaves SSH** para trabalhar entre 2 **Servidores**, sem a necessidade de digitar a sua senha a cada **conexão**, é uma boa opção para automatizar tarefas.
 
 Este processo pode ser executado em qualquer ambiente que suporte SSH, como **Linux**, **MAC OS X**, ou até mesmo **Windows**, com alguns passos adicionais.

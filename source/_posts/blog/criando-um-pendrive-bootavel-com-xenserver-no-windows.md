@@ -13,6 +13,7 @@ type: post
 published: true
 alias: blog/2014/08/18/criando-um-pendrive-bootavel-com-xenserver-no-windows.html
 ---
+
 O **XenServer** é uma plataforma de virtualização open-source que pode ser utilizada para gerenciar infraestruturas virtuais em nuvem, servidor e desktop.
 
 Através deste tutorial você irá aprender como criar um Pendrive bootavel com o XenServer, para efetuar a sua própria instalação.

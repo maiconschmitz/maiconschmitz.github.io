@@ -12,6 +12,7 @@ type: post
 published: true
 alias: blog/2015/02/09/instalando-o-dd-wrt-no-tl-wr740n.html
 ---
+
 O **DD-WRT** é um firmware para roteadores, baseado em **Linux**.
 A idéia por trás do **DD-WRT** é a possibilidade de utilizar todos os recursos suportados pelo harware do seu roteador, mesmo quando o firmware padrão do mesmo não o suporta. Neste caso, a alternativa é substituir o firmware de fábrica.
 

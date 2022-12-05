@@ -13,6 +13,7 @@ type: post
 published: true
 alias: blog/2014/07/28/instalando-o-nodejs-no-ubuntu.html
 ---
+
 Caso você deseje instalar o **Node.js**, em sua versão disponível no canal oficial do **APT**, bastará executar um simples comando:
 
 	$ sudo apt-get install nodejs

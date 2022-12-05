@@ -13,6 +13,7 @@ status: publish
 type: post
 published: true
 ---
+
 Instalar o **Node.js** no **Ubuntu 17** é extremamente simples.
 
 É bastante comum, que você encontre instruções nos mais diversos sites, que indiquem que você deve instalar o Node.js a partir do repositório do APT.

@@ -12,8 +12,8 @@ tags:
 status: publish
 type: post
 published: true
-
 ---
+
 As vezes, durante o uso do composer install, ou composer update, é possível que você se depare com uma mensagem semelhante à esta:
 
 	...please create a GitHub OAuth token to go over the API rate limit...

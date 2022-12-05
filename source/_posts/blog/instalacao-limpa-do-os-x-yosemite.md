@@ -15,6 +15,7 @@ type: post
 published: true
 alias: blog/2014/12/30/instalacao-limpa-do-os-x-yosemite.html
 ---
+
 Neste passo-a-passo irei mostrar como efetuar uma instalação limpa do OS X (clean install)
 
 Com o OS X ainda em funcionamento, efetue o download da Instalação do **OS X Yosemite** através da **Mac App Store**.

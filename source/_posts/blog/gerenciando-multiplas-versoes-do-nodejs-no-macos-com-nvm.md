@@ -14,6 +14,7 @@ status: publish
 type: post
 published: true
 ---
+
 O Node Version Manager (NVM), é um ferramenta que permite gerenciar multiplas versões do **Node.js**, em seu sistema operacional.
 
 Independentemente da forma como o **Node.js** foi instalado inicialmente, é possível fazer uso do **nvm**, para passar a gerenciar as atualizações e instalações de outras versões do mesmo.

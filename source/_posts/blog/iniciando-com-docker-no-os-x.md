@@ -16,6 +16,7 @@ type: post
 published: true
 alias: blog/2016/05/20/iniciando-com-docker-no-os-x.html
 ---
+
 Abaixo irei detalhar a forma mais fácil de iniciar o uso do Docker no OS X.
 
 O **Docker**, para quem não conhece, é uma plataforma Open Source, utilizada para empacotar aplicações e/ou ambientes inteiros, dentro de containers, que podem ser portados para outros Hosts (Máquinas).

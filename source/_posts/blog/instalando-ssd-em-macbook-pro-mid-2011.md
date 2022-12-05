@@ -12,6 +12,7 @@ type: post
 published: true
 alias: blog/2015/11/11/instalando-ssd-em-macbook-pro-mid-2011.html
 ---
+
 Recentemente efetuei um upgrade em um MacBook Pro de 2011, substituindo o HD magnético por um SSD.
 
 Este procedimento é bastante simples e pode ser feito utilizando qualquer SSD, de qualquer marca.

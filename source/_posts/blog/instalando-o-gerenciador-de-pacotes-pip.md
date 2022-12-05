@@ -13,6 +13,7 @@ type: post
 published: true
 alias: blog/2015/04/09/instalando-o-gerenciador-de-pacotes-pip.html
 ---
+
 O PIP, é um sistema de gerenciamento de pacotes para Python.
 Como o PIP funciona através de uma interface de linha de comando, efetuar a instalação de pacotes de software Python, se torna uma tarefa bastante simples.
 

@@ -15,6 +15,7 @@ type: post
 published: true
 alias: blog/2015/10/02/instalacao-limpa-do-os-x-el-capitan.html
 ---
+
 Abaixo irei detalhar o procedimento para efetuar a instalação limpa do recém lançado OS X El Capitan.
 
 Com o OS X ainda em funcionamento, efetue o download da Instalação do **OS X El Capitan** através da **Mac App Store**.

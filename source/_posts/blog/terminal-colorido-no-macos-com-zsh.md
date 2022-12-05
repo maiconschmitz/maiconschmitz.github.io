@@ -12,7 +12,6 @@ tags:
 status: publish
 type: post
 published: true
-
 ---
 
 O **ZSH** é um shell interativo e também um interpretador de scripts, semelhante ao bash, porém oferece uma ampla gama de configurações e temas.

@@ -14,6 +14,7 @@ type: post
 published: true
 alias: blog/2013/07/24/criando-pendrive-bootavel-com-ubuntu-no-mac-os-x.html
 ---
+
 De posse da imagem ISO e de um Pendrive, basta seguir alguns poucos passos no terminal do Mac, para executar esta simples tarefa, seja para criar um Pendrive bootavel com Ubuntu, outra Distribuição Linux ou até mesmo outro OS qualquer.
 
 Primeiramente, conecte o **Pendrive** ao **Mac**

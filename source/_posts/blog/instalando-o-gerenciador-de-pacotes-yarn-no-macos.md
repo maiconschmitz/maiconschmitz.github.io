@@ -11,6 +11,7 @@ status: publish
 type: post
 published: true
 ---
+
 O **Yarn** é um gerenciador de pacotes, alternativo ao popular e conhecido **npm**, o qual surgiu de um desconforto na forma como o npm se comportava e funcionava na época.
 
 Embora seja uma alternativa ao **npm**, o **yarn** se utiliza dos mesmos servidores de repositório do npm, portanto, ele é 100% compatível com este e todo e qualquer módulo que estiver disponível no npm, estará disponível também no yarn.

@@ -14,6 +14,7 @@ type: post
 published: true
 alias: blog/2015/03/04/instalando-composer-no-mac-os-x.html
 ---
+
 O Composer é um gerenciador de dependências para PHP.
 
 Com o Composer, você pode definir uma lista de bibliotecas e as versões, das quais o seu projeto depende.

@@ -12,7 +12,6 @@ tags:
 status: publish
 type: post
 published: true
-
 ---
 
 Além da infinidade de possibilidades que a **Alexa** proporciona no dia a dia, é possível utilizá-la também, como uma "simples caixinha de som". Seja através da conexão de um cabo de som auxiliar, que pode ser encontrado normalmente ao lado da entrada de energia, ou então, via bluetooth.

@@ -12,6 +12,7 @@ type: post
 published: true
 alias: blog/2013/01/11/gerenciando-o-ubuntu-pelo-browser-com-webmin.html
 ---
+
 Este passo-a-passo, tem como objetivo apresentar uma ferramenta simples e eficaz para gerenciamento de uma distribuição Ubuntu, através de uma interface web.
 
 Sem adentrar em detalhes técnicos específicos, esta é uma ótima opção para criar um servidor para um pequeno ambiente de testes e desenvolvimento.

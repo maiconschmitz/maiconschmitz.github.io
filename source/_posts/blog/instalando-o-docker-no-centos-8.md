@@ -11,7 +11,6 @@ tags:
 status: publish
 type: post
 published: true
-
 ---
 
 O **Docker CE** atualmente não é suportado pelo **Red Hat Enterprise Linux (RHEL) 8** e **CentOS 8**.

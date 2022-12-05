@@ -13,6 +13,7 @@ type: post
 published: true
 alias: blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7.html
 ---
+
 Para poder compilar e instalar o **Node.js** no CentOS 7, você deverá executar alguns passos.
 
 Primeiramente, prepare um local para baixar o Node.js.

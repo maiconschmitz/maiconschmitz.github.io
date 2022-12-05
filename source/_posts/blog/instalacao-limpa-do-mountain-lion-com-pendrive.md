@@ -15,6 +15,7 @@ type: post
 published: true
 alias: blog/2013/03/25/instalacao-limpa-do-mountain-lion-com-pendrive.html
 ---
+
 Efetuar uma instalação limpa do OS X, ou clean install, como é comumente conhecida, é uma tarefa relativamente simples.
 
 Com o OS X ainda em funcionamento, efetue o download da Instalação do **OS X Mountain Lion** através da **Mac App Store**.

@@ -13,6 +13,7 @@ type: post
 published: true
 alias: blog/2015/03/23/instalando-o-postgresql-no-mac-os-x.html
 ---
+
 O PostgreSQL é um Banco de Dados Objeto Relacional, desenvolvido como projeto de código aberto, atualmente na versão 9.4.1.
 
 ## Instalando o PostgreSQL

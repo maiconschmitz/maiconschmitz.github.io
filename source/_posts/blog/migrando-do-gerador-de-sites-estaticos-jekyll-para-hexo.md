@@ -11,6 +11,7 @@ tags:
 - hexo
 - nodejs
 ---
+
 Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de sites estáticos, optou-se por migrar do **Wordpress** para o **Jekyl** e agora, do Jekyl para o **Hexo**.
 
 ## Jekyl

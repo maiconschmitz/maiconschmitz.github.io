@@ -11,6 +11,7 @@ status: publish
 type: post
 published: true
 ---
+
 Fazendo uma instalação limpa (do zero) do macOS Mojave.
 
 Com o seu OS X/macOS ainda em funcionamento, efetue o download da Instalação do [**macOS Mojave**](https://www.apple.com/br/macos/mojave/ "macOS Mojave") através da **App Store**.

@@ -15,6 +15,7 @@ type: post
 published: true
 alias: blog/2014/07/07/configurando-chaves-ssh-para-acessar-o-bitbucket-no-ubuntu.html
 ---
+
 Uma boa escolha para trabalhar com o **BitBucket**, sem a necessidade de digitar a sua senha a cada **push** ou **pull** do **GIT**, é a configuração de **chaves SSH**.
 Seja no **Linux**, **MAC OS X** ou até **Windows**, a configuração de chaves SSH é uma ótima e segura opção.
 

@@ -12,6 +12,7 @@ type: post
 published: true
 alias: blog/2014/09/11/atualizando-o-node-js-via-npm.html
 ---
+
 Para atualizar o **Node.js**, é possível utilizar o **npm**.
 
 Independente da forma como o **Node.js** foi instalado, seja via pacote ou até mesmo compilado, é possível efetuar a atualização do mesmo via npm.

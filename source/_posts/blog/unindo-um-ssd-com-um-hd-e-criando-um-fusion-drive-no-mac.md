@@ -17,6 +17,7 @@ type: post
 published: true
 alias: blog/2017/07/03/Unindo-um-SSD-com-um-HDD-e-criando-um-Fusion-Drive-no-Mac/
 ---
+
 Após a adição de um segundo HD ao MacBook Pro mid 2011, o qual você pode ver o passo a passo em [Instalando um segundo HD em um MacBook Pro mid 2011](http://www.maiconschmitz.com.br/blog/2017/04/28/instalando-2-hd-em-macbook-pro-mid-2011 "Instalando um segundo HD em um MacBook Pro mid 2011"), uma opção, é efetuar a criação de um **Fusion Drive**.
 
 O **Fusion Drive**, é um recurso disponível nas versões mais recentes do macOS, que possibilita efetuar a junção de um ou mais discos, da tal forma à lhe disponibilizar apenas um **volume virtual**.

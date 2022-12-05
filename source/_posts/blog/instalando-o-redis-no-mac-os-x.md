@@ -14,6 +14,7 @@ type: post
 published: true
 alias: blog/2014/12/29/instalando-o-redis-no-mac-os-x.html
 ---
+
 O Redis é um banco de dados NoSQL do tipo chave/valor, extremamente rápido, o que o torna um banco de dados ideal para diversas situações.
 
 Fácil de instalar e fácil de operar, é escrito em C, o que o torna compatível com os diversos sistemas Linux, Unix, etc.

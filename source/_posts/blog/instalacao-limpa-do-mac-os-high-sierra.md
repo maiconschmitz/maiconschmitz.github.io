@@ -11,6 +11,7 @@ status: publish
 type: post
 published: true
 ---
+
 Fazendo uma instalação limpa (do zero) do macOS High Sierra.
 
 Com o seu OS X/macOS ainda em funcionamento, efetue o download da Instalação do [**macOS High Sierra**](https://www.apple.com/br/macos/high-sierra/ "macOS High Sierra") através da **App Store**.

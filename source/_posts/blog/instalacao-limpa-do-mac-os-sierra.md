@@ -12,6 +12,7 @@ type: post
 published: true
 alias: blog/2017/06/02/instalacao-limpa-do-mac-os-sierra.html
 ---
+
 Neste procedimento, irei detalhar como efetuar a instalação limpa do macOS Sierra.
 
 Com o OS X/macOS ainda em funcionamento, efetue o download da Instalação do **macOS Sierra** através da **Mac App Store**.
