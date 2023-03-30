@@ -20,7 +20,9 @@ O **ZSH** é um shell interativo e também um interpretador de scripts, semelhan
 
 Para instalar o **ZSH**, basta abrir o **Terminal** e rodar um simples comando:
 
-	$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+~~~ shell
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+~~~
 
 O processo de instalação é rápido e simples.
 
