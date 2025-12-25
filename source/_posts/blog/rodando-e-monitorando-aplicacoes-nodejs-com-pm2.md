@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rodando e monitorando aplicações Node.js com PM2
+title: "Rodando e Monitorando Aplicações Node.js com PM2"
 date: 2020-07-20 22:00:00.000000000 -03:00
 categories:
 - blog
@@ -9,115 +9,111 @@ tags:
 - nodejs
 - npm
 - nodemon
-- hotreload
+- "hot reload"
 - python
 - go
+- "process manager"
 status: publish
 type: post
 published: true
 ---
 
-O **PM2** é um gerenciador de processos, que irá lhe ajudar à gerenciar e manter sua aplicação sempre online.
+O **PM2** é um gerenciador de processos avançado, de produção, para aplicações Node.js. Ele ajuda a gerenciar e manter sua aplicação sempre online, 24/7.
 
-Largamente utilizado para o gerenciamento de aplicações **Node.js**, para o qual possui inclusive, um controle mais apurado, como por exemplo o gerenciamento e a execução da aplicação em modo **cluster**.
-
-No entanto, ele pode ser utilizado também para gerenciar de uma forma mais simples, aplicações escritas em outras linguagens, seja interpretadas ou compiladas, como **Python** e **GO**, por exemplo.
-
+Embora seja largamente utilizado para o gerenciamento de aplicações **Node.js**, para as quais possui recursos avançados como balanceamento de carga e execução em modo **cluster**, ele também pode ser utilizado para gerenciar aplicações escritas em outras linguagens, como **Python** e **Go**, por exemplo.
 
 ## Instalando o PM2
 
-Primeiramente, você deve instalar o **PM2** de forma global, através do comando:
+Primeiramente, você deve instalar o **PM2** de forma global através do `npm`:
 
-	npm install pm2@latest -g
+```bash
+npm install pm2@latest -g
+```
 
+## Registrando e iniciando um processo com o PM2
 
-## Registrando e/ou iniciando um processo com o PM2
+Com o **PM2** instalado, vamos partir para a execução da sua aplicação. O PM2 utiliza um comando `start`, que serve tanto para registrar e iniciar um novo processo, quanto para iniciar um processo que já foi registrado anteriormente.
 
-Com o **PM2** instalado, vamos partir para a execução do seu processo.
+Em nosso exemplo, o script inicial da aplicação será o `entrypoint.js`.
 
-De forma semelhante à qual você rodaria a sua aplicação, seja com um "npm start" ou através da execução direta do seu script de entrada, <s>normalmente index.js</s>.
+Para iniciar a aplicação, execute o comando:
 
-O PM2 também possui um comando "start" e este serve tanto para registrar, quanto para iniciar um processo que já tenha sido "registrado" no PM2 anteriormente.
-
-Em nosso exemplo, o script inicial da aplicação, será o entrypoint.js.
-
-Logo, para executar a aplicação, deve-se executar o comando:
-
-    pm2 start entrypoint.js
-
+```bash
+pm2 start entrypoint.js
+```
 
 ### Definindo um nome para a aplicação
 
-É possível definir um nome para o processo, passando o parâmetro "--name NOME", onde NOME é o nome à ser dado para a aplicação.
+É uma boa prática definir um nome para o processo, utilizando o parâmetro `--name`.
 
-Em nosso exemplo, vamos nomear nossa aplicação como "API":
+```bash
+pm2 start entrypoint.js --name "minha-api"
+```
 
-    pm2 start entrypoint.js --name API
+Neste caso, todos os comandos subsequentes poderão ser executados usando o nome da aplicação (`minha-api`) em vez do nome do arquivo.
 
-Neste caso, todos os comandos subsequentes poderão ser executados usando o nome da aplicação, devendo-se substituir "entrypoint.js" por "API".
+### Recarregar ao atualizar (Hot Reload)
 
-Exemplo:
+Se você desejar que a aplicação seja recarregada automaticamente sempre que um arquivo for alterado (hot reload), de forma semelhante ao que o **nodemon** faz, utilize o parâmetro `--watch`.
 
-    pm2 start API
+```bash
+pm2 start entrypoint.js --name "minha-api" --watch
+```
 
-Mas não se esqueça, a primeira execução deverá ser completa, como por exemplo:
+## Gerenciando Processos
 
-    pm2 start entrypoint.js --name API
+*   **Reiniciar um processo:**
+    Para reiniciar sua aplicação (por exemplo, após uma atualização de código, se não estiver usando `--watch`):
 
+    ```bash
+    pm2 restart minha-api
+    ```
 
-### Recarregar ao atualizar
+*   **Parar um processo:**
+    Para parar a execução da sua aplicação momentaneamente:
 
-Se você desejar que a aplicação seja recarregada, sempre que houver uma atualização do seu conteúdo (hot reload), de forma semelhante ao que o **nodemon** faz, então você deverá roda-la com o parâmetro "--watch".
+    ```bash
+    pm2 stop minha-api
+    ```
 
-Exemplo:
+*   **Deletar um processo:**
+    Quando não houver mais a necessidade de gerenciar um determinado processo, você pode removê-lo da lista do PM2 com o comando `delete`:
 
-    pm2 start entrypoint.js --name API --watch
+    ```bash
+    pm2 delete minha-api
+    ```
 
+## Salvando a lista de processos
 
-## Reiniciando um processo
+Para garantir que suas aplicações iniciem automaticamente após a reinicialização do servidor, você precisa salvar a lista de processos atual do PM2.
 
-Se você não deseja utilizar o parâmetro "--watch" e deseja controlar quando e como reiniciar sua aplicação, você poderá utilizar o comando "restart".
+```bash
+pm2 save
+```
 
-    pm2 restart API
-
-
-## Parando um processo
-
-Se você desejar parar a execução da sua aplicação momentaneamente, você deverá utilizar o comando "stop".
-
-    pm2 stop API
-
-
-## Deletar um processo
-
-Quando não houver mais a necessidade de rodar um determinado processo, você poderá efetuar a deleção do mesmo, com o comando "delete".
-
-    pm2 delete API
-
-
-## Salvando as configurações
-
-Sempre que uma configuração for efetuada e um determinado estado precisar ser salvo, você deverá definir isto explicitamente, executando o comando "save":
-
-    pm2 save
-
-Rodando este comando, a lista de processos à serem inicializados ou não pelo PM2 será salva e consequentemente será "recuperada", no caso da reinicialização do sistema operacional ou outra circunstância.
-
+Este comando cria um "dump" da lista de processos que será restaurado na próxima inicialização.
 
 ## Habilitando a inicialização do PM2 como um serviço
 
-Com relação à inicialização do PM2 junto à inicialização do sistema operacional, é importante notar que você deverá habilitar este recurso, executando o comando:
+Para que o PM2 inicie juntamente com o sistema operacional e restaure os processos salvos, você precisa habilitar seu script de inicialização. O PM2 detectará o `init system` da sua distribuição (como systemd, upstart, etc.) e fornecerá o comando correto.
 
-    pm2 startup
+```bash
+pm2 startup
+```
 
+Siga as instruções que aparecerão na tela (geralmente, será necessário copiar e colar um comando com `sudo`).
 
 ## Monitorando os processos com o PM2
 
-Basicamente, existem 2 comandos que irão lhe apresentar o **status** das aplicações, bem como lhe ajudarão à **monitorar** a execução das mesmas.
+Existem dois comandos principais que irão lhe apresentar o **status** das aplicações e ajudar a **monitorar** a execução das mesmas:
 
-São eles:
-
+*   **`pm2 status`** (ou `pm2 ls`): Mostra uma lista de todos os processos gerenciados, seus status, uso de CPU e memória.
+    ```bash
     pm2 status
+    ```
+*   **`pm2 monit`**: Abre um painel de monitoramento em tempo real no seu terminal.
+    ```bash
     pm2 monit
+    ```
 
-Rode e explore estes comandos à vontade.
+Explore estes comandos para ter uma visão completa da saúde de suas aplicações.

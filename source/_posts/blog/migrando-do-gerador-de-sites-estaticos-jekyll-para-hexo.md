@@ -1,5 +1,5 @@
 ---
-title: Migrando do gerador de sites estáticos Jekyll para Hexo
+title: "Migrando do Gerador de Sites Estáticos Jekyll para Hexo"
 date: 2017-07-27 18:30:00
 tags:
 - site
@@ -10,129 +10,128 @@ tags:
 - ruby
 - hexo
 - nodejs
+- "github pages"
 ---
 
-Em suas primeiras versões, este site havia sido desenvolvido em Wordpress, porém com o passar do tempo e do advento dos geradores de sites estáticos, optou-se por migrar do **Wordpress** para o **Jekyl** e agora, do Jekyl para o **Hexo**.
+Em suas primeiras versões, este site foi desenvolvido em WordPress. Com o passar do tempo e o advento dos geradores de sites estáticos, optei por migrar do **WordPress** para o **Jekyll** e, agora, do Jekyll para o **Hexo**.
 
-## Jekyl
+## Jekyll
 
-O Jekyl é um gerador de sites estáticos, bastante rápido, escrito em Ruby e é também, o gerador "oficial" utilizado no [GitHub Pages](https://pages.github.com/ "GitHub Pages"), motivo principal que levou esta página à ser migrada para ele inicialmente.
+O Jekyll é um gerador de sites estáticos bastante rápido, escrito em Ruby. Ele é também o gerador "oficial" utilizado pelo [GitHub Pages](https://pages.github.com/), principal motivo que me levou a migrar para ele inicialmente.
 
 ## Hexo
 
-O Hexo, assim como o **Jekyl**, também é um gerador de sites estáticos, porém este é escrito em **Nodejs**. Bastante semelhante ao Jekyl em funcionalidade, efetuar esta migração é um passo bastante simples, sendo necessário tomar cuidado apenas com pequenos detalhes.
+O Hexo, assim como o Jekyll, também é um gerador de sites estáticos, porém este é escrito em **Node.js**. Bastante semelhante ao Jekyll em funcionalidade, efetuar a migração é um processo simples, sendo necessário tomar cuidado apenas com pequenos detalhes.
 
 ## Instalando o Hexo
 
-Acesse o Terminal e execute o seguinte comando:
+Acesse o Terminal e execute o seguinte comando para instalar a CLI do Hexo globalmente:
 
-    $npm install hexo-cli -g
+```bash
+npm install hexo-cli -g
+```
 
-Para maiores esclarecimentos sobre a instalação, você pode acessar a documentação no site do [Hexo](https://hexo.io/docs/ "Hexo").
+Para maiores esclarecimentos sobre a instalação, você pode acessar a [documentação oficial do Hexo](https://hexo.io/docs/).
 
-## Migrando do Jekyl para o Hexo
+## Migrando do Jekyll para o Hexo
 
-Crie um novo projeto com o Hexo:
+1.  **Crie um novo projeto com o Hexo:**
 
-    $hexo init <nome-do-projeto>
-    $cd <nome-do-projeto>
-    $npm install
+    ```bash
+    hexo init <nome-do-projeto>
+    cd <nome-do-projeto>
+    npm install
+    ```
+    *Lembre-se de substituir `<nome-do-projeto>` pelo nome do seu projeto.*
 
-Lembrando que **nome-do-projeto**, deve ser substituido pelo nome do seu projeto.
+2.  **Configure o projeto:**
+    Edite o arquivo `_config.yml` que se encontra na raiz do diretório. Este arquivo de configuração é bastante intuitivo e segue o padrão YAML.
+    *   Defina os valores para as principais tags, como `title`, `description` e `author`.
+    *   Defina `language` com o valor `pt-BR`.
+    *   Insira a URL do seu site em `url`.
+    *   Ajuste os padrões de data e hora em `date_format` (ex: `DD/MM/YYYY`) e `time_format` (ex: `HH:mm:ss`).
 
-Uma vez que este procedimento estiver concluído, configure o seu projeto, editando o arquivo **_config.yml** que se encontra na raiz do diretório **nome-do-projeto**.
+3.  **Migre os Posts:**
+    Copie os arquivos de post do Jekyll, que estão na pasta `_posts` (no formato Markdown, `*.md`), para a pasta `source/_posts/` do Hexo.
 
-Este arquivo de configuração é bastante intuitívo e segue o padrão de qualquel YAML.
+4.  **Ajuste a estrutura de permalinks:**
+    Volte ao seu arquivo de configuração (`_config.yml`) e ajuste o valor da tag `new_post_name` e `permalink` para utilizar o mesmo padrão que você possuía no Jekyll. No meu caso, o valor definido foi:
+    ```yaml
+    permalink: blog/:title/
+    ```
+    Isso garante que as URLs dos seus posts permaneçam as mesmas.
 
-Defina os valores para as principais **tags** como **title**, **description** e **author**. Defina **language** com o valor *pt-BR*, a URL seu site em **url** e ajuste os padrões de data e hora em **date_format**, com *DD/MM/YYY* e **time_format** com *HH:mm:ss*, respectivamente.
+## Gerando os Arquivos Estáticos
 
-### Migrando os Posts
+Para gerar as páginas estáticas do seu site com o Hexo, execute o comando:
 
-Para migrar os Posts, basta copiar os arquivos de post do Jekyll, que estão na pasta **_posts** e no formato Markdown (\*.md), para a pasta **source/_posts/** do **Hexo**.
+```bash
+hexo generate
+```
 
-Volte para o seu arquivo de configuração (**_config.yml**) e ajuste o valor da **tag**, **new_post_name** para utilizar o mesmo padrão que você possuia no Jekyll. No meu caso, o valor definido foi **blog/:title.md**, pois meus posts ficam todos no subdiretório **blog** e possuem como URL, apenas o **título**.
+Este comando irá processar todos os seus arquivos `.md` e gerar os respectivos arquivos HTML, além de criar a paginação, arquivos de índice de posts e páginas de tags. O `generate` também se encarrega de copiar quaisquer arquivos estáticos (como imagens e CSS) da pasta `source` para a pasta de destino, que é o diretório `public`.
 
-## Gerando os arquivos estáticos
+**Importante:** Não efetue qualquer alteração manual no conteúdo do diretório `public`, pois ele é completamente recriado sempre que o comando `generate` é executado.
 
-Para gerar as páginas estáticas do Hexo, basta executar o comando:
+## Servindo as Páginas Localmente
 
-    $hexo generate
+Para visualizar seu site localmente, você pode usar o servidor nativo do Hexo:
 
-Este procedimento irá processar todos os seus arquivos .md e irá gerar os devidos arquivos para cada um dos Posts, irá também, gerar a paginação, arquivos (indice de posts) e tags, caso você às utilize.
+```bash
+hexo server
+```
 
-O generate também se encarrega de copiar quaisquer arquivos estáticos, como *assets* da pasta source, para a pasta de destino, no diretório **public**.
+Acesse [http://localhost:4000](http://localhost:4000) no seu navegador para visualizar o site.
 
-Lembre-se de não efetuar qualquer alteração no conteúdo dos arquivos do diretório **public**, pois sempre que o **generate** é executado, estes conteúdos são sustituídos/atualizados, com base no conteúdo do diretório **source** e do resultado de geração das páginas estáticas.
+## Fazendo o Deploy
 
-## Servindo as páginas estáticas
+O Hexo provê um sistema bastante simples e efetivo para fazer o deploy. Para fazer o deploy via Git (por exemplo, para o GitHub Pages), adicione as seguintes informações ao seu arquivo `_config.yml`:
 
-Para servir as páginas estáticas do Hexo, você pode utilizar o próprio Hexo, bastando executar o comando:
+```yaml
+deploy:
+  type: git
+  repo: <url-do-seu-repositorio.git>
+  branch: <nome-do-branch-de-deploy> # ex: gh-pages ou master
+```
 
-    $hexo serve
+Feita esta configuração, instale o plugin de deploy para Git:
 
-Assim, você poderá acessar o [http://localhost:4000](http://localhost:4000 "http://localhost:4000") para navegar e visualizar o seu site.
+```bash
+npm install hexo-deployer-git --save
+```
 
-## Fazendo o deploy
+Finalmente, para efetuar o deploy, execute o comando:
 
-O Hexo provê um sistema bastante simples e efetivo para efetuar o deploy.
+```bash
+hexo clean && hexo generate && hexo deploy
+```
 
-Para que você possa fazer o deploy via git, por exemplo, você deverá adicionar ao arquivo **_config.yml**, as seguintes informações:
+Caso ainda possua dúvidas, não deixe de consultar a seção de [Deployment](https://hexo.io/docs/deployment.html) na documentação.
 
-    deploy:
-        type: git
-        repo: <url-do-repositorio.git>
-        branch: <nome-do-branch-normalmente-master>
+## Usando o Hexo com GitHub Pages
 
-Feita esta configuração, não se esqueça de efetuar a instalação do plugin de deploy, com o comando:
+Para publicar seu site com Hexo no GitHub Pages, siga algumas boas práticas:
 
-    $npm install hexo-deployer-git --save
+1.  **Crie um Branch para os Fontes:**
+    É uma prática comum manter o código-fonte do seu site Hexo em um branch separado (ex: `source` ou `develop`) e deixar o branch `master` (ou `gh-pages`) ser gerenciado apenas pelo `hexo deploy`.
+2.  **Arquivo `CNAME`:**
+    Se você utiliza um domínio customizado com o GitHub Pages, crie um arquivo chamado `CNAME` na raiz da pasta `source` do seu projeto Hexo. Dentro dele, coloque apenas o seu domínio (ex: `www.meusite.com`). O Hexo irá copiar este arquivo para a raiz do diretório `public` a cada build.
 
-Enfim, para efetuar o deploy, execute o comando:
+## Fluxo de Trabalho com Hexo
 
-    $hexo deploy
+*   **Criar um novo post:**
+    ```bash
+    hexo new post "Título do Post"
+    ```
+    *Edite o arquivo gerado em `source/_posts/titulo-do-post.md`.*
 
-Caso você ainda possua dúvidas, não deixe de consulta a seção de [Deployment](https://hexo.io/docs/deployment.html "Deployment") na documentação.
+*   **Gerar e visualizar localmente:**
+    ```bash
+    hexo server
+    ```
+    *Acesse [http://localhost:4000](http://localhost:4000).*
 
-## GitHub Pages
-
-Para que você possa utilizar o **Hexo** no [GitHub Pages](https://pages.github.com/ "GitHub Pages"), será necessário mais alguns passos.
-
-### Crie um Branch para os Fontes!
-
-Para que você possa publicar o seu site no **GitHub Pages**, você deverá criar um novo branch para os fontes do seu projeto, deixando o branch **master**, apenas para o site gerado através do comando **hexo deploy**, isto por que atualmente o GitHub Pages, só serve os sites estáticos à partir do branch **master**.
-
-No meu caso:
-    Criei um repositório git
-    Criei um branch **source**
-    Criei o projeto do **hexo** neste branch **source**
-    Efetuo **git add**, **commit** e **push** apenas neste branch
-    Deixo o branch **master** nas mãos do **hexo deploy**
-
-### CNAME
-
-Caso você esteja apontando o seu domínio para o GitHub Pages, é bem provável que você já possui um CNAME configurado.
-
-Se não sabe o que é isto, verifique artigo [utilizando um domínio customizado com o github pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/ "utilizando um domínio customizado com o github pages").
-
-Para que você possa manter as configurações do CNAME funcionais, será necessário copiar o seu arquivo **CNAME** para a raiz da pasta **souce**.
-
-## Adicionando e Gerando Posts
-
-Passados os passos anteriores, o fluxo de utilização do Hexo será o seguinte:
-
-### Criando um novo Post:
-
-    $ hexo new post <titulo-do-post>
-
-Edite o arquivo source/_posts/titulo-do-post.md
-
-### Gerando e visualizando as páginas:
-
-    $ hexo generate
-    $ hexo serve
-
-Acesse o link [http://localhost:4000](http://localhost:4000 "http://localhost:4000")
-
-### Efetuando o deploy
-
-    $hexo deploy
+*   **Efetuar o deploy:**
+    ```bash
+    hexo deploy
+    ```
