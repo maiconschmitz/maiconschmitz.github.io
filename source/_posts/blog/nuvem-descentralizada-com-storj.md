@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Núvem descentralizada com Storj
+title: "Nuvem Descentralizada com Storj"
 date: 2017-09-21 17:00:00.000000000 -03:00
 categories:
 - blog
@@ -15,35 +15,36 @@ tags:
 status: publish
 type: post
 published: true
-alias: blog/2017/06/02/instalacao-limpa-do-mac-os-sierra.html
 ---
 
 ## O que é o Storj?
-O **Storj** é um sistema de armazenamento de arquivos distribuídos, **peer-to-peer** (**P2P**), desenvolvido e mantido pela Storj Labs.
-O Storj utiliza criptografia de última geração, de ponta a ponta e a tecnologia **Blockchain** do **Ethereum**.
+
+O **Storj** (pronuncia-se "storage") é um sistema de armazenamento de arquivos distribuído, **peer-to-peer (P2P)**, de código aberto, desenvolvido e mantido pela Storj Labs. O Storj utiliza criptografia de ponta a ponta e a tecnologia **Blockchain** (originalmente do Ethereum, agora utiliza sua própria camada de pagamento).
 
 ## Para que serve o Storj?
-O Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem, ao criar uma núvem de arquivos distribuída e descentralizada, que alia segura e alto desempenho para armazenar seus arquivos à um preço economicamente viável.
+
+O Storj fornece uma alternativa às tradicionais soluções de armazenamento em nuvem (como Amazon S3, Google Cloud Storage, etc.), ao criar uma nuvem de arquivos distribuída e descentralizada, que alia segurança e alto desempenho para armazenar seus arquivos a um preço economicamente viável.
 
 ## Como funciona o Storj?
-Diferente de outros sistemas de Storage, o Storj não utiliza servidores em Data Centers, mas sim, os computadores dos usuários que fazem parte de rede e cedem espaço de armazenamento.
 
-O Storj ainda não possui uma ferramentas de sincronização automática, como possuem outros serviços como Dropbox, Google Drive, iCloud, OneDrive, etc.
+Diferente de outros sistemas de armazenamento, o Storj não utiliza servidores em data centers centralizados. Em vez disso, ele utiliza uma rede de computadores de usuários ao redor do mundo, que cedem seu espaço de armazenamento não utilizado em troca de pagamento.
 
-No momento, é possível, por exemplo, enviar e acessar seus arquivos através do software **FileZilla**, um dos, ou senão o primeiro à suportar o protocolo do Storj.
+Quando você faz o upload de um arquivo, ele é criptografado, dividido em pedaços e distribuído por essa rede de nós. Isso aumenta a segurança (pois ninguém tem o arquivo completo) e a disponibilidade (pois há múltiplas cópias dos pedaços em locais diferentes).
 
-Além de possuir seus códigos disponíveis para acesso público em seu [Github](https://github.com/storj), o Storj também oferece uma **API** de integração, para que qualquer um possa desenvolver suas próprias soluções ou ferramentas.
+Atualmente, o Storj é compatível com a API do Amazon S3, o que significa que você pode usá-lo com muitas ferramentas existentes, como o software de FTP **FileZilla**, que foi um dos primeiros a suportar o protocolo do Storj.
 
-## Quanto custa o armazenamento na núvem com o Storj?
-Atualmente, o preço por GB armazenado, é de **$0.015**, enquanto que a banda de transferência, é de **$0.05** por GB baixado.
-Em um cálculo rápido, isso significa que o armazenamento de 50 GB, custaria em torno de $0.75/mês (não contando a banda de download)
+Além de ter seu código-fonte disponível no [GitHub](https://github.com/storj), o Storj também oferece uma **API** de integração para que qualquer um possa desenvolver suas próprias soluções ou ferramentas.
 
-## Alugando seu espaço em disco para a núvem do Storj
-O ponto chave do Storj, são os **Farmers** (agricultores), que são os usuários que disponibilizam (mediante aluguel) porções do seu espaço em disco rígido, para outros usuários ou clientes do Storj.
+## Quanto custa o armazenamento na nuvem com o Storj?
 
-Para compartihar seu espaço em disco, basta se inscrever no Storj: [https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610](https://app.storj.io/login#/signup?referralLink=racegoers-cervicography-610).
+Na data de publicação deste artigo, o preço por GB armazenado era de **$0.015**, enquanto que a banda de transferência era de **$0.05** por GB baixado. Em um cálculo rápido, isso significava que o armazenamento de 50 GB custaria em torno de $0.75 por mês (sem contar a banda de download).
 
-Após feita a inscrição, basta você baixar e instalar o GUI de Compartilhamento, através do link: [https://storj.io/share.html](https://storj.io/share.html).
+## Alugando seu espaço em disco para a nuvem do Storj
 
-## Gratuíto por 12 meses
-Novos usuários, podem utilizar o Storj gratuitamente, nos primeiros de 12 meses, contanto que não ultrapassem o limite de armazenamento de 25 GB/mês.
+O ponto-chave do Storj são os operadores de nós (anteriormente chamados de **"farmers"** ou agricultores), que são os usuários que disponibilizam porções do seu espaço em disco rígido para a rede.
+
+Para compartilhar seu espaço em disco, basta se inscrever na plataforma do Storj e seguir as instruções para configurar um nó de armazenamento: [https://storj.io/share](https://storj.io/share).
+
+## Gratuito por 12 meses
+
+Na época, novos usuários podiam utilizar o Storj gratuitamente nos primeiros 12 meses, contanto que não ultrapassassem o limite de armazenamento de 25 GB por mês. Verifique o site oficial para as ofertas atuais.

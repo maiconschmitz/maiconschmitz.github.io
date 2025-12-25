@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Netbeans 8.2 não cria nem abre projetos no macOS
+title: "NetBeans 8.2 não cria nem abre projetos no macOS (após instalar o JDK 9+)"
 date: 2018-07-16 12:00:00.000000000 -03:00
 categories:
 - blog
@@ -14,33 +14,46 @@ type: post
 published: true
 ---
 
-Recentemente, instalei a **JDK 10** e ao instalar o **Netbeans 8.2**, me deparei com uma aplicação que não abria, nem criava projetos.
+Recentemente, instalei o **JDK 10** e, ao tentar usar o **NetBeans 8.2**, me deparei com um problema em que a IDE não conseguia abrir nem criar novos projetos.
 
-Se o seu **Netbeans 8.2** esta apresentando este problema, então, muito provavelmente você possui uma versão incorreta da JDK instala.
+Se o seu NetBeans 8.2 está apresentando este comportamento no macOS, é muito provável que você esteja utilizando uma versão incompatível do JDK.
 
-A versão correta da JDK para utilizar com o **Netbeans 8.2**, é a **JDK 8**!
+O **NetBeans 8.2** foi lançado antes do Java 9 e, portanto, **não é oficialmente compatível com o JDK 9, 10 ou versões superiores**. A versão correta do JDK para utilizar com o NetBeans 8.2 é o **JDK 8**.
 
-Então, remova a sua **JDK 10**, instale a **JDK 8** e execute o Netbeans, sem maiores problemas.
+A solução é remover sua versão atual do JDK (se for superior à 8), instalar o JDK 8 e executar o NetBeans novamente.
 
-## Como remover o Java do macOS
+**Alternativa:** Para usar versões mais recentes do Java, considere migrar para uma IDE mais nova, como o **Apache NetBeans** (a versão atual mantida pela Apache Software Foundation) ou outras IDEs como IntelliJ IDEA ou VS Code.
 
-Para remover o Java do macOS, existem algum simples passos à serem seguidos.
+## Como remover o JDK do macOS
 
-A JDK pode ser localizada na pasta: /Library/Java/JavaVirtualMachines
+Para remover uma versão do JDK do macOS, siga os passos abaixo.
 
-Então, abra o terminal e execute os comandos abaixo:
+O JDK é instalado na pasta `/Library/Java/JavaVirtualMachines`.
 
+1.  Abra o Terminal e execute os comandos abaixo para listar as versões instaladas:
+
+    ```bash
     cd /Library/Java/JavaVirtualMachines
     ls
-    sudo rm -rf jdk*
+    ```
 
-Se desejar remover também o plugin e painel do Java, ainda no terminal, execute os seguintes comandos:
+2.  Remova o diretório da versão do JDK que você deseja desinstalar (neste caso, qualquer versão superior à 8, como `jdk-10.jdk`):
 
-    sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
-    sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefpane
+    ```bash
+    sudo rm -rf jdk-10.jdk
+    ```
+    *(Substitua `jdk-10.jdk` pelo nome correto do diretório)*
 
-## Instalação da JDK e do Netbeans
+Se desejar remover também o plugin de applet (obsoleto) e o painel de controle do Java, execute os seguintes comandos no terminal:
 
-A JDK 8 pode ser encontrada no seguinte link de [Download](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html "JDK 8").
+```bash
+sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefpane
+```
 
-O Netbeans 8.2 pode ser encontrado no seguinte de [Download](https://netbeans.org/downloads/?pagelang=pt_BR "Netbeans 8.2").
+## Instalação do JDK 8 e do NetBeans 8.2
+
+*   O **JDK 8** pode ser encontrado no site da Oracle: [Oracle JDK 8 Downloads](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html).
+*   O **NetBeans 8.2** pode ser encontrado na página de download do NetBeans: [NetBeans 8.2 Download](https://netbeans.org/downloads/?pagelang=pt_BR).
+
+Após instalar o JDK 8, a instalação e execução do NetBeans 8.2 devem funcionar sem problemas.

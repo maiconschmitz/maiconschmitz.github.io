@@ -1,49 +1,45 @@
 ---
 layout: post
-title: Usando Alexa como Autofalante do MacBook
+title: "Usando um Amazon Echo (Alexa) como Alto-falante do macOS"
 date: 2020-10-30 06:30:00.000000000 -03:00
 categories:
 - blog
 tags:
-- mac-os-x
+- "mac os x"
 - macos
 - alexa
+- "echo dot"
 - bluetooth
 status: publish
 type: post
 published: true
 ---
 
-Além da infinidade de possibilidades que a **Alexa** proporciona no dia a dia, é possível utilizá-la também, como uma "simples caixinha de som". Seja através da conexão de um cabo de som auxiliar, que pode ser encontrado normalmente ao lado da entrada de energia, ou então, via bluetooth.
-
+Além da infinidade de possibilidades que um dispositivo **Amazon Echo** com **Alexa** proporciona no dia a dia, é possível utilizá-lo também como uma "simples caixinha de som" para o seu Mac. Isso pode ser feito através de uma conexão com cabo de áudio auxiliar (se o dispositivo tiver a entrada) ou, de forma mais prática, via **Bluetooth**.
 
 | Echo Dot  | Echo Dot com Relógio  | Echo Show  |
-| --------- |:---------------------:| ----------:|
+| :---: |:---:| :---:|
 | <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=schmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B084DWCZY6&asins=B084DWCZY6&linkId=f91c6b91ae04618cfc0e3da973c34e6a&show_border=true&link_opens_in_new_window=true"></iframe> | <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=schmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B084J4WP6J&asins=B084J4WP6J&linkId=d183581ea47832fa69879cd03011f696&show_border=true&link_opens_in_new_window=true"></iframe> | <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=schmitz-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08KGWJDRZ&asins=B08KGWJDRZ&linkId=3a8741721183f583bf43717a6e18c5a3&show_border=true&link_opens_in_new_window=true"></iframe> |
 
-## Pareando a Alexa com o MacBook
+## Pareando o Dispositivo Echo com o Mac
 
-Para parear a **Alexa** com o MacBook, você pode poderá utilizar o App da Alexa, ou efetuar o procedimento diretamente através de um Navegador no MacBook.
+Para parear seu dispositivo **Echo** com o Mac, você pode utilizar o aplicativo da Alexa no seu celular ou efetuar o procedimento diretamente através de um navegador. Vamos fazer através de um navegador.
 
-Neste caso, vamos fazer através de um Navegador.
+### No Navegador
 
-Abra o site [https://alexa.amazon.com/](https://alexa.amazon.com/)
-Efetue o login, com a conta da Amazon que utiliza na sua **Alexa**.
-No menu à esquerda, selecione **Configurações**
-Na lista de **Dispositivos**, selecione o dispositivo que deseja configurar
-Acesse a sessão **Bluetooth**
-E em seguida escolha a opção **Parear um novo dispositivo**
+1.  Acesse o site [alexa.amazon.com.br](https://alexa.amazon.com.br/) e efetue o login com a conta da Amazon que você utiliza na sua Alexa.
+2.  No menu à esquerda, selecione **"Configurações"**.
+3.  Na lista de **"Dispositivos"**, selecione o dispositivo Echo que deseja configurar.
+4.  Acesse a seção **"Bluetooth"** e, em seguida, escolha a opção **"Parear um novo dispositivo"**. A Alexa entrará em modo de pareamento.
 
-### No MacBook ###
+### No Mac
 
-Abra as preferência do Bluetooth, clicando no ícone do Bluetooth na "barra do relógio", ou então acesse a opção "Bluetooth" pelo **Spotlight**
+1.  Abra as preferências do Bluetooth clicando no ícone do Bluetooth na barra de menus, ou acesse "Preferências do Sistema" > "Bluetooth".
+2.  Na janela que se abre, aguarde o seu dispositivo Echo surgir na lista de dispositivos disponíveis.
+3.  Quando ele aparecer, basta clicar no botão **"Conectar"** ao lado do nome do dispositivo.
 
-Na janela que se abre, aguarde a Alexa surgir na lista de opções.
+Com isso, a Alexa emitirá um aviso sonoro, informando que o pareamento ocorreu com sucesso.
 
-Quando isto ocorrer, basta selecionar a opção **Conectar**.
+A partir deste ponto, o macOS deverá selecionar automaticamente o dispositivo Echo como saída de áudio. Caso isso não aconteça, você pode selecioná-lo manualmente clicando no ícone de volume na barra de menus.
 
-Com isto, a Alexa irá exibir um aviso sonoro, informando que o pareamento ocorreu com sucesso!
-
-Deste ponto em diante, basta seleciona a Alexa como dispositivo de saída de áudio, clicando no ícone de Volume na "barra do relógio".
-
-Nas próximas vezes que ligar o MacBook, será necessário apenas efetuar a conexão com a Alexa, clicando no ícone do Bluetooth na "barra do relógio", selecionando-a e conectando-se com a mesma.
+Nas próximas vezes que ligar o Mac, será necessário apenas efetuar a conexão com a Alexa clicando no ícone do Bluetooth na barra de menus, selecionando-a na lista de dispositivos e clicando em "Conectar".
