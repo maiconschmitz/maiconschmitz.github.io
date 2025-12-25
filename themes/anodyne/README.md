@@ -37,7 +37,7 @@ Note: No Image Gallery. Useless and too heavyweight. Feel free to develop one an
 Install the theme by using:
 
 ```
-$ git clone https://github.com/klugjo/hexo-theme-anodyne themes/anodyne
+  git clone https://github.com/klugjo/hexo-theme-anodyne themes/anodyne
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `anodyne`:

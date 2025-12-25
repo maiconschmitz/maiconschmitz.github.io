@@ -16,7 +16,9 @@ Como resolver a exibição do aviso `Key is stored in legacy trusted.gpg keyring
 
 Este warning é exibido ao executar o apt update via linha de comando:
 
+```text
 	Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+```
 
 A origem desta mensagem vem da necessidade de instalar algum software de terceiro, que não está presente no repositório oficial do Ubuntu.
 
@@ -32,6 +34,7 @@ Acesse o terminal e execute:
 
 Você terá uma saída semalhante à listada abaixo:
 
+```shell
 	/etc/apt/trusted.gpg
 	--------------------
 	pub   rsa4096 2020-05-07 [SC]
@@ -50,7 +53,7 @@ Você terá uma saída semalhante à listada abaixo:
 	pub   rsa4096 2018-09-17 [SC]
 		F6EC B376 2474 EDA9 D21B  7022 8719 20D1 991B C93C
 	uid           [ desconhecida] Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>
-
+```
 
 Neste caso, o que responsável pela geração do warning é o bloco abaixo:
 

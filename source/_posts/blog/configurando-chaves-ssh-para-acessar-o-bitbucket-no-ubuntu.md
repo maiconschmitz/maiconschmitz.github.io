@@ -23,20 +23,28 @@ No exemplo abaixo, será demonstrado um passo a passo de como efetuar a configur
 
 Estando no terminal, acesse o diretório .ssh da sua home (~/.ssh)
 
-	$ cd ~/.ssh
+~~~ shell
+	cd ~/.ssh
+~~~
 
 Caso o diretório não exista, crie-o
 
-	$ mkdir ~/.ssh
+~~~ shell
+	mkdir ~/.ssh
+~~~
 
 E então acesse-o...
 
-	$ cd ~/.ssh
+~~~ shell
+	cd ~/.ssh
+~~~
 
 Se o diretório existir, procure pela sua chave pública.
 A chave pública estará em um arquivo nomeado como **id_rsa.pub** ou **id_dsa.pub**
 
-	$ ls
+~~~ shell
+	ls
+~~~
 
 Se nenhum dos arquivos: id_rsa.pub ou id_dsa.pub existir, então significa que você deverá cria-los:
 
@@ -44,7 +52,9 @@ Se nenhum dos arquivos: id_rsa.pub ou id_dsa.pub existir, então significa que v
 
 Para criar a sua chave publica, basta executar o comando abaixo, lembrando de alterar o endereço "ENDERECO-DE-EMAIL@DOMINIO.COM.BR" pelo seu e-mail.
 
-	$ ssh-keygen -t rsa -C "ENDERECO-DE-EMAIL@DOMINIO.COM.BR"
+~~~ shell
+	ssh-keygen -t rsa -C "ENDERECO-DE-EMAIL@DOMINIO.COM.BR"
+~~~
 
 Quando for solicitado o nome do arquivo a ser criado, defina um de sua preferência ou simplesmente confirme a sugestão, pressionando <Enter>
 Quando solicitar uma passphrase, defina uma senha ou deixe-a em branco, simplesmente pressionando <Enter>
@@ -57,11 +67,15 @@ Quando solicitar uma passphrase, defina uma senha ou deixe-a em branco, simplesm
 
 Agora que a sua chave esta criada, liste os arquivos do diretório ~/.ssh
 
-	$ ls ~/.ssh
+~~~ shell
+	ls ~/.ssh
+~~~
 
 Visualize e copie o conteúdo da sua chave, tomando o cuidado para não adicionar espaços extras no início ou no final do arquivo
 
-	$ cat ~/.ssh/id_rsa.pub
+~~~ shell
+	cat ~/.ssh/id_rsa.pub
+~~~
 
 Sua chave normalmente irá iniciar com a string: "ssh-rsa " e terminar com o endereço de e-mail anteriormente informado: "ENDERECO-DE-EMAIL@DOMINIO.COM.BR"
 
@@ -84,7 +98,9 @@ Confirme, clicando em “Adicionar chave”.
 
 Volte ao Terminal para testar se a adição das chaves funcionou de forma correta
 
-	$ ssh -T git@bitbucket.org
+~~~ shell
+	ssh -T git@bitbucket.org
+~~~
 
 Quando solicitar se você deseja realmente conectar:
 _"Are you sure you want to continue connecting (yes/no)?"_
