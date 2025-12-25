@@ -25,38 +25,54 @@ Primeiramente, no servidor onde a conexão será originada.
 
 Execute o seguinte comando:
 
-	$ ssh-keygen -b 1024 -t rsa
+~~~ shell
+	ssh-keygen -b 1024 -t rsa
+~~~
 
 Visualize o conteúdo do arquivo e copie a sua chave:
 
+~~~ shell
 	~/.ssh/id_rsa.pub
+~~~
 
 A sua chave será ~~parecida~~ com:
 
+~~~ shell
 	ssh-rsa U2Ugdm9jw6ogZGVjb2RpZmljb3Ugc8OzIHBhcmEgdmVyIG8gY29udGXDumRvLCBkZWl4ZSBzZXUgY29tZW50w6FyaW8gYWJhaXhvIDsp SEU-USUARIO@SEU-HOST
+~~~
 
 Tendo copiado a chave ssh, conecte-se ou acesse o servidor que irá receber a conexão.
 
 Estando no terminal do mesmo, acesse o diretório .ssh da sua pasta home (~/.ssh)
 
-	$ cd ~/.ssh
+~~~ shell
+	cd ~/.ssh
+~~~
 
 Caso o diretório não exista, crie-o
 
-	$ mkdir ~/.ssh
+~~~ shell
+	mkdir ~/.ssh
+~~~
 
 E então acesse-o...
 
-	$ cd ~/.ssh
+~~~ shell
+	cd ~/.ssh
+~~~
 
 Cole a chave anteriormente copiada ao final no arquivo:
 
+~~~ shell
 	~/.ssh/authorized_keys
+~~~
 
 Lembre-se, que caso o arquivo não exista, ele também deverá ser criado.
 
 Processo concluído, basta voltar ao servidor inicial e abrir a conexão com o servidor de destino.
 
+~~~ shell
 	ssh nomedohost -l usuario
+~~~
 
 Se a senha não for solicitada, então isto significa que tudo esta funcionando normalmente.

@@ -21,13 +21,16 @@ Para utilizar as **gems** mais atuais do **Ruby**, se faz necessário atualizar 
 
 Vá até o terminal e execute o seguinte comando:
 
-	$ ruby -v
-
+~~~ shell
+	ruby -v
+~~~
 ## Baixando o Ruby
 
 Para efetuar a atualizaão do Ruby, estando no Terminal, execute:
 
-	$ curl -sSL https://get.rvm.io | bash -s stable
+~~~ shell
+	curl -sSL https://get.rvm.io | bash -s stable
+~~~
 
 Após a instalação, feche o terminal que utilizou e abra-o novamente.
 
@@ -35,10 +38,13 @@ Agora, você pode verificar as versões disponíveis do Ruby para upgrade.
 
 Para isto, execute:
 
-	$ rvm list known
+~~~ shell
+	rvm list known
+~~~
 
 O seu retorno, será algo semelhante à isto:
 
+~~~ shell
 	# MRI Rubies
 	[ruby-]1.8.6[-p420]
 	[ruby-]1.8.7[-head] # security released on head
@@ -108,17 +114,24 @@ O seu retorno, será algo semelhante à isto:
 	# IronRuby
 	ironruby[-1.1.3]
 	ironruby-head
+~~~
 
 Como neste momento, a versão do Ruby 2.6.0 estava ainda em preview, optei pela última versão da 2.5, no caso a 2.5.1.
 
 Para instalar, apenas execute:
 
-	$ rvm install ruby-2.5.1
+~~~ shell
+	rvm install ruby-2.5.1
+~~~
 
 Ao final da instalação, execute:
 
-	$ ruby -v
+~~~ shell
+	ruby -v
+~~~
 
 Se ainda não estiver exibindo a versão recem instalada, então execute:
 
-	$ rvm use ruby-2.5.1 --default
+~~~ shell
+	rvm use ruby-2.5.1 --default
+~~~

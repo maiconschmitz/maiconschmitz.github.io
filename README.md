@@ -18,4 +18,3 @@ Execute o servidor do Hexo:
 Acesse a página localmente:
 
      http://localhost:4000/
-

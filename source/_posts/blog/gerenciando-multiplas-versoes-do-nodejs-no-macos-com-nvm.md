@@ -32,10 +32,12 @@ Se você nunca utilizou o **Brew**, você pode saber mais sobre ele em: [Instala
 Após a instalação, você deve atualizar o seu profile (.profile, .zshrc ou .zprofile).
 Para isto, execute:
 
-	export NVM_DIR=~/.nvm
-	source $(brew --prefix nvm)/nvm.sh
+	export NVM_DIR="$HOME/.nvm"
+	[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+	[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
-Para verificar se a instalação ocorreu normalmente, você pode checar a versão do nvm com o comando:
+
+Para verificar se a instalação ocorreu normalmente, você pode checar a versão do nvm com o comando (pode ser necessário fechar e reabrir o terminal novamente):
 
 	nvm --version
 

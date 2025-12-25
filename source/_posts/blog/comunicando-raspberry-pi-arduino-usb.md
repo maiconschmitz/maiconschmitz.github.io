@@ -70,11 +70,15 @@ No nosso exemplo, foi criado o arquivo **testeserial.py**
 
 Antes de rodar o projeto, não esqueça de instalar o pacote pySerial
 
-	$sudo pip install pyserial
+~~~ shell
+	sudo pip install pyserial
+~~~
 
 Para testar, basta executar:
 
-	$python testeserial.py
+~~~ shell
+	python testeserial.py
+~~~
 
 Se tudo ocorrer sem erros, à cada 5 segundos, você verá a mensagem **COMUNICACAO SERIAL VIA USB** sendo impressa no Terminal, vindo diretamente do **Arduino**.
 

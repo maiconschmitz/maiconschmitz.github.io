@@ -18,7 +18,9 @@ Este guia explica como resolver o aviso de depreciação `Key is stored in legac
 
 O aviso completo geralmente se parece com isto:
 
-> `W: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.`
+```text
+	Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+```
 
 A origem desta mensagem vem da necessidade de instalar algum software de terceiro que não está presente no repositório oficial. Nestes casos, é comum adicionar uma chave GPG (chave pública) para verificar a autenticidade dos pacotes.
 
@@ -36,7 +38,13 @@ Primeiro, liste as chaves que estão no chaveiro legado com o comando:
 sudo apt-key list
 ```
 
-Você terá uma saída semelhante à listada abaixo, mostrando todas as chaves, incluindo as legadas e as que já estão no formato correto:
+```shell
+	/etc/apt/trusted.gpg
+	--------------------
+	pub   rsa4096 2020-05-07 [SC]
+		E8A0 32E0 94D8 EB4E A189  D270 DA41 8C88 A321 9F7B
+	uid           [ desconhecida] HashiCorp Security (HashiCorp Package Signing) <security+packaging@hashicorp.com>
+	sub   rsa4096 2020-05-07 [E]
 
 ```
 /etc/apt/trusted.gpg
@@ -46,15 +54,12 @@ pub   rsa4096 2020-05-07 [SC]
 uid           [ desconhecida] HashiCorp Security (HashiCorp Package Signing) <security+packaging@hashicorp.com>
 sub   rsa4096 2020-05-07 [E]
 
-/etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
-------------------------------------------------------
-pub   rsa4096 2012-05-11 [SC]
-      8439 38DF 228D 22F7 B374  2BC0 D94A A3F0 EFE2 1092
-uid           [ desconhecida] Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>
-...
+	/etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg
+	------------------------------------------------------
+	pub   rsa4096 2018-09-17 [SC]
+		F6EC B376 2474 EDA9 D21B  7022 8719 20D1 991B C93C
+	uid           [ desconhecida] Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>
 ```
-
-Neste caso, a chave da **HashiCorp**, que está em `/etc/apt/trusted.gpg`, é a que está causando o aviso.
 
 ### 2. Exporte a chave para o formato correto
 

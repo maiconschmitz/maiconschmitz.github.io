@@ -34,7 +34,7 @@ No Ubuntu, temos disponível o **notify-send**
 Exemplo de uso:
 
 ~~~ shell
-notify-send "Mensagem"
+    notify-send "Mensagem"
 ~~~
 
 ### Notificação no KDE
@@ -44,7 +44,7 @@ No KDE, temos disponível o **kdialog**
 Exemplo de uso:
 
 ~~~ shell
-kdialog --title "Mensagem"
+    kdialog --title "Mensagem"
 ~~~
 
 ## OS X
@@ -62,7 +62,7 @@ A notificação no OS X Mountain Lion ou mais recente, se utiliza da Central de 
 Você pode instalar o wrapper via [Homebrew](https://github.com/Homebrew/homebrew):
 
 ~~~ shell
-$ brew install terminal-notifier
+    brew install terminal-notifier
 ~~~
 
 Caso você não possua o HomeBrew instalado, pode verificar [aqui, como Instalar o HomeBrew](http://www.maiconschmitz.com.br/blog/2015/01/09/instalando-o-gerenciador-de-pacotes-brew).
@@ -70,7 +70,7 @@ Caso você não possua o HomeBrew instalado, pode verificar [aqui, como Instalar
 Ou, caso deseje utilizar o mesmo também via [Ruby](https://github.com/alloy/terminal-notifier/tree/master/Ruby), efetue a instalação via RubyGems:
 
 ~~~ shell
-$ [sudo] gem install terminal-notifier
+    sudo gem install terminal-notifier
 ~~~
 
 Uma vez que o Terminal Notifier esteja instalado, você terá a sua disposição o **terminal-notifier**.
@@ -78,7 +78,7 @@ Uma vez que o Terminal Notifier esteja instalado, você terá a sua disposição
 Exemplo de uso:
 
 ~~~ shell
-terminal-notifier -message "Mensagem" -title "Titulo"
+    terminal-notifier -message "Mensagem" -title "Titulo"
 ~~~
 
 ### Notificação no Mac OS X, anterior ao Mountain Lion
@@ -103,5 +103,5 @@ Uma vez que o Growl esteja instalado, você terá a sua disposição o **growlno
 Exemplo de uso:
 
 ~~~ shell
-/usr/local/bin/growlnotify Titulo -m 'Mensagem'
+    /usr/local/bin/growlnotify Titulo -m 'Mensagem'
 ~~~
