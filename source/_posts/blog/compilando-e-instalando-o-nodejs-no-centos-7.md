@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compilando e Instalando o Node.js no CentOS 7
+title: Compilando e instalando o Node.js no CentOS 7
 date: 2014-08-26 11:30:56.000000000 -03:00
 categories:
 - blog
@@ -14,55 +14,53 @@ published: true
 alias: blog/2014/08/26/compilando-e-instalando-o-nodejs-no-centos-7.html
 ---
 
-Para poder compilar e instalar o **Node.js** no CentOS 7, você deverá executar alguns passos.
+Para compilar e instalar o **Node.js** no CentOS 7, você precisará executar alguns passos.
 
-Primeiramente, prepare um local para baixar o Node.js.
+Primeiramente, prepare um local para baixar o Node.js. Pode ser na sua pasta `home`:
 
-Pode ser na sua pasta home:
+```shell
+cd ~
+mkdir node
+cd node/
+```
 
-~~~ shell
-	cd ~
-	mkdir node
-	cd node/
-~~~
+## Baixe e descompacte o Node.js
 
-## Baixe e Descompacte o Node
+```shell
+wget http://nodejs.org/dist/v0.10.31/node-v0.10.31.tar.gz
+tar xzvf node-v* && cd node-v*
+```
 
-~~~ shell
-	wget http://nodejs.org/dist/v0.10.31/node-v0.10.31.tar.gz
-	tar xzvf node-v* && cd node-v*
-~~~
+No momento da escrita deste artigo, a versão estável era a `v0.10.31`.
 
-À título de curiosidade, atualmente a versão estável é a v0.10.31.
+Para compilar, é necessário ter o **GCC**. Caso não o possua, instale-o com o seguinte comando:
 
-Para poder compilar, será necessário possuir o **GCC**, caso você não o possua instalado, então intale-o:
+```shell
+sudo yum install gcc gcc-c++
+```
 
-~~~ shell
-	sudo yum install gcc gcc-c++
-~~~
+## Compilando e instalando o Node.js
 
-## Compilando e Instalando o Node.js
+Para compilar e instalar o Node.js, execute a sequência de comandos abaixo:
 
-Para compilar e instalar o Node, execute a sequência de comandos abaixo:
+```shell
+./configure
+make
+sudo make install
+```
 
-~~~ shell
-	./configure
-	make
-	sudo make install
-~~~
+Quando o processo de instalação for concluído, você pode verificar se tudo ocorreu corretamente testando a versão do Node.js que acabou de instalar.
 
-Quando o processo de instalação estiver concluído, você poderá verificar se tudo ocorreu normalmente, testando por exemplo, a versão do node que você acabou de instalar.
+Para isso, execute o seguinte comando:
 
-Para isto, bastará executar o seguinte comando:
+```shell
+node --version
+```
 
-~~~ shell
-	node --version
-~~~
+O que, neste exemplo, resultará em:
 
-O qual, neste exemplo, resultou em:
+```shell
+v0.10.31
+```
 
-~~~ shell
-	v0.10.31
-~~~
-
-Com isto você tem o **Node.js** instalado e pronto para usar.
+Com isso, você tem o **Node.js** instalado e pronto para usar.

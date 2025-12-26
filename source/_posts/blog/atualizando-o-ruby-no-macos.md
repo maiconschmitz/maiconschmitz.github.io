@@ -13,36 +13,37 @@ type: post
 published: true
 ---
 
-Por padrão o macOS Sierra vem com o Ruby na versão 2.0 instalado.
+Por padrão, o macOS Sierra vem com o Ruby na versão 2.0.
 
-Para utilizar as **gems** mais atuais do **Ruby**, se faz necessário atualizar o Ruby para alguma versão mais recente.
+Para utilizar as **gems** mais atuais do **Ruby**, é necessário atualizar o Ruby para uma versão mais recente.
 
-## Verifique a versão do Ruby instalada.
+## Verifique a versão do Ruby instalada
 
 Vá até o terminal e execute o seguinte comando:
 
-~~~ shell
-	ruby -v
-~~~
+```shell
+ruby -v
+```
+
 ## Baixando o Ruby
 
-Para efetuar a atualizaão do Ruby, estando no Terminal, execute:
+Para efetuar a atualização do Ruby, execute no terminal:
 
-~~~ shell
-	curl -sSL https://get.rvm.io | bash -s stable
-~~~
+```shell
+curl -sSL https://get.rvm.io | bash -s stable
+```
 
-Após a instalação, feche o terminal que utilizou e abra-o novamente.
+Após a instalação, feche e abra o terminal novamente.
 
-Agora, você pode verificar as versões disponíveis do Ruby para upgrade.
+Agora, você pode verificar as versões do Ruby disponíveis para upgrade.
 
-Para isto, execute:
+Para isso, execute:
 
-~~~ shell
-	rvm list known
-~~~
+```shell
+rvm list known
+```
 
-O seu retorno, será algo semelhante à isto:
+Seu retorno será algo semelhante a isto:
 
 ~~~ shell
 	# MRI Rubies
