@@ -15,32 +15,39 @@ alias: blog/2014/09/11/atualizando-o-node-js-via-npm.html
 
 Para atualizar o **Node.js**, é possível utilizar o **npm**.
 
-Independente da forma como o **Node.js** foi instalado, seja via pacote ou até mesmo compilado, é possível efetuar a atualização do mesmo via npm.
+Independentemente da forma como o **Node.js** foi instalado (seja via pacote ou compilado), é possível efetuar a atualização através do npm.
 
-Este formato de atualização foi testado no Ubuntu, com o **Node.js** tendo sido instalado via apt, no CentOS, tendo sido compilado e também no Mac OS X, tendo sido instalado pelas vias padrões.
+Este método foi testado no Ubuntu (com o **Node.js** instalado via `apt`), no CentOS (compilado) e também no macOS (instalado pelos métodos padrões).
 
-Os passos para atualizar o **Node.js** são extremamente simples e são exemplificados logo abaixo.
+Os passos para atualizar o **Node.js** são extremamente simples e estão exemplificados abaixo.
 
-Primeiramente, iremos verificar a versão do **Node.js**, executando:
+Primeiramente, verifique a versão do **Node.js** executando:
 
-	node -v
+```shell
+node -v
+```
 
-## Partindo para a atualização propriamente dita
+## Partindo para a atualização
 
 Execute a seguinte sequência de comandos:
 
-	sudo npm cache clean -f
-	sudo npm install -g n
+```shell
+sudo npm cache clean -f
+sudo npm install -g n
+```
 
 Agora, para atualizar o **Node.js**, você tem duas opções:
 
-Pode escolher istalar o **Node.js** na sua versão mais atual e estável, executando:
+Pode escolher instalar o **Node.js** na sua versão mais atual e estável, executando:
 
-	sudo n stable
+```shell
+sudo n stable
+```
 
-Ou pode istalar o **Node.js** em uma versão mais específica, neste exemplo, a versão 0.11.x.
-Para isto, basta executar:
+Ou pode instalar uma versão específica do **Node.js** (neste exemplo, a versão `0.11.x`). Para isso, basta executar:
 
-	sudo n 0.11
+```shell
+sudo n 0.11
+```
 
-Com isto você tem o **Node.js** atualizado na versão desejada.
+Com isso, você terá o **Node.js** atualizado na versão desejada.
