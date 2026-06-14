@@ -1,0 +1,23 @@
+---
+import TagList from './TagList.astro'
+import { formatDate, getPostUrl } from '@/utils/posts'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  post: CollectionEntry<'posts'>
+}
+
+const { post } = Astro.props
+const { title, date, tags } = post.data
+const url = getPostUrl(post.slug, date)
+---
+
+<article class="post-card">
+  <div class="post-card__meta">
+    <time datetime={date.toISOString()}>{formatDate(date)}</time>
+    {tags.length > 0 && <TagList tags={tags.slice(0, 4)} />}
+  </div>
+  <h2 class="post-card__title">
+    <a href={url}>{title}</a>
+  </h2>
+</article>

@@ -1,0 +1,16 @@
+---
+interface Props {
+  tags: string[]
+}
+const { tags } = Astro.props
+---
+
+<ul class="tags" role="list">
+  {tags.map(tag => (
+    <li>
+      <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">
+        #{tag}
+      </a>
+    </li>
+  ))}
+</ul>

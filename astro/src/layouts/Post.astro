@@ -1,0 +1,66 @@
+---
+import Base from './Base.astro'
+import TagList from '@/components/TagList.astro'
+import { formatDate, readingTime, getPostUrl } from '@/utils/posts'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  post: CollectionEntry<'posts'>
+  prev?: CollectionEntry<'posts'>
+  next?: CollectionEntry<'posts'>
+}
+
+const { post, prev, next } = Astro.props
+const { title, date, tags, description } = post.data
+const { Content, remarkPluginFrontmatter } = await post.render()
+const mins = readingTime(post.body)
+---
+
+<Base title={title} description={description}>
+  <div class="container">
+    <article>
+      <header class="post-header">
+        <h1 class="post-title">{title}</h1>
+        <div class="post-meta">
+          <time datetime={date.toISOString()}>{formatDate(date)}</time>
+          <span>·</span>
+          <span>{mins} min de leitura</span>
+          {tags.length > 0 && (
+            <>
+              <span>·</span>
+              <TagList tags={tags} />
+            </>
+          )}
+        </div>
+      </header>
+
+      <div class="post-content">
+        <Content />
+      </div>
+
+      <footer class="post-footer">
+        {tags.length > 0 && (
+          <div>
+            <TagList tags={tags} />
+          </div>
+        )}
+
+        <nav class="post-nav" aria-label="Navegação entre posts">
+          {prev && (
+            <a href={getPostUrl(prev.slug, prev.data.date)}>
+              <span class="post-nav__label">← Anterior</span>
+              <span class="post-nav__title">{prev.data.title}</span>
+            </a>
+          )}
+          {!prev && <span />}
+          {next && (
+            <a href={getPostUrl(next.slug, next.data.date)} class="post-nav--next">
+              <span class="post-nav__label">Próximo →</span>
+              <span class="post-nav__title">{next.data.title}</span>
+            </a>
+          )}
+        </nav>
+      </footer>
+    </article>
+  </div>
+</Base>

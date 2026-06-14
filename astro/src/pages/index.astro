@@ -1,0 +1,33 @@
+---
+import Base from '@/layouts/Base.astro'
+import PostCard from '@/components/PostCard.astro'
+import Pagination from '@/components/Pagination.astro'
+import { getSortedPosts } from '@/utils/posts'
+
+const PAGE_SIZE = 10
+const allPosts = await getSortedPosts()
+const totalPages = Math.ceil(allPosts.length / PAGE_SIZE)
+const posts = allPosts.slice(0, PAGE_SIZE)
+---
+
+<Base title="Maicon Schmitz">
+  <section class="hero">
+    <div class="container">
+      <h1>Maicon Schmitz</h1>
+      <p>Arquiteto de Software · Web · Mobile · DevOps · IoT</p>
+    </div>
+  </section>
+
+  <div class="container" style="padding-top: 2rem">
+    <div class="post-list">
+      {posts.map(post => <PostCard post={post} />)}
+    </div>
+
+    <Pagination
+      currentPage={1}
+      totalPages={totalPages}
+      prevUrl={null}
+      nextUrl={totalPages > 1 ? '/pagina/2/' : null}
+    />
+  </div>
+</Base>
