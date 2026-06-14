@@ -1,0 +1,31 @@
+---
+import Icon from './Icon.astro'
+import type { Project } from '@/data/portfolio'
+
+interface Props {
+  project: Project
+}
+const { project } = Astro.props
+---
+
+<article class="project-card">
+  <h3 class="project-card__title">{project.name}</h3>
+  <p class="project-card__desc">{project.description}</p>
+
+  <ul class="project-card__tags" role="list">
+    {project.tags.map((tag) => <li class="chip">{tag}</li>)}
+  </ul>
+
+  <div class="project-card__links">
+    {project.url && (
+      <a href={project.url} target="_blank" rel="noopener noreferrer">
+        <Icon name="external" size={16} /> Ver projeto
+      </a>
+    )}
+    {project.repo && (
+      <a href={project.repo} target="_blank" rel="noopener noreferrer">
+        <Icon name="github" size={16} /> Código
+      </a>
+    )}
+  </div>
+</article>

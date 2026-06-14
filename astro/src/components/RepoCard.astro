@@ -1,0 +1,18 @@
+---
+import Icon from './Icon.astro'
+import type { Repo } from '@/data/portfolio'
+
+interface Props {
+  repo: Repo
+}
+const { repo } = Astro.props
+---
+
+<a class="repo-card" href={repo.href} target="_blank" rel="noopener noreferrer">
+  <div class="repo-card__head">
+    <Icon name="github" size={18} />
+    <span class="repo-card__name">{repo.name}</span>
+    {repo.language && <span class="repo-card__lang">{repo.language}</span>}
+  </div>
+  <p class="repo-card__desc">{repo.description}</p>
+</a>
