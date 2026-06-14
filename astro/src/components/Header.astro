@@ -1,0 +1,32 @@
+---
+import ThemeToggle from './ThemeToggle.astro'
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/arquivos', label: 'Arquivos' },
+  { href: '/sobre', label: 'Sobre' },
+]
+
+const current = Astro.url.pathname
+---
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="/images/logo.svg" alt="Maicon Schmitz" width="28" height="28" />
+      <span>Maicon Schmitz</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      {navLinks.map(({ href, label }) => (
+        <a
+          href={href}
+          class={current === href || (href !== '/' && current.startsWith(href)) ? 'active' : ''}
+        >
+          {label}
+        </a>
+      ))}
+      <ThemeToggle />
+    </nav>
+  </div>
+</header>

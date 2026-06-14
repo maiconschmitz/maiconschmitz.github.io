@@ -1,0 +1,36 @@
+---
+import Base from '@/layouts/Base.astro'
+import PostCard from '@/components/PostCard.astro'
+import { getSortedPosts } from '@/utils/posts'
+
+export async function getStaticPaths() {
+  const posts = await getSortedPosts()
+  const tagSet = new Set(posts.flatMap(p => p.data.tags.map(t => t.toLowerCase().replace(/\s+/g, '-'))))
+
+  return [...tagSet].map(tag => ({
+    params: { tag },
+    props: { tag },
+  }))
+}
+
+interface Props { tag: string }
+const { tag } = Astro.props
+
+const allPosts = await getSortedPosts()
+const posts = allPosts.filter(p =>
+  p.data.tags.some(t => t.toLowerCase().replace(/\s+/g, '-') === tag)
+)
+---
+
+<Base title={`#${tag}`}>
+  <div class="container">
+    <h1 class="page-title" style="margin-top: 2rem">
+      #{tag}
+      <span>— {posts.length} {posts.length === 1 ? 'post' : 'posts'}</span>
+    </h1>
+
+    <div class="post-list">
+      {posts.map(post => <PostCard post={post} />)}
+    </div>
+  </div>
+</Base>

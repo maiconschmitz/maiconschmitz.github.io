@@ -1,0 +1,39 @@
+---
+import Base from '@/layouts/Base.astro'
+import { getSortedPosts, formatDate, getPostUrl } from '@/utils/posts'
+
+const posts = await getSortedPosts()
+
+const byYear = posts.reduce<Record<string, typeof posts>>((acc, post) => {
+  const year = new Intl.DateTimeFormat('pt-BR', {
+    year: 'numeric',
+    timeZone: 'America/Sao_Paulo',
+  }).format(post.data.date)
+  ;(acc[year] ??= []).push(post)
+  return acc
+}, {})
+
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a))
+---
+
+<Base title="Arquivos">
+  <div class="container">
+    <h1 class="page-title" style="margin-top: 2rem">Arquivos</h1>
+
+    {years.map(year => (
+      <section class="archive-year">
+        <h2>{year}</h2>
+        <ul class="archive-list">
+          {byYear[year].map(post => (
+            <li class="archive-item">
+              <time class="archive-date" datetime={post.data.date.toISOString()}>
+                {formatDate(post.data.date)}
+              </time>
+              <a href={getPostUrl(post.slug, post.data.date)}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
