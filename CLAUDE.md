@@ -165,8 +165,10 @@ O dark mode segue o padrão GitHub (`[data-theme="dark"]` no `<html>`), persisti
 ## Arquitetura de URLs
 
 ```
-/                           Homepage (pág. 1)
-/pagina/2/ … /pagina/6/    Paginação
+/                           Home = portfólio (apresentação) + últimos posts
+/blog                       Listagem do blog (pág. 1)
+/blog/pagina/2/ … /6/       Paginação do blog
+/pagina/2/ … /pagina/6/    Redirect 301 → /blog/pagina/N (compatibilidade)
 /blog/YYYY/MM/DD/slug/      Posts (URL idêntica ao Hexo)
 /tags/[tag]/                Por tag
 /arquivos/                  Cronologia
@@ -179,6 +181,23 @@ O dark mode segue o padrão GitHub (`[data-theme="dark"]` no `<html>`), persisti
 /ads.txt                    AdSense
 /404                        Página de erro customizada
 ```
+
+---
+
+## Redesign: home como portfólio (jun/2026)
+
+A home deixou de ser a lista de posts e virou uma **landing de apresentação** (híbrida: portfólio + seção "Do blog" com os últimos posts). O blog completo passou para `/blog`.
+
+- **Conteúdo central:** `astro/src/data/portfolio.ts` — perfil, links sociais (inclui **LinkedIn**), skills, experiências, projetos e open source. Editar conteúdo é só mexer nesse arquivo.
+- **Componentes novos:** `Icon.astro` (SVGs inline, inclui LinkedIn), `ProjectCard.astro`, `RepoCard.astro`.
+- **Logotipo descartado:** header agora usa wordmark + monograma "MS"; favicon novo em `public/favicon.svg` (`public/images/logo.svg|png` ficaram órfãos, podem ser removidos).
+- **Identidade visual renovada (tom mais sóbrio/dev):** paleta azul `#2563eb` + ciano `#06b6d4`, header neutro com blur (não mais gradiente cheio), dark mode mais profundo. Dark/light mantidos.
+- **Open source** alimentado com repositórios públicos reais do GitHub.
+
+### ⚠️ Falta você preencher
+
+- **`experiences` em `portfolio.ts`** estão como **placeholders** (`20XX`, "Empresa anterior", TODO). Ajuste cargos, empresas, datas e descrições reais.
+- Conferir/expandir `projects` (vitrine) com os trabalhos que quiser destacar.
 
 ---
 

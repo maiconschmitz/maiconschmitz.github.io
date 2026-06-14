@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const allPosts = await getSortedPosts()
   const totalPages = Math.ceil(allPosts.length / PAGE_SIZE)
 
-  return Array.from({ length: totalPages - 1 }, (_, i) => {
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => {
     const page = i + 2
     return {
       params: { page: String(page) },
@@ -26,17 +26,22 @@ const allPosts = await getSortedPosts()
 const posts = allPosts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 ---
 
-<Base title={`Posts — Página ${page}`}>
+<Base title={`Blog — Página ${page}`}>
   <div class="container">
-    <div class="post-list" style="margin-top: 2rem">
-      {posts.map(post => <PostCard post={post} />)}
+    <div class="page-hero">
+      <h1>Blog</h1>
+      <p>Página {page} de {totalPages}</p>
+    </div>
+
+    <div class="post-list">
+      {posts.map((post) => <PostCard post={post} />)}
     </div>
 
     <Pagination
       currentPage={page}
       totalPages={totalPages}
-      prevUrl={page === 2 ? '/' : `/pagina/${page - 1}/`}
-      nextUrl={page < totalPages ? `/pagina/${page + 1}/` : null}
+      prevUrl={page === 2 ? '/blog' : `/blog/pagina/${page - 1}/`}
+      nextUrl={page < totalPages ? `/blog/pagina/${page + 1}/` : null}
     />
   </div>
 </Base>

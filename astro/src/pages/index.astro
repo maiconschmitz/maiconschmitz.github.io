@@ -1,33 +1,172 @@
 ---
 import Base from '@/layouts/Base.astro'
+import Icon from '@/components/Icon.astro'
+import ProjectCard from '@/components/ProjectCard.astro'
+import RepoCard from '@/components/RepoCard.astro'
 import PostCard from '@/components/PostCard.astro'
-import Pagination from '@/components/Pagination.astro'
 import { getSortedPosts } from '@/utils/posts'
+import { profile, socials, skills, experiences, projects, openSource } from '@/data/portfolio'
 
-const PAGE_SIZE = 10
-const allPosts = await getSortedPosts()
-const totalPages = Math.ceil(allPosts.length / PAGE_SIZE)
-const posts = allPosts.slice(0, PAGE_SIZE)
+const latestPosts = (await getSortedPosts()).slice(0, 4)
+const primarySocials = socials.filter((s) => 'primary' in s && s.primary)
 ---
 
-<Base title="Maicon Schmitz">
-  <section class="hero">
-    <div class="container">
-      <h1>Maicon Schmitz</h1>
-      <p>Arquiteto de Software · Web · Mobile · DevOps · IoT</p>
+<Base title={profile.name}>
+  {/* ── Hero ─────────────────────────────────────────── */}
+  <section class="hero-portfolio">
+    <div class="container container--wide">
+      <span class="hero-portfolio__mono" aria-hidden="true">{profile.initials}</span>
+      <p class="hero-portfolio__eyebrow">{profile.role} · {profile.location}</p>
+      <h1 class="hero-portfolio__name">{profile.name}</h1>
+      <p class="hero-portfolio__tagline">{profile.tagline}</p>
+
+      <div class="hero-portfolio__intro">
+        {profile.intro.map((p) => <p>{p}</p>)}
+      </div>
+
+      <div class="hero-portfolio__cta">
+        {primarySocials.map((s) => (
+          <a
+            class={`btn ${s.icon === 'linkedin' ? 'btn--primary' : 'btn--ghost'}`}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name={s.icon} size={18} /> {s.label}
+          </a>
+        ))}
+        <a class="btn btn--ghost" href="#contato">
+          <Icon name="mail" size={18} /> Contato
+        </a>
+      </div>
     </div>
   </section>
 
-  <div class="container" style="padding-top: 2rem">
-    <div class="post-list">
-      {posts.map(post => <PostCard post={post} />)}
-    </div>
+  {/* ── Conhecimentos ────────────────────────────────── */}
+  <section class="section">
+    <div class="container container--wide">
+      <header class="section__head">
+        <h2>Conhecimentos</h2>
+        <p>Tecnologias com que trabalho e estudo.</p>
+      </header>
 
-    <Pagination
-      currentPage={1}
-      totalPages={totalPages}
-      prevUrl={null}
-      nextUrl={totalPages > 1 ? '/pagina/2/' : null}
-    />
-  </div>
+      <div class="skills-grid">
+        {skills.map((group) => (
+          <div class="skill-group">
+            <h3>{group.category}</h3>
+            <ul class="chip-list" role="list">
+              {group.items.map((item) => <li class="chip">{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ── Experiência ──────────────────────────────────── */}
+  <section class="section section--alt">
+    <div class="container container--wide">
+      <header class="section__head">
+        <h2>Experiência</h2>
+        <p>Trajetória profissional.</p>
+      </header>
+
+      <ol class="timeline" role="list">
+        {experiences.map((exp) => (
+          <li class="timeline__item">
+            <div class="timeline__dot" data-current={exp.current ? 'true' : 'false'}></div>
+            <div class="timeline__body">
+              <div class="timeline__meta">
+                <span class="timeline__period">{exp.period}</span>
+                {exp.current && <span class="badge">Atual</span>}
+              </div>
+              <h3 class="timeline__role">{exp.role}</h3>
+              <p class="timeline__company">
+                {exp.company}{exp.location ? ` · ${exp.location}` : ''}
+              </p>
+              <p class="timeline__desc">{exp.description}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  {/* ── Projetos ─────────────────────────────────────── */}
+  <section class="section">
+    <div class="container container--wide">
+      <header class="section__head">
+        <h2>Projetos</h2>
+        <p>Alguns trabalhos que fiz.</p>
+      </header>
+
+      <div class="cards-grid">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </section>
+
+  {/* ── Open source ──────────────────────────────────── */}
+  <section class="section section--alt">
+    <div class="container container--wide">
+      <header class="section__head">
+        <h2>Open source</h2>
+        <p>Código que mantenho público no GitHub.</p>
+      </header>
+
+      <div class="cards-grid">
+        {openSource.map((repo) => <RepoCard repo={repo} />)}
+      </div>
+
+      <p class="section__more">
+        <a href="https://github.com/maiconschmitz" target="_blank" rel="noopener noreferrer">
+          Ver tudo no GitHub <Icon name="arrow" size={16} />
+        </a>
+      </p>
+    </div>
+  </section>
+
+  {/* ── Últimos posts ────────────────────────────────── */}
+  {latestPosts.length > 0 && (
+    <section class="section">
+      <div class="container container--wide">
+        <header class="section__head">
+          <h2>Do blog</h2>
+          <p>Anotações técnicas — voltando aos poucos a escrever.</p>
+        </header>
+
+        <div class="post-list">
+          {latestPosts.map((post) => <PostCard post={post} />)}
+        </div>
+
+        <p class="section__more">
+          <a href="/blog">Todos os posts <Icon name="arrow" size={16} /></a>
+        </p>
+      </div>
+    </section>
+  )}
+
+  {/* ── Contato ──────────────────────────────────────── */}
+  <section class="section section--alt" id="contato">
+    <div class="container container--wide">
+      <div class="contact">
+        <h2>Vamos conversar?</h2>
+        <p>
+          Aberto a projetos, parcerias e boas ideias. Me encontra nos canais abaixo.
+        </p>
+        <div class="hero-portfolio__cta">
+          {socials.map((s) => (
+            <a
+              class="btn btn--ghost"
+              href={s.href}
+              target={s.href.startsWith('http') ? '_blank' : undefined}
+              rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            >
+              <Icon name={s.icon} size={18} /> {s.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
 </Base>
