@@ -201,6 +201,53 @@ A home deixou de ser a lista de posts e virou uma **landing de apresentação** 
 
 ---
 
+## Histórico cronológico da sessão (rastro das decisões)
+
+Sequência de pedidos do usuário e o que resultou de cada um — para reconstruir o raciocínio numa sessão futura.
+
+1. **"Analise este projeto e entenda ao que ele se propõe."**
+   → Levantamento: blog pessoal em Hexo 6, tema `anodyne`, 58 posts (2013–2022), Tachyons CSS, GitHub Pages. Constatado que a branch `master` só tinha o HTML gerado.
+
+2. **"Gere um plano de migração do Hexo para o Astro."** Motivação: unificar stack com outro projeto que também usará Astro. Pedido de tema clean/moderno com dark mode, RSS, LLMS.txt e recursos "mais novos".
+   → Plano em 6 fases. Nesse momento eu ainda achava que os Markdown fonte não existiam e propus uma "Fase 0" para reconstruir os posts a partir do HTML (via `atom.xml` + turndown).
+
+3. **"Por que reconstruir o Markdown se temos os fontes na branch `source` em `source/_posts/blog`?"**
+   → Correção minha: confirmei que a branch `source` tinha tudo (Markdown, `_config.yml`, tema EJS). **Fase 0 eliminada.** Erro de origem: eu não tinha checado outras branches na análise inicial.
+
+4. **"Você analisou toda a branch `source`? Analise para ver o que mais pode ser simplificado."**
+   → Análise completa da `source`: frontmatter real dos posts, `_config.yml`, tema `anodyne`, IDs de serviços (GA, AdSense, Disqus, OneSignal). Cronograma reduzido (~30%), risco de perda de conteúdo eliminado.
+
+5. **"Efetue as implementações."** (goal)
+   → Perguntei 4 decisões-chave (ver tabela abaixo) e implementei o projeto Astro completo. Build de 165 páginas, commit e push. `.gitignore` do Astro tinha ficado de fora → corrigido em commit seguinte (feedback do stop-hook).
+
+6. **"Como testo o site localmente?"**
+   → Instruções `npm run dev` / `build` / `preview`; ressalva de que o Pagefind só funciona após `build`.
+
+7. **PR #3 criado pela UI do Claude Code** para esta branch.
+
+8. **"Como transfiro o desenvolvimento para minha máquina e mantenho o histórico?"** → **"Crie o CLAUDE.md agora."**
+   → Este arquivo foi criado (commit `977e536`).
+
+9. **Redesign home → portfólio** (commit `c3c3182`, feito fora desta sessão / na máquina do usuário): home virou landing de apresentação, blog movido para `/blog`, `portfolio.ts` criado, identidade visual renovada.
+
+10. **"Como continuo a sessão no meu ambiente local mantendo o histórico?"** → **"Adicione o rastro cronológico ao CLAUDE.md."**
+    → Esta seção.
+
+### Decisões respondidas no passo 5 (via AskUserQuestion)
+
+| Pergunta | Resposta do usuário |
+|---|---|
+| Onde construir o projeto Astro? | Subpasta `/astro` |
+| Quais serviços legados manter? | Google Analytics + AdSense (removidos: OneSignal e comentários) |
+| Tecnologia de comentários? | **Sem comentários** |
+| Deploy no GitHub Pages? | GitHub Actions → `gh-pages` |
+
+> **Nota sobre continuidade:** o histórico literal do chat **não** transfere entre ambientes (as sessões do Claude Code são locais a cada máquina/container). Este `CLAUDE.md` é o mecanismo de continuidade — ao abrir o Claude Code no diretório do repo, ele lê este arquivo automaticamente. Numa nova sessão, basta pedir *"leia o CLAUDE.md e me diga o que falta"*.
+
+> **Nota sobre o ambiente remoto:** o container remoto é efêmero e pode ser recriado com uma cópia antiga do repo. Sempre rode `git fetch origin <branch>` e sincronize antes de editar — em jun/2026 o container voltou apontando para o commit Hexo de 2022 enquanto o remoto já tinha 4 commits novos.
+
+---
+
 ## Contexto do PR
 
 - **PR #3:** `claude/project-analysis-CeIUG` → `master`
