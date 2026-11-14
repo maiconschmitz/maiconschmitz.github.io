@@ -13,15 +13,30 @@ export const profile = {
   name: 'Maicon Schmitz',
   /** Aparece como wordmark no header (sem logotipo/imagem). */
   initials: 'MS',
-  role: 'Arquiteto de Software',
+  role: 'Tech Lead & Senior Backend Engineer',
   /** Frase curta, logo abaixo do nome no hero. */
-  tagline: 'Construo software para Web, Mobile e back-end — com gosto por DevOps, automação e IoT.',
+  tagline: 'Tecnologia só tem valor quando resolve problemas reais de negócio.',
   location: 'Rio Grande do Sul, Brasil',
-  /** Parágrafos de apresentação (cada item vira um <p>). */
+  /** Texto focado e enxuto para a página inicial */
   intro: [
-    'Sou desenvolvedor e arquiteto de software com experiência em projetos Web, Mobile e back-end. Gosto de transformar problemas em sistemas simples, manuteníveis e que escalam bem.',
-    'Ao longo dos anos trabalhei de PHP/Laravel e JavaScript a Node.js, Python e Go, passando por front-end (Vue, Angular), mobile (Ionic, Flutter) e bastante infraestrutura com Docker. Atualmente me dedico a Go, automação e IoT.',
+    'Escrevo código há mais de 20 anos e nesse tempo aprendi que tecnologia só tem valor quando resolve problemas reais de negócio. Atuo como Tech Lead e Engenheiro Backend Sênior, transformando problemas complexos em arquiteturas robustas, manuteníveis e de alta disponibilidade.',
   ],
+  /** Biografia completa e direcionada para a página Sobre */
+  about: {
+    paragraphs: [
+      'Escrevo código há mais de 20 anos e nesse tempo aprendi que tecnologia só tem valor quando resolve problemas reais de negócio.',
+      'Comecei no desenvolvimento de sistemas ERP, onde aprendi a traduzir regras de negócio complexas em software funcional. Esse fundamento moldou minha forma de trabalhar: entender o problema antes de escrever a primeira linha de código.',
+      'Hoje atuo como Tech Lead & Senior Backend Engineer, especializado em arquiteturas escaláveis com Python e Go, rodando em ambientes Docker/Kubernetes. Minha stack inclui PostgreSQL, MySQL, MongoDB, Redis e mensageria com RabbitMQ, com pipelines de CI/CD via GitHub Actions.',
+      'Ao longo da carreira, passei por todo o ciclo de desenvolvimento, de aplicações Desktop, Web e Mobile até sistemas distribuídos com microsserviços. Já levei produtos do zero à produção, incluindo aplicações Mobile, nas lojas App Store e Google Play.',
+      'Tenho experiência em ambientes de alto volume, onde decisões de arquitetura impactam diretamente a performance e os resultados do produto.',
+    ],
+    deliverables: [
+      'Arquitetura de sistemas backend robustos e de alta disponibilidade',
+      'Liderança técnica em times de desenvolvimento',
+      'Integração de sistemas e automação de processos',
+      'Ambientes cloud estruturados, monitorados e escaláveis',
+    ],
+  },
 } as const
 
 /* ── Links sociais ──────────────────────────────────────────────────────── */
@@ -60,61 +75,89 @@ export const socials = [
 export const skills: { category: string; items: string[] }[] = [
   {
     category: 'Linguagens',
-    items: ['Go', 'Python', 'JavaScript / TypeScript', 'PHP', 'SQL', 'Shell'],
+    items: ['Python', 'Go', 'SQL', 'TypeScript / JavaScript', 'Shell / Bash', 'PHP'],
   },
   {
-    category: 'Back-end',
-    items: ['Node.js', 'Laravel', 'Flask', 'APIs REST', 'NATS'],
+    category: 'Back-end & Arquitetura',
+    items: [
+      'Microsserviços',
+      'Sistemas Distribuídos',
+      'Alta Disponibilidade',
+      'APIs REST',
+      'RabbitMQ (Mensageria)',
+      'Integração de Sistemas',
+    ],
   },
   {
-    category: 'Front-end',
-    items: ['Vue.js', 'Angular', 'Astro', 'HTML & CSS'],
+    category: 'Bancos de Dados & Cache',
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
   },
   {
-    category: 'Mobile',
-    items: ['Flutter', 'Ionic'],
+    category: 'DevOps & Cloud',
+    items: [
+      'Docker',
+      'Kubernetes',
+      'CI/CD Pipelines',
+      'GitHub Actions',
+      'Linux',
+      'Monitoramento & Métricas',
+      'Nginx',
+    ],
   },
   {
-    category: 'Dados',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB'],
+    category: 'Mobile & Front-end',
+    items: [
+      'Flutter',
+      'Ionic',
+      'Publicações App Store & Google Play',
+      'Vue.js',
+      'Angular',
+      'Astro',
+    ],
   },
   {
-    category: 'DevOps & Infra',
-    items: ['Docker', 'Linux', 'Nginx', 'CI/CD', 'GitHub Actions'],
-  },
-  {
-    category: 'Interesses',
-    items: ['IoT', 'Automação', 'Raspberry Pi'],
+    category: 'Liderança & Especialidades',
+    items: [
+      'Liderança Técnica (Tech Lead)',
+      'Arquitetura de Software',
+      'Sistemas ERP & Negócios Complexos',
+      'Automação de Processos',
+      'IoT & Hardware',
+    ],
   },
 ]
 
-/* ── Experiência ────────────────────────────────────────────────────────── */
-// TODO: estes itens são placeholders — ajuste cargos, empresas e datas reais.
-export type Experience = {
-  role: string
-  company: string
-  period: string
-  location?: string
+/* ── Filosofia de Engenharia / Como Trabalho ────────────────────────────── */
+export type Principle = {
+  title: string
+  subtitle: string
   description: string
-  current?: boolean
 }
 
-export const experiences: Experience[] = [
+export const principles: Principle[] = [
   {
-    role: 'Arquiteto de Software / Desenvolvedor',
-    company: 'Freelancer',
-    period: '20XX — Atual', // TODO
-    location: 'Remoto',
+    title: 'Entender o problema antes de codificar',
+    subtitle: 'Regra de Negócio & Domínio',
     description:
-      'Desenvolvimento de aplicações Web e Mobile sob demanda — da arquitetura à entrega. Back-ends em Node.js/Python, front-end em Vue/Angular e apps em Flutter, com deploy em Docker.',
-    current: true,
+      'Fundamento cultivado em sistemas ERP: tecnologia só tem valor real quando resolve problemas concretos de negócio. Antes da primeira linha de código ou escolha de ferramentas, o foco é compreender a fundo os processos, regras e objetivos do produto.',
   },
   {
-    role: 'Desenvolvedor de Software', // TODO
-    company: 'Empresa anterior', // TODO
-    period: '20XX — 20XX', // TODO
+    title: 'Arquitetura pragmática e escalável',
+    subtitle: 'Simplicidade & Alto Volume',
     description:
-      'TODO: descreva aqui responsabilidades, stack e principais entregas desta experiência.',
+      'Sistemas distribuídos desenhados para alta disponibilidade e manutenção sustentável. Microsserviços e mensageria assíncrona (com Python, Go e RabbitMQ) aplicados onde há real ganho de escala e desacoplamento, evitando complexidade acidental.',
+  },
+  {
+    title: 'Automação e resiliência por padrão',
+    subtitle: 'DevOps, Cloud & CI/CD',
+    description:
+      'Pipelines automatizados no GitHub Actions, conteinerização com Docker e Kubernetes, testes e observabilidade não são etapas tardias. São a base que garante entregas contínuas, estáveis e com confiança em produção.',
+  },
+  {
+    title: 'Liderança técnica e cultura de engenharia',
+    subtitle: 'Alinhamento & Mentoria',
+    description:
+      'Como Tech Lead, atuo na ponte entre as necessidades do produto e a excelência técnica da equipe. Fomento padrões consistentes, decisões arquiteturais transparentes e a evolução técnica contínua do time.',
   },
 ]
 

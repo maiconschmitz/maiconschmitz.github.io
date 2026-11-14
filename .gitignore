@@ -1,0 +1,5 @@
+# Claude Code local settings
+.claude/settings.local.json
+
+# Cursor local settings
+.cursor/cli-config.json

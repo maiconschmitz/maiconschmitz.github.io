@@ -48,7 +48,11 @@
 /* ── Reset ──────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100% }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+}
 
 body {
   font-family: var(--font-sans);
@@ -687,6 +691,49 @@ html[data-theme="dark"] .astro-code span {
 .hero-portfolio__intro p { margin-bottom: 1rem }
 .hero-portfolio__intro p:last-child { margin-bottom: 0 }
 
+.deliverables-box,
+.hero-portfolio__deliverables {
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.deliverables-title,
+.hero-portfolio__deliverables-title {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 0 !important;
+  margin-bottom: .75rem !important;
+}
+.deliverables-list,
+.hero-portfolio__deliverables-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: .95rem;
+}
+.deliverables-list li,
+.hero-portfolio__deliverables-list li {
+  position: relative;
+  padding-left: 1.35rem !important;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 0 !important;
+}
+.deliverables-list li::before,
+.hero-portfolio__deliverables-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-1);
+  font-weight: bold;
+}
+
 .hero-portfolio__cta {
   display: flex;
   flex-wrap: wrap;
@@ -759,44 +806,69 @@ html[data-theme="dark"] .astro-code span {
   margin-bottom: .75rem;
 }
 
-/* ── Timeline ──────────────────────────────────────── */
-.timeline { list-style: none; position: relative; padding-left: 1.75rem }
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 6px;
-  bottom: 6px;
-  width: 2px;
-  background: var(--border);
+/* ── Como Trabalho / Princípios de Engenharia ────────── */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
-.timeline__item { position: relative; padding-bottom: 2rem }
-.timeline__item:last-child { padding-bottom: 0 }
-.timeline__dot {
-  position: absolute;
-  left: -1.75rem;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+@media (max-width: 640px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.principle-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
   background: var(--bg);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color .15s, box-shadow .15s, transform .15s;
 }
-.timeline__dot[data-current='true'] {
-  background: var(--accent-1);
+.principle-card:hover {
   border-color: var(--accent-1);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-1) 20%, transparent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
 }
-.timeline__meta { display: flex; align-items: center; gap: .6rem; margin-bottom: .3rem }
-.timeline__period {
-  font-size: .8rem;
-  font-weight: 600;
+.principle-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.principle-card__num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .85rem;
+  font-weight: 700;
   color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
 }
-.timeline__role { font-size: 1.1rem; font-weight: 700; line-height: 1.3 }
-.timeline__company { font-size: .9rem; color: var(--accent-1); font-weight: 500; margin-bottom: .5rem }
-.timeline__desc { color: var(--text-muted); font-size: .95rem }
+.principle-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
+  margin-bottom: .6rem;
+}
+.principle-card__desc {
+  color: var(--text-muted);
+  font-size: .95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.principles-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: .95rem;
+}
+.principles-footer a {
+  font-weight: 600;
+  color: var(--accent-1);
+}
+.principles-footer a:hover {
+  text-decoration: underline;
+}
 
 /* ── Cards grid (projetos + open source) ───────────── */
 .cards-grid {

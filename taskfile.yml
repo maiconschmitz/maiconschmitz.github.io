@@ -1,0 +1,130 @@
+version: "3"
+
+vars:
+  ASTRO_DIR: "astro"
+  DIST_DIR: "astro/dist"
+  PORT: '{{default "4321" .PORT}}'
+  HOST: '{{default "127.0.0.1" .HOST}}'
+  BRANCH: { sh: "git rev-parse --abbrev-ref HEAD 2>/dev/null || echo 'main'" }
+  COMMIT: { sh: "git rev-parse --short HEAD 2>/dev/null || echo 'unknown'" }
+  NOW: { sh: "date '+%Y-%m-%d %H:%M:%S %z' 2>/dev/null || echo 'unknown'" }
+
+tasks:
+  default:
+    desc: "Exibe a lista de tarefas disponíveis"
+    cmds:
+      - task --list
+    silent: true
+
+  # === AMBIENTE & DEPENDÊNCIAS ===
+
+  init:
+    desc: "Inicializa o ambiente de desenvolvimento e instala dependências"
+    cmds:
+      - task: install
+
+  install:
+    aliases: [setup, deps]
+    desc: "Instala as dependências do projeto Astro sob astro/"
+    cmds:
+      - npm --prefix {{.ASTRO_DIR}} install
+
+  # === DESENVOLVIMENTO & EXECUÇÃO ===
+
+  dev:
+    aliases: [run, start]
+    desc: "Inicia o servidor de desenvolvimento Astro (hot-reload)"
+    cmds:
+      - npm --prefix {{.ASTRO_DIR}} run dev -- --host {{.HOST}} --port {{.PORT}} {{.CLI_ARGS}}
+
+  preview:
+    aliases: [prev]
+    desc: "Inicia o servidor de preview local do build de produção"
+    deps: [build]
+    cmds:
+      - npm --prefix {{.ASTRO_DIR}} run preview -- --host {{.HOST}} --port {{.PORT}} {{.CLI_ARGS}}
+
+  # === BUILD & VALIDAÇÃO ===
+
+  build:
+    desc: "Compila o site estático e gera o índice de busca Pagefind em astro/dist"
+    cmds:
+      - npm --prefix {{.ASTRO_DIR}} run build
+
+  test:
+    aliases: [check]
+    desc: "Executa validação e compilação para checar integridade do projeto"
+    deps: [build]
+    cmds:
+      - echo "Build e integridade validados com sucesso!"
+
+  clean:
+    desc: "Limpa artefatos de build gerados (dist, .astro e caches)"
+    cmds:
+      - rm -rf {{.ASTRO_DIR}}/dist {{.ASTRO_DIR}}/.astro {{.ASTRO_DIR}}/node_modules/.cache
+      - echo "Artefatos de build e caches temporários foram limpos."
+
+  clean:all:
+    desc: "Limpeza profunda (dist, caches e node_modules)"
+    cmds:
+      - task: clean
+      - rm -rf {{.ASTRO_DIR}}/node_modules
+      - echo "Dependências node_modules removidas."
+
+  # === DISTRIBUIÇÃO & DEPLOY ===
+
+  deploy:
+    aliases: [dist, distribute]
+    desc: "Valida o build e dispara o deploy no GitHub Actions via GitHub CLI (gh)"
+    deps: [build]
+    cmds:
+      - |
+        if command -v gh >/dev/null 2>&1; then
+          echo "Disparando workflow de deploy no GitHub Actions para a branch '{{.BRANCH}}'..."
+          gh workflow run deploy.yml --ref {{.BRANCH}}
+          echo "Workflow disparado! Use 'task deploy:status' para acompanhar o status."
+        else
+          echo "GitHub CLI (gh) não disponível."
+          echo "Para distribuir, envie suas alterações para a branch remota: git push origin {{.BRANCH}}"
+        fi
+
+  deploy:status:
+    aliases: [status]
+    desc: "Verifica o status das últimas execuções de deploy no GitHub Actions"
+    cmds:
+      - gh run list --workflow=deploy.yml -L 5
+
+  deploy:watch:
+    aliases: [watch]
+    desc: "Acompanha em tempo real a execução do último workflow de deploy"
+    cmds:
+      - gh run watch
+
+  # === UTILITÁRIOS DE CONTEÚDO ===
+
+  post:new:
+    aliases: [novo-post, post]
+    desc: "Cria um novo post no blog (ex: task post:new -- meu-novo-artigo)"
+    cmds:
+      - ./scripts/new-post.sh {{.CLI_ARGS}}
+
+  # === INFORMAÇÕES & AJUDA ===
+
+  info:
+    aliases: [version]
+    desc: "Exibe informações do ambiente de desenvolvimento e versões"
+    cmds:
+      - |
+        echo "=== Informações do Projeto ==="
+        echo "Branch atual:  {{.BRANCH}}"
+        echo "Último commit: {{.COMMIT}}"
+        echo "Node:          $(node -v 2>/dev/null || echo 'não instalado')"
+        echo "NPM:           $(npm -v 2>/dev/null || echo 'não instalado')"
+        echo "Task:          $(task --version 2>/dev/null || echo 'não instalado')"
+        echo "GitHub CLI:    $(gh --version 2>/dev/null | head -n 1 || echo 'não instalado')"
+    silent: true
+
+  help:
+    desc: "Lista todas as tarefas disponíveis"
+    cmds:
+      - task --list

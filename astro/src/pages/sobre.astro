@@ -1,27 +1,26 @@
 ---
 import Base from '@/layouts/Base.astro'
+import { profile } from '@/data/portfolio'
 ---
 
-<Base title="Sobre" description="Sobre Maicon Schmitz — Arquiteto de Software Sênior, desenvolvedor Web e Mobile Freelancer.">
+<Base title="Sobre" description={`Sobre ${profile.name} — ${profile.role}.`}>
   <div class="container">
     <div class="page-hero">
       <h1>Sobre</h1>
-      <p>Arquiteto de Software Sênior · Freelancer</p>
+      <p>{profile.role} · {profile.location}</p>
     </div>
 
     <div class="page-content post-content">
-      <p>
-        Meu nome é <strong>Maicon Schmitz</strong>, sou Arquiteto de Software Sênior e desenvolvo
-        softwares Web e Mobile em modelo Freelancer. Já trabalhei com diversas tecnologias, dentre
-        elas PHP, Laravel, JavaScript, Node.js, AngularJS, Vue.js, Python, Flask, Ionic e Flutter.
-      </p>
+      {profile.about.paragraphs.map((p) => <p>{p}</p>)}
 
-      <ul>
-        <li>🇧🇷 Brasil, Rio Grande do Sul</li>
-        <li>🔭 Desenvolvedor de software Backend, Web e Mobile</li>
-        <li>🌱 Atualmente estudando Python e Go</li>
-        <li>🚀 Entusiasta de IoT, Automação e Raspberry Pi</li>
-      </ul>
+      <div class="deliverables-box">
+        <h2 class="deliverables-title">O que entrego na prática</h2>
+        <ul class="deliverables-list" role="list">
+          {profile.about.deliverables.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
 
       <h2>Contato</h2>
       <p>

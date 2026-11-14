@@ -5,7 +5,7 @@ import ProjectCard from '@/components/ProjectCard.astro'
 import RepoCard from '@/components/RepoCard.astro'
 import PostCard from '@/components/PostCard.astro'
 import { getSortedPosts } from '@/utils/posts'
-import { profile, socials, skills, experiences, projects, openSource } from '@/data/portfolio'
+import { profile, socials, skills, principles, projects, openSource } from '@/data/portfolio'
 
 const latestPosts = (await getSortedPosts()).slice(0, 4)
 const primarySocials = socials.filter((s) => 'primary' in s && s.primary)
@@ -47,7 +47,7 @@ const primarySocials = socials.filter((s) => 'primary' in s && s.primary)
     <div class="container container--wide">
       <header class="section__head">
         <h2>Conhecimentos</h2>
-        <p>Tecnologias com que trabalho e estudo.</p>
+        <p>Tecnologias, arquitetura e ferramentas consolidadas na prática.</p>
       </header>
 
       <div class="skills-grid">
@@ -63,32 +63,35 @@ const primarySocials = socials.filter((s) => 'primary' in s && s.primary)
     </div>
   </section>
 
-  {/* ── Experiência ──────────────────────────────────── */}
+  {/* ── Como Trabalho ────────────────────────────────── */}
   <section class="section section--alt">
     <div class="container container--wide">
       <header class="section__head">
-        <h2>Experiência</h2>
-        <p>Trajetória profissional.</p>
+        <h2>Como Trabalho</h2>
+        <p>Princípios de engenharia e cultura técnica que guiam minhas decisões.</p>
       </header>
 
-      <ol class="timeline" role="list">
-        {experiences.map((exp) => (
-          <li class="timeline__item">
-            <div class="timeline__dot" data-current={exp.current ? 'true' : 'false'}></div>
-            <div class="timeline__body">
-              <div class="timeline__meta">
-                <span class="timeline__period">{exp.period}</span>
-                {exp.current && <span class="badge">Atual</span>}
-              </div>
-              <h3 class="timeline__role">{exp.role}</h3>
-              <p class="timeline__company">
-                {exp.company}{exp.location ? ` · ${exp.location}` : ''}
-              </p>
-              <p class="timeline__desc">{exp.description}</p>
+      <div class="principles-grid">
+        {principles.map((item, idx) => (
+          <article class="principle-card">
+            <div class="principle-card__head">
+              <span class="principle-card__num">0{idx + 1}</span>
+              <span class="badge">{item.subtitle}</span>
             </div>
-          </li>
+            <h3 class="principle-card__title">{item.title}</h3>
+            <p class="principle-card__desc">{item.description}</p>
+          </article>
         ))}
-      </ol>
+      </div>
+
+      <footer class="principles-footer">
+        <p>
+          Para consultar o histórico cronológico de cargos, empresas e recomendações, acesse meu{' '}
+          <a href="https://www.linkedin.com/in/maiconschmitz" target="_blank" rel="noopener noreferrer">
+            LinkedIn &rarr;
+          </a>
+        </p>
+      </footer>
     </div>
   </section>
 
